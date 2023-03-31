@@ -5,7 +5,7 @@ const _festivalData = [
   "./data/2023.json",
 ];
 
-function documentReady(fn) {
+const documentReady = (fn) => {
   if (document.readyState !== "loading") {
     fn();
     return;
@@ -25,7 +25,7 @@ function documentReady(fn) {
       sort(col) {
         if (this.sortCol === col) this.sortAsc = !this.sortAsc;
         this.sortCol = col;
-        this.sortArrowIcon = this.sortAsc ? '▲' : '▼',
+        this.sortArrowIcon = this.sortAsc ? '▲' : '▼';
         this.videos.sort((a, b) => {
           if (a[this.sortCol] < b[this.sortCol]) return this.sortAsc ? 1 : -1;
           if (a[this.sortCol] > b[this.sortCol]) return this.sortAsc ? -1 : 1;
@@ -35,13 +35,12 @@ function documentReady(fn) {
     }));
   });
 }
-documentReady(onReady);
 
-function onReady() {
+const onReady = () => {
   console.info("document ready");
 }
 
-function fetchAndCombineFestivalData(urls) {
+const fetchAndCombineFestivalData = (urls) => {
   const promises = urls.map((url) => {
     return fetch(url).then((response) => response.json());
   });
@@ -60,3 +59,5 @@ function fetchAndCombineFestivalData(urls) {
     }, []);
   });
 }
+
+documentReady(onReady);
