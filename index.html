@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gray Area Festival Video Archive</title>
     <script defer src="/lib/alpine.min.js"></script>
     <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
+
+<h1>Gray Area Festival Video Archive</h1>
 
 <table id="videoTable" x-data="videoData">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>URL</th>
-      <th>Festival Year</th>
-      <th>Festival Theme</th>
+      <th @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
+      <th @click="sort('url')" x-text="'URL' + sortArrow('url')">URL</th>
+      <th @click="sort('festivalYear')" x-text="'Festival Year' + sortArrow('festivalYear')">Festival Year</th>
+      <th @click="sort('festivalTitle')" x-text="'Festival Theme' + sortArrow('festivalTitle')">Festival Theme</th>
     </tr>
   </thead>
   <tbody>
@@ -24,15 +29,14 @@
     </template>
     <template x-for="video in videos">
       <tr>
-        <td x-text="video.title"></td>   
-        <td x-text="video.url"></td>   
-        <td x-text="video.festival.year"></td>   
-        <td x-text="video.festival.title"></td>
+        <td x-text="video.title"></td>
+        <td x-text="video.url"></td>
+        <td x-text="video.festivalYear"></td>
+        <td x-text="video.festivalTitle"></td>
       </tr>
     </template>
   </tbody>
 </table>
 
 </body>
-
 </html>
