@@ -4,15 +4,15 @@
     "title": "Festival Theme",
     "videos": [
         {
-            "title": "video1"
+            "title": "video1",
             "url" : "url1"
         },
         {
-            "title": "video2"
+            "title": "video2",
             "url" : "url2"
         },
         {
-            "title": "video3"
+            "title": "video3",
             "url" : "url3"
         }                
     ]

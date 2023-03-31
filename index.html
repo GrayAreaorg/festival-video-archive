@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gray Area Festival Video Archive</title>
     <script defer src="/lib/alpine.min.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
 
 <div x-data="load()">
-  <button 
-    @click="fetchVideos()"
-    :disabled="isLoading"
-    >
-  Load Videos
-  </button>
+  <button x-on:click="fetchVideos()" :disabled="isLoading">Fetch Videos</button>
   <div>Message: <span x-text="videoDisplay"></span></div>
   <template x-for="video in videos" :key="videos.indexOf(video)">
     <div x-data="video">
@@ -25,50 +21,24 @@
 </div>
 
 
+<div x-data="$store.videos.filteredVideos">
+  <ul>
+    <template x-for="(video, index) in $store.videos" :key="index">
+      <li>
+        <a :href="video.url">
+          <h2 x-text="video.title"></h2>
+          <div class="thumb">
+            <img :src="video.thumbnail" />
+          </div>
+        </a>
+      </li>
+    </template>
+  </ul>
+  <template x-if="$store.videos.length === 0">
+    <p>Loading...</p>
+  </template>
+</div>
+
 </body>
-<script>
 
-function onReady() {
-  console.log('document ready');
-  // fetch('/data/2020.json')
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     console.log(data);
-  //   })
-}
-
-function fetchAll() {
-  
-}
-
-function load() {
-  return {
-    message: 'Videos Loaded',
-    videos: [],
-    videoDisplay: '',
-    isLoading: false,
-    fetchVideos: function () {
-      this.videoDisplay = this.message;    
-      this.isLoading = true;
-      fetch('/data/2020.json')
-        .then(res => res.json())
-        .then(data => {
-          this.isLoading = false;
-          this.videos = data.videos
-        })
-    }
-  }
-}
-
-
-function documentReady(fn) {
-  if (document.readyState !== 'loading') {
-    fn();
-    return;
-  }
-  document.addEventListener('DOMContentLoaded', fn);
-}  
-documentReady(onReady)
-
-</script>
 </html>
