@@ -5,16 +5,25 @@ const _festivalData = [
   './data/2023.json'
 ];
 
+function documentReady(fn) {
+  if (document.readyState !== 'loading') {
+    fn();
+    return;
+  }
+  document.addEventListener('DOMContentLoaded', fn);
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('videoData', () => ({
+      videos: [],
+      async init() {
+        this.videos = await fetchAndCombineFestivalVideoData(_festivalData);
+      },
+    }))
+  });  
+}  
+documentReady(onReady)
+
 function onReady() {
   console.info('document ready');
-  fetchAndCombineFestivalVideoData(_festivalData)
-    .then(videos => {
-      Alpine.store('videos', videos);
-      console.log('vids', videos);
-    })
-    .catch(error => {
-      console.error(error);
-    });
 }
 
 function fetchAndCombineFestivalVideoData(urls) {
@@ -40,34 +49,5 @@ function fetchAndCombineFestivalVideoData(urls) {
     });
 }
 
-function load() {
-  return {
-    message: 'Videos Loaded',
-    videos: [],
-    videoDisplay: '',
-    isLoading: false,
-    fetchVideos: function () {
-      this.videoDisplay = this.message;    
-      this.isLoading = true;
-      fetch('/data/2020.json')
-        .then(res => res.json())
-        .then(data => {
-          this.isLoading = false;
-          this.videos = data.videos
-        })
-    }
-  }
-}
 
 
-function documentReady(fn) {
-  if (document.readyState !== 'loading') {
-    fn();
-    return;
-  }
-  document.addEventListener('DOMContentLoaded', fn);
-  document.addEventListener('alpine:init', () => {
-    Alpine.store('videos', []);
-  });  
-}  
-documentReady(onReady)

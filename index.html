@@ -9,35 +9,29 @@
 </head>
 <body>
 
-<div x-data="load()">
-  <button x-on:click="fetchVideos()" :disabled="isLoading">Fetch Videos</button>
-  <div>Message: <span x-text="videoDisplay"></span></div>
-  <template x-for="video in videos" :key="videos.indexOf(video)">
-    <div x-data="video">
-      <span x-text="video.title"></span>
-      <span x-text="video.url"></span>
-    </div>
-  </template>
-</div>
-
-
-<div x-data="$store.videos.filteredVideos">
-  <ul>
-    <template x-for="(video, index) in $store.videos" :key="index">
-      <li>
-        <a :href="video.url">
-          <h2 x-text="video.title"></h2>
-          <div class="thumb">
-            <img :src="video.thumbnail" />
-          </div>
-        </a>
-      </li>
+<table id="videoTable" x-data="videoData">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>URL</th>
+      <th>Festival Year</th>
+      <th>Festival Theme</th>
+    </tr>
+  </thead>
+  <tbody>
+    <template x-if="!videos">
+      <tr><td colspan="4"><i>Loading...</i></td></tr>
     </template>
-  </ul>
-  <template x-if="$store.videos.length === 0">
-    <p>Loading...</p>
-  </template>
-</div>
+    <template x-for="video in videos">
+      <tr>
+        <td x-text="video.title"></td>   
+        <td x-text="video.url"></td>   
+        <td x-text="video.festival.year"></td>   
+        <td x-text="video.festival.title"></td>
+      </tr>
+    </template>
+  </tbody>
+</table>
 
 </body>
 
