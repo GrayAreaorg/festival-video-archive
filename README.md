@@ -1,2 +1,1 @@
-# ga-video-archive
-Gray Area Video Festival Archive
+# Gray Area Festival Video Archive
