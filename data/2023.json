@@ -1,0 +1,19 @@
+{
+    "description": "Gray Area Festival 2023: Distant Early Warning",
+    "year": "2023",
+    "title": "Distant Early Warning",
+    "videos": [
+        {
+            "title": "video1"
+            "url" : "url1"
+        },
+        {
+            "title": "video2"
+            "url" : "url2"
+        },
+        {
+            "title": "video3"
+            "url" : "url3"
+        }                
+    ]
+}

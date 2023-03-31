@@ -1,1 +1,74 @@
-Gray Area Festival Video Archive
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gray Area Festival Video Archive</title>
+    <script defer src="/lib/alpine.min.js"></script>
+</head>
+<body>
+
+<div x-data="load()">
+  <button 
+    @click="fetchVideos()"
+    :disabled="isLoading"
+    >
+  Load Videos
+  </button>
+  <div>Message: <span x-text="videoDisplay"></span></div>
+  <template x-for="video in videos" :key="videos.indexOf(video)">
+    <div x-data="video">
+      <span x-text="video.title"></span>
+      <span x-text="video.url"></span>
+    </div>
+  </template>
+</div>
+
+
+</body>
+<script>
+
+function onReady() {
+  console.log('document ready');
+  // fetch('/data/2020.json')
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     console.log(data);
+  //   })
+}
+
+function fetchAll() {
+  
+}
+
+function load() {
+  return {
+    message: 'Videos Loaded',
+    videos: [],
+    videoDisplay: '',
+    isLoading: false,
+    fetchVideos: function () {
+      this.videoDisplay = this.message;    
+      this.isLoading = true;
+      fetch('/data/2020.json')
+        .then(res => res.json())
+        .then(data => {
+          this.isLoading = false;
+          this.videos = data.videos
+        })
+    }
+  }
+}
+
+
+function documentReady(fn) {
+  if (document.readyState !== 'loading') {
+    fn();
+    return;
+  }
+  document.addEventListener('DOMContentLoaded', fn);
+}  
+documentReady(onReady)
+
+</script>
+</html>
