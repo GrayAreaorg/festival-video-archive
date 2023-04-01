@@ -4,6 +4,10 @@ const onReady = () => {
   console.info("document ready");
 }
 
+const filterData = () => {
+  console.log('filter');
+}
+
 const documentReady = (fn) => {
   if (document.readyState !== "loading") {
     fn();
@@ -13,14 +17,23 @@ const documentReady = (fn) => {
   document.addEventListener("alpine:init", () => {
     // get all videos and set as data object
     Alpine.data("videoData", () => ({
+      allVideos: [],
       videos: [],
       async init() {
         this.videos = await fetch(_databaseFilename).then((response) => response.json());
+        this.allVideos = this.videos;
       },
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : '';
       },
       sortCol: '',
+      filter(filters) {
+        if (filters.length > 0) {
+          this.videos = this.allVideos.filter(video => filters.includes(video.festival_year));
+        } else {
+          this.videos = this.allVideos;
+        }
+      },
       sort(col) {
         if (this.sortCol === col) this.sortAsc = !this.sortAsc;
         this.sortCol = col;

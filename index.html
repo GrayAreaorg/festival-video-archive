@@ -16,34 +16,47 @@
 
 <h1>Gray Area Festival Video Archive</h1>
 
-Filters
-<button>2015</button>
-<button>2016</button>
-<button>2017</button>
-<button>2018</button>
-<button>2019</button>
+<div x-data="videoData">
 
-<table id="videoTable" x-data="videoData">
-  <thead>
-    <tr>
-      <th></th>
-      <th class="sort" @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
-      <th class="sort" @click="sort('festival_year')" x-text="'Year' + sortArrow('festival_year')">Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <template x-if="!videos">
-      <tr><td colspan="4"><i>Loading...</i></td></tr>
-    </template>
-    <template x-for="video in videos">
+  <div id="filters" x-data="{ filters: [] }" x-on:change="filter(filters)">
+    <p>Filters: <span x-text="filters.join(', ')" ></span></p>
+    <label><input type="checkbox" x-model="filters" value="2015">2015</label>
+    <label><input type="checkbox" x-model="filters" value="2016">2016</label>
+    <label><input type="checkbox" x-model="filters" value="2017">2017</label>
+    <label><input type="checkbox" x-model="filters" value="2018">2018</label>
+    <label><input type="checkbox" x-model="filters" value="2019">2019</label>
+  </div>
+
+  <table id="videoTable">
+    <thead>
       <tr>
-        <td><img :src="video.thumbnail_small"></td>
-        <td><a :href="video.webpage_url" x-text="video.title"></a></td>
-        <td x-text="video.festival_year"></td>
+        <th></th>
+        <th class="sort" @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
+        <th class="sort" @click="sort('festival_year')" x-text="'Year' + sortArrow('festival_year')">Year</th>
+        <th>Tags</th>
       </tr>
-    </template>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <template x-if="!videos">
+        <tr><td colspan="4"><i>Loading...</i></td></tr>
+      </template>
+      <template x-for="video in videos">
+        <tr>
+          <td><a :href="video.webpage_url"><img :src="video.thumbnail_small"></a></td>
+          <td><a :href="video.webpage_url" x-text="video.title"></a></td>
+          <td x-text="video.festival_year"></td>
+          <td>
+            <ul class="tags">
+              <template x-for="tag in video.tags">
+                <li x-text="tag"></li>
+              </template>
+            </ul>
+          </td>
+        </tr>
+      </template>
+    </tbody>
+  </table>
+</div>
 
 </body>
 </html>
