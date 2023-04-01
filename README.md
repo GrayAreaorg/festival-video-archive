@@ -7,33 +7,33 @@ https://quilime.github.io/gray-area-video-archive
 
 ### Logo Bumper
 
-  [ ] Gray Area Logo
-  [ ] Festival Title
-  [ ] Festival Year
+  - [ ] Gray Area Logo
+  - [ ] Festival Title
+  - [ ] Festival Year
 
 
 ### Aggregation Page
 
-  [ ] Festival description per year
-  [x] Starting page
-  [x] Rev chron by year (sortable)
-  [x] Year tags
-  [ ] Hot tags
+  - [ ] Festival description per year
+  - [x] Starting page
+  - [x] Rev chron by year (sortable)
+  - [x] Year tags
+  - [ ] Hot tags
 
 
 ### Festival talks metadata
 
-  [x] Title
-  [ ] Presenter
-  [ ] Description
-  [x] Tags
-  [x] Date
-  [x] Festival Year
+  - [x] Title
+  - [ ] Presenter
+  - [ ] Description
+  - [x] Tags
+  - [x] Date
+  - [x] Festival Year
 
 
 ### JSON Database
 
-  [ ] JSON Database
+  - [ ] JSON Database
 
 
 ### Existing Festival Websites
