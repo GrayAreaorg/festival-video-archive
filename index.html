@@ -16,13 +16,19 @@
 
 <h1>Gray Area Festival Video Archive</h1>
 
+Filters
+<button>2015</button>
+<button>2016</button>
+<button>2017</button>
+<button>2018</button>
+<button>2019</button>
+
 <table id="videoTable" x-data="videoData">
   <thead>
     <tr>
-      <th @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
-      <th @click="sort('url')" x-text="'URL' + sortArrow('url')">URL</th>
-      <th @click="sort('festivalYear')" x-text="'Festival Year' + sortArrow('festivalYear')">Festival Year</th>
-      <th @click="sort('festivalTitle')" x-text="'Festival Theme' + sortArrow('festivalTitle')">Festival Theme</th>
+      <th></th>
+      <th class="sort" @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
+      <th class="sort" @click="sort('festival_year')" x-text="'Year' + sortArrow('festival_year')">Year</th>
     </tr>
   </thead>
   <tbody>
@@ -31,10 +37,9 @@
     </template>
     <template x-for="video in videos">
       <tr>
-        <td x-text="video.title"></td>
-        <td x-text="video.url"></td>
-        <td x-text="video.festivalYear"></td>
-        <td x-text="video.festivalTitle"></td>
+        <td><img :src="video.thumbnail_small"></td>
+        <td><a :href="video.webpage_url" x-text="video.title"></a></td>
+        <td x-text="video.festival_year"></td>
       </tr>
     </template>
   </tbody>

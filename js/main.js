@@ -1,9 +1,8 @@
-const _festivalData = [
-  "./data/2020.json",
-  "./data/2021.json",
-  "./data/2022.json",
-  "./data/2023.json",
-];
+const _databaseFilename = "./data/db.json";
+
+const onReady = () => {
+  console.info("document ready");
+}
 
 const documentReady = (fn) => {
   if (document.readyState !== "loading") {
@@ -16,7 +15,7 @@ const documentReady = (fn) => {
     Alpine.data("videoData", () => ({
       videos: [],
       async init() {
-        this.videos = await fetchAndCombineFestivalData(_festivalData);
+        this.videos = await fetch(_databaseFilename).then((response) => response.json());
       },
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : '';
@@ -33,30 +32,6 @@ const documentReady = (fn) => {
         });
       },
     }));
-  });
-}
-
-const onReady = () => {
-  console.info("document ready");
-}
-
-const fetchAndCombineFestivalData = (urls) => {
-  const promises = urls.map((url) => {
-    return fetch(url).then((response) => response.json());
-  });
-  return Promise.all(promises).then((data) => {
-    return data.reduce((acc, cur) => {
-      // concat festival metadata onto each video object
-      const videos = cur.videos.map((element) => {
-        return {
-          ...element,
-          festivalYear: cur.year,
-          festivalDescription: cur.description,
-          festivalTitle: cur.title,
-        };
-      });
-      return acc.concat(videos);
-    }, []);
   });
 }
 
