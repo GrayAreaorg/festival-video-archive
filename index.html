@@ -19,11 +19,11 @@
 
   <div id="filters" x-data="{ filters: [] }" x-on:change="filter(filters)">
     <p>Filters: <span x-text="filters.join(', ')" ></span></p>
-    <label><input type="checkbox" x-model="filters" value="2015">2015</label>
-    <label><input type="checkbox" x-model="filters" value="2016">2016</label>
-    <label><input type="checkbox" x-model="filters" value="2017">2017</label>
-    <label><input type="checkbox" x-model="filters" value="2018">2018</label>
-    <label><input type="checkbox" x-model="filters" value="2019">2019</label>
+    <label><input type="checkbox" x-model="filters" value="2015"><span>2015</span></label>
+    <label><input type="checkbox" x-model="filters" value="2016"><span>2016</span></label>
+    <label><input type="checkbox" x-model="filters" value="2017"><span>2017</span></label>
+    <label><input type="checkbox" x-model="filters" value="2018"><span>2018</span></label>
+    <label><input type="checkbox" x-model="filters" value="2019"><span>2019</span></label>
   </div>
 
   <table id="videoTable">
@@ -32,7 +32,6 @@
         <th></th>
         <th class="sort" @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
         <th class="sort" @click="sort('festival_year')" x-text="'Year' + sortArrow('festival_year')">Year</th>
-        <!-- <th></th> -->
       </tr>
     </thead>
     <tbody>
@@ -44,13 +43,6 @@
           <td><a :href="video.webpage_url"><img :src="video.thumbnail_small"></a></td>
           <td><a :href="video.webpage_url" x-text="video.title"></a></td>
           <td x-text="video.festival_year"></td>
-          <!-- <td class="tags">
-            <ul class="tags">
-              <template x-for="tag in video.tags">
-                <li x-text="tag"></li>
-              </template>
-            </ul>
-          </td> -->
         </tr>
       </template>
     </tbody>
