@@ -4,7 +4,7 @@ body {
 }
 
 table {
-  width: 100%;
+
 }
 
 th {
@@ -19,13 +19,16 @@ th.sort {
 #filters {
   margin-bottom: 2em;
 }
-
-.tags {
+td.tags {
+  max-width:150px;
+  padding:0em 1em;
+}
+ul.tags {
   font-size:10px;
   margin:0;
   padding:0;
 }
-.tags li {
+ul.tags li {
   display: inline-block;
   margin:1px;
   border-radius: 5px;

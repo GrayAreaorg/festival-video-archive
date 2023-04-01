@@ -33,7 +33,7 @@
         <th></th>
         <th class="sort" @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
         <th class="sort" @click="sort('festival_year')" x-text="'Year' + sortArrow('festival_year')">Year</th>
-        <th>Tags</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -45,7 +45,7 @@
           <td><a :href="video.webpage_url"><img :src="video.thumbnail_small"></a></td>
           <td><a :href="video.webpage_url" x-text="video.title"></a></td>
           <td x-text="video.festival_year"></td>
-          <td>
+          <td class="tags">
             <ul class="tags">
               <template x-for="tag in video.tags">
                 <li x-text="tag"></li>
