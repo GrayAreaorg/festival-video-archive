@@ -31,8 +31,8 @@ const DOMContentLoaded = () => {
         }
       },
       sort(col) {
-        const up = "▲";
-        const dn = "▼";
+        const up = "↑";
+        const dn = "↓";
 
         if (this.sortCol === col) this.sortAsc = !this.sortAsc;
         this.sortCol = col;

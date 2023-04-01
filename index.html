@@ -30,9 +30,8 @@
   <table id="videoTable">
     <thead>
       <tr>
-        <th></th>
-        <th class="sort" @click="sort('title')" x-text="'Title' + sortArrow('title')">Title</th>
-        <th class="sort" @click="sort('festival_year')" x-text="'Year' + sortArrow('festival_year')">Year</th>
+        <th class="sort" @click="sort('title')" x-text="'Video ' + sortArrow('title')"></th>
+        <th class="sort" @click="sort('festival_year')" x-text="'Date ' + sortArrow('festival_year')"></th>
       </tr>
     </thead>
     <tbody>
@@ -41,9 +40,15 @@
       </template>
       <template x-for="video in videos">
         <tr>
-          <td class="thumbnail"><a :href="video.webpage_url"><img :src="video.thumbnail_small"></a></td>
-          <td><a :href="video.webpage_url" x-text="video.title"></a></td>
-          <td x-text="video.festival_year"></td>
+          <td class="video">
+            <div class="thumbnail">
+              <a :href="video.webpage_url"><img :src="video.thumbnail_small"></a>
+            </div>
+            <div class="info">
+              <a :href="video.webpage_url" x-text="video.title"></a>
+            </div>
+          </td>
+          <td class="year" x-text="video.festival_year"></td>
         </tr>
       </template>
     </tbody>

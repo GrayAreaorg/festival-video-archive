@@ -3,12 +3,14 @@
   --content-bg-color: #1F1F1F;
   --fg-color: #EDEDED;
   --fg-color2: #999999;
+  --fg-color3: #333;
   --link-color: #5DA4F8;
   --link-color-hover: #3e6aa0;
+  --border-color: #3E3E3E;
 }
 body {
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   background: var(--bg-color);
   color: var(--fg-color);
   margin:2em;
@@ -19,23 +21,39 @@ a {
 }
 a:hover {
   color: var(--link-color-hover);
+  text-decoration: underline;
 }
 table {
   background-color: var(--content-bg-color);
   padding:1em;
   width: 100%;
 }
-th {
+th, td {
   text-align: left;
-  border-bottom: 1px dotted var(--fg-color);
+  border-bottom: 1px solid var(--fg-color3);
+}
+th, td {
+  padding:1em;
 }
 th.sort {
   cursor: pointer;
 }
-td.thumbnail a:hover img {
+td.thumbnail {
+  width: 196px;
+}
+td.video .thumbnail {
+  float: left;
+}
+td.video .info {
+  padding: 1em;
+  float:left;
+}
+td.video .thumbnail:hover img {
   opacity: 0.45;
 }
-
+td.video a {
+  color: var(--fg-color);
+}
 h1, h2, h4, h5, h6 {
   font-weight: normal;
 }
@@ -44,10 +62,9 @@ h1, h2, h4, h5, h6 {
   max-height:1.4em;
 }
 #filters {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   background-color: var(--content-bg-color);
   color: var(--fg-color2);
-  width: 100%;
   padding: 1em;
   font-weight: bold;
 }
@@ -63,7 +80,6 @@ td.tags {
   padding: 0em 1em;
 }
 ul.tags {
-  font-size: 10px;
   margin: 0;
   padding: 0;
 }
