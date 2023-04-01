@@ -21,11 +21,13 @@ const documentReady = (fn) => {
       videos: [],
       async init() {
         this.videos = await fetch(_databaseFilename).then((response) => response.json());
+        this.sort('festival_year')
         this.allVideos = this.videos;
       },
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : '';
       },
+      sortAsc: true,
       sortCol: '',
       filter(filters) {
         if (filters.length > 0) {
@@ -37,7 +39,11 @@ const documentReady = (fn) => {
       sort(col) {
         if (this.sortCol === col) this.sortAsc = !this.sortAsc;
         this.sortCol = col;
-        this.sortArrowIcon = this.sortAsc ? '▲' : '▼';
+        if (this.sortCol == 'festival_year') {
+          this.sortArrowIcon = this.sortAsc ?  '▼' : '▲';
+        } else {
+          this.sortArrowIcon = this.sortAsc ? '▲' : '▼';
+        }
         this.videos.sort((a, b) => {
           if (a[this.sortCol] < b[this.sortCol]) return this.sortAsc ? 1 : -1;
           if (a[this.sortCol] > b[this.sortCol]) return this.sortAsc ? -1 : 1;
