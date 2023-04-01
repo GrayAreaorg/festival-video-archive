@@ -5,20 +5,13 @@ https://quilime.github.io/gray-area-video-archive
 
 ## TODO
 
-### Logo Bumper
-
-  - [ ] Gray Area Logo
-  - [ ] Festival Title
-  - [ ] Festival Year
-
-
 ### Aggregation Page
 
   - [ ] Festival description per year
+  - [ ] Hot tags
   - [x] Starting page
   - [x] Rev chron by year (sortable)
   - [x] Year tags
-  - [ ] Hot tags
 
 
 ### Festival talks metadata
@@ -31,9 +24,11 @@ https://quilime.github.io/gray-area-video-archive
   - [x] Festival Year
 
 
-### JSON Database
+### Logo Bumper for New Videos
 
-  - [ ] JSON Database
+  - [ ] Gray Area Logo
+  - [ ] Festival Title
+  - [ ] Festival Year
 
 
 ### Existing Festival Websites
