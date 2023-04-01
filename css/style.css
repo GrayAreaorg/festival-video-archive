@@ -1,24 +1,62 @@
+:root {
+  --bg-color: #282828;
+  --content-bg-color: #1F1F1F;
+  --fg-color: #EDEDED;
+  --fg-color2: #999999;
+  --link-color: #5DA4F8;
+  --link-color-hover: #3e6aa0;
+}
 body {
-  font-family: sans-serif;
-  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  background: var(--bg-color);
+  color: var(--fg-color);
+  margin:2em;
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-color-hover);
 }
 table {
+  background-color: var(--content-bg-color);
+  padding:1em;
+  width: 100%;
 }
 th {
   text-align: left;
-  border-bottom: 1px dotted #000;
+  border-bottom: 1px dotted var(--fg-color);
 }
 th.sort {
   cursor: pointer;
 }
+td.thumbnail a:hover img {
+  opacity: 0.45;
+}
+
+h1, h2, h4, h5, h6 {
+  font-weight: normal;
+}
+
+#logo img {
+  max-height:1.4em;
+}
 #filters {
   margin-bottom: 2em;
+  background-color: var(--content-bg-color);
+  color: var(--fg-color2);
+  width: 100%;
+  padding: 1em;
+  font-weight: bold;
 }
 #filters label {
   cursor: pointer;
   padding: 0.25em;
 }
 #filters label input:checked + span {
+  color: var(--fg-color);
 }
 td.tags {
   max-width: 150px;

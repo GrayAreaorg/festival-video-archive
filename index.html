@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="static/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Gray Area Festival Video Archive</title>
     <script defer src="lib/alpine.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-
 <body>
-
-<h1>Gray Area Festival Video Archive</h1>
-
+  <header>
+    <div id="logo">
+      <img src="static/gray-area-logo-text-small.svg" alt="Gray Area"/>
+    </div>
+    <h2>Festival Video Archive</h2>
+  </header>
 <div x-data="videoData">
-
   <div id="filters" x-data="{ filters: [] }" x-on:change="filter(filters)">
     <p>Filters: <span x-text="filters.join(', ')" ></span></p>
+    <div id="filterList">
     <label><input type="checkbox" x-model="filters" value="2015"><span>2015</span></label>
     <label><input type="checkbox" x-model="filters" value="2016"><span>2016</span></label>
     <label><input type="checkbox" x-model="filters" value="2017"><span>2017</span></label>
     <label><input type="checkbox" x-model="filters" value="2018"><span>2018</span></label>
     <label><input type="checkbox" x-model="filters" value="2019"><span>2019</span></label>
+    </div>
   </div>
-
   <table id="videoTable">
     <thead>
       <tr>
@@ -36,11 +37,11 @@
     </thead>
     <tbody>
       <template x-if="!videos">
-        <tr><td colspan="4"><i>Loading...</i></td></tr>
+        <tr><td colspan="3">Loading...</td></tr>
       </template>
       <template x-for="video in videos">
         <tr>
-          <td><a :href="video.webpage_url"><img :src="video.thumbnail_small"></a></td>
+          <td class="thumbnail"><a :href="video.webpage_url"><img :src="video.thumbnail_small"></a></td>
           <td><a :href="video.webpage_url" x-text="video.title"></a></td>
           <td x-text="video.festival_year"></td>
         </tr>
@@ -48,6 +49,5 @@
     </tbody>
   </table>
 </div>
-
 </body>
 </html>
