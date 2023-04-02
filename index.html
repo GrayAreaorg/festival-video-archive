@@ -14,7 +14,7 @@
 <div x-data="videoData">
   <div x-data="{ filters: [] }">
 
-  <header x-on:click="filters=[];filter(filters);">
+  <header>
     <div id="logo">
         <img src="static/gray-area-logo-text-small.svg" alt="Gray Area"/>
     </div>
@@ -27,14 +27,14 @@
       <button x-on:click="selVideo = false">Close</button>
 
       <div class="videoPlayer">
-      <iframe
-        class="ytvideo"
-        :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-        allowfullscreen>
-      </iframe>
+        <iframe
+          class="ytvideo"
+          :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+          allowfullscreen>
+        </iframe>
       </div>
 
       <div x-data="{ open: false }">
@@ -80,13 +80,15 @@
     </thead>
     <tbody>
       <template x-if="!videos">
-        <tr><td colspan="3">Loading...</td></tr>
+        <tr><td colspan="2">Loading...</td></tr>
       </template>
       <template x-for="video in videos">
         <tr>
           <td class="video">
             <div class="thumbnail">
-                <a href="#" x-on:click="selVideo = video"><img :src="video.thumbnail_small"></a>
+                <a href="#" x-on:click="selVideo = video">
+                  <img :src="video.thumbnail_small">
+                </a>
             </div>
             <div class="info" >
               <a href="#" x-on:click="selVideo = video" x-text="video.title"></a>
