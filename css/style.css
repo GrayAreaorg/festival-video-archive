@@ -109,6 +109,7 @@ td.video a {
   background-color: var(--content-bg-color);
   padding: 2em;
   margin-bottom:1em;
+  max-width:800px;
 }
 #videoViewer button {
   float:right;

@@ -21,6 +21,7 @@ const DOMContentLoaded = () => {
         this.videos = this.allVideos = await fetch(_databaseFilename).then(
           (response) => response.json()
         );
+        this.sort("festival_year");
       },
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : "";
