@@ -1,5 +1,6 @@
 :root {
   --bg-color: #282828;
+  --bg-color2: #333;
   --content-bg-color: #1F1F1F;
   --fg-color: #EDEDED;
   --fg-color2: #999999;
@@ -28,6 +29,10 @@ table {
   padding:1em;
   width: 100%;
 }
+header {
+  display: inline-block;
+  cursor: pointer;
+}
 th, td {
   text-align: left;
   border-bottom: 1px solid var(--fg-color3);
@@ -43,9 +48,9 @@ td.thumbnail {
 }
 td.video .thumbnail {
   float: left;
+  padding: 0 1em 0.25em 0;
 }
 td.video .info {
-  padding: 1em;
   float:left;
 }
 td.video .thumbnail:hover img {
@@ -57,8 +62,10 @@ td.video a {
 h1, h2, h4, h5, h6 {
   font-weight: normal;
 }
-
+#logo {
+}
 #logo img {
+  max-width:20em;
   max-height:1.4em;
 }
 #filters {
@@ -68,12 +75,30 @@ h1, h2, h4, h5, h6 {
   padding: 1em;
   font-weight: bold;
 }
+#filters ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+#filters li {
+  margin:1em 0;
+  padding:1px;
+  display: inline-block;
+}
 #filters label {
-  cursor: pointer;
-  padding: 0.25em;
+  /* cursor: pointer; */
+  padding: 7px;
+  border: 1px solid var(--fg-color3);
+  background: var(--bg-color2);
+}
+#filters label span {
+  margin-left:0.25em;
 }
 #filters label input:checked + span {
   color: var(--fg-color);
+}
+#filters .clear {
+  margin-top:0.5em;
 }
 td.tags {
   max-width: 150px;

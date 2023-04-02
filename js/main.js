@@ -2,6 +2,8 @@ const _databaseFilename = "./data/db.json";
 
 const onReady = () => {};
 
+const filterStrings = ["2015", "2016", "2017", "2018", "2019"];
+
 const DOMContentLoaded = () => {
   if (document.readyState !== "loading") {
     onReady();
@@ -12,18 +14,19 @@ const DOMContentLoaded = () => {
     Alpine.data("videoData", () => ({
       allVideos: [],
       videos: [],
+      sortAsc: true,
+      sortCol: "",
       async init() {
-        this.videos = this.allVideos = await fetch(_databaseFilename).then(response => response.json());
-        this.sort("festival_year");
+        this.videos = this.allVideos = await fetch(_databaseFilename).then(
+          (response) => response.json()
+        );
       },
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : "";
       },
-      sortAsc: true,
-      sortCol: "",
       filter(filters) {
         if (filters.length > 0) {
-          this.videos = this.allVideos.filter(video =>
+          this.videos = this.allVideos.filter((video) =>
             filters.includes(video.festival_year)
           );
         } else {
@@ -37,7 +40,8 @@ const DOMContentLoaded = () => {
         if (this.sortCol === col) this.sortAsc = !this.sortAsc;
         this.sortCol = col;
 
-        if (this.sortCol == "festival_year") this.sortArrowIcon = this.sortAsc ? dn : up;
+        if (this.sortCol == "festival_year")
+          this.sortArrowIcon = this.sortAsc ? dn : up;
         else this.sortArrowIcon = this.sortAsc ? up : dn;
 
         this.videos.sort((a, b) => {
@@ -49,4 +53,5 @@ const DOMContentLoaded = () => {
     }));
   });
 };
+
 DOMContentLoaded();

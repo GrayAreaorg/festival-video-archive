@@ -10,23 +10,27 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-  <header>
+
+<div x-data="videoData">
+  <div x-data="{ filters: [] }">
+
+  <header x-on:click="filters=[];filter(filters);">
     <div id="logo">
-      <img src="static/gray-area-logo-text-small.svg" alt="Gray Area"/>
+        <img src="static/gray-area-logo-text-small.svg" alt="Gray Area"/>
     </div>
     <h2>Festival Video Archive</h2>
   </header>
-<div x-data="videoData">
-  <div id="filters" x-data="{ filters: [] }" x-on:change="filter(filters)">
-    <p>Filters: <span x-text="filters.join(', ')" ></span></p>
-    <div id="filterList">
-    <label><input type="checkbox" x-model="filters" value="2015"><span>2015</span></label>
-    <label><input type="checkbox" x-model="filters" value="2016"><span>2016</span></label>
-    <label><input type="checkbox" x-model="filters" value="2017"><span>2017</span></label>
-    <label><input type="checkbox" x-model="filters" value="2018"><span>2018</span></label>
-    <label><input type="checkbox" x-model="filters" value="2019"><span>2019</span></label>
-    </div>
+
+  <div id="filters" x-on:change="filter(filters)">
+    <div>Filters: <span x-text="filters.join(', ')" ></span></div>
+    <ul x-data="filterStrings">
+      <template x-for="f in filterStrings">
+        <li><label><input type="checkbox" x-model="filters" :value="f"><span  x-text="f"></span></label></li>
+      </template>
+    </ul>
+    <button class="clear" x-on:click="filters=[];filter(filters);">Clear</button>
   </div>
+
   <table id="videoTable">
     <thead>
       <tr>
@@ -53,6 +57,9 @@
       </template>
     </tbody>
   </table>
+
 </div>
+</div>
+
 </body>
 </html>
