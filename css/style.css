@@ -83,7 +83,7 @@ h1, h2, h4, h5, h6 {
   padding:0;
 }
 #filters li {
-  margin:1em 0;
+  margin:5px 0;
   padding:1px;
   display: inline-block;
 }

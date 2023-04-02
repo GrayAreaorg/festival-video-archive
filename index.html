@@ -62,14 +62,12 @@
   <div id="filters" x-on:change="filter(filters)">
     <div>
       Filters: <span x-text="filters.join(', ')" ></span>
-      <template x-if="filters.length > 0">
-        <button class="clear" x-on:click="filters=[];filter(filters);">Clear</button>
-      </template>
     </div>
     <ul x-data="filterStrings">
       <template x-for="f in filterStrings">
         <li><label><input type="checkbox" x-model="filters" :value="f"><span  x-text="f"></span></label></li>
       </template>
+      <li><button class="clear" x-on:click="filters=[];filter(filters);">Clear</button></li>
     </ul>
   </div>
 
