@@ -68,6 +68,7 @@ h1, h2, h4, h5, h6 {
   max-width:20em;
   max-height:1.4em;
 }
+
 #filters {
   margin-bottom: 1em;
   background-color: var(--content-bg-color);
@@ -100,6 +101,7 @@ h1, h2, h4, h5, h6 {
 #filters .clear {
   margin-top:0.5em;
 }
+
 td.tags {
   max-width: 150px;
   padding: 0em 1em;
@@ -114,4 +116,32 @@ ul.tags li {
   border-radius: 5px;
   padding: 2px 5px;
   background: #ddd;
+}
+
+#videoViewer {
+  background-color: var(--content-bg-color);
+  padding: 1em;
+  margin-bottom:1em;
+}
+#videoViewer button {
+  float:right;
+}
+#videoViewer ul {
+  font-size: 12px;
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+#videoViewer li {
+  max-width:600px;
+}
+#videoViewer li span:first-child {
+  color: var(--fg-color2);
+  display: block;
+  margin-top:0.5em;
+}
+
+.moreless {
+  display: block;
+  margin: 0.25em 0;
 }

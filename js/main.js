@@ -14,6 +14,7 @@ const DOMContentLoaded = () => {
     Alpine.data("videoData", () => ({
       allVideos: [],
       videos: [],
+      selVideo: "",
       sortAsc: true,
       sortCol: "",
       async init() {

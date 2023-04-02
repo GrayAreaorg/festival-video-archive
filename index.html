@@ -21,6 +21,40 @@
     <h2>Festival Video Archive</h2>
   </header>
 
+  <template x-if="selVideo">
+    <div id="videoViewer">
+
+      <button x-on:click="selVideo = false">Close</button>
+
+      <iframe
+        width="560"
+        height="315"
+        :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <div x-data="{ open: false }">
+        <template x-if="!open">
+          <a class="moreless" href="javascript:return;" x-on:click="open = ! open">More...</a>
+        </template>
+        <div x-show="open">
+          <ul x-data="selVideo">
+            <template x-for="v, i in selVideo">
+              <li><span x-text="i"></span><span x-text="v"></span></li>
+            </template>
+          </ul>
+        </div>
+        <template x-if="open">
+          <a class="moreless" href="javascript:return;" x-on:click="open = ! open">Less...</a>
+        </template>
+      </div>
+
+    </div>
+  </template>
+
   <div id="filters" x-on:change="filter(filters)">
     <div>Filters: <span x-text="filters.join(', ')" ></span></div>
     <ul x-data="filterStrings">
@@ -46,10 +80,10 @@
         <tr>
           <td class="video">
             <div class="thumbnail">
-              <a :href="video.webpage_url"><img :src="video.thumbnail_small"></a>
+                <a href="#" x-on:click="selVideo = video"><img :src="video.thumbnail_small"></a>
             </div>
-            <div class="info">
-              <a :href="video.webpage_url" x-text="video.title"></a>
+            <div class="info" >
+              <a href="#" x-on:click="selVideo = video" x-text="video.title"></a>
             </div>
           </td>
           <td class="year" x-text="video.festival_year"></td>
