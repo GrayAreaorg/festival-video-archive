@@ -32,30 +32,26 @@
         :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
         allowfullscreen>
       </iframe>
 
       <div x-data="{ open: false }">
         <template x-if="!open">
-          <a class="moreless" href="javascript:return;" x-on:click="open = ! open">More...</a>
+          <a class="moreless" href="#;" x-on:click="open = ! open">Metadata...</a>
         </template>
         <div x-show="open">
           <ul x-data="selVideo">
             <template x-for="v, i in selVideo">
-              <li><span x-text="i"></span>
-                <template x-if="v.startsWith('http')">
-                  <a :href="v" target="_blank" x-text="v">
-                </template>
-                <template x-if="typeof(v) ==='number' || !v.startsWith('http')">
-                  <span x-text="v"></span>
-                </template>
+              <li>
+                <span x-text="i"></span>
+                <span x-text="v"></span>
               </li>
             </template>
           </ul>
         </div>
         <template x-if="open">
-          <a class="moreless" href="javascript:return;" x-on:click="open = ! open">Less...</a>
+          <a class="moreless" href="#;" x-on:click="open = ! open">Less...</a>
         </template>
       </div>
 
