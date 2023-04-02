@@ -43,7 +43,14 @@
         <div x-show="open">
           <ul x-data="selVideo">
             <template x-for="v, i in selVideo">
-              <li><span x-text="i"></span><span x-text="v"></span></li>
+              <li><span x-text="i"></span>
+                <template x-if="v.startsWith('http')">
+                  <a :href="v" target="_blank" x-text="v">
+                </template>
+                <template x-if="typeof(v) ==='number' || !v.startsWith('http')">
+                  <span x-text="v"></span>
+                </template>
+              </li>
             </template>
           </ul>
         </div>

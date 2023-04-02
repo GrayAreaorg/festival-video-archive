@@ -134,6 +134,7 @@ ul.tags li {
 }
 #videoViewer li {
   max-width:600px;
+  padding-bottom: 0.2em;
 }
 #videoViewer li span:first-child {
   color: var(--fg-color2);
