@@ -26,19 +26,20 @@
 
       <button x-on:click="selVideo = false">Close</button>
 
+      <div class="videoPlayer">
       <iframe
-        width="560"
-        height="315"
+        class="ytvideo"
         :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
         allowfullscreen>
       </iframe>
+      </div>
 
       <div x-data="{ open: false }">
         <template x-if="!open">
-          <a class="moreless" href="#;" x-on:click="open = ! open">Metadata...</a>
+          <a class="moreless" href="#;" x-on:click="open = ! open">More...</a>
         </template>
         <div x-show="open">
           <ul x-data="selVideo">
@@ -59,13 +60,17 @@
   </template>
 
   <div id="filters" x-on:change="filter(filters)">
-    <div>Filters: <span x-text="filters.join(', ')" ></span></div>
+    <div>
+      Filters: <span x-text="filters.join(', ')" ></span>
+      <template x-if="filters.length > 0">
+        <button class="clear" x-on:click="filters=[];filter(filters);">Clear</button>
+      </template>
+    </div>
     <ul x-data="filterStrings">
       <template x-for="f in filterStrings">
         <li><label><input type="checkbox" x-model="filters" :value="f"><span  x-text="f"></span></label></li>
       </template>
     </ul>
-    <button class="clear" x-on:click="filters=[];filter(filters);">Clear</button>
   </div>
 
   <table id="videoTable">
