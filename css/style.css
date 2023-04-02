@@ -24,14 +24,18 @@ a:hover {
   color: var(--link-color-hover);
   text-decoration: underline;
 }
-table {
-  background-color: var(--content-bg-color);
-  padding:1em;
-  width: 100%;
+h1, h2, h4, h5, h6 {
+  font-weight: normal;
 }
 header {
   display: inline-block;
   cursor: pointer;
+}
+
+table {
+  background-color: var(--content-bg-color);
+  padding:1em;
+  width: 100%;
 }
 th, td {
   text-align: left;
@@ -59,9 +63,7 @@ td.video .thumbnail:hover img {
 td.video a {
   color: var(--fg-color);
 }
-h1, h2, h4, h5, h6 {
-  font-weight: normal;
-}
+
 #logo {
 }
 #logo img {
@@ -103,22 +105,6 @@ h1, h2, h4, h5, h6 {
   margin:0 0.5em;
 }
 
-td.tags {
-  max-width: 150px;
-  padding: 0em 1em;
-}
-ul.tags {
-  margin: 0;
-  padding: 0;
-}
-ul.tags li {
-  display: inline-block;
-  margin: 1px;
-  border-radius: 5px;
-  padding: 2px 5px;
-  background: #ddd;
-}
-
 #videoViewer {
   background-color: var(--content-bg-color);
   padding: 2em;
@@ -142,13 +128,12 @@ ul.tags li {
   display: block;
   margin-top:0.5em;
 }
-
-.videoPlayer {
+#videoViewer .videoPlayer {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
 }
-.ytvideo {
+#videoViewer .ytvideo {
   position: absolute;
   top: 0;
   left: 0;
@@ -156,8 +141,7 @@ ul.tags li {
   height: 100%;
   border: 0;
 }
-
-.moreless {
+#videoViewer .moreless {
   display: block;
   margin: 0.5em 0;
 }
