@@ -75,7 +75,7 @@
     <thead>
       <tr>
         <th class="sort" @click="sort('title')" x-text="'Video ' + sortArrow('title')"></th>
-        <th class="sort" @click="sort('meta_featured')" x-text="'Featured ' + sortArrow('meta_featured')"></th>
+        <!-- <th class="sort" @click="sort('meta_featured')" x-text="'Featured ' + sortArrow('meta_featured')"></th> -->
         <th class="sort" @click="sort('festival_year')" x-text="'Year ' + sortArrow('festival_year')"></th>
       </tr>
     </thead>
@@ -95,7 +95,7 @@
               <a href="#" x-on:click="selVideo = video" x-text="video.title"></a>
             </div>
           </td>
-          <td class="featured" x-text="video.meta_featured"></td>
+          <!-- <td class="featured" x-text="video.meta_featured"></td> -->
           <td class="year" x-text="video.festival_year"></td>
         </tr>
       </template>
