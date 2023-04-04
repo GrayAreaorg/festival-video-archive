@@ -49,7 +49,7 @@ festival_year: 2015
 ./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZXGbpAdjpIP9cuuJYfOW-F ./data/videos/2019/
 
 # 2018
-./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaNfzV_-f0aYvrpAZAzjhIl ./data/2018/
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaNfzV_-f0aYvrpAZAzjhIl ./data/videos/2018/
 
 # 2017
 ./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYAk9rAz1CQmE9Pzn8G_hrq ./data/videos/2017/
