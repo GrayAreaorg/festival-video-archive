@@ -26,7 +26,7 @@ https://quilime.github.io/gray-area-video-archive
   - Metadata delimiter (7 equals signs) "======="
   - `key: value` format
   - append raw metadata to bottom of YouTube Description field
-  - when parsed in archive, prepended with "meta_", for example, "festival_year" becomes { "meta_festival_year" : "2015" } in the archive json
+  - when parsed in archive, prepended with `meta_`, for example, `festival_year: 2015` becomes `{ "meta_festival_year" : "2015" }` in the archive json
 
 ```
 ======
