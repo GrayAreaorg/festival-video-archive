@@ -2,7 +2,7 @@ const _databaseFilename = "./data/db.json";
 
 const onReady = () => {};
 
-const filterStrings = ["2015", "2016", "2017", "2018", "2019"];
+const filterStrings = ["2015", "2016", "2017", "2018", "2019", "2020", "2021"];
 
 const DOMContentLoaded = () => {
   if (document.readyState !== "loading") {

@@ -3,7 +3,7 @@
 // console.info('Node Version', process.version);
 
 if (!process.argv[2]) {
-  console.error('Usage: ./script <filename>')
+  console.error('Usage: ' + process.argv[1] + ' [filename]')
   return;
 }
 

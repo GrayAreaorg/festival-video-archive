@@ -13,17 +13,6 @@ https://quilime.github.io/gray-area-video-archive
   - [x] Rev chron by year (sortable)
   - [x] Year tags
 
-
-### Festival talks metadata
-
-  - [x] Title
-  - [ ] Presenter
-  - [ ] Description
-  - [x] Tags
-  - [x] Date
-  - [x] Festival Year
-
-
 ### Logo Bumper for New Videos
 
   - [ ] Gray Area Logo
@@ -31,25 +20,44 @@ https://quilime.github.io/gray-area-video-archive
   - [ ] Festival Year
 
 
-### Existing Festival Websites
+## New Metadata
 
-  - https://2015.grayareafestival.io/
-  - https://2016.grayareafestival.io/
-  - https://2017.grayareafestival.io/
-  - https://2018.grayareafestival.io/
-  - https://2019.grayareafestival.io/
-  - https://2020.grayareafestival.io/
-  - https://2021.grayareafestival.io/
+  - Used for more fidelity in Video Archive
+  - Retrieved in Video JSON and parsed
+  - Metadata delimiter (7 equals signs) "======="
+  - key : value format
+  - strip '\n' when parsing
+  - append to bottom of YouTube Description field
 
+```
+======
+featured: <featured person(s), or group>
+featured_url: https://www.ruhabenjamin.com
+festival_year: 2015
+... additional metadata as needed ...
+```
 
 ## Fetching YouTube Playlist Metadata
 
-Retrieve All Playlists from Youtube as JSON
+```
+# 2021
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIb5NO3fjqIb7o2AxxIqU2w- ./data/videos/2021/
 
-Single Playlist
+# 2020
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaarwTpOzGg4DXXVLWy2GVU ./data/videos/2020/
 
-`ytdlp --write-info-json --skip-download "https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZXGbpAdjpIP9cuuJYfOW-F"`
+# 2019
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZXGbpAdjpIP9cuuJYfOW-F ./data/videos/2019/
 
-Multiple Playlists
+# 2018
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaNfzV_-f0aYvrpAZAzjhIl ./data/2018/
 
-`ytdlp --ignore-errors --write-info-json --skip-download -o "./%(playlist)s/%(title)s.%(ext)s" https://www.youtube.com/@GrayAreaorg/playlists`
+# 2017
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYAk9rAz1CQmE9Pzn8G_hrq ./data/videos/2017/
+
+# 2016
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZtQ0PqjW341QIWrqPPkQXi ./data/videos/2016/
+
+# 2015
+./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw ./data/videos/2015/
+```
