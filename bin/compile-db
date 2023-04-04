@@ -78,7 +78,7 @@ for (let i = 0; i < allFiles.length; i++) {
     return obj;
   }, {});
 
-  // add festival year from file path
+  // get festival year from file path
   const year = path.parse(path.dirname(fileName)).name;
   reduced.festival_year = year;
 
@@ -90,14 +90,12 @@ for (let i = 0; i < allFiles.length; i++) {
   // festival_year: <festival year, ie, 2015>
   const descSplit = reduced.description.split(descMetaDelim);
   if (descSplit.length > 1) {
-    let metadata = {};
     descSplit[1].split("\n").forEach((str) => {
       const index = str.indexOf(":");
       const first = str.substr(0, index);
       const second = str.substring(index + 1);
-      metadata[first.trim()] =  second.trim();
+      reduced["meta_" + first.trim()] =  second.trim();
     });
-    reduced.metadata = metadata;
   }
 
   // parse small thumbnail

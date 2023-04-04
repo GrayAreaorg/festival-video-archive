@@ -19,15 +19,14 @@ https://quilime.github.io/gray-area-video-archive
   - [ ] Festival Title
   - [ ] Festival Year
 
-
 ## New Metadata
 
   - Used for more fidelity in Video Archive
   - Retrieved in Video JSON and parsed
   - Metadata delimiter (7 equals signs) "======="
   - key : value format
-  - strip '\n' when parsing
-  - append to bottom of YouTube Description field
+  - append raw metadata to bottom of YouTube Description field
+  - when parsed in archive, prepended with "meta_", for example, "festival_year" becomes { "meta_festival_year" : "2015" } in the archive json
 
 ```
 ======
@@ -37,7 +36,7 @@ festival_year: 2015
 ... additional metadata as needed ...
 ```
 
-## Fetching YouTube Playlist Metadata
+## Fetch Gray Area Festival YouTube Playlist Metadata
 
 ```
 # 2021
