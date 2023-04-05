@@ -1,0 +1,54 @@
+#!/usr/bin/env node
+
+// console.info('Node Version', process.version);
+
+if (!process.argv[2]) {
+  console.error('Usage: ' + process.argv[1] + ' <sourceDir>')
+  process.exit();
+}
+
+const fs = require("fs");
+const { exec } = require('child_process');
+const path = require("path");
+
+const jsonSrc = process.argv[2];
+
+const getAllFiles = (dirPath, fileArray) => {
+  const files = fs.readdirSync(dirPath);
+  fileArray = fileArray || [];
+  files.forEach(function (file) {
+    if (fs.statSync(dirPath + "/" + file).isDirectory()) {
+      fileArray = getAllFiles(dirPath + "/" + file, fileArray);
+    } else {
+      if (path.extname(file) === ".json") {
+        fileArray.push(path.join(dirPath, "/", file));
+      }
+    }
+  });
+  return fileArray;
+};
+
+const allFiles = getAllFiles(jsonSrc);
+let promises = []
+for (let i = 0; i < allFiles.length; i++) {
+  const fileName = allFiles[i];
+  var json = JSON.parse(fs.readFileSync(fileName, "utf8"));
+  promises.push(new Promise((resolve, reject) => {
+    exec(`${process.cwd()}/bin/get-youtube-subs "${json.id}" "${fileName}"`, (error, stdout, stderr) => {
+      if (error) {
+        reject(error);
+        return;
+      }
+      console.log(stdout);
+      resolve();
+    });
+  }));
+}
+
+Promise.all(promises)
+  .then(() => {
+    console.log('All commands completed successfully');
+  })
+  .catch((error) => {
+    console.error('An error occurred:', error);
+  });

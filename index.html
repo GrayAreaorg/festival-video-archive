@@ -22,7 +22,7 @@
   </header>
 
   <template x-if="selVideo">
-    <div id="videoViewer">
+    <div id="videoViewer" x-data="selVideo">
 
       <button x-on:click="selVideo = false">Close</button>
 
@@ -37,24 +37,47 @@
         </iframe>
       </div>
 
+      <div class="transcriptContainer" x-data="{ parsedSubs: '' }">
+        <template x-if="parsedSubs">
+          <pre class="transcript" x-text="parsedSubs"></pre>
+        </template>
+        <template x-if="!parsedSubs">
+          <button @click="parsedSubs = fetchSubs(selVideo.subtitlesFile)">Fetch Transcript</button>
+        </template>
+      </div>      
+
       <div x-data="{ open: false }">
         <template x-if="!open">
-          <a class="moreless" href="#;" x-on:click="open = ! open">More...</a>
+          <a class="moreless" href="#;" x-on:click="open = ! open">Show Metadata...</a>
         </template>
         <div x-show="open">
-          <ul x-data="selVideo">
+          <ul>
             <template x-for="v, i in selVideo">
               <li>
                 <span x-text="i"></span>
-                <span x-html="v.replace(/\n/g, '<br />')"></span>
+                <span x-html="String(v).replace(/\n/g, '<br />')"></span>
               </li>
             </template>
           </ul>
         </div>
         <template x-if="open">
-          <a class="moreless" href="#;" x-on:click="open = ! open">Less...</a>
+          <a class="moreless" href="#;" x-on:click="open = ! open">Hide Metadata...</a>
         </template>
       </div>
+<!-- 
+      <div x-data="{ transcript: false }">
+        <template x-if="!transcript">
+          <a class="moreless" href="#;" x-on:click="transcript = ! transcript">Transcript...</a>
+        </template>
+        <div x-show="transcript">
+          <template x-if="selVideo.subtitlesFile">
+            <div x-text="selVideo.subtitlesFile"></div>
+          </template>
+        </div>
+        <template x-if="transcript">
+          <a class="moreless" href="#;" x-on:click="transcript = ! transcript">Close Transcript...</a>
+        </template>        
+      </div> -->
 
     </div>
   </template>

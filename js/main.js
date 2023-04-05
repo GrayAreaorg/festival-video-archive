@@ -23,6 +23,28 @@ const DOMContentLoaded = () => {
         );
         this.sort("festival_year");
       },
+      async fetchSubs(subsFile) {
+        try {
+          const response = await fetch(subsFile);
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return await response.text();
+        } catch (error) {
+          console.error(error);
+        }        
+        // if (subsFile) {
+        //   let subs = ""
+        //   fetch((subsFile))
+        //   .then(response => response.text())
+        //   .then(data => {
+        //     subs = data;
+        //     // return data;
+        //   })
+        //   .catch(error => console.error(error));
+        //   return subs;
+        // }
+      },
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : "";
       },

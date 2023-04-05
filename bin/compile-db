@@ -4,7 +4,7 @@
 
 if (!process.argv[3]) {
   console.error('Usage: ' + process.argv[1] + ' [source] [dest]')
-  return;
+  process.exit();
 }
 
 const fs = require("fs");
@@ -37,9 +37,6 @@ const selectedKeys = [
   "width",
 ];
 const descMetaDelim = "======\n"
-// ======
-// featuring: Ruha Benjamin
-// url: https://www.ruhabenjamin.com
 
 const getAllFiles = (dirPath, fileArray) => {
   const files = fs.readdirSync(dirPath);
@@ -102,6 +99,12 @@ for (let i = 0; i < allFiles.length; i++) {
   const thumb196 = originalJson.thumbnails.filter(thumb => thumb.width === 196)
   if (thumb196.length > 0) {
     reduced.thumbnail_small = thumb196[0].url
+  }
+
+  // add local .vtt if it exists (generate with `bin/get-all-subs`)
+  const sub = `./${fileName}.en.vtt`;
+  if (fs.existsSync(sub)) {
+    reduced.subtitlesFile = sub;
   }
 
   outputJson.push(reduced);
