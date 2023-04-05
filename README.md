@@ -84,3 +84,21 @@ Examples
 Serve locally for dev via Python http server
 
 Usage: `serve`
+
+
+# Notes
+
+alpine and pagination
+https://www.raymondcamden.com/2022/05/02/building-table-sorting-and-pagination-in-alpinejs
+https://codepen.io/cfjedimaster/pen/ExQaZQZ
+
+openai whisper
+https://www.pinecone.io/learn/openai-whisper/
+https://www.youtube.com/watch?v=vpU_6x3jowg
+https://github.com/jamescalam/ask-youtube/tree/main/youtube-search
+
+subtitles
+https://superuser.com/questions/927523/how-to-download-only-subtitles-of-videos-using-youtube-dl
+
+download subs for id
+yt-dlp --sub-lan=en --write-auto-sub --skip-download vy2yuh_ENNA
