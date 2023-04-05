@@ -25,8 +25,8 @@ https://quilime.github.io/gray-area-video-archive
   - Retrieved in Video JSON and parsed
   - Metadata delimiter (7 equals signs) "======="
   - `key: value` format
-  - append raw metadata to bottom of YouTube Description field
-  - when parsed in archive, prepended with `meta_`, for example, `festival_year: 2015` becomes `{ "meta_festival_year" : "2015" }` in the archive json
+  - Append raw metadata to bottom of YouTube Description field
+  - When parsed in the archive JSON, prepended with `meta_`, for example, `festival_year: 2015` becomes `{ "meta_festival_year" : "2015" }` in the archive json
 
 ```
 ======
@@ -36,8 +36,26 @@ festival_year: 2015
 ... additional metadata as needed ...
 ```
 
-## Fetch Gray Area Festival YouTube Playlist Metadata
+## Scripts
 
+## Compile Archive Database
+
+Compile JSON formatted database to be queried from the front end.
+
+Usage `compile-db [source] [dest]`
+
+- `source` A JSON file or folder of JSON files of YouTube metadata scraped from YouTube via ytdlp
+- `dest` A destination folder to write the JSON single-file database. Will prompt to confirm overwrite.
+
+## Get YouTube Metadata
+
+Download YouTube metadata in JSON format from single YouTube video, playlist, or playlists.
+
+Usage `get-youtube-metadata [destination]`
+
+- `destination` A destination folder to save the JSON data
+
+Examples
 ```
 # 2021
 ./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIb5NO3fjqIb7o2AxxIqU2w- ./data/videos/2021/
@@ -60,3 +78,9 @@ festival_year: 2015
 # 2015
 ./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw ./data/videos/2015/
 ```
+
+## Localhost (dev)
+
+Serve locally for dev via Python http server
+
+Usage: `serve`
