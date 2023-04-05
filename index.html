@@ -37,47 +37,29 @@
         </iframe>
       </div>
 
-      <div class="transcriptContainer" x-data="{ parsedSubs: '' }">
-        <template x-if="parsedSubs">
-          <pre class="transcript" x-text="parsedSubs"></pre>
+      <div>
+        <h3>Transcript</h3>
+        <template x-if="selVideo.parsedSubs">
+          <pre class="transcript" x-text="selVideo.parsedSubs"></pre>
         </template>
-        <template x-if="!parsedSubs">
-          <button @click="parsedSubs = fetchSubs(selVideo.subtitlesFile)">Fetch Transcript</button>
+        <template x-if="!selVideo.parsedSubs">
+          <button @click="fetchSubs(selVideo)">Fetch Transcript</button>
         </template>
-      </div>      
+      </div>
 
-      <div x-data="{ open: false }">
-        <template x-if="!open">
-          <a class="moreless" href="#;" x-on:click="open = ! open">Show Metadata...</a>
-        </template>
-        <div x-show="open">
-          <ul>
-            <template x-for="v, i in selVideo">
+      <div>
+        <h3>Metadata</h3>
+        <ul>
+          <template x-for="v, i in selVideo">
+            <template x-if="i != 'parsedSubs'">
               <li>
                 <span x-text="i"></span>
                 <span x-html="String(v).replace(/\n/g, '<br />')"></span>
               </li>
             </template>
-          </ul>
-        </div>
-        <template x-if="open">
-          <a class="moreless" href="#;" x-on:click="open = ! open">Hide Metadata...</a>
-        </template>
-      </div>
-<!-- 
-      <div x-data="{ transcript: false }">
-        <template x-if="!transcript">
-          <a class="moreless" href="#;" x-on:click="transcript = ! transcript">Transcript...</a>
-        </template>
-        <div x-show="transcript">
-          <template x-if="selVideo.subtitlesFile">
-            <div x-text="selVideo.subtitlesFile"></div>
           </template>
-        </div>
-        <template x-if="transcript">
-          <a class="moreless" href="#;" x-on:click="transcript = ! transcript">Close Transcript...</a>
-        </template>        
-      </div> -->
+        </ul>
+      </div>
 
     </div>
   </template>
@@ -110,7 +92,7 @@
         <tr>
           <td class="video">
             <div class="thumbnail">
-                <a href="#" x-on:click="selVideo = video">
+                <a href="#" x-on:click="selVideo = video; fetchSubs(selVideo)">
                   <img :src="video.thumbnail_small">
                 </a>
             </div>
