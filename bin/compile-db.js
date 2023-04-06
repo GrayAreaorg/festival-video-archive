@@ -101,7 +101,7 @@ for (let i = 0; i < allFiles.length; i++) {
     reduced.thumbnail_small = thumb196[0].url
   }
 
-  // add local .vtt if it exists (generate with `bin/get-all-subs`)
+  // local .vtt if it exists (generate with `bin/get-all-subs.sh`)
   const sub = `./${fileName}.en.vtt`;
   if (fs.existsSync(sub)) {
     reduced.subtitlesFile = sub;
