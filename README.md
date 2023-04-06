@@ -42,7 +42,7 @@ festival_year: 2015
 
 Compile JSON formatted database to be queried from the front end.
 
-Usage `compile-db [source] [dest]`
+Usage `compile-db source [dest]`
 
 - `source` A JSON file or folder of JSON files of YouTube metadata scraped from YouTube via ytdlp
 - `dest` A destination folder to write the JSON single-file database. Will prompt to confirm overwrite.
@@ -51,7 +51,7 @@ Usage `compile-db [source] [dest]`
 
 Download YouTube metadata in JSON format from single YouTube video, playlist, or playlists.
 
-Usage `get-youtube-metadata [destination]`
+Usage `get-youtube-metadata destination`
 
 - `destination` A destination folder to save the JSON data
 
@@ -78,6 +78,15 @@ Examples
 # 2015
 ./bin/get-youtube-metadata https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw ./data/videos/2015/
 ```
+
+## Get YouTube Subs
+
+Download YouTube auto-generated subtitles in English (en) .vtt subtitle format from existing YouTube JSON metadata. Will create .vtt files alongside source JSON
+
+Usage `get-all-subs sourceDir`
+
+- `sourceDir` A source folder of YouTube JSON metadata files
+
 
 ## Localhost (dev)
 

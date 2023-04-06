@@ -37,28 +37,27 @@
         </iframe>
       </div>
 
-      <div>
-        <h3>Transcript</h3>
-        <template x-if="selVideo.parsedSubs">
+      <div x-data="{ open: false }">
+        <h3><a href="#;" x-on:click="open = !open" x-text="'Transcript ' + (open ? '▾' : '▸')"></a></h3>
+        <template x-if="open">
           <pre class="transcript" x-text="selVideo.parsedSubs"></pre>
-        </template>
-        <template x-if="!selVideo.parsedSubs">
-          <button @click="fetchSubs(selVideo)">Fetch Transcript</button>
         </template>
       </div>
 
-      <div>
-        <h3>Metadata</h3>
-        <ul>
-          <template x-for="v, i in selVideo">
-            <template x-if="i != 'parsedSubs'">
-              <li>
-                <span x-text="i"></span>
-                <span x-html="String(v).replace(/\n/g, '<br />')"></span>
-              </li>
+      <div x-data="{ open: false }">
+        <h3><a href="#;" x-on:click="open = !open" x-text="'Metadata ' + (open ? '▾' : '▸')"></a></h3>
+        <template x-if="open">
+          <ul>
+            <template x-for="v, i in selVideo">
+              <template x-if="i != 'parsedSubs'">
+                <li>
+                  <span x-text="i"></span>
+                  <span x-html="String(v).replace(/\n/g, '<br />')"></span>
+                </li>
+              </template>
             </template>
-          </template>
-        </ul>
+          </ul>
+        </template>
       </div>
 
     </div>
