@@ -52,7 +52,12 @@
               <template x-if="i != 'parsedSubs'">
                 <li>
                   <span x-text="i"></span>
-                  <span x-html="String(v).replace(/\n/g, '<br />')"></span>
+                  <template x-if="String(v).startsWith('http')">
+                    <a :href="v" target="_blank" x-text="v"></a>
+                  </template>
+                  <template x-if="!String(v).startsWith('http')">
+                    <span x-html="String(v).replace(/\n/g, '<br />')"></span>
+                  </template>
                 </li>
               </template>
             </template>
