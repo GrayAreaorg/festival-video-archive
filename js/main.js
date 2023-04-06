@@ -18,9 +18,10 @@ const DOMContentLoaded = () => {
       sortAsc: true,
       sortCol: "",
       async init() {
-        this.videos = this.allVideos = await fetch(_databaseFilename).then(
+        const _db = await fetch(_databaseFilename).then(
           (response) => response.json()
         );
+        this.videos = this.allVideos = _db.videos;
         this.sort("festival_year");
       },
       fetchSubs(selVideo) {

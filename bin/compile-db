@@ -63,7 +63,7 @@ const saveOutput = (outputJson) => {
 
 const allFiles = getAllFiles(jsonSrc);
 
-let outputJson = [];
+let outputJson = {videos: []};
 
 for (let i = 0; i < allFiles.length; i++) {
   const fileName = allFiles[i];
@@ -107,7 +107,7 @@ for (let i = 0; i < allFiles.length; i++) {
     reduced.subtitlesFile = sub;
   }
 
-  outputJson.push(reduced);
+  outputJson.videos.push(reduced);
 }
 
 // write output
