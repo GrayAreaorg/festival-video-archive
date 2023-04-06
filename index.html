@@ -38,7 +38,7 @@
       </div>
 
       <div x-data="{ open: false }">
-        <h3><a href="#;" x-on:click="open = !open" x-text="'Transcript ' + (open ? '▾' : '▸')"></a></h3>
+        <h3><a href="#;" x-on:click="open = !open" x-text="'Captions ' + (open ? '▾' : '▸')"></a></h3>
         <template x-if="open">
           <pre class="transcript" x-text="selVideo.parsedSubs"></pre>
         </template>
