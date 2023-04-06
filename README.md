@@ -111,3 +111,20 @@ https://superuser.com/questions/927523/how-to-download-only-subtitles-of-videos-
 
 download subs for id
 yt-dlp --sub-lan=en --write-auto-sub --skip-download vy2yuh_ENNA
+
+
+only list selected keys
+
+    <div x-data="{ open: false, selectedKeys: ['id', 'title', 'description', 'duration', 'playlists'] }">
+      <h3><a href="#;" x-on:click="open = !open" x-text="'Metadata ' + (open ? '▾' : '▸')"></a></h3>
+      <template x-if="open">
+        <ul>
+          <template x-for="key in Object.keys(selVideo).filter(key => selectedKeys.includes(key))">
+              <li>
+                <span x-text="key"></span>
+                <span x-html="String(selVideo[key]).replace(/\n/g, '<br />')"></span>
+              </li>
+          </template>
+        </ul>
+      </template>
+    </div>
