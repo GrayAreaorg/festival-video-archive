@@ -15,9 +15,15 @@ https://quilime.github.io/gray-area-video-archive
 
 ### Logo Bumper for New Videos
 
-  - [ ] Gray Area Logo
-  - [ ] Festival Title
-  - [ ] Festival Year
+  ### 2021 - Worlding
+  - [ ] Add Logo Bumper to Each Video
+  - [ ] Re-upload each video.
+
+  ### 2022 - Distant Early
+  - [ ] Add Logo Bumper to Each Video
+  - [ ] Re-upload each video
+  - [ ] Presenter Name
+
 
 ## New Metadata
 
