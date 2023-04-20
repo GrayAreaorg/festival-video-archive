@@ -13,15 +13,9 @@ https://quilime.github.io/gray-area-video-archive
   - [x] Rev chron by year (sortable)
   - [x] Year tags
 
-### Logo Bumper for New Videos
+### Hosting
 
-  ### 2021 - Worlding
-  - [x] Add Logo Bumper to Each Video
-  - [x] Re-upload each video.
-
-  ### 2022 - Distant Early
-  - [x] Add Logo Bumper and Presenter Name to Each Video
-  - [x] Re-upload each video
+  - [ ] Investigate decentralized storage for videos (IPFS?)
 
 
 ## New Metadata
