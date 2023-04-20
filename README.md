@@ -16,13 +16,12 @@ https://quilime.github.io/gray-area-video-archive
 ### Logo Bumper for New Videos
 
   ### 2021 - Worlding
-  - [ ] Add Logo Bumper to Each Video
-  - [ ] Re-upload each video.
+  - [x] Add Logo Bumper to Each Video
+  - [x] Re-upload each video.
 
   ### 2022 - Distant Early
-  - [ ] Add Logo Bumper to Each Video
-  - [ ] Re-upload each video
-  - [ ] Presenter Name
+  - [x] Add Logo Bumper and Presenter Name to Each Video
+  - [x] Re-upload each video
 
 
 ## New Metadata
@@ -63,28 +62,10 @@ Usage `get-youtube-metadata.sh destination`
 
 - `destination` A destination folder to save the JSON data
 
-Examples
+Example
 ```
-# 2021
-./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIb5NO3fjqIb7o2AxxIqU2w- ./data/videos/2021/
-
-# 2020
-./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaarwTpOzGg4DXXVLWy2GVU ./data/videos/2020/
-
-# 2019
-./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZXGbpAdjpIP9cuuJYfOW-F ./data/videos/2019/
-
-# 2018
-./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaNfzV_-f0aYvrpAZAzjhIl ./data/videos/2018/
-
-# 2017
-./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYAk9rAz1CQmE9Pzn8G_hrq ./data/videos/2017/
-
-# 2016
-./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZtQ0PqjW341QIWrqPPkQXi ./data/videos/2016/
-
-# 2015
-./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw ./data/videos/2015/
+# get all 2021 videos
+./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIbQgPDRsUHiawVtahvShN8X ./data/videos/2021/
 ```
 
 ## Get YouTube Subs from Json Data

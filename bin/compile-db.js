@@ -102,9 +102,12 @@ for (let i = 0; i < allFiles.length; i++) {
   }
 
   // local .vtt if it exists (generate with `bin/get-all-subs.sh`)
-  const sub = `./${fileName}.en.vtt`;
+
+  // get subtile name
+  let pathParts = fileName.split("]");
+  const sub = `./${pathParts[0]}].en.vtt`;
   if (fs.existsSync(sub)) {
-    reduced.subtitlesFile = sub;
+   reduced.subtitlesFile = sub;
   }
 
   outputJson.videos.push(reduced);
