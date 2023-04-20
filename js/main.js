@@ -1,6 +1,6 @@
 const _databaseFilename = "./data/db.json";
 
-const onReady = () => {};
+const onReady = () => { };
 
 const filterStrings = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
 
@@ -27,11 +27,11 @@ const DOMContentLoaded = () => {
       fetchSubs(selVideo) {
         if (selVideo.subtitlesFile) {
           fetch((selVideo.subtitlesFile))
-          .then(response => response.text())
-          .then(data => {
-            selVideo.parsedSubs = data;
-          })
-          .catch(error => console.error(error));
+            .then(response => response.text())
+            .then(data => {
+              selVideo.parsedSubs = data;
+            })
+            .catch(error => console.error(error));
         }
       },
       sortArrow(col) {

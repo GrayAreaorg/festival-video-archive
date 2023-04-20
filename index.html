@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="static/favicon-16x16.png" sizes="16x16" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Gray Area Festival Video Archive</title>
-    <script defer src="lib/alpine.min.js"></script>
-    <script src="js/main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="static/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Gray Area Festival Video Archive</title>
+  <script defer src="lib/alpine.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
+
 <body>
+  <div x-data="videoData">
+    <div x-data="{ filters: [] }">
 
-<div x-data="videoData">
-  <div x-data="{ filters: [] }">
+      <header>
+        <div id="logo">
+          <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" />
+        </div>
+        <h2>Festival Video Archive</h2>
+      </header>
 
-  <header>
-    <div id="logo">
-        <img src="static/gray-area-logo-text-small.svg" alt="Gray Area"/>
-    </div>
-    <h2>Festival Video Archive</h2>
-  </header>
+      <template x-if="selVideo">
+        <div id="videoViewer" x-data="selVideo">
 
-  <template x-if="selVideo">
-    <div id="videoViewer" x-data="selVideo">
+          <button x-on:click="selVideo = false">Close</button>
 
-      <button x-on:click="selVideo = false">Close</button>
+          <div class="videoPlayer">
+            <iframe class="ytvideo" :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen>
+            </iframe>
+          </div>
 
-      <div class="videoPlayer">
-        <iframe
-          class="ytvideo"
-          :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <div x-data="{ open: false }">
-        <h3><a href="#;" x-on:click="open = !open" x-text="'Captions ' + (open ? '▾' : '▸')"></a></h3>
-        <template x-if="open">
-          <pre class="transcript" x-text="selVideo.parsedSubs"></pre>
-        </template>
-      </div>
-
-      <div x-data="{ open: false }">
-        <h3><a href="#;" x-on:click="open = !open" x-text="'Metadata ' + (open ? '▾' : '▸')"></a></h3>
-        <template x-if="open">
-          <ul>
-            <template x-for="v, i in selVideo">
-              <template x-if="i != 'parsedSubs'">
-                <li>
-                  <span x-text="i"></span>
-                  <template x-if="String(v).startsWith('http')">
-                    <a :href="v" target="_blank" x-text="v"></a>
-                  </template>
-                  <template x-if="!String(v).startsWith('http')">
-                    <span x-html="String(v).replace(/\n/g, '<br />')"></span>
-                  </template>
-                </li>
-              </template>
+          <div x-data="{ open: false }">
+            <h3><a href="#;" x-on:click="open = !open" x-text="'Captions ' + (open ? '▾' : '▸')"></a></h3>
+            <template x-if="open">
+              <pre class="transcript" x-text="selVideo.parsedSubs"></pre>
             </template>
-          </ul>
-        </template>
+          </div>
+
+          <div x-data="{ open: false }">
+            <h3><a href="#;" x-on:click="open = !open" x-text="'Metadata ' + (open ? '▾' : '▸')"></a></h3>
+            <template x-if="open">
+              <ul>
+                <template x-for="v, i in selVideo">
+                  <template x-if="i != 'parsedSubs'">
+                    <li>
+                      <span x-text="i"></span>
+                      <template x-if="String(v).startsWith('http')">
+                        <a :href="v" target="_blank" x-text="v"></a>
+                      </template>
+                      <template x-if="!String(v).startsWith('http')">
+                        <span x-html="String(v).replace(/\n/g, '<br />')"></span>
+                      </template>
+                    </li>
+                  </template>
+                </template>
+              </ul>
+            </template>
+          </div>
+
+        </div>
+      </template>
+
+      <div id="filters" x-on:change="filter(filters)">
+        <div>
+          Filters: <span x-text="filters.join(', ')"></span>
+        </div>
+        <ul x-data="filterStrings">
+          <template x-for="f in filterStrings">
+            <li><label><input type="checkbox" x-model="filters" :value="f"><span x-text="f"></span></label></li>
+          </template>
+          <li><button class="clear" x-on:click="filters=[];filter(filters);">Clear</button></li>
+        </ul>
       </div>
 
-    </div>
-  </template>
+      <table id="videoTable">
+        <thead>
+          <tr>
+            <th class="sort" @click="sort('title')" x-text="'Video ' + sortArrow('title')"></th>
+            <!-- <th class="sort" @click="sort('meta_featured')" x-text="'Featured ' + sortArrow('meta_featured')"></th> -->
+            <th class="sort" @click="sort('festival_year')" x-text="'Year ' + sortArrow('festival_year')"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <template x-if="!videos">
+            <tr>
+              <td colspan="2">Loading...</td>
+            </tr>
+          </template>
+          <template x-for="video in videos">
+            <tr>
+              <td class="video">
+                <div class="thumbnail">
+                  <a href="#" x-on:click="selVideo = video; fetchSubs(selVideo)">
+                    <img :src="video.thumbnail_small">
+                  </a>
+                </div>
+                <div class="info">
+                  <a href="#" x-on:click="selVideo = video" x-text="video.title"></a>
+                </div>
+              </td>
+              <!-- <td class="featured" x-text="video.meta_featured"></td> -->
+              <td class="year" x-text="video.festival_year"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
 
-  <div id="filters" x-on:change="filter(filters)">
-    <div>
-      Filters: <span x-text="filters.join(', ')" ></span>
     </div>
-    <ul x-data="filterStrings">
-      <template x-for="f in filterStrings">
-        <li><label><input type="checkbox" x-model="filters" :value="f"><span  x-text="f"></span></label></li>
-      </template>
-      <li><button class="clear" x-on:click="filters=[];filter(filters);">Clear</button></li>
-    </ul>
   </div>
-
-  <table id="videoTable">
-    <thead>
-      <tr>
-        <th class="sort" @click="sort('title')" x-text="'Video ' + sortArrow('title')"></th>
-        <!-- <th class="sort" @click="sort('meta_featured')" x-text="'Featured ' + sortArrow('meta_featured')"></th> -->
-        <th class="sort" @click="sort('festival_year')" x-text="'Year ' + sortArrow('festival_year')"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <template x-if="!videos">
-        <tr><td colspan="2">Loading...</td></tr>
-      </template>
-      <template x-for="video in videos">
-        <tr>
-          <td class="video">
-            <div class="thumbnail">
-                <a href="#" x-on:click="selVideo = video; fetchSubs(selVideo)">
-                  <img :src="video.thumbnail_small">
-                </a>
-            </div>
-            <div class="info" >
-              <a href="#" x-on:click="selVideo = video" x-text="video.title"></a>
-            </div>
-          </td>
-          <!-- <td class="featured" x-text="video.meta_featured"></td> -->
-          <td class="year" x-text="video.festival_year"></td>
-        </tr>
-      </template>
-    </tbody>
-  </table>
-
-</div>
-</div>
-
 </body>
+
 </html>

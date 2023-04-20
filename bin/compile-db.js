@@ -63,7 +63,7 @@ const saveOutput = (outputJson) => {
 
 const allFiles = getAllFiles(jsonSrc);
 
-let outputJson = {videos: []};
+let outputJson = { videos: [] };
 
 for (let i = 0; i < allFiles.length; i++) {
   const fileName = allFiles[i];
@@ -91,7 +91,7 @@ for (let i = 0; i < allFiles.length; i++) {
       const index = str.indexOf(":");
       const first = str.substr(0, index);
       const second = str.substring(index + 1);
-      reduced["meta_" + first.trim()] =  second.trim();
+      reduced["meta_" + first.trim()] = second.trim();
     });
   }
 
@@ -102,12 +102,11 @@ for (let i = 0; i < allFiles.length; i++) {
   }
 
   // local .vtt if it exists (generate with `bin/get-all-subs.sh`)
-
   // get subtile name
   let pathParts = fileName.split("]");
   const sub = `./${pathParts[0]}].en.vtt`;
   if (fs.existsSync(sub)) {
-   reduced.subtitlesFile = sub;
+    reduced.subtitlesFile = sub;
   }
 
   outputJson.videos.push(reduced);
