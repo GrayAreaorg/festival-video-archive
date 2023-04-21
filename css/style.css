@@ -182,3 +182,7 @@ pre.transcript {
   padding: 1em;
   border: 1px solid var(--border-color);
 }
+
+#pagination {
+  margin-top:1em;
+}
