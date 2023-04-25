@@ -22,17 +22,17 @@ const DOMContentLoaded = () => {
   document.addEventListener("alpine:init", () => {
     Alpine.data("videoData", () => ({
       allVideos: [],
-      videos: [],
+      videos: Alpine.$persist([]),
+      filters: Alpine.$persist([]),
       selVideo: "",
       sortAsc: true,
       sortCol: "",
       pageSize: 10,
       curPage: 1,
       async init() {
-        const _db = await fetch(_databaseFilename).then((response) =>
-          response.json()
-        );
+        const _db = await fetch(_databaseFilename).then((response) => response.json());
         this.videos = this.allVideos = _db.videos;
+        this.filter(this.filters);
         this.sort("festival_year");
       },
       fetchSubs(selVideo) {
