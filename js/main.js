@@ -1,7 +1,4 @@
 const _databaseFilename = "./data/db.json";
-
-const onReady = () => {};
-
 const filterStrings = [
   "2015",
   "2016",
@@ -13,6 +10,7 @@ const filterStrings = [
   "2022",
 ];
 
+const onReady = () => {};
 const DOMContentLoaded = () => {
   if (document.readyState !== "loading") {
     onReady();
@@ -22,15 +20,17 @@ const DOMContentLoaded = () => {
   document.addEventListener("alpine:init", () => {
     Alpine.data("videoData", () => ({
       allVideos: [],
-      videos: Alpine.$persist([]),
-      filters: Alpine.$persist([]),
+      videos: [], // Alpine.$persist([]),
+      filters: [], // Alpine.$persist([]),
       selVideo: "",
       sortAsc: true,
       sortCol: "",
       pageSize: 10,
       curPage: 1,
       async init() {
-        const _db = await fetch(_databaseFilename).then((response) => response.json());
+        const _db = await fetch(_databaseFilename).then((response) =>
+          response.json()
+        );
         this.videos = this.allVideos = _db.videos;
         this.filter(this.filters);
         this.sort("festival_year");
@@ -48,11 +48,11 @@ const DOMContentLoaded = () => {
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : "";
       },
-      filter(filters) {
+      filter(selectedFilters) {
         this.curPage = 1;
-        if (filters.length > 0) {
+        if (selectedFilters.length > 0) {
           this.videos = this.allVideos.filter((video) =>
-            filters.includes(video.festival_year)
+            selectedFilters.includes(video.festival_year)
           );
         } else {
           this.videos = this.allVideos;
