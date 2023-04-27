@@ -69,11 +69,11 @@
 
       <div id="filters">
 
-        <h3>Filters</h3>
+        <h4>Filters</h4>
 
         <div class="filterFlexContainer">
 
-          <div class="filterColumn">
+          <div class="filterColumn" id="filterYear">
             <h5>FESTIVAL YEAR</h5>
             <ul x-data="filtersYear" x-on:change="filter(filtersYear)">
               <template x-for="f in filterYearStrings">
@@ -84,12 +84,15 @@
             </ul>
           </div>
 
-          <div class="filterColumn">
+          <div class="filterColumn" id="filterSortBy">
             <h5>SORT BY</h5>
-            <ul x-data="filtersSortBy"  x-on:change="filterSortBy(filtersSortBy)">
+            <ul x-data="filtersSortBy" x-on:change="filterSortBy(filtersSortBy);">
               <template x-for="f in filterSortByStrings">
                 <li>
-                  <label><input type="radio" x-model="filtersSortBy" :value="f" /><span x-text="f"></span></label>
+                  <label>
+                    <input type="radio" x-model="filtersSortBy" :value="f" x-on:click="filterSortByRadioClick" />
+                    <span x-text="f"></span>
+                  </label>
                 </li>
               </template>
             </ul>

@@ -37,7 +37,6 @@ h5,
 h6 {
 }
 h3 {
-  margin:0;
 }
 
 .info .date {
@@ -117,6 +116,10 @@ td.video a {
   padding-bottom:0.5em;
 }
 
+#filters h4 {
+  margin: 0;
+}
+
 #filters ul {
   list-style-type: none;
   margin: 0;
@@ -130,7 +133,7 @@ td.video a {
 }
 
 #filters label {
-  /* cursor: pointer; */
+  cursor: pointer;
   height: 2em;
   display: block;
 }
@@ -142,6 +145,11 @@ td.video a {
 
 #filters label span {
   margin-left: 0.25em;
+}
+
+#filters label input:checked+span::after {
+  content: "✕";
+  margin-left:0.5em;
 }
 
 #filters label input:checked+span {

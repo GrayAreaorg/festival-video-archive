@@ -14,7 +14,7 @@ const filterSortByStrings = [
   "Date"
 ]
 
-const onReady = () => {};
+const onReady = () => { };
 const DOMContentLoaded = () => {
   if (document.readyState !== "loading") {
     onReady();
@@ -28,6 +28,7 @@ const DOMContentLoaded = () => {
       filters: [], // Alpine.$persist([]),
       filtersYear: [],
       filtersSortBy: [],
+      filtersSortBySel: "",
       selVideo: "",
       sortAsc: true,
       sortCol: "",
@@ -48,16 +49,20 @@ const DOMContentLoaded = () => {
             .then((data) => {
               selVideo.parsedSubs = data;
             })
-            .catch((error) => console.error(error));
         }
       },
-      sortArrow(col) {
-        return this.sortCol === col ? this.sortArrowIcon : "";
+      filterSortByRadioClick(e) {
+        if (this.filtersSortBySel == e.currentTarget.value) {
+          document.querySelectorAll("#filterSortBy ul li input").forEach((el => {
+            el.checked = false;
+          }))
+        }
+        this.filtersSortBySel = e.currentTarget.value;
       },
-      filterSortBy (sortFilter) {
+      filterSortBy(sortFilter) {
         switch (sortFilter) {
-          case "Date": this.sort("festival_year"); this.sortAsc = false; break;
-          case "Title": this.sort("title"); this.sortAsc = true; break;
+          case "Date": this.sort("festival_year", false); break;
+          case "Title": this.sort("title", true); break;
         }
       },
       filter(selectedFilters) {
@@ -70,22 +75,11 @@ const DOMContentLoaded = () => {
           this.videos = this.allVideos;
         }
       },
-      sort(col) {
-        const up = "↑";
-        const dn = "↓";
-
-        // console.log(this.sortAsc);
-
-        // if (this.sortCol === col) this.sortAsc = !this.sortAsc;
+      sort(col, asc = true) {
         this.sortCol = col;
-
-        if (this.sortCol == "festival_year")
-          this.sortArrowIcon = this.sortAsc ? dn : up;
-        else this.sortArrowIcon = this.sortAsc ? up : dn;
-
         this.videos.sort((a, b) => {
-          if (a[this.sortCol] < b[this.sortCol]) return this.sortAsc ? 1 : -1;
-          if (a[this.sortCol] > b[this.sortCol]) return this.sortAsc ? -1 : 1;
+          if (a[this.sortCol] < b[this.sortCol]) return asc ? -1 : 1;
+          if (a[this.sortCol] > b[this.sortCol]) return asc ? 1 : -1;
           return;
         });
       },
