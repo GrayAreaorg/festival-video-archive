@@ -98,8 +98,21 @@
             </ul>
           </div>
 
-        </div>
+          <div class="filterColumn" id="filterTopic">
+            <h5>TOPICS</h5>
+            <ul x-data="filtersTopic" x-on:change="filterTopic(filtersTopic);">
+              <template x-for="f in filtersTopicStrings">
+                <li>
+                  <label>
+                    <input type="radio" x-model="filtersTopic" :value="f" x-on:click="filtersTopicRadioClick"/>
+                    <span x-text="f"></span>
+                  </label>
+                </li>
+              </template>
+            </ul>
+          </div>
 
+        </div>
       </div>
 
 

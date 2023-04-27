@@ -12,7 +12,19 @@ const filterYearStrings = [
 const filterSortByStrings = [
   "Title",
   "Date"
-]
+];
+const filtersTopicStrings = [
+  "Machine Learning",
+  "Artificial Intelligence",
+  "AR/VR/XR",
+  "Music",
+  "Art",
+  "Software",
+  "History",
+  "Philosophy",
+  "Performance",
+  "Systems",
+];
 
 const onReady = () => { };
 const DOMContentLoaded = () => {
@@ -27,6 +39,8 @@ const DOMContentLoaded = () => {
       videos: [], // Alpine.$persist([]),
       filters: [], // Alpine.$persist([]),
       filtersYear: [],
+      filtersTopic: [],
+      filtersTopicSel: "",
       filtersSortBy: [],
       filtersSortBySel: "",
       selVideo: "",
@@ -51,6 +65,14 @@ const DOMContentLoaded = () => {
             })
         }
       },
+      filtersTopicRadioClick(e) {
+        if (this.filtersTopicSel == e.currentTarget.value) {
+          document.querySelectorAll("#filterTopic ul li input").forEach((el => {
+            el.checked = false;
+          }))
+        }
+        this.filtersTopicSel = e.currentTarget.value;
+      },
       filterSortByRadioClick(e) {
         if (this.filtersSortBySel == e.currentTarget.value) {
           document.querySelectorAll("#filterSortBy ul li input").forEach((el => {
@@ -64,6 +86,9 @@ const DOMContentLoaded = () => {
           case "Date": this.sort("festival_year", false); break;
           case "Title": this.sort("title", true); break;
         }
+      },
+      filterTopic (topic) {
+        console.log(`filter => '${topic}'`);
       },
       filter(selectedFilters) {
         this.curPage = 1;
