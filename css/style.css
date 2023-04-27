@@ -16,7 +16,7 @@ body {
   font-size: 14px;
   background: var(--bg-color);
   color: var(--fg-color);
-  margin: 2em;
+  margin: 1em;
 }
 
 a {
@@ -35,8 +35,6 @@ h3,
 h4,
 h5,
 h6 {
-}
-h3 {
 }
 
 .info .date {
@@ -100,7 +98,8 @@ td.video a {
   background-color: var(--content-bg-color);
   color: var(--fg-color);
   padding: 2em;
-  line-height: 1.5em;
+  line-height: 1.2em;
+
 }
 
 .filterFlexContainer {
@@ -114,6 +113,7 @@ td.video a {
 .filterColumn h5 {
   border-bottom: 1px solid var(--border-color);
   padding-bottom:0.5em;
+  margin-bottom:1em;
 }
 
 #filters h4 {
@@ -125,7 +125,7 @@ td.video a {
   margin: 0;
   padding: 0;
   display: inline-block;
-  min-width:100px;
+  min-width:60px;
 }
 
 #filters li {
@@ -134,8 +134,10 @@ td.video a {
 
 #filters label {
   cursor: pointer;
-  height: 2em;
   display: block;
+  text-indent: -0.75em;
+  /* padding-left: 0.75em; */
+  padding: 0.4em 0 0.4em 0.75em;
 }
 
 #filters label input {
@@ -144,7 +146,6 @@ td.video a {
 }
 
 #filters label span {
-  margin-left: 0.25em;
 }
 
 #filters label input:checked+span::after {
