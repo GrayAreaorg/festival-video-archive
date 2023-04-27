@@ -1,5 +1,5 @@
 const _databaseFilename = "./data/db.json";
-const filterStrings = [
+const filterYearStrings = [
   "2015",
   "2016",
   "2017",
@@ -9,6 +9,10 @@ const filterStrings = [
   "2021",
   "2022",
 ];
+const filterSortByStrings = [
+  "Title",
+  "Date"
+]
 
 const onReady = () => {};
 const DOMContentLoaded = () => {
@@ -22,6 +26,8 @@ const DOMContentLoaded = () => {
       allVideos: [],
       videos: [], // Alpine.$persist([]),
       filters: [], // Alpine.$persist([]),
+      filtersYear: [],
+      filtersSortBy: [],
       selVideo: "",
       sortAsc: true,
       sortCol: "",
@@ -48,6 +54,12 @@ const DOMContentLoaded = () => {
       sortArrow(col) {
         return this.sortCol === col ? this.sortArrowIcon : "";
       },
+      filterSortBy (sortFilter) {
+        switch (sortFilter) {
+          case "Date": this.sort("festival_year"); this.sortAsc = false; break;
+          case "Title": this.sort("title"); this.sortAsc = true; break;
+        }
+      },
       filter(selectedFilters) {
         this.curPage = 1;
         if (selectedFilters.length > 0) {
@@ -62,7 +74,9 @@ const DOMContentLoaded = () => {
         const up = "↑";
         const dn = "↓";
 
-        if (this.sortCol === col) this.sortAsc = !this.sortAsc;
+        // console.log(this.sortAsc);
+
+        // if (this.sortCol === col) this.sortAsc = !this.sortAsc;
         this.sortCol = col;
 
         if (this.sortCol == "festival_year")

@@ -4,6 +4,7 @@
   --content-bg-color: #1F1F1F;
   --fg-color: #EDEDED;
   --fg-color2: #999999;
+  --fg-color-dim: #656565;
   --fg-color3: #333;
   --link-color: #5DA4F8;
   --link-color-hover: #3e6aa0;
@@ -30,10 +31,18 @@ a:hover {
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+}
+h3 {
+  margin:0;
+}
+
+.info .date {
+  padding-top: 0.5em;;
+  color: var(--fg-color2);
 }
 
 header {
@@ -48,8 +57,6 @@ table {
 
 th,
 td {
-  text-align: left;
-  border-bottom: 1px solid var(--fg-color3);
 }
 
 th,
@@ -75,7 +82,7 @@ td.video .info {
 }
 
 td.video .thumbnail:hover img {
-  opacity: 0.45;
+  opacity: 0.35;
 }
 
 td.video a {
@@ -92,29 +99,45 @@ td.video a {
 #filters {
   margin-bottom: 1em;
   background-color: var(--content-bg-color);
-  color: var(--fg-color2);
+  color: var(--fg-color);
   padding: 2em;
-  font-weight: bold;
   line-height: 1.5em;
+}
+
+.filterFlexContainer {
+  display: flex;
+}
+
+.filterColumn {
+  display: inline-block;
+  padding-right:1em;
+}
+.filterColumn h5 {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom:0.5em;
 }
 
 #filters ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: inline-block;
+  width:100px;
 }
 
 #filters li {
-  margin: 5px 0;
-  padding: 1px;
-  display: inline-block;
+  color: var(--fg-color-dim);
 }
 
 #filters label {
   /* cursor: pointer; */
-  padding: 7px;
-  border: 1px solid var(--fg-color3);
-  background: var(--bg-color2);
+  height: 2em;
+  display: block;
+}
+
+#filters label input {
+  visibility: hidden;
+  display:none;
 }
 
 #filters label span {
