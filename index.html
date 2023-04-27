@@ -16,9 +16,11 @@
   <div x-data="videoData">
     <div x-data="filters">
       <header>
-        <div id="logo">
-          <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" />
-        </div>
+        <a href="index.html">
+          <div id="logo">
+            <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" />
+          </div>
+        </a>
         <h2>Festival Video Archive</h2>
       </header>
 
@@ -104,7 +106,7 @@
               <template x-for="f in filtersTopicStrings">
                 <li>
                   <label>
-                    <input type="radio" x-model="filtersTopic" :value="f" x-on:click="filtersTopicRadioClick"/>
+                    <input type="radio" x-model="filtersTopic" :value="f" x-on:click="filtersTopicRadioClick" />
                     <span x-text="f"></span>
                   </label>
                 </li>
