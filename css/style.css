@@ -100,11 +100,8 @@ td.video a {
   background-color: var(--content-bg-color);
   color: var(--fg-color);
   padding: 2em;
+  width: fit-content;
   line-height: 1.2em;
-}
-
-.filterFlexContainer {
-  display: flex;
 }
 
 .filterColumn {
@@ -126,7 +123,7 @@ td.video a {
   margin: 0;
   padding: 0;
   display: inline-block;
-  min-width: 60px;
+  min-width: 80px;
   display: flex;
   flex-wrap: wrap;
   flex-flow: column wrap;
@@ -162,10 +159,6 @@ td.video a {
 
 #filters label input:checked+span {
   color: var(--fg-color);
-}
-
-#filters .clear {
-  margin: 0 0.5em;
 }
 
 #videoViewer {

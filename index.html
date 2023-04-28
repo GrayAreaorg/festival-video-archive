@@ -73,48 +73,45 @@
 
         <h4>Filters</h4>
 
-        <div class="filterFlexContainer">
-
-          <div class="filterColumn" id="filterYear">
-            <h5>YEAR</h5>
-            <ul x-data="filtersYear" x-on:change="filter(filtersYear)">
-              <template x-for="f in filterYearStrings">
-                <li>
-                  <label><input type="checkbox" x-model="filtersYear" :value="f" /><span x-text="f"></span></label>
-                </li>
-              </template>
-            </ul>
-          </div>
-
-          <div class="filterColumn" id="filterSortBy">
-            <h5>SORT BY</h5>
-            <ul x-data="filtersSortBy" x-on:change="filterSortBy(filtersSortBy);">
-              <template x-for="f in filterSortByStrings">
-                <li>
-                  <label>
-                    <input type="radio" x-model="filtersSortBy" :value="f" />
-                    <span x-text="f"></span>
-                  </label>
-                </li>
-              </template>
-            </ul>
-          </div>
-
-          <div class="filterColumn" id="filterTopic">
-            <h5>TOPICS</h5>
-            <ul x-data="filtersTopic" x-on:change="filterTopic(filtersTopic);">
-              <template x-for="f in filtersTopicStrings">
-                <li>
-                  <label>
-                    <input type="checkbox" x-model="filtersTopic" :value="f" />
-                    <span x-text="f"></span>
-                  </label>
-                </li>
-              </template>
-            </ul>
-          </div>
-
+        <div class="filterColumn" id="filterYear">
+          <h5>YEAR</h5>
+          <ul x-data="filtersYear" x-on:change="filter(filtersYear)">
+            <template x-for="f in filterYearStrings">
+              <li>
+                <label><input type="checkbox" x-model="filtersYear" :value="f" /><span x-text="f"></span></label>
+              </li>
+            </template>
+          </ul>
         </div>
+
+        <div class="filterColumn" id="filterSortBy">
+          <h5>SORT BY</h5>
+          <ul x-data="filtersSortBy" x-on:change="filterSortBy(filtersSortBy);">
+            <template x-for="f in filterSortByStrings">
+              <li>
+                <label>
+                  <input type="radio" x-model="filtersSortBy" :value="f" />
+                  <span x-text="f"></span>
+                </label>
+              </li>
+            </template>
+          </ul>
+        </div>
+
+        <div class="filterColumn" id="filterTopic">
+          <h5>TOPICS</h5>
+          <ul x-data="filtersTopic" x-on:change="filterTopic(filtersTopic);">
+            <template x-for="f in filtersTopicStrings">
+              <li>
+                <label>
+                  <input type="checkbox" x-model="filtersTopic" :value="f" />
+                  <span x-text="f"></span>
+                </label>
+              </li>
+            </template>
+          </ul>
+        </div>
+
       </div>
 
 
@@ -131,15 +128,15 @@
               <td class="video">
 
                 <div class="videobg">
-                  <a href="#" x-on:click="selVideo = video;">
+                  <a href="#" x-on:click="selVideo = video; fetchSubs(selVideo)">
 
-                  <div class="thumbnail">
-                    <img :src="video.thumbnail_small" />
-                  </div>
+                    <div class="thumbnail">
+                      <img :src="video.thumbnail_small" />
+                    </div>
 
-                  <div class="info">
-                    <h3 x-text="video.title"></h3>
-                  </div>
+                    <div class="info">
+                      <h3 x-text="video.title"></h3>
+                    </div>
 
                   </a>
                 </div>
