@@ -14,16 +14,11 @@ const filterSortByStrings = [
   "Date"
 ];
 const filtersTopicStrings = [
-  "Machine Learning",
-  "Artificial Intelligence",
-  "AR/VR/XR",
-  "Music",
-  "Art",
-  "Software",
-  "History",
-  "Philosophy",
-  "Performance",
-  "Systems",
+  "Topic 1",
+  "Topic 2",
+  "Topic 3",
+  "Topic 4",
+  "Topic 5",
 ];
 
 const onReady = () => { };
@@ -49,12 +44,16 @@ const DOMContentLoaded = () => {
       pageSize: 10,
       curPage: 1,
       async init() {
+
+        // load from flatfile json db
         const _db = await fetch(_databaseFilename).then((response) =>
           response.json()
         );
         this.videos = this.allVideos = _db.videos;
-        this.filter(this.filters);
-        this.sort("festival_year");
+
+        // select Date filter to start
+        document.querySelectorAll('#filterSortBy ul li input[value="Date"]')[0].checked = true;
+        this.filterSortBy("Date");
       },
       fetchSubs(selVideo) {
         if (selVideo.subtitlesFile) {
@@ -64,22 +63,6 @@ const DOMContentLoaded = () => {
               selVideo.parsedSubs = data;
             })
         }
-      },
-      filtersTopicRadioClick(e) {
-        if (this.filtersTopicSel == e.currentTarget.value) {
-          document.querySelectorAll("#filterTopic ul li input").forEach((el => {
-            el.checked = false;
-          }))
-        }
-        this.filtersTopicSel = e.currentTarget.value;
-      },
-      filterSortByRadioClick(e) {
-        if (this.filtersSortBySel == e.currentTarget.value) {
-          document.querySelectorAll("#filterSortBy ul li input").forEach((el => {
-            el.checked = false;
-          }))
-        }
-        this.filtersSortBySel = e.currentTarget.value;
       },
       filterSortBy(sortFilter) {
         switch (sortFilter) {

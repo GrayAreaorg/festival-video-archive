@@ -92,7 +92,7 @@
               <template x-for="f in filterSortByStrings">
                 <li>
                   <label>
-                    <input type="radio" x-model="filtersSortBy" :value="f" x-on:click="filterSortByRadioClick" />
+                    <input type="radio" x-model="filtersSortBy" :value="f" />
                     <span x-text="f"></span>
                   </label>
                 </li>
@@ -106,7 +106,7 @@
               <template x-for="f in filtersTopicStrings">
                 <li>
                   <label>
-                    <input type="radio" x-model="filtersTopic" :value="f" x-on:click="filtersTopicRadioClick" />
+                    <input type="checkbox" x-model="filtersTopic" :value="f"/>
                     <span x-text="f"></span>
                   </label>
                 </li>

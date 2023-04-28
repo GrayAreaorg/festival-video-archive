@@ -99,7 +99,6 @@ td.video a {
   color: var(--fg-color);
   padding: 2em;
   line-height: 1.2em;
-
 }
 
 .filterFlexContainer {
@@ -125,19 +124,25 @@ td.video a {
   margin: 0;
   padding: 0;
   display: inline-block;
-  min-width:60px;
+  min-width: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  max-height: 16em;
 }
 
 #filters li {
   color: var(--fg-color-dim);
+  display: flexbox;
+  padding-right:1em;
 }
 
 #filters label {
   cursor: pointer;
   display: block;
   text-indent: -0.75em;
-  /* padding-left: 0.75em; */
   padding: 0.4em 0 0.4em 0.75em;
+  white-space: nowrap;
 }
 
 #filters label input {
