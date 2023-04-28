@@ -47,22 +47,24 @@ header {
 }
 
 table {
+  padding:0;
+  margin:0;
+}
+
+th,
+td {
+  padding: 2em;
+}
+
+td.video {
+padding:0;
+margin:0;
+}
+
+.videobg {
   background-color: var(--content-bg-color);
-  padding: 1em;
-  width: 100%;
-}
-
-th,
-td {
-}
-
-th,
-td {
-  padding: 1em;
-}
-
-th.sort {
-  cursor: pointer;
+  padding:2em;
+  margin:0 0.5em 0.5em 0;
 }
 
 td.thumbnail {
@@ -70,16 +72,16 @@ td.thumbnail {
 }
 
 td.video .thumbnail {
-  float: left;
   padding: 0 1em 0.25em 0;
 }
 
-td.video .info {
-  float: left;
+td.video .info h3  {
+  margin:0.25em 0 0 0;
+  max-width:200px;
 }
 
-td.video .thumbnail:hover img {
-  opacity: 0.35;
+td.video:hover img {
+  opacity: 0.5;
 }
 
 td.video a {
@@ -197,7 +199,6 @@ td.video a {
 
 #videoViewer .videoPlayer {
   position: relative;
-  width: 100%;
   padding-bottom: 56.25%;
 }
 

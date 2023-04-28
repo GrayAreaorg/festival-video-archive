@@ -106,7 +106,7 @@
               <template x-for="f in filtersTopicStrings">
                 <li>
                   <label>
-                    <input type="checkbox" x-model="filtersTopic" :value="f"/>
+                    <input type="checkbox" x-model="filtersTopic" :value="f" />
                     <span x-text="f"></span>
                   </label>
                 </li>
@@ -119,7 +119,7 @@
 
 
 
-      <table id="videoTable">
+      <table id="videoTable" cellspacing="0">
         <tbody>
           <template x-if="!videos">
             <tr>
@@ -129,15 +129,21 @@
           <template x-for="video in pagedVideos">
             <tr>
               <td class="video">
-                <div class="thumbnail">
-                  <a href="#" x-on:click="selVideo = video; fetchSubs(selVideo)">
+
+                <div class="videobg">
+                  <a href="#" x-on:click="selVideo = video;">
+
+                  <div class="thumbnail">
                     <img :src="video.thumbnail_small" />
+                  </div>
+
+                  <div class="info">
+                    <h3 x-text="video.title"></h3>
+                  </div>
+
                   </a>
                 </div>
-                <div class="info">
-                  <a href="#" x-on:click="selVideo = video" x-text="video.title"></a>
-                  <div class="date" x-text="video.festival_year"></div>
-                </div>
+
               </td>
             </tr>
           </template>
