@@ -9,10 +9,7 @@ const filterYearStrings = [
   "2021",
   "2022",
 ];
-const filterSortByStrings = [
-  "Title",
-  "Date"
-];
+const filterSortByStrings = ["Title", "Date"];
 const filtersTopicStrings = [
   "Topic 1",
   "Topic 2",
@@ -21,7 +18,7 @@ const filtersTopicStrings = [
   "Topic 5",
 ];
 
-const onReady = () => { };
+const onReady = () => {};
 const DOMContentLoaded = () => {
   if (document.readyState !== "loading") {
     onReady();
@@ -44,7 +41,6 @@ const DOMContentLoaded = () => {
       pageSize: 10,
       curPage: 1,
       async init() {
-
         // load from flatfile json db
         const _db = await fetch(_databaseFilename).then((response) =>
           response.json()
@@ -52,7 +48,9 @@ const DOMContentLoaded = () => {
         this.videos = this.allVideos = _db.videos;
 
         // select Date filter to start
-        document.querySelectorAll('#filterSortBy ul li input[value="Date"]')[0].checked = true;
+        document.querySelectorAll(
+          '#filterSortBy ul li input[value="Date"]'
+        )[0].checked = true;
         this.filterSortBy("Date");
       },
       fetchSubs(selVideo) {
@@ -61,16 +59,20 @@ const DOMContentLoaded = () => {
             .then((response) => response.text())
             .then((data) => {
               selVideo.parsedSubs = data;
-            })
+            });
         }
       },
       filterSortBy(sortFilter) {
         switch (sortFilter) {
-          case "Date": this.sort("festival_year", false); break;
-          case "Title": this.sort("title", true); break;
+          case "Date":
+            this.sort("festival_year", false);
+            break;
+          case "Title":
+            this.sort("title", true);
+            break;
         }
       },
-      filterTopic (topic) {
+      filterTopic(topic) {
         console.log(`filter => '${topic}'`);
       },
       filter(selectedFilters) {

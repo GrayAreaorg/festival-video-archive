@@ -17,7 +17,6 @@ https://quilime.github.io/gray-area-video-archive
 
   - [ ] Investigate decentralized storage for videos (IPFS?)
 
-
 ## New Metadata
 
   - Used for more fidelity in Video Archive
@@ -35,8 +34,20 @@ festival_year: 2015
 ... additional metadata as needed ...
 ```
 
-## Scripts
+## Install
 
+Using [Tailwind](https://tailwindcss.com/) CLI for CSS generation.
+
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+Use `./bin/watch` to build css to `./dist/output.css`
+
+
+
+## Scripts
 
 ## Compile Archive Database
 
@@ -86,6 +97,13 @@ Usage `get-youtube-subs.sh youtube_id [dest]`
 Serve locally for dev via Python http server
 
 Usage: `serve`
+
+
+## Watch (Tailwind CSS)
+
+Watch for CSS changes and build output css to `./dist/output.css`
+
+Usage: `watch`
 
 
 # Notes

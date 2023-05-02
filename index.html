@@ -2,16 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="static/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <link rel="stylesheet" href="dist/output.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" href="static/favicon-16x16.png" sizes="16x16" />
     <title>Gray Area Festival Video Archive</title>
-    <!-- <script defer src="lib/alpine.persist.min.js"></script> -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <script defer src="lib/alpine.persist.min.js"></script>
     <script defer src="lib/alpine.min.js"></script>
     <script src="js/main.js"></script>
   </head>
@@ -19,54 +14,35 @@
   <body class="m-10 bg-zinc-800 text-slate-200">
     <div x-data="videoData">
       <div x-data="filters">
-
         <header>
           <a href="index.html">
-            <img
-              src="static/gray-area-logo-text-small.svg"
-              alt="Gray Area"
-              class="max-w-xs mb-4"
-            />
+            <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" class="max-w-xs mb-4" />
+            <h2 class="text-2xl mb-4">Festival Video Archive</h2>
           </a>
-          <h2 class="text-xl mb-4">Festival Video Archive</h2>
         </header>
 
         <template x-if="selVideo">
           <div x-data="selVideo" class="bg-zinc-900 p-5 my-5">
             <button class="bg-zinc-600 mb-5 hover:bg-slate-700 p-1 px-4 rounded-full" x-on:click="selVideo = false">Close</button>
 
-            <div class="videoPlayer">
-              <iframe
-                class="ytvideo"
-                :src="('https://www.youtube.com/embed/' + selVideo.display_id)"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-                allowfullscreen
-              >
-              </iframe>
+            <div class="videoPlayer mb-5">
+              <iframe class="ytvideo" :src="('https://www.youtube.com/embed/' + selVideo.display_id)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
             </div>
 
-            <div x-data="{ open: false }" class="py-5">
-              <h3>
-                <a
-                  href="#;"
-                  x-on:click="open = !open"
-                  x-text="'Captions ' + (open ? '▾' : '▸')"
-                ></a>
+            <h1 x-text="selVideo.title" class="text-2xl mb-5"></h1>
+
+            <div x-data="{ open: false }" class="mb-5">
+              <h3 class="mb-2">
+                <a href="#;" x-on:click="open = !open" x-text="'Captions ' + (open ? '▾' : '▸')"></a>
               </h3>
               <template x-if="open">
-                <pre class="p-2 bg-zinc-950 overflow-auto w-full h-64" x-text="selVideo.parsedSubs"></pre>
+                <pre class="font-mono text-xs p-2 bg-zinc-950 overflow-auto w-full h-64" x-text="selVideo.parsedSubs"></pre>
               </template>
             </div>
 
-            <div x-data="{ open: false }" class="py-5">
-              <h3>
-                <a
-                  href="#;"
-                  x-on:click="open = !open"
-                  x-text="'Metadata ' + (open ? '▾' : '▸')"
-                ></a>
+            <div x-data="{ open: false }">
+              <h3 class="mb-2">
+                <a href="#;" x-on:click="open = !open" x-text="'Metadata ' + (open ? '▾' : '▸')"></a>
               </h3>
               <template x-if="open">
                 <ul class="m-2">
@@ -78,9 +54,7 @@
                           <a :href="v" target="_blank" x-text="v"></a>
                         </template>
                         <template x-if="!String(v).startsWith('http')">
-                          <span
-                            x-html="String(v).replace(/\n/g, '<br />')"
-                          ></span>
+                          <span x-html="String(v).replace(/\n/g, '<br />')"></span>
                         </template>
                       </li>
                     </template>
@@ -93,86 +67,78 @@
 
         <!-- filters -->
         <div id="filters" class="bg-zinc-900 p-5">
-          <h4 class="text-xs">FILTERS</h4>
+          <h4 class="">FILTERS</h4>
 
           <div class="flex mt-4">
+            <div id="filterYear" class="mr-5">
+              <h5 class="text-xs border-b mb-2">YEAR</h5>
+              <ul x-data="filtersYear" x-on:change="filter(filtersYear)">
+                <template x-for="f in filterYearStrings">
+                  <li>
+                    <label class="text-zinc-600">
+                      <input class="hidden" type="checkbox" x-model="filtersYear" :value="f" />
+                      <span x-text="f"></span>
+                    </label>
+                  </li>
+                </template>
+              </ul>
+            </div>
 
-          <div id="filterYear" class="mr-5">
-            <h5 class="text-xs border-b mb-2">YEAR</h5>
-            <ul  x-data="filtersYear" x-on:change="filter(filtersYear)">
-              <template x-for="f in filterYearStrings">
-                <li class="text-zinc-600">
-                  <label
-                    ><input
-                      type="checkbox"
-                      x-model="filtersYear"
-                      :value="f" /><span x-text="f"></span
-                  ></label>
-                </li>
-              </template>
-            </ul>
+            <div id="filterSortBy" class="mr-5">
+              <h5 class="text-xs border-b mb-2">SORT BY</h5>
+              <ul x-data="filtersSortBy" x-on:change="filterSortBy(filtersSortBy);">
+                <template x-for="f in filterSortByStrings">
+                  <li>
+                    <label class="text-zinc-600">
+                      <input class="hidden" type="radio" x-model="filtersSortBy" :value="f" />
+                      <span x-text="f"></span>
+                    </label>
+                  </li>
+                </template>
+              </ul>
+            </div>
+
+            <div id="filterTopic" class="mr-5">
+              <h5 class="text-xs border-b mb-2">TOPICS</h5>
+              <ul x-data="filtersTopic" x-on:change="filterTopic(filtersTopic);">
+                <template x-for="f in filtersTopicStrings">
+                  <li>
+                    <label class="text-zinc-600">
+                      <input class="hidden" type="checkbox" x-model="filtersTopic" :value="f" />
+                      <span x-text="f"></span>
+                    </label>
+                  </li>
+                </template>
+              </ul>
+            </div>
           </div>
-
-          <div id="filterSortBy" class="mr-5">
-            <h5 class="text-xs  border-b mb-2">SORT BY</h5>
-            <ul
-              x-data="filtersSortBy"
-              x-on:change="filterSortBy(filtersSortBy);"
-            >
-              <template x-for="f in filterSortByStrings">
-                <li>
-                  <label>
-                    <input type="radio" x-model="filtersSortBy" :value="f" />
-                    <span x-text="f"></span>
-                  </label>
-                </li>
-              </template>
-            </ul>
-          </div>
-
-          <div id="filterTopic" class="mr-5">
-            <h5 class="text-xs border-b mb-2">TOPICS</h5>
-            <ul x-data="filtersTopic" x-on:change="filterTopic(filtersTopic);">
-              <template x-for="f in filtersTopicStrings">
-                <li>
-                  <label>
-                    <input type="checkbox" x-model="filtersTopic" :value="f" />
-                    <span x-text="f"></span>
-                  </label>
-                </li>
-              </template>
-            </ul>
-          </div>
-
-        </div>
-
         </div>
 
         <!-- results -->
-        <div class="flex-auto max-w-full my-4" >
+        <div class="flex-auto max-w-full my-4">
           <template x-if="!videos">
             <span>Loading...</span>
           </template>
           <template x-for="video in pagedVideos">
-            <div class="bg-zinc-900 p-5 inline-block mr-4 mb-4 w-95 h-64 align-top">
-              <a href="#" x-on:click="selVideo = video; fetchSubs(selVideo)">
-                <img :src="video.thumbnail_small" class="w-full" />
+            <a href="#" class="inline-block mr-4 mb-4" x-on:click="selVideo = video; fetchSubs(selVideo)">
+              <div class="hover:underline hover:opacity-70 bg-zinc-900 p-5 inline-block w-95 h-72 align-top">
+                <img :src="video.thumbnail_small" class="w-full mb-4" />
                 <h3 x-text="video.title" class="w-60"></h3>
-              </a>
-            </div>
+              </div>
+            </a>
           </template>
         </div>
 
         <div class="mt-5">
           <button class="bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="previousPage">Previous Page</button>
           <button class="ml-1 bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="nextPage">Next Page</button>
-          <div class="inline-block ml-4">
+          <div class="inline-block m-4">
             <span>Page:</span> <span x-text="curPage"></span>
             of
             <span x-text="Math.ceil(videos.length / pageSize)"></span>
           </div>
         </div>
-
+      </div>
     </div>
   </body>
 </html>

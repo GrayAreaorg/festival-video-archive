@@ -5,67 +5,21 @@
 :root {
   --bg-color: #282828;
   --bg-color2: #333;
-  --content-bg-color: #1F1F1F;
-  --fg-color: #EDEDED;
+  --content-bg-color: #1f1f1f;
+  --fg-color: #ededed;
   --fg-color2: #999999;
   --fg-color-dim: #656565;
   --fg-color3: #333;
-  --link-color: #5DA4F8;
+  --link-color: #5da4f8;
   --link-color-hover: #3e6aa0;
-  --border-color: #3E3E3E;
+  --border-color: #3e3e3e;
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
+  @apply text-blue-300 hover:underline;
 }
 
-a:hover {
-  color: var(--link-color-hover);
-  text-decoration: underline;
-}
-
-
-
-td.video:hover img {
-  opacity: 0.5;
-}
-
-td.video a {
-  color: var(--fg-color);
-}
-
-#filters ul {
-  min-width: 80px;
-}
-
-#filters li {
-  color: var(--fg-color-dim);
-}
-
-#filters label {
-  cursor: pointer;
-  display: block;
-  text-indent: -0.75em;
-  padding: 0.4em 0 0.4em 0.75em;
-  white-space: nowrap;
-}
-
-#filters label input {
-  visibility: hidden;
-  display:none;
-}
-
-#filters label input:checked+span::after {
-  content: "✕";
-  margin-left:0.5em;
-}
-
-#filters label input:checked+span {
-  color: var(--fg-color);
-}
-
-
+/* video player */
 .videoPlayer {
   position: relative;
   padding-bottom: 56.25%;
@@ -78,4 +32,22 @@ td.video a {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* filters */
+#filters ul {
+  min-width: 80px;
+}
+
+#filters label {
+  @apply cursor-pointer block whitespace-nowrap -indent-3 py-1 pr-0 pl-3;
+}
+
+#filters label input:checked + span::after {
+  content: "✕";
+  margin-left: 0.5em;
+}
+
+#filters label input:checked + span {
+  @apply text-slate-200;
 }
