@@ -43,7 +43,9 @@ npm install -D tailwindcss
 npx tailwindcss init
 ```
 
-Use `./bin/watch` to build css to `./dist/output.css`
+Use `./bin/css-watch` to watch for change and output css to `./dist/output.css`.
+
+Use `./bin/css-build` to output minified css to `./dist/output.css` for production.
 
 
 
@@ -99,11 +101,18 @@ Serve locally for dev via Python http server
 Usage: `serve`
 
 
-## Watch (Tailwind CSS)
+## Watch
 
-Watch for CSS changes and build output css to `./dist/output.css`
+Watch for CSS changes and build output CSS to `./dist/output.css` with TailwindCSS
 
 Usage: `watch`
+
+
+## Build
+
+Build minified CSS to `./dist/output.css` with TailwindCSS
+
+Usage: `build`
 
 
 # Notes
