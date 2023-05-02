@@ -1,0 +1,70 @@
+#!/bin/bash
+
+IFS=$'\n'
+delim='======\n'
+
+# empty final output
+json_db='{"videos": []}'
+out=''
+
+# selected keys from YouTube metadata
+selKeys='{aspect_ratio, audio_channels, channel_id, channel_url, description, display_id, duration_string, duration, fps, fulltitle, height, id, playlist_id, playlist_title, playlist, tags, thumbnail, title, upload_date, webpage_url, width}'
+# selKeys='{id}'
+
+# Find all JSON files in the current directory and loop over them
+while IFS= read -r -d '' file; do
+
+  # Use jq to select the desired keys and add new keys
+  ytjson=$(jq "$selKeys" "$file")
+
+  echo "Processing" $(echo $ytjson | jq .title) ...
+
+  # Get metadata from description string field
+  # split the description string on the delimiter and loop over the resulting lines
+  hasMetadata=false
+  metaJson="{}"
+  IFS=$'\n' read -d '' -ra description_lines <<< "$(jq -r '.description' "$file")"
+  for line in "${description_lines[@]}"; do
+
+    # split each line into a key and value
+    IFS=':' read -r key value <<< "$line"
+
+    if [ "$hasMetadata" = true ]; then
+      # trim whitespace from the key and value
+      key="${key#"${key%%[![:space:]]*}"}"
+      value="${value#"${value%%[![:space:]]*}"}"
+
+      # add the new key-value pair to the JSON object
+      metaJson=$(jq --arg key "$key" --arg value "$value" '. + {($key): $value}' <<< "$metaJson")
+    fi;
+
+    # if we encounter 6 '=' signs, we know we are encountering metadata
+    if [ "$line" = "======" ]; then
+      hasMetadata=true
+    fi;
+  done
+
+  # check for subtitles/transcript
+  if test -e $file".en.vtt"; then
+    ytjson=$(echo "$ytjson" | jq '.subtitlesFile = "'"$file".en.vtt'"')
+  fi
+
+  # append metadata to ytjson
+  ytjson=$(jq --null-input --argjson orig "$ytjson" --argjson meta "$metaJson" '$orig + {metadata: $meta}');
+
+  # append complete object to json_db
+  json_db=$(jq ".videos |= . + [${ytjson}]" <<< "$json_db")
+
+done  < <(find $1 -type f -name '*.json' -print0)
+
+
+
+# # Combine all the JSON objects into a single array
+# final_json=$(jq -s '.' <<< "${json_array[@]}")
+
+# echo $final_json | jq .
+
+# # Write the final JSON to a new file
+echo "$json_db" | jq . > $2
+
+
