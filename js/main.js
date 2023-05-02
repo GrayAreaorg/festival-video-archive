@@ -38,7 +38,7 @@ const DOMContentLoaded = () => {
       selVideo: "",
       sortAsc: true,
       sortCol: "",
-      pageSize: 10,
+      pageSize: 24,
       curPage: 1,
       async init() {
         // load from flatfile json db

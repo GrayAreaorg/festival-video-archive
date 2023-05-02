@@ -31,6 +31,8 @@
 
             <h1 x-text="selVideo.title" class="text-2xl mb-5"></h1>
 
+            <p class="mb-5" x-html="String(selVideo.description).replace(/\n/g, '<br />')"></p>
+
             <div x-data="{ open: false }" class="mb-5">
               <h3 class="mb-2">
                 <a href="#;" x-on:click="open = !open" x-text="'Captions ' + (open ? '▾' : '▸')"></a>
