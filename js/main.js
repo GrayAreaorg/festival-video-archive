@@ -35,7 +35,8 @@ const DOMContentLoaded = () => {
       filtersTopicSel: "",
       filtersSortBy: [],
       filtersSortBySel: "",
-      selVideo: "",
+      selVideo: {},
+      showViewer: false,
       sortAsc: true,
       sortCol: "",
       pageSize: 24,
@@ -53,13 +54,9 @@ const DOMContentLoaded = () => {
         )[0].checked = true;
         this.filterSortBy("Date");
       },
-      fetchSubs(selVideo) {
+      async fetchSubs(selVideo) {
         if (selVideo.subtitlesFile) {
-          fetch(selVideo.subtitlesFile)
-            .then((response) => response.text())
-            .then((data) => {
-              selVideo.parsedSubs = data;
-            });
+          selVideo.parsedSubs = fetch(selVideo.subtitlesFile).then((response) => response.text())
         }
       },
       filterSortBy(sortFilter) {

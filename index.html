@@ -21,9 +21,9 @@
           </a>
         </header>
 
-        <template x-if="selVideo">
-          <div x-data="selVideo" class="bg-zinc-900 p-5 my-5">
-            <button class="bg-zinc-600 mb-5 hover:bg-slate-700 p-1 px-4 rounded-full" x-on:click="selVideo = false">Close</button>
+        <template x-if="showViewer" x-data="selVideo">
+          <div class="bg-zinc-900 p-5 my-5">
+            <button class="bg-zinc-600 mb-5 hover:bg-slate-700 p-1 px-4 rounded-full" x-on:click="showViewer = false">Close</button>
 
             <div class="videoPlayer mb-5">
               <iframe class="ytvideo" :src="('https://www.youtube.com/embed/' + selVideo.display_id)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
@@ -122,7 +122,7 @@
             <span>Loading...</span>
           </template>
           <template x-for="video in pagedVideos">
-            <a href="#" class="inline-block mr-4 mb-4" x-on:click="selVideo = video; fetchSubs(selVideo)">
+            <a href="#" class="inline-block mr-4 mb-4" x-on:click="selVideo = video; fetchSubs(selVideo); showViewer = true">
               <div class="hover:underline hover:opacity-70 bg-zinc-900 p-5 inline-block w-95 h-72 align-top">
                 <img :src="video.thumbnail_small" class="w-full mb-4" />
                 <h3 x-text="video.title" class="w-60"></h3>
