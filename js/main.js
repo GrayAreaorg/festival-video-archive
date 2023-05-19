@@ -1,21 +1,32 @@
 const _databaseFilename = "./data/db.json";
 const filterYearStrings = [
-  "2015",
-  "2016",
-  "2017",
-  "2018",
-  "2019",
-  "2020",
-  "2021",
   "2022",
+  "2021",
+  "2020",
+  "2019",
+  "2018",
+  "2017",
+  "2016",
+  "2015",
 ];
 const filterSortByStrings = ["Title", "Date"];
 const filtersTopicStrings = [
-  "Topic 1",
-  "Topic 2",
-  "Topic 3",
-  "Topic 4",
-  "Topic 5",
+  "AI",
+  "AR/VR/XR",
+  "Art",
+  "Biology",
+  "Decolonialism",
+  "Design",
+  "Ecology",
+  "History",
+  "Indigenous Wisdom",
+  "Machine Learning",
+  "Metaverse",
+  "Music",
+  "Performance",
+  "Philosophy",
+  "Software",
+  "Systems",
 ];
 
 const onReady = () => {};
@@ -56,7 +67,9 @@ const DOMContentLoaded = () => {
       },
       async fetchSubs(selVideo) {
         if (selVideo.subtitlesFile) {
-          selVideo.parsedSubs = fetch(selVideo.subtitlesFile).then((response) => response.text())
+          selVideo.parsedSubs = fetch(selVideo.subtitlesFile).then((response) =>
+            response.text()
+          );
         }
       },
       filterSortBy(sortFilter) {

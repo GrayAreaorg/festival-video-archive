@@ -6,6 +6,10 @@ a {
   @apply text-blue-300 hover:underline;
 }
 
+input {
+ @apply text-zinc-400 bg-zinc-800 p-1.5;
+}
+
 /* video player */
 .videoPlayer {
   position: relative;
@@ -21,19 +25,27 @@ a {
 }
 
 /* filters */
+#filters {
+  @apply text-xs md:text-sm
+}
+#filters #filterTopic {
+  @apply md:w-[22em];
+}
 #filters ul {
-  @apply min-w-[80px];
+  @apply md:max-h-60 md:flex md:flex-col md:flex-wrap;
 }
-
 #filters label {
-  @apply cursor-pointer block whitespace-nowrap -indent-3 py-1 pr-0 pl-3;
+  @apply text-zinc-600 cursor-pointer block whitespace-nowrap -indent-3 py-1 pr-0 pl-3;
 }
-
 #filters label input:checked + span::after {
   content: "✕";
-  @apply ml-2;
+  @apply ml-2 visible;
 }
-
+#filters label input + span::after {
+  content: "✕";
+  @apply ml-2 invisible;
+}
 #filters label input:checked + span {
   @apply text-slate-200;
 }
+

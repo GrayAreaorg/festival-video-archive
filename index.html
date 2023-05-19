@@ -11,13 +11,13 @@
     <script src="js/main.js"></script>
   </head>
 
-  <body class="m-10 bg-zinc-800 text-slate-200">
+  <body class="sm:m-8 m-2 bg-zinc-800 text-slate-200">
     <div x-data="videoData">
       <div x-data="filters">
         <header>
           <a href="index.html">
             <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" class="max-w-xs mb-4" />
-            <h2 class="text-2xl mb-0">Festival Video Archive</h2>
+            <h2 class="text-2xl mb-4">Festival Video Archive</h2>
           </a>
         </header>
 
@@ -68,30 +68,23 @@
         </template>
 
         <!-- filters -->
-        <div id="filters" class="bg-zinc-900 p-5">
+        <div id="filters" class="bg-zinc-900 p-5 inline-block">
           <h4 class="">FILTERS</h4>
 
+          <!--
+          <div class="mt-2">
+            <input type="text" placeholder="Filter String">
+          </div>
+          -->
+
           <div class="flex mt-4">
-            <div id="filterYear" class="mr-5">
-              <h5 class="text-xs border-b mb-2">YEAR</h5>
-              <ul x-data="filtersYear" x-on:change="filter(filtersYear)">
-                <template x-for="f in filterYearStrings">
-                  <li>
-                    <label class="text-zinc-600">
-                      <input class="hidden" type="checkbox" x-model="filtersYear" :value="f" />
-                      <span x-text="f"></span>
-                    </label>
-                  </li>
-                </template>
-              </ul>
-            </div>
 
             <div id="filterSortBy" class="mr-5">
               <h5 class="text-xs border-b mb-2">SORT BY</h5>
               <ul x-data="filtersSortBy" x-on:change="filterSortBy(filtersSortBy);">
                 <template x-for="f in filterSortByStrings">
-                  <li>
-                    <label class="text-zinc-600">
+                  <li class="mr-4">
+                    <label>
                       <input class="hidden" type="radio" x-model="filtersSortBy" :value="f" />
                       <span x-text="f"></span>
                     </label>
@@ -100,12 +93,26 @@
               </ul>
             </div>
 
-            <div id="filterTopic" class="mr-5">
+            <div id="filterYear" class="mr-5">
+              <h5 class="text-xs border-b mb-2">YEAR</h5>
+              <ul x-data="filtersYear" x-on:change="filter(filtersYear)">
+                <template x-for="f in filterYearStrings">
+                  <li class="flex-1 mr-4">
+                    <label>
+                      <input class="hidden" type="checkbox" x-model="filtersYear" :value="f" />
+                      <span x-text="f"></span>
+                    </label>
+                  </li>
+                </template>
+              </ul>
+            </div>
+
+            <div id="filterTopic" class="mr-2">
               <h5 class="text-xs border-b mb-2">TOPICS</h5>
               <ul x-data="filtersTopic" x-on:change="filterTopic(filtersTopic);">
                 <template x-for="f in filtersTopicStrings">
-                  <li>
-                    <label class="text-zinc-600">
+                  <li class="mr-4">
+                    <label>
                       <input class="hidden" type="checkbox" x-model="filtersTopic" :value="f" />
                       <span x-text="f"></span>
                     </label>
@@ -123,7 +130,7 @@
           </template>
           <template x-for="video in pagedVideos">
             <a href="#" class="inline-block mr-4 mb-4" x-on:click="selVideo = video; fetchSubs(selVideo); showViewer = true">
-              <div class="hover:underline hover:opacity-70 bg-zinc-900 p-5 inline-block w-95 h-72 align-top">
+              <div class="hover:underline hover:opacity-70 bg-zinc-900 p-5 inline-block w-[354px] h-[328px] align-top">
                 <img :src="video.thumbnail_small" class="w-full mb-4" />
                 <h3 x-text="video.title" class="w-60"></h3>
               </div>
@@ -131,8 +138,8 @@
           </template>
         </div>
 
+        <!-- footer -->
         <footer>
-
           <button class="bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="previousPage">Previous Page</button>
           <button class="ml-1 bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="nextPage">Next Page</button>
           <div class="inline-block m-4">
@@ -140,11 +147,9 @@
             of
             <span x-text="Math.ceil(videos.length / pageSize)"></span>
           </div>
-
           <div class="my-2 text-sm">
             Source on <a href="https://github.com/GrayAreaorg/festival-video-archive">Github</a>
           </div>
-
         </footer>
 
       </div>
