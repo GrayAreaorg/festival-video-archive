@@ -40,11 +40,11 @@ npm install -D tailwindcss
 npx tailwindcss init
 ```
 
-Run `./bin/css-watch` to watch for change and output css to `./dist/output.css`.
+Run `./bin/css-watch.sh` to watch for change and output css to `./dist/output.css`.
 
-Run `./bin/css-build` to output minified css to `./dist/output.css` for production.
+Run `./bin/css-build.sh` to output minified css to `./dist/output.css` for production.
 
-Run `./bin/serve` to launch local http server
+Run `./bin/serve.sh` to launch local http server
 
 ## Scripts
 
@@ -102,11 +102,21 @@ Usage: `./bin/serve`
 
 Watch for CSS changes and build output CSS to `./dist/output.css` with TailwindCSS
 
-Usage: `./bin/css-watch`
+Usage: `./bin/css-watch.sh`
 
 
 ## Build
 
 Build minified CSS to `./dist/output.css` with TailwindCSS
 
-Usage: `./bin/css-build`
+Usage: `./bin/css-build.sh`
+
+
+## Generate Wordcount
+
+This script counts the number of words in all the video caption files (`*.vtt`).
+It sorts them by frequency and associates them to the corresponding video via a unique id.
+
+It generates `wordcount.txt` and `wordcount_ids.txt`.
+
+Usage: `./bin/wordcount.sh`
