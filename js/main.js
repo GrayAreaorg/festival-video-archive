@@ -9,7 +9,7 @@ const filterYearStrings = [
   "2016",
   "2015",
 ];
-const filterSortByStrings = ["Title", "Date"];
+const filterSortByStrings = ["Date", "Title"];
 const filtersTopicStrings = [
   "AI",
   "AR/VR/XR",
