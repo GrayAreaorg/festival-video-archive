@@ -1,8 +1,7 @@
 # Gray Area Festival Video Archive
 
-View at:
+Live at:
 https://grayareaorg.github.io/festival-video-archive/
-
 
 ## TODO
 
@@ -53,7 +52,7 @@ Run `./bin/serve` to launch local http server
 
 Compile JSON formatted database to be queried from the front end.
 
-Usage `compile-db.js source dest`
+Usage `./bin/compile-db.js source dest`
 
 - `source` A JSON file or folder of JSON files of YouTube metadata scraped from YouTube via ytdlp
 - `dest` A destination folder to write the JSON single-file database. Will prompt to confirm overwrite.
@@ -63,7 +62,7 @@ Usage `compile-db.js source dest`
 
 Download YouTube metadata in JSON format from single YouTube video, playlist, or playlists.
 
-Usage `get-youtube-metadata.sh destination`
+Usage `./bin/get-youtube-metadata.sh destination`
 
 - `destination` A destination folder to save the JSON data
 
@@ -77,7 +76,7 @@ Example
 
 Download YouTube auto-generated subtitles in English (en) .vtt subtitle format using information existing YouTube JSON metadata (prerequiste). Will create .vtt files alongside source JSON
 
-Usage `get-all-subs.sh sourceDir`
+Usage `./bin/get-all-subs.sh sourceDir`
 
 - `sourceDir` A source folder of YouTube JSON metadata files
 
@@ -86,7 +85,7 @@ Usage `get-all-subs.sh sourceDir`
 
 Download auto-generated transcription/subtitles in English for given YouTube ID
 
-Usage `get-youtube-subs.sh youtube_id [dest]`
+Usage `./bin/get-youtube-subs.sh youtube_id [dest]`
 
 - `youtube_id` A YouTubeID
 - `dest` (optional) .vtt output destination. Default output will be alongside the source.
@@ -96,53 +95,18 @@ Usage `get-youtube-subs.sh youtube_id [dest]`
 
 Serve locally for dev via Python http server
 
-Usage: `serve`
+Usage: `./bin/serve`
 
 
 ## Watch
 
 Watch for CSS changes and build output CSS to `./dist/output.css` with TailwindCSS
 
-Usage: `watch`
+Usage: `./bin/css-watch`
 
 
 ## Build
 
 Build minified CSS to `./dist/output.css` with TailwindCSS
 
-Usage: `build`
-
-
-# Notes
-
-alpine and pagination
-https://www.raymondcamden.com/2022/05/02/building-table-sorting-and-pagination-in-alpinejs
-https://codepen.io/cfjedimaster/pen/ExQaZQZ
-
-openai whisper
-https://www.pinecone.io/learn/openai-whisper/
-https://www.youtube.com/watch?v=vpU_6x3jowg
-https://github.com/jamescalam/ask-youtube/tree/main/youtube-search
-
-subtitles
-https://superuser.com/questions/927523/how-to-download-only-subtitles-of-videos-using-youtube-dl
-
-download subs for id
-yt-dlp --sub-lan=en --write-auto-sub --skip-download vy2yuh_ENNA
-
-
-only list selected keys
-
-    <div x-data="{ open: false, selectedKeys: ['id', 'title', 'description', 'duration', 'playlists'] }">
-      <h3><a href="#;" x-on:click="open = !open" x-text="'Metadata ' + (open ? '▾' : '▸')"></a></h3>
-      <template x-if="open">
-        <ul>
-          <template x-for="key in Object.keys(selVideo).filter(key => selectedKeys.includes(key))">
-              <li>
-                <span x-text="key"></span>
-                <span x-html="String(selVideo[key]).replace(/\n/g, '<br />')"></span>
-              </li>
-          </template>
-        </ul>
-      </template>
-    </div>
+Usage: `./bin/css-build`
