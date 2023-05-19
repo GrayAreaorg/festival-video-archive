@@ -1,6 +1,7 @@
 # Gray Area Festival Video Archive
 
-https://quilime.github.io/gray-area-video-archive
+View at:
+https://grayareaorg.github.io/festival-video-archive/
 
 
 ## TODO
@@ -8,10 +9,7 @@ https://quilime.github.io/gray-area-video-archive
 ### Aggregation Page
 
   - [ ] Festival description per year
-  - [ ] Hot tags
-  - [x] Starting page
-  - [x] Rev chron by year (sortable)
-  - [x] Year tags
+  - [ ] Topic List
 
 ### Hosting
 
@@ -34,7 +32,7 @@ festival_year: 2015
 ... additional metadata as needed ...
 ```
 
-## Install
+## Dev Setup
 
 Using [Tailwind](https://tailwindcss.com/) CLI for CSS generation.
 
@@ -43,11 +41,11 @@ npm install -D tailwindcss
 npx tailwindcss init
 ```
 
-Use `./bin/css-watch` to watch for change and output css to `./dist/output.css`.
+Run `./bin/css-watch` to watch for change and output css to `./dist/output.css`.
 
-Use `./bin/css-build` to output minified css to `./dist/output.css` for production.
+Run `./bin/css-build` to output minified css to `./dist/output.css` for production.
 
-
+Run `./bin/serve` to launch local http server
 
 ## Scripts
 
