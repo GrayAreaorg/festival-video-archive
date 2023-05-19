@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg-color: #282828;
-  --bg-color2: #333;
-  --content-bg-color: #1f1f1f;
-  --fg-color: #ededed;
-  --fg-color2: #999999;
-  --fg-color-dim: #656565;
-  --fg-color3: #333;
-  --link-color: #5da4f8;
-  --link-color-hover: #3e6aa0;
-  --border-color: #3e3e3e;
-}
-
 a {
   @apply text-blue-300 hover:underline;
 }
@@ -24,7 +11,6 @@ a {
   position: relative;
   padding-bottom: 56.25%;
 }
-
 .ytvideo {
   position: absolute;
   top: 0;
@@ -36,7 +22,7 @@ a {
 
 /* filters */
 #filters ul {
-  min-width: 80px;
+  @apply min-w-[80px];
 }
 
 #filters label {
@@ -45,7 +31,7 @@ a {
 
 #filters label input:checked + span::after {
   content: "✕";
-  margin-left: 0.5em;
+  @apply ml-2;
 }
 
 #filters label input:checked + span {
