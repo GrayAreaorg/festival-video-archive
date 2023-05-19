@@ -7,8 +7,7 @@ https://grayareaorg.github.io/festival-video-archive/
 
 ### Aggregation Page
 
-  - [ ] Festival description per year
-  - [ ] Topic List
+  - [ ] Filter by topic list
 
 ### Hosting
 
