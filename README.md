@@ -121,3 +121,23 @@ It sorts them by frequency and associates them to the corresponding video via vi
 Usage: `node ./bin/wordcount.js srcDirectory outputFile.txt [--include-video-stats]`
 
 `--include-video-stats` (optional) includes the wordcount per video id.
+
+
+## Generate Topic Lists
+
+Usage Example: `./bin/search-caption-string.sh data/videos data/topics/software.txt  "software" "programming" "code" "algorhythm" "computer science" "open source" "interface"`
+
+The above example will parse all the .vtt files for the key words used as arguments. You can use any amount of key words. The output will be a sorted list of occurances.
+
+```
+ 102 data/videos/2015/History of the Future, Art & Technology from 1965 - Yesterday ｜ Casey Reas ｜ The Gray Area Festival [mHox98NFU3o].en.vtt
+  75 data/videos/2020/Amelia Winger-Bearskin ｜ Gray Area Festival 2020 [68gwy1W7Duo].en.vtt
+  50 data/videos/2019/Jaron Lanier ｜ Gray Area Festival 2019 Keynote [lsNF4KfmwkY].en.vtt
+  49 data/videos/2021/Wendy Chun ｜ Gray Area Festival 2021 [0z_CAlHWdpo].en.vtt
+  48 data/videos/2016/Situated Systems Panel ｜ Autodesk ｜ The 2016 Gray Area Festival [jTDMOl7MvrU].en.vtt
+  47 data/videos/2015/The School of Poetic Computation ｜ Zach Lieberman ｜ The Gray Area Festival 2015 [0F8EZU6B-jE].en.vtt
+  46 data/videos/2017/Lauren McCarthy ｜ the 2017 Gray Area Festival [l1qeNMXccvA].en.vtt
+  42 data/videos/2020/Ruha Benjamin ｜ Gray Area Festival 2020 Keynote [GISl_8-fbuA].en.vtt
+  42 data/videos/2018/Claire L Evans ｜ Gray Area Festival 2018 [evwWTQ7LRRM].en.vtt
+  ...
+```
