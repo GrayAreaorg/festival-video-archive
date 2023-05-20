@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-// console.info('Node Version', process.version);
+console.info('Node Version', process.version);
 
 if (!process.argv[3]) {
   console.error('Usage: ' + process.argv[1] + ' [source] [dest]')
