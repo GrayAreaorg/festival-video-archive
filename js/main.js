@@ -12,7 +12,6 @@ const filterYearStrings = [
 const filterSortByStrings = ["Date", "Title"];
 const filtersTopicStrings = [
   "AI",
-  "AR/VR/XR",
   "Art",
   "Biology",
   "Decolonialism",
@@ -23,7 +22,6 @@ const filtersTopicStrings = [
   "Machine Learning",
   "Metaverse",
   "Music",
-  "Performance",
   "Philosophy",
   "Software",
   "Systems",

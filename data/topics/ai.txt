@@ -1,0 +1,15 @@
+  24 data/videos/2020/Stephanie Dinkins ｜ Gray Area Festival 2020 [41I4tAz-lNE].en.vtt
+  12 data/videos/2020/D. Fox Harrell ｜ Gray Area Festival 2020 Keynote [nh--7UOAJMY].en.vtt
+  10 data/videos/2020/ZERO1 Panel ｜ Gray Area Festival 2020 [0uXQCz6tu2c].en.vtt
+  10 data/videos/2020/Ruha Benjamin ｜ Gray Area Festival 2020 Keynote [GISl_8-fbuA].en.vtt
+   8 data/videos/2020/Amelia Winger-Bearskin ｜ Gray Area Festival 2020 [68gwy1W7Duo].en.vtt
+   6 data/videos/2021/Vernelle A. A. Noel ｜ Gray Area Festival 2021 [KT6WVJ3Ubvc].en.vtt
+   6 data/videos/2020/Lawrence Lek ｜ Gray Area Festival 2020 [nd0Wc3QH9Lo].en.vtt
+   6 data/videos/2019/Jaron Lanier ｜ Gray Area Festival 2019 Keynote [lsNF4KfmwkY].en.vtt
+   4 data/videos/2017/Caroline Sinders ｜ the Gray Area Festival 2017 [kvefuhhweSk].en.vtt
+   2 data/videos/2022/Caroline Sinders ｜ Gray Area Festival 2022 [s59CPSgkOm8].en.vtt
+   2 data/videos/2021/Wendy Chun ｜ Gray Area Festival 2021 [0z_CAlHWdpo].en.vtt
+   2 data/videos/2021/Valencia James ｜ Gray Area Festival 2021 [PZwWSoStb5o].en.vtt
+   2 data/videos/2018/Sam Hart ｜ Gray Area Festival 2018 [vy2yuh_ENNA].en.vtt
+   2 data/videos/2016/Sougwen Chung ｜ The 2016 Gray Area Festival [68l8KucLPX4].en.vtt
+   2 data/videos/2016/Catalyzing Innovation in Story ｜ Kamal Sinclair at the 2016 Gray Area Festival [CbyNk-802_g].en.vtt
