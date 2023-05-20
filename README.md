@@ -107,7 +107,7 @@ Usage: `./bin/css-build.sh`
 
 ## Generate Wordcount
 
-[wordcount.py](bin/data/wordcount.py)
+[wordcount.py](bin/wordcount.py)
 
 This script counts the number of words in all the video caption files (`*.vtt`).
 It sorts them by frequency and associates them to the corresponding video via video id.
