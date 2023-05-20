@@ -12,8 +12,12 @@
   </head>
 
   <body class="sm:m-8 m-2 bg-zinc-800 text-slate-200 max-w-6xl">
+
+    <a name="top"></a>
+
     <div x-data="videoData">
       <div x-data="filters">
+
         <header>
           <a href="index.html">
             <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" class="max-w-xs mb-4" />
@@ -140,8 +144,8 @@
 
         <!-- footer -->
         <footer>
-          <button class="bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="previousPage">Previous Page</button>
-          <button class="ml-1 bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="nextPage">Next Page</button>
+          <button class="bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="previousPage; document.location.href='#top'">Previous Page</button>
+          <button class="ml-1 bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="nextPage; document.location.href='#top'">Next Page</button>
           <div class="inline-block m-4">
             <span>Page:</span> <span x-text="curPage"></span>
             of
