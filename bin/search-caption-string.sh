@@ -16,7 +16,7 @@
 #   "Metaverse"           ->  " ar " " vr " " xr " "augmented reality" "mixed reality" "virtual reality" "immersive" "virtual world"
 #   "Music"               ->  "music" "song" "concert" "composition" "melody"
 #   "Philosophy"          ->  "philosophy" "metaphysics" "ethics" "aesthetic" "phenomenology"
-#   "Software"            ->  "software" "code" "algorhythm" "computer science" "open source" "interface"
+#   "Software"            ->  "software" "programming" "code" "algorhythm" "computer science" "open source" "interface"
 #   "Systems"             ->  "systems" "chaos" "complexity" "modeling" "simulation" "pattern"
 
 
