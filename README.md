@@ -164,3 +164,13 @@ Find and collate vtt's related to the topic of "software": `./bin/search-caption
 - Philosophy: "philosophy" "metaphysics" "ethics" "aesthetic" "phenomenology"
 - Software: "software" "programming" "code" "algorhythm" "open source"
 - Systems: "systems" "chaos" "complexity" "modeling" "simulation" "pattern"
+
+## Various Scripts and Snippets
+
+Convert all topic .txt file lists into json alongside the original files.
+```
+for file in $(find . -type f -name "*.txt"); do
+  json_file="${file%.txt}.json"
+  node bin/topic_lists_to_json.js "$file" > "$json_file"
+done
+```
