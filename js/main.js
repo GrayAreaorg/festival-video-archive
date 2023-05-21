@@ -20,7 +20,7 @@ const filtersTopicStrings = [
   { topic: "Design", data: "design.json" },
   { topic: "Ecology", data: "ecology.json" },
   { topic: "History", data: "history.json" },
-  { topic: "Indigenous Wisdon", data: "indigenous-wisdom.json" },
+  { topic: "Indigenous Wisdom", data: "indigenous.json" },
   { topic: "Machine Learning", data: "machine-learning.json" },
   { topic: "Metaverse", data: "metaverse.json" },
   { topic: "Music", data: "music.json" },
