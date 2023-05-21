@@ -1,0 +1,9 @@
+{
+  "scripts" : {
+    "css-watch" : "npx tailwindcss -i ./css/style.css -o ./dist/output.css --watch",
+    "css-build" : "npx tailwindcss -i ./css/style.css -o ./dist/output.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
