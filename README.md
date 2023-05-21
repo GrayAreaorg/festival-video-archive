@@ -126,19 +126,41 @@ Usage: `node ./bin/wordcount.js srcDirectory outputFile.txt [--include-video-sta
 
 ### Generate Topic Lists
 
-Usage Example: `./bin/search-caption-string.sh data/videos data/topics/software.txt  "software" "programming" "code" "algorhythm" "computer science" "open source" "interface"`
+This script searches for specified query patterns in .vtt files within a source directory, counts the occurrences of each file, and saves the sorted results to an output file.
 
-The above example will parse all the .vtt files for the key words used as arguments. You can use any amount of key words. The output will be a sorted list of occurances.
+Example Use:
 
+Find and collate vtt's related to the topic of "software": `./bin/search-caption-string.sh data/videos "software" "programming" "code" "algorhythm" "open source"`
+
+Example Output:
 ```
- 102 data/videos/2015/History of the Future, Art & Technology from 1965 - Yesterday ｜ Casey Reas ｜ The Gray Area Festival [mHox98NFU3o].en.vtt
-  75 data/videos/2020/Amelia Winger-Bearskin ｜ Gray Area Festival 2020 [68gwy1W7Duo].en.vtt
-  50 data/videos/2019/Jaron Lanier ｜ Gray Area Festival 2019 Keynote [lsNF4KfmwkY].en.vtt
-  49 data/videos/2021/Wendy Chun ｜ Gray Area Festival 2021 [0z_CAlHWdpo].en.vtt
+  97 data/videos/2015/History of the Future, Art & Technology from 1965 - Yesterday ｜ Casey Reas ｜ The Gray Area Festival [mHox98NFU3o].en.vtt
+  72 data/videos/2020/Amelia Winger-Bearskin ｜ Gray Area Festival 2020 [68gwy1W7Duo].en.vtt
   48 data/videos/2016/Situated Systems Panel ｜ Autodesk ｜ The 2016 Gray Area Festival [jTDMOl7MvrU].en.vtt
   47 data/videos/2015/The School of Poetic Computation ｜ Zach Lieberman ｜ The Gray Area Festival 2015 [0F8EZU6B-jE].en.vtt
-  46 data/videos/2017/Lauren McCarthy ｜ the 2017 Gray Area Festival [l1qeNMXccvA].en.vtt
+  43 data/videos/2017/Lauren McCarthy ｜ the 2017 Gray Area Festival [l1qeNMXccvA].en.vtt
   42 data/videos/2020/Ruha Benjamin ｜ Gray Area Festival 2020 Keynote [GISl_8-fbuA].en.vtt
-  42 data/videos/2018/Claire L Evans ｜ Gray Area Festival 2018 [evwWTQ7LRRM].en.vtt
+  39 data/videos/2019/Jaron Lanier ｜ Gray Area Festival 2019 Keynote [lsNF4KfmwkY].en.vtt
   ...
 ```
+
+Save output to file via `cat`:
+
+Find and collate vtt's related to the topic of "software": `./bin/search-caption-string.sh data/videos  "software" "programming" "code" "algorhythm" "open source" > data/topics/software.txt`
+
+### Topic List Query Arrays
+
+- AI: "artificial intelligence" " ai "
+- Art: " art " "fine art" "gallery"
+- Biology: "biology" "cell" "genetics" "evolution" "physiology" "biochemistry" "adaptation" "reproduction" "biodiversity" "microbio" "molecular"
+- Decolonialism: "decolonialism" "neocolonialism" "colonial" "indigenous" "imperialism" "sovereignty"
+- Design: "design" "graphic design" "web design" "product design"
+- Ecology: "ecology" "earth" "climate change" "ecosystem" "biodiversity" "conservation" "environment"
+- History: "history" "historical" "past" "era" "ancient" "civilization" "culture" "heritage"
+- Indigenous Wisdom: "indigenous" "wisdom" "elder" "past" "native" "heritage" "spiritual"
+- Machine Learning: "machine learning" " ml " "neural net"
+- Metaverse: " ar " " vr " " xr " "augmented reality" "mixed reality" "virtual reality" "immersive" "virtual world"
+- Music: "music" "song" "concert" "composition" "melody"
+- Philosophy: "philosophy" "metaphysics" "ethics" "aesthetic" "phenomenology"
+- Software: "software" "programming" "code" "algorhythm" "open source"
+- Systems: "systems" "chaos" "complexity" "modeling" "simulation" "pattern"
