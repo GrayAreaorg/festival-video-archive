@@ -48,4 +48,3 @@ input {
 #filters label input:checked + span {
   @apply text-slate-200;
 }
-

@@ -36,16 +36,14 @@ async function processVtt(filePath) {
   const data = await readFile(filePath, "utf-8");
   const lines = data.split("\n").slice(4); // remove .vtt preamble at the top
   const tsRx = /\d{2}:\d{2}:\d{2}\.\d{3}/; // timestamp regex
-  const uniqueLines = []; // array for processed lines
+  const uniqueLines = []; // new array for processed lines
 
   // for each line in .vtt
   for (const line of lines) {
     // Skip the line if it's just whitespace or it contains a timestamp
     if (line.trim() === "" || tsRx.test(line)) continue;
-
     // convert to lowercase
     const lc = line.toLowerCase();
-
     // pushing the string to the array allows us to check and eliminated duplicate lines
     if (!uniqueLines.includes(lc)) {
       uniqueLines.push(lc);
