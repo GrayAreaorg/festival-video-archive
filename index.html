@@ -117,8 +117,8 @@
                 <template x-for="f in filtersTopicStrings">
                   <li class="mr-4">
                     <label>
-                      <input class="hidden" type="checkbox" x-model="filtersTopic" :value="f" />
-                      <span x-text="f"></span>
+                      <input class="hidden" type="checkbox" x-model="filtersTopic" :value="f.topic" />
+                      <span x-text="f.topic"></span>
                     </label>
                   </li>
                 </template>
