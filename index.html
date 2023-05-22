@@ -87,12 +87,6 @@
         <div id="filters" class="bg-zinc-900 p-5 inline-block">
           <h4 class="">FILTERS</h4>
 
-          <!--
-          <div class="mt-2">
-            <input type="text" placeholder="Filter String">
-          </div>
-          -->
-
           <div class="flex mt-4">
 
             <div id="filterSortBy" class="mr-5">
@@ -137,6 +131,12 @@
               </ul>
             </div>
           </div>
+
+          <div class="mt-4">
+            <h5 class="text-xs border-b mb-2">TITLE & DESC</h5>
+            <input @input.debounce="filterTitleDesc" type="text" class="w-full" x-@ placeholder="Filter String">
+          </div>
+
         </div>
 
         <!-- results -->

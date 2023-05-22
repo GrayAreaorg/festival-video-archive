@@ -33,19 +33,17 @@ const fetchJSON = async (url) => {
   return res.json();
 };
 
-async function loadAndCombineJSONFiles(fileUrls) {
-  const combineAndSortVideos = (allVideos) => {
+const loadAndCombineJSONFiles = async(fileUrls) => {
+  try {
+    const jsonFiles = await Promise.all(fileUrls.map(fetchJSON));
+    const allVideos = jsonFiles.flatMap((file) => file.videos);
     const videoMap = new Map();
     allVideos.forEach((video) => {
       if (!videoMap.has(video.id) || videoMap.get(video.id).num < video.num)
         videoMap.set(video.id, video);
     });
+    // return sorted vides
     return Array.from(videoMap.values()).sort((a, b) => b.num - a.num);
-  };
-  try {
-    const jsonFiles = await Promise.all(fileUrls.map(fetchJSON));
-    const allVideos = jsonFiles.flatMap((file) => file.videos);
-    return combineAndSortVideos(allVideos);
   } catch (error) {
     console.error("Error loading and combining JSON files:", error);
     return [];
@@ -69,6 +67,7 @@ const DOMContentLoaded = () => {
       filtersTopic: [],
       filtersSortBy: [],
       selectedFilters: [],
+      topic: [],
       selVideo: {},
       showViewer: false,
       sortAsc: true,
@@ -94,6 +93,25 @@ const DOMContentLoaded = () => {
           );
         }
       },
+      filterTitleDesc(e) {
+        const search = e.target.value;
+
+        if (!search) {
+          console.log('empty');
+          this.videos = this.allVideos;
+        }
+
+        const filtered = this.allVideos.filter(obj =>
+            (obj.title && obj.title.toLowerCase().includes(search.toLowerCase())) ||
+            (obj.description && obj.description.toLowerCase().includes(search.toLowerCase()))
+          );
+
+        console.log(filtered);
+        console.log(this.topic);
+
+        this.videos = filtered;
+        this.filter(this.selectedFilters);
+      },
       filterSortBy(sortFilter) {
         this.sortFilter = sortFilter;
         switch (sortFilter) {
@@ -105,22 +123,44 @@ const DOMContentLoaded = () => {
             break;
         }
       },
-      async filterTopic(topic) {
+      async filterTopic(topic, prefilteredVids) {
         // console.log(`filter => '${topic}'`);
+
+        /*
+        // TODO;
+        - each filter function sets their own setting, and then
+        - store one outputlist that gets filtered in a single filter function
+        - this manages stage and order of operations better.
+
+        the filter order is:
+
+        - date
+        - topic
+        - title/description
+        - order
+
+        each setting is set discretely, and then a single filter function is hit.
+
+        reset the pagination when filtering is changed.
+
+        */
+
+        const vids = prefilteredVids ? prefilteredVids : this.allVideos;
 
         if (topic.length == 0) {
           this.videos = this.allVideos;
+          this.topic = [];
           this.topicFilteredVideos = [];
           this.filter(this.selectedFilters);
           return;
         }
 
+        this.topic = topic;
+
         const fileUrls = [];
         for (var i = 0; i < topic.length; i++) {
           const t = topic[i];
-          const foundObject = filtersTopicStrings.find(
-            (obj) => obj.topic === t
-          );
+          const foundObject = filtersTopicStrings.find((obj) => obj.topic === t);
           if (foundObject)
             fileUrls.push(`${filtersTopicsDir}/${foundObject.data}`);
         }
@@ -128,28 +168,21 @@ const DOMContentLoaded = () => {
         loadAndCombineJSONFiles(fileUrls).then((combinedVideos) => {
           const filteredVideos = combinedVideos
             .map((videoIdObj) => {
-              const videoMatch = this.allVideos.find(
-                (video) => video.id === videoIdObj.id
-              );
+              const videoMatch = this.allVideos.find((video) => video.id === videoIdObj.id);
               return videoMatch ? videoMatch : null;
             })
             .filter((video) => video !== null);
 
           this.topicFilteredVideos = filteredVideos;
-          this.filter(this.selectedFilters);
+          this.filter(this.selectedFilters, this.topicFilteredVideos);
         });
       },
-      filter(selectedFilters) {
+      filter(selectedFilters, preFilteredVids = []) {
         this.selectedFilters = selectedFilters;
         this.curPage = 1;
-        const vids =
-          this.topicFilteredVideos.length > 0
-            ? this.topicFilteredVideos
-            : this.allVideos;
+        const vids = preFilteredVids.length > 0 ? preFilteredVids : this.allVideos;
         if (selectedFilters.length > 0) {
-          this.videos = vids.filter((video) =>
-            selectedFilters.includes(video.festival_year)
-          );
+          this.videos = vids.filter((video) => selectedFilters.includes(video.festival_year));
         } else {
           this.videos = vids;
         }
