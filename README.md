@@ -12,11 +12,14 @@ This project is open to submissions and suggestions around engaging with this gr
 
 ## Dev Setup
 
-Requirements
+Built Using
 
-- Node (built using v19.8.1)
-
-Using [Tailwind](https://tailwindcss.com/) CLI for CSS generation.
+- [Node] v19.8.1
+- [AlpineJS](https://alpinejs.dev/) v3.12.0
+- [TailwindCSS](https://tailwindcss.com/) v3.3.2
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) v2023.02.17
+- [jq](https://stedolan.github.io/jq/) v1.6
+- Bash v3.2.5
 
 Installation
 
