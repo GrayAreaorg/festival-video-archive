@@ -8,7 +8,7 @@ The archive is built with a flat-file JSON database and includes captions and tr
 
 The website is entirely client-side, developed using HTML, JavaScript, and Bash. Content can be filtered by year and sorted by title or date.
 
-This project is open to submissions and suggestions around engaging with this growing collection of content. Feel free to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or create an [issue](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
+This project is open to submissions and suggestions around engaging with this growing collection of content. Feel free to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute an [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
 
 ## Dev Setup
 
