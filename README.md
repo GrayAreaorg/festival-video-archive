@@ -127,7 +127,7 @@ Keywords used to generate the curated topics. Any transcripts containing these k
 - Art: " art " "visual art" "installation art" "immersive art"
 - Biology: "biology" "cell" "genetics" "evolution" "physiology" "biochemistry" "adaptation" "reproduction" "biodiversity" "microbio" "molecular"
 - Decolonialism: "decolonialism" "neocolonialism" "colonial" "indigenous" "imperialism" "sovereignty"
-- Design: "design" "graphic design" "web design" "product design"
+- Design: "design" "graphic design" "web design" "product design" "industrial design" "mechanical design"
 - Ecology: "ecology" "earth" "climate change" "ecosystem" "biodiversity" "conservation" "environment"
 - History: "history" "historical" "past" "era" "ancient" "civilization" "culture" "heritage"
 - Indigenous Wisdom: "indigenous" "wisdom" "elder" "past" "native" "heritage" "spiritual"
