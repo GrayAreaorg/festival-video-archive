@@ -72,20 +72,6 @@ Usage `./bin/get-youtube-subs.sh youtube_id [dest]`
 - `dest` (optional) .vtt output destination. Default output will be alongside the source.
 
 
-### CSS Watch
-
-Watch for CSS changes and build output CSS to `./dist/output.css` with TailwindCSS
-
-Usage: `./bin/css-watch.sh`
-
-
-### CSS Build
-
-Build minified CSS to `./dist/output.css` with TailwindCSS
-
-Usage: `./bin/css-build.sh`
-
-
 ### Generate Wordcount from .vtt Captions
 
 Counts the number of words in all the video caption files (`*.vtt`) in a given directory.
