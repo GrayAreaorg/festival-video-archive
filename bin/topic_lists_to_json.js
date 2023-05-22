@@ -16,8 +16,11 @@ fs.readFile(path, "utf8", (err, data) => {
   const lines = data.split("\n");
   const jsonArray = lines
     .map((line) => {
-      const match = line.match(/(\d+)\s.*\[(\w+)\]/);
-      if (match) return { num: parseInt(match[1]), id: match[2] };
+      const trimmed = line.trim();
+      const count = trimmed.split(" ")[0];
+      const idRx = /\[(.*?)\]/;
+      const match = trimmed.match(idRx);
+      if (match) return { num: parseInt(count), id: match[1] };
     })
     .filter(Boolean);
 
