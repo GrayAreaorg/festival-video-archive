@@ -29,6 +29,10 @@
             A filterable archive of videos in-person and virtual conference talks, presentations, and panels from the <a href="https://grayareafestival.io/">Gray Area Festival</a>.
           </p>
 
+          <p class="mt-4">
+            Source on <a href="https://github.com/GrayAreaorg/festival-video-archive">Github</a>
+          </p>
+
         </header>
 
         <template x-if="showViewer" x-data="selVideo">
@@ -156,9 +160,6 @@
             <span>Page:</span> <span x-text="curPage"></span>
             of
             <span x-text="Math.ceil(videos.length / pageSize)"></span>
-          </div>
-          <div class="my-2 text-sm">
-            Source on <a href="https://github.com/GrayAreaorg/festival-video-archive">Github</a>
           </div>
         </footer>
 
