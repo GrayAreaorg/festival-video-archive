@@ -12,16 +12,17 @@ Requirements
 
   - Node (built using v19.8.1)
 
+Installation
+
 ```bash
 npm install -D tailwindcss
 npx tailwindcss init
 ```
 
-Run `npm run css-watch` to watch for change and output css to `./dist/output.css`.
+NPM Scripts
 
-Or run `npm run css-build` to output minified css to `./dist/output.css` for production.
-
-Run `python3 -m http.server` (optional) launch local http server for testing.
+- `npm run css-watch` to watch for change and output css to `./dist/output.css`.
+- `npm run css-build` to output minified css to `./dist/output.css` for production.
 
 
 ## Scripts
@@ -53,7 +54,7 @@ Example
 ```
 
 
-### Get YouTube Subs from Json Data
+### Get YouTube Subs from JSON Data
 
 Download YouTube auto-generated subtitles in English (en) .vtt subtitle format using information existing YouTube JSON metadata (prerequiste). Will create .vtt files alongside source JSON
 
@@ -107,7 +108,7 @@ Save output to file via `cat`:
 Find and collate vtt's related to the topic of "software": `./bin/search-caption-string.sh data/videos  "software" "programming" "code" "algorhythm" "open source" > data/topics/software.txt`
 
 
-### Topic List Query Arrays
+#### Topic List Query Arrays
 
 - AI: "artificial intelligence" " ai "
 - Art: " art " "fine art" "gallery"
@@ -125,9 +126,7 @@ Find and collate vtt's related to the topic of "software": `./bin/search-caption
 - Systems: "systems" "chaos" "complexity" "modeling" "simulation" "pattern"
 
 
-## Various Scripts and Snippets
-
-Convert all topic .txt file lists into json alongside the original files.
+### Convert all topic .txt file lists into json alongside the original files.
 ```
 for file in $(find . -type f -name "*.txt"); do
   json_file="${file%.txt}.json"
