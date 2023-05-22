@@ -12,17 +12,15 @@ const path = process.argv[2];
 
 fs.readFile(path, "utf8", (err, data) => {
   if (err) throw err;
-
   const lines = data.split("\n");
-  const jsonArray = lines
-    .map((line) => {
-      const trimmed = line.trim();
-      const count = trimmed.split(" ")[0];
-      const idRx = /\[(.*?)\]/;
-      const match = trimmed.match(idRx);
-      if (match) return { num: parseInt(count), id: match[1] };
-    })
-    .filter(Boolean);
+  const jsonArray = lines.map((line) => {
+    const trimmed = line.trim();
+    const count = trimmed.split(" ")[0];
+    const idRx = /\[(.*?)\]/;
+    const match = trimmed.match(idRx);
+    if (match) return { num: parseInt(count), id: match[1] };
+  })
+  .filter(Boolean);
 
-  console.log(JSON.stringify({ videos: jsonArray, }, null, 2 ));
+  console.log(JSON.stringify({ videos: jsonArray }, null, 2));
 });
