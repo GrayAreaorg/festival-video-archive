@@ -97,6 +97,17 @@ for file in $(find . -type f -name "*.txt"); do
 done
 ```
 
+## Generate Wordcount from .vtt Captions
+
+[wordcount.js](./bin/wordcount.js)
+
+Counts the number of words in all the video caption files (`*.vtt`) in a given directory.
+It sorts them by frequency and associates them to the corresponding video via video id.
+
+Usage: `node ./bin/wordcount.js srcDirectory outputFile.txt [--include-video-stats]`
+
+`--include-video-stats` (optional) includes the wordcount per video id.
+
 
 ## Compile JSON Archive Database
 
@@ -144,18 +155,6 @@ Usage `./bin/get-youtube-subs.sh youtube_id [dest]`
 
 - `youtube_id` A YouTubeID
 - `dest` (optional) .vtt output destination. Default output will be alongside the source.
-
-## Generate Wordcount from .vtt Captions
-
-[wordcount.js](./bin/wordcount.js)
-
-Counts the number of words in all the video caption files (`*.vtt`) in a given directory.
-It sorts them by frequency and associates them to the corresponding video via video id.
-
-Usage: `node ./bin/wordcount.js srcDirectory outputFile.txt [--include-video-stats]`
-
-`--include-video-stats` (optional) includes the wordcount per video id.
-
 
 ## Optional Metadata: Custom Keys via YouTube Description Field
 
