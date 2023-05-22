@@ -2,9 +2,9 @@
 
 Live at: https://grayareaorg.github.io/festival-video-archive/
 
-This archive features videos from the Gray Area Festival, consisting of in-person and virtual conference talks, presentations, and group panels.
+This archive features videos from the Gray Area Festival, consisting of in-person and virtual conference talks, presentations, and group panels. The videos in the archive are currently hosted on the [Gray Area YouTube Channel](https://www.youtube.com/@grayareaorg), which is also the source of video metadata.
 
-The archive is built on a flat-file JSON database and includes captions and transcripts for each video, which  improves accessibility and encourages NLP analysis and/or experimentation with LLMs. Preliminary work has been carried out to allow users to filter videos by various curated topics ordered by the frequency of keywords found in the transcripts. View these files in the [./data/topics](data/topics/).
+The archive is built with a flat-file JSON database and includes captions and transcripts for each video, which improves accessibility and encourages NLP analysis and/or experimentation with LLMs. Preliminary work has been carried out to allow users to filter videos by various curated topics ordered by the frequency of keywords found in the transcripts. View these files in the [./data/topics](data/topics/).
 
 The website is entirely client-side, developed using HTML, JavaScript, and Bash. Content can be filtered by year and sorted by title or date.
 
