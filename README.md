@@ -2,13 +2,13 @@
 
 Live at: https://grayareaorg.github.io/festival-video-archive/
 
-A filterable archive of videos from the Gray Area Festival, consisting of in-person and virtual conference talks, presentations, and group panels. The videos in the archive are currently hosted on the [Gray Area YouTube Channel](https://www.youtube.com/@grayareaorg), which is also the source of video metadata.
+A filterable archive of videos from the [Gray Area Festival](https://grayareafestival.io), consisting of in-person and virtual conference talks, presentations, and group panels. The videos in the archive are currently hosted on the Gray Area [YouTube Channel](https://www.youtube.com/@grayareaorg), which is currently the source of video metadata.
 
 The archive is built entirely client-side with flat-file JSON files, and includes english captions for each video, which improves accessibility and encourages filtering, searching, NLP analysis, and/or experimentation with LLMs. Contributions are welcome. These `.vtt` formatted caption files are stored alongside the video metadata JSON in the [data/videos](data/videos/) folder.
 
 Preliminary work has been carried out to allow users to filter videos by various curated topics ordered by the [frequency of key-words](data/wordcount.txt), and [word-count per video](data/wordcount_video_stats.txt) generated from the video captions. View these files in the [data/topics](data/topics/).
 
-This project is open to submissions and suggestions around engaging with this growing collection of content. Feel free to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute an [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
+This project is open to submissions and suggestions around engaging with this growing collection of content. You are welcome to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute to the [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
 
 ## Dev Setup
 
