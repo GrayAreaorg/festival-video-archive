@@ -6,30 +6,8 @@ https://grayareaorg.github.io/festival-video-archive/
 
 ## TODO
 
-- [ ] Filter by topic list
 - [ ] Enhance video metadata by adding more tags (via YouTube)
-
-### Hosting
-
 - [ ] Investigate decentralized storage for videos (IPFS)
-
-
-## Custom Keys via YouTube Description Field
-
-Used for more fidelity in Video Archive. Extra object keys can added to the YouTube description field with the following criteria:
-
-- Metadata delimiter (6 equals signs) "======"
-- `key: value` format
-- Append raw metadata to bottom of YouTube Description field
-- When parsed in the archive JSON, prepended with `meta_`, for example, `festival_year: 2015` becomes `{ "meta_festival_year" : "2015" }` in the archive json
-
-```
-======
-featured: <featured person(s), or group>
-featured_url: https://www.ruhabenjamin.com
-festival_year: 2015
-... additional metadata as needed ...
-```
 
 
 ## Dev Setup
@@ -50,7 +28,6 @@ Run `npm run css-watch` to watch for change and output css to `./dist/output.css
 Or run `npm run css-build` to output minified css to `./dist/output.css` for production.
 
 Run `python3 -m http.server` (optional) launch local http server for testing.
-
 
 
 ## Scripts
@@ -80,6 +57,7 @@ Example
 # get all 2021 videos
 ./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIbQgPDRsUHiawVtahvShN8X ./data/videos/2021/
 ```
+
 
 ### Get YouTube Subs from Json Data
 
@@ -148,6 +126,7 @@ Save output to file via `cat`:
 
 Find and collate vtt's related to the topic of "software": `./bin/search-caption-string.sh data/videos  "software" "programming" "code" "algorhythm" "open source" > data/topics/software.txt`
 
+
 ### Topic List Query Arrays
 
 - AI: "artificial intelligence" " ai "
@@ -165,6 +144,7 @@ Find and collate vtt's related to the topic of "software": `./bin/search-caption
 - Software: "software" "programming" "code" "algorhythm" "open source"
 - Systems: "systems" "chaos" "complexity" "modeling" "simulation" "pattern"
 
+
 ## Various Scripts and Snippets
 
 Convert all topic .txt file lists into json alongside the original files.
@@ -173,4 +153,22 @@ for file in $(find . -type f -name "*.txt"); do
   json_file="${file%.txt}.json"
   node bin/topic_lists_to_json.js "$file" > "$json_file"
 done
+```
+
+
+## Optional Metadata: Custom Keys via YouTube Description Field
+
+Used for more fidelity in Video Archive. Extra object keys can added to the YouTube description field with the following criteria:
+
+- Metadata delimiter (6 equals signs) "======"
+- `key: value` format
+- Append raw metadata to bottom of YouTube Description field
+- When parsed in the archive JSON, prepended with `meta_`, for example, `festival_year: 2015` becomes `{ "meta_festival_year" : "2015" }` in the archive json
+
+```
+======
+featured: <featured person(s), or group>
+featured_url: https://www.ruhabenjamin.com
+festival_year: 2015
+... additional metadata as needed ...
 ```
