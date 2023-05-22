@@ -127,7 +127,8 @@ Find and collate vtt's related to the topic of "software": `./bin/search-caption
 
 
 ### Convert all topic .txt file lists into json alongside the original files.
-```
+```bash
+#!/bin/bash
 for file in $(find . -type f -name "*.txt"); do
   json_file="${file%.txt}.json"
   node bin/topic_lists_to_json.js "$file" > "$json_file"
