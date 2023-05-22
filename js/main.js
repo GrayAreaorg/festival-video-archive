@@ -1,4 +1,3 @@
-const _databaseFilename = "./data/db.json";
 const filterYearStrings = [
   "2022",
   "2021",
@@ -42,7 +41,6 @@ const loadAndCombineJSONFiles = async(fileUrls) => {
       if (!videoMap.has(video.id) || videoMap.get(video.id).num < video.num)
         videoMap.set(video.id, video);
     });
-    // return sorted vides
     return Array.from(videoMap.values()).sort((a, b) => b.num - a.num);
   } catch (error) {
     console.error("Error loading and combining JSON files:", error);
@@ -62,7 +60,7 @@ const DOMContentLoaded = () => {
       allVideos: [],
       topicFilteredVideos: [],
       videos: [], // Alpine.$persist([]),
-      filters: [], // Alpine.$persist([]),
+      filters: {},
       filtersYear: [],
       filtersTopic: [],
       filtersSortBy: [],
@@ -77,13 +75,11 @@ const DOMContentLoaded = () => {
       curPage: 1,
       async init() {
         // load from flatfile json db
-        const _db = await fetchJSON(_databaseFilename);
+        const _db = await fetchJSON("./data/db.json");
         this.videos = this.allVideos = _db.videos;
 
         // select Date filter to start
-        document.querySelectorAll(
-          '#filterSortBy ul li input[value="Date"]'
-        )[0].checked = true;
+        document.querySelectorAll('#filterSortBy ul li input[value="Date"]')[0].checked = true;
         this.filterSortBy("Date");
       },
       async fetchSubs(selVideo) {
@@ -93,8 +89,44 @@ const DOMContentLoaded = () => {
           );
         }
       },
+      filterVideos(filters) {
+        console.log(filters);
+
+        /*
+
+        // TODO;
+        - each filter function sets their own setting, and then
+        - store one outputlist that gets filtered in a single filter function
+        - this manages stage and order of operations better.
+
+        the filter order is:
+
+        - sort
+        - filter year
+        - filter topic
+        - filter title/description
+
+        each setting is set discretely, and then a single filter function is hit.
+
+        reset the pagination when filtering is changed.
+
+        */
+
+
+        // filter by year
+
+
+
+
+
+
+      },
       filterTitleDesc(e) {
         const search = e.target.value;
+
+        this.filters.search = search;
+        this.filterVideos(this.filters);
+        return;
 
         if (!search) {
           console.log('empty');
@@ -113,6 +145,13 @@ const DOMContentLoaded = () => {
         this.filter(this.selectedFilters);
       },
       filterSortBy(sortFilter) {
+
+        this.filters.sortBy = sortFilter;
+        this.filterVideos(this.filters);
+        return;
+
+        console.log('filters', this.filters);
+
         this.sortFilter = sortFilter;
         switch (sortFilter) {
           case "Date":
@@ -122,28 +161,19 @@ const DOMContentLoaded = () => {
             this.sort("title", true);
             break;
         }
+
+
+
       },
-      async filterTopic(topic, prefilteredVids) {
+      async filterTopic(topics) {
+        this.filters.topics = topics;
+        this.filterVideos(this.filters);
+        return;
+
+
         // console.log(`filter => '${topic}'`);
 
-        /*
-        // TODO;
-        - each filter function sets their own setting, and then
-        - store one outputlist that gets filtered in a single filter function
-        - this manages stage and order of operations better.
 
-        the filter order is:
-
-        - date
-        - topic
-        - title/description
-        - order
-
-        each setting is set discretely, and then a single filter function is hit.
-
-        reset the pagination when filtering is changed.
-
-        */
 
         const vids = prefilteredVids ? prefilteredVids : this.allVideos;
 
@@ -177,12 +207,16 @@ const DOMContentLoaded = () => {
           this.filter(this.selectedFilters, this.topicFilteredVideos);
         });
       },
-      filter(selectedFilters, preFilteredVids = []) {
-        this.selectedFilters = selectedFilters;
+      filterYear(festivalYears) {
+        this.filters.years = festivalYears;
+        this.filterVideos(this.filters);
+
+        return
+        this.selectedFilters = festivalYears;
         this.curPage = 1;
-        const vids = preFilteredVids.length > 0 ? preFilteredVids : this.allVideos;
-        if (selectedFilters.length > 0) {
-          this.videos = vids.filter((video) => selectedFilters.includes(video.festival_year));
+        const vids = this.videos > 0 ? this.videos : this.allVideos;
+        if (festivalYears.length > 0) {
+          this.videos = vids.filter((video) => festivalYears.includes(video.festival_year));
         } else {
           this.videos = vids;
         }

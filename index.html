@@ -18,21 +18,18 @@
     <div x-data="videoData">
       <div x-data="filters">
 
-        <header class="mb-5 max-w-md">
-
+        <header class="mb-5 max-w-[30em]">
           <a href="index.html">
             <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" class="max-w-xs mb-4" />
             <h2 class="text-2xl mb-4">Festival Video Archive</h2>
           </a>
-
           <p>
-            A filterable video archive of in-person and virtual conference talks, presentations, and panels from the <a href="https://grayareafestival.io/">Gray Area Festival</a>.
+            A filterable video archive of in-person and virtual conference talks, presentations,
+            and panels from the <a href="https://grayareafestival.io/">Gray Area Festival</a>.
           </p>
-
           <p class="mt-4">
             Source on <a href="https://github.com/GrayAreaorg/festival-video-archive">Github</a>
           </p>
-
         </header>
 
         <a name="viewer"></a>
@@ -105,7 +102,7 @@
 
             <div id="filterYear" class="mr-5">
               <h5 class="text-xs border-b mb-2">YEAR</h5>
-              <ul x-data="filtersYear" x-on:change="filter(filtersYear)">
+              <ul x-data="filtersYear" x-on:change="filterYear(filtersYear)">
                 <template x-for="f in filterYearStrings">
                   <li class="flex-1 mr-4">
                     <label>
