@@ -10,7 +10,6 @@ const filterYearStrings = [
   "2015",
 ];
 const filterSortByStrings = ["Date", "Title"];
-
 const filtersTopicsDir = "./data/topics";
 const filtersTopicStrings = [
   { topic: "AI", data: "ai.json" },

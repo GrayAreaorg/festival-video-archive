@@ -6,7 +6,7 @@ A filterable archive of videos from the Gray Area Festival, consisting of in-per
 
 The archive is built entirely client-side with flat-file JSON files, and includes captions and transcripts for each video, which improves accessibility and encourages filtering, searching, NLP analysis, and/or experimentation with LLMs. Contributions are welcome. These `.vtt` formatted caption files are stored alongside the video metadata JSON in the [data/videos](data/videos/) folder.
 
-Preliminary work has been carried out to allow users to filter videos by various curated topics ordered by the frequency of keywords found in the transcripts. View these files in the [data/topics](data/topics/).
+Preliminary work has been carried out to allow users to filter videos by various curated topics ordered by the [frequency of key-words](data/wordcount.txt), and [word-count per video](data/wordcount_video_stats.txt) generated from the video captions. View these files in the [data/topics](data/topics/).
 
 This project is open to submissions and suggestions around engaging with this growing collection of content. Feel free to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute an [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
 

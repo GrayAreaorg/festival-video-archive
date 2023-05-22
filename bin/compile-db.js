@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-console.info('Node Version', process.version);
+console.info("Node Version", process.version);
 
 if (!process.argv[3]) {
-  console.error('Usage: ' + process.argv[1] + ' [source] [dest]')
+  console.error("Usage: " + process.argv[1] + " [source] [dest]");
   process.exit();
 }
 
@@ -35,7 +35,7 @@ const selectedKeys = [
   "webpage_url",
   "width",
 ];
-const descMetaDelim = "======\n"
+const descMetaDelim = "======\n";
 
 const getAllFiles = (dirPath, fileArray) => {
   const files = fs.readdirSync(dirPath);
@@ -58,7 +58,7 @@ const saveOutput = (outputJson) => {
   } catch (err) {
     console.error(err);
   }
-}
+};
 
 const allFiles = getAllFiles(jsonSrc);
 
@@ -95,9 +95,11 @@ for (let i = 0; i < allFiles.length; i++) {
   }
 
   // parse small thumbnail
-  const thumb196 = originalJson.thumbnails.filter(thumb => thumb.width === 196)
+  const thumb196 = originalJson.thumbnails.filter(
+    (thumb) => thumb.width === 196
+  );
   if (thumb196.length > 0) {
-    reduced.thumbnail_small = thumb196[0].url
+    reduced.thumbnail_small = thumb196[0].url;
   }
 
   // local .vtt if it exists (generate with `bin/get-all-subs.sh`)
@@ -119,14 +121,17 @@ fs.access(jsonDest, fs.constants.F_OK, (err) => {
     // File exists, prompt user to confirm overwrite
     const rl = readline.createInterface({
       input: process.stdin,
-      output: process.stdout
+      output: process.stdout,
     });
-    rl.question(`File '${jsonDest}' already exists. Do you want to overwrite it? (y/n) `, (answer) => {
-      if (answer.toLowerCase() === 'y') {
-        console.log(`Overwriting file '${jsonDest}'...`);
-        saveOutput(outputJson);
+    rl.question(
+      `File '${jsonDest}' already exists. Do you want to overwrite it? (y/n) `,
+      (answer) => {
+        if (answer.toLowerCase() === "y") {
+          console.log(`Overwriting file '${jsonDest}'...`);
+          saveOutput(outputJson);
+        }
+        rl.close();
       }
-      rl.close();
-    });
+    );
   }
 });

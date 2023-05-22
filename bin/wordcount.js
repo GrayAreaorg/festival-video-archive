@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-console.info('Node Version', process.version);
+console.info("Node Version", process.version);
 
 const fs = require("fs");
 const path = require("path");
@@ -104,7 +104,11 @@ async function main(directory, outputFile, includeVideoStats) {
 }
 
 if (!process.argv[3]) {
-  console.error("Usage: " + process.argv[1] + " directory outputFile.txt [--include-video-stats]");
+  console.error(
+    "Usage: " +
+      process.argv[1] +
+      " directory outputFile.txt [--include-video-stats]"
+  );
   process.exit();
 }
 

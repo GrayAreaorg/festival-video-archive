@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [[ $# -eq 0 ]]; then
-    echo "Usage: $0 url [destination]"
-    exit 1
+  echo "Usage: $0 url [destination]"
+  exit 1
 fi
 
 # $1 can be

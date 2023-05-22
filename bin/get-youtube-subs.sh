@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [[ $# -eq 0 ]]; then
-    echo "Usage: $0 youtube_id dest"
-    exit 1
+  echo "Usage: $0 youtube_id dest"
+  exit 1
 fi
 
 if [ -n "$2" ]; then
