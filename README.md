@@ -124,7 +124,7 @@ Find and collate vtt's related to the topic of "software": `./bin/search-caption
 Keywords used to generate the curated topics. Any transcripts containing these key words will be sorted by descending word frequency.
 
 - AI: "artificial intelligence" " ai "
-- Art: " art " "fine art" "gallery"
+- Art: " art " "visual art" "installation art" "immersive art"
 - Biology: "biology" "cell" "genetics" "evolution" "physiology" "biochemistry" "adaptation" "reproduction" "biodiversity" "microbio" "molecular"
 - Decolonialism: "decolonialism" "neocolonialism" "colonial" "indigenous" "imperialism" "sovereignty"
 - Design: "design" "graphic design" "web design" "product design"
@@ -138,8 +138,16 @@ Keywords used to generate the curated topics. Any transcripts containing these k
 - Software: "software" "programming" "code" "algorhythm" "open source"
 - Systems: "systems" "chaos" "complexity" "modeling" "simulation" "pattern"
 
-## Convert all topic .txt file lists into json alongside the original files.
+## TopicList.txt to JSON
 
+[topic_lists_to_json.js](./bin/topic_lists_to_json.js)
+
+Converts a topic list `.txt` file generated from [search-caption-string.sh](./bin/search-caption-string.sh) to JSON format, readable by the front-end.
+
+Usage: `node bin/topic_lists_to_json.js file.txt > file.json`
+
+
+Convert entire folder:
 ```bash
 #!/bin/bash
 for file in $(find . -type f -name "*.txt"); do
