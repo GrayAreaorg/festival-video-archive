@@ -4,12 +4,6 @@ Live at:
 https://grayareaorg.github.io/festival-video-archive/
 
 
-## TODO
-
-- [ ] Enhance video metadata by adding more tags (via YouTube)
-- [ ] Investigate decentralized storage for videos (IPFS)
-
-
 ## Dev Setup
 
 Using [Tailwind](https://tailwindcss.com/) CLI for CSS generation.
