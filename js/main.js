@@ -1,3 +1,4 @@
+const filterSortByStrings = ["Date", "Title"];
 const filterYearStrings = [
   "2022",
   "2021",
@@ -8,8 +9,6 @@ const filterYearStrings = [
   "2016",
   "2015",
 ];
-const filterSortByStrings = ["Date", "Title"];
-const filtersTopicsDir = "./data/topics";
 const filtersTopicStrings = [
   { topic: "AI", data: "ai.json" },
   { topic: "Art", data: "art.json" },
@@ -58,19 +57,13 @@ const DOMContentLoaded = () => {
   document.addEventListener("alpine:init", () => {
     Alpine.data("videoData", () => ({
       allVideos: [],
-      topicFilteredVideos: [],
       videos: [], // Alpine.$persist([]),
       filters: {},
       filtersYear: [],
       filtersTopic: [],
       filtersSortBy: [],
-      selectedFilters: [],
-      topic: [],
       selVideo: {},
       showViewer: false,
-      sortAsc: true,
-      sortCol: "",
-      sortFilter: "",
       pageSize: 24,
       curPage: 1,
       async init() {
@@ -78,7 +71,7 @@ const DOMContentLoaded = () => {
         const _db = await fetchJSON("./data/db.json");
         this.videos = this.allVideos = _db.videos;
 
-        // select Date filter to start
+        // init with sortBy: Date
         document.querySelectorAll('#filterSortBy ul li input[value="Date"]')[0].checked = true;
         this.filterSortBy("Date");
       },
@@ -89,70 +82,64 @@ const DOMContentLoaded = () => {
           );
         }
       },
-      filterVideos(filters) {
-        console.log(filters);
+      async filterVideos(filters) {
 
-        /*
+        // reset pagination to first page
+        this.curPage = 1;
 
-        // TODO;
-        - each filter function sets their own setting, and then
-        - store one outputlist that gets filtered in a single filter function
-        - this manages stage and order of operations better.
-
-        the filter order is:
-
-        - sort
-        - filter year
-        - filter topic
-        - filter title/description
-
-        each setting is set discretely, and then a single filter function is hit.
-
-        reset the pagination when filtering is changed.
-
-        */
-
-
-        // filter by year
-
-
-
-
-
-
-      },
-      filterTitleDesc(e) {
-        const search = e.target.value;
-
-        this.filters.search = search;
-        this.filterVideos(this.filters);
-        return;
-
-        if (!search) {
-          console.log('empty');
+        // filter by topic
+        if (filters.topics && filters.topics.length > 0) {
+          // if we have a topic, they are sorted by relevance, so we deselect 'sortBy'
+          const sortBy = document.querySelectorAll('#filterSortBy ul li input').forEach(el => {
+            el.checked = false;
+          });
+          // get all file urls for the selected topics
+          const fileUrls = [];
+          for (var i = 0; i < filters.topics.length; i++) {
+            const foundTopic = filtersTopicStrings.find((obj) => obj.topic === filters.topics[i]);
+            if (foundTopic) fileUrls.push(`./data/topics/${foundTopic.data}`);
+          }
+          // parse appropriate topic json files
+          const combinedVideos = await loadAndCombineJSONFiles(fileUrls);
+          // filter videos from results
+          const filteredVideos = combinedVideos.map((videoIdObj) => {
+              const videoMatch = this.allVideos.find((video) => video.id === videoIdObj.id);
+              return videoMatch ? videoMatch : null;
+          }).filter((video) => video !== null);
+          this.videos = filteredVideos;
+        } else {
           this.videos = this.allVideos;
         }
 
-        const filtered = this.allVideos.filter(obj =>
-            (obj.title && obj.title.toLowerCase().includes(search.toLowerCase())) ||
-            (obj.description && obj.description.toLowerCase().includes(search.toLowerCase()))
+        // filter by year
+        if (filters.years && filters.years.length > 0) {
+          this.videos = this.videos.filter((video) => filters.years.includes(video.festival_year));
+        }
+
+        // filter by title/desc string fragment
+        if (filters.search) {
+          this.videos = this.videos.filter(obj =>
+            (obj.title && obj.title.toLowerCase().includes(filters.search.toLowerCase())) ||
+            (obj.description && obj.description.toLowerCase().includes(filters.search.toLowerCase()))
           );
-
-        console.log(filtered);
-        console.log(this.topic);
-
-        this.videos = filtered;
-        this.filter(this.selectedFilters);
+        }
       },
-      filterSortBy(sortFilter) {
-
-        this.filters.sortBy = sortFilter;
+      filterYear(festivalYears) {
+        this.filters.years = festivalYears;
         this.filterVideos(this.filters);
         return;
-
-        console.log('filters', this.filters);
-
-        this.sortFilter = sortFilter;
+      },
+      filterTopic(topics) {
+        this.filters.topics = topics;
+        this.filterVideos(this.filters);
+        return;
+      },
+      filterTitleDesc(e) {
+        this.filters.search = e.target.value;
+        this.filterVideos(this.filters);
+        return;
+      },
+      filterSortBy(sortFilter) {
         switch (sortFilter) {
           case "Date":
             this.sort("festival_year", false);
@@ -161,71 +148,11 @@ const DOMContentLoaded = () => {
             this.sort("title", true);
             break;
         }
-
-
-
-      },
-      async filterTopic(topics) {
-        this.filters.topics = topics;
-        this.filterVideos(this.filters);
-        return;
-
-
-        // console.log(`filter => '${topic}'`);
-
-
-
-        const vids = prefilteredVids ? prefilteredVids : this.allVideos;
-
-        if (topic.length == 0) {
-          this.videos = this.allVideos;
-          this.topic = [];
-          this.topicFilteredVideos = [];
-          this.filter(this.selectedFilters);
-          return;
-        }
-
-        this.topic = topic;
-
-        const fileUrls = [];
-        for (var i = 0; i < topic.length; i++) {
-          const t = topic[i];
-          const foundObject = filtersTopicStrings.find((obj) => obj.topic === t);
-          if (foundObject)
-            fileUrls.push(`${filtersTopicsDir}/${foundObject.data}`);
-        }
-
-        loadAndCombineJSONFiles(fileUrls).then((combinedVideos) => {
-          const filteredVideos = combinedVideos
-            .map((videoIdObj) => {
-              const videoMatch = this.allVideos.find((video) => video.id === videoIdObj.id);
-              return videoMatch ? videoMatch : null;
-            })
-            .filter((video) => video !== null);
-
-          this.topicFilteredVideos = filteredVideos;
-          this.filter(this.selectedFilters, this.topicFilteredVideos);
-        });
-      },
-      filterYear(festivalYears) {
-        this.filters.years = festivalYears;
-        this.filterVideos(this.filters);
-
-        return
-        this.selectedFilters = festivalYears;
-        this.curPage = 1;
-        const vids = this.videos > 0 ? this.videos : this.allVideos;
-        if (festivalYears.length > 0) {
-          this.videos = vids.filter((video) => festivalYears.includes(video.festival_year));
-        } else {
-          this.videos = vids;
-        }
       },
       sort(col, asc = true) {
-        this.sortCol = col;
         this.videos.sort((a, b) => {
-          if (a[this.sortCol] < b[this.sortCol]) return asc ? -1 : 1;
-          if (a[this.sortCol] > b[this.sortCol]) return asc ? 1 : -1;
+          if (a[col] < b[col]) return asc ? -1 : 1;
+          if (a[col] > b[col]) return asc ? 1 : -1;
           return;
         });
       },
