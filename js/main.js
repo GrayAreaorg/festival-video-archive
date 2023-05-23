@@ -83,8 +83,6 @@ const DOMContentLoaded = () => {
         }
       },
       async filterVideos(filters) {
-
-        // reset pagination to first page
         this.curPage = 1;
 
         // filter by topic
@@ -140,6 +138,7 @@ const DOMContentLoaded = () => {
         return;
       },
       filterSortBy(sortFilter) {
+        this.curPage = 1;
         switch (sortFilter) {
           case "Date":
             this.sort("festival_year", false);
