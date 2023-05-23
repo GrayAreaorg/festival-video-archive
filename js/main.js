@@ -57,7 +57,7 @@ const DOMContentLoaded = () => {
   document.addEventListener("alpine:init", () => {
     Alpine.data("videoData", () => ({
       allVideos: [],
-      videos: [], // Alpine.$persist([]),
+      videos: [],
       filters: {},
       filtersYear: [],
       filtersTopic: [],
