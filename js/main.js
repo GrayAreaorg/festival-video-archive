@@ -100,11 +100,10 @@ const DOMContentLoaded = () => {
           // parse appropriate topic json files
           const combinedVideos = await loadAndCombineJSONFiles(fileUrls);
           // filter videos from results
-          const filteredVideos = combinedVideos.map((videoIdObj) => {
+          this.videos = combinedVideos.map((videoIdObj) => {
               const videoMatch = this.allVideos.find((video) => video.id === videoIdObj.id);
               return videoMatch ? videoMatch : null;
           }).filter((video) => video !== null);
-          this.videos = filteredVideos;
         } else {
           this.videos = this.allVideos;
         }
