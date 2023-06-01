@@ -24,19 +24,6 @@
             A filterable video archive of in-person and virtual conference talks, presentations,
             and panels from the <a href="https://grayareafestival.io/">Gray Area Festival</a>.
           </p>
-
-          <p class="mt-4">
-            Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
-          </p>
-
-          <p class="mt-4">
-            Source on <a href="https://github.com/GrayAreaorg/festival-video-archive">Github</a>
-          </p>
-
-          <p class="mt-4">
-            <span>&copy; <a href="https://grayarea.org">Gray Area</a> <span x-text="new Date().getFullYear()"></span></span>
-          </p>
-
         </header>
 
         <a name="viewer"></a>
@@ -168,6 +155,20 @@
 
           <div class="inline-block m-4">
             <span x-text="curPage * pageSize - (pageSize-1)"></span>&mdash;<span x-text="Math.min(curPage * pageSize, videos.length)"></span> of <span x-text="videos.length + ' Results'"></span>
+          </div>
+
+          <div class="text-sm">
+            <p class="mt-4">
+              Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
+            </p>
+
+            <p class="mt-4">
+              Source on <a href="https://github.com/GrayAreaorg/festival-video-archive">Github</a>
+            </p>
+
+            <p class="mt-4">
+              <span>&copy; <a href="https://grayarea.org">Gray Area</a> <span x-text="new Date().getFullYear()"></span></span>
+            </p>
           </div>
 
         </footer>
