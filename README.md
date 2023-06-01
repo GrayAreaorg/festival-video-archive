@@ -13,7 +13,7 @@ This project is open to submissions and suggestions around engaging with this gr
 
 ## LICENSE
 
-This work is licensed under a [CC Attribution-NonCommercial-NoDerivatives 4.0 International License]("http://creativecommons.org/licenses/by-nc-nd/4.0/")
+This work and all content therin is licensed under a [CC Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 
 ## Dev Setup
