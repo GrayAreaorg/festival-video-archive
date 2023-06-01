@@ -17,9 +17,9 @@
 
         <header class="mb-5 max-w-[30em] text-sm">
           <a href="index.html">
-            <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" class="max-w-xs mb-4" />
-            <h2 class="text-2xl mb-4">Festival Archive</h2>
+            <img src="static/gray-area-logo-text-small.svg" alt="Gray Area" class="max-w-xs mb-4 float" />
           </a>
+          <h2 class="text-2xl mb-4">Festival Archive</h2>
           <p>
             In-person and virtual conference talks, presentations,
             and panels from the <a href="https://grayareafestival.io/">Gray Area Festival</a>.
@@ -150,12 +150,15 @@
         <!-- footer -->
         <footer>
 
-          <button class="bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="previousPage; document.location.href='#results'">&lsaquo;</button>
-          <button class="ml-1 bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="nextPage; document.location.href='#results'">&rsaquo;</button>
-
-          <div class="inline-block m-4">
+          <div class="inline-block m-4 ml-0">
             <span x-text="curPage * pageSize - (pageSize-1)"></span>&mdash;<span x-text="Math.min(curPage * pageSize, videos.length)"></span> of <span x-text="videos.length + ' Results'"></span>
           </div>
+
+          <div class="inline-block">
+            <button class="bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="previousPage; document.location.href='#results'">&lsaquo;</button>
+            <button class="ml-1 bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="nextPage; document.location.href='#results'">&rsaquo;</button>
+          </div>
+
 
           <div class="text-sm">
             <p class="mt-4">
@@ -165,7 +168,7 @@
               Source on <a href="https://github.com/GrayAreaorg/festival-video-archive">Github</a>
             </p>
             <p class="mt-4">
-              <span>&copy; <a href="https://grayarea.org">Gray Area</a> <span x-text="new Date().getFullYear()"></span></span>
+              <span>&copy; <span x-text="new Date().getFullYear()"></span> <a href="https://grayarea.org">Gray Area</a></span>
             </p>
           </div>
 
