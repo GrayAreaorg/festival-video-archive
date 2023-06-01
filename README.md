@@ -10,6 +10,12 @@ Preliminary work has been carried out to allow users to filter videos by various
 
 This project is open to submissions and suggestions around engaging with this growing collection of content. You are welcome to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute to the [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
 
+
+## LICENSE
+
+This work is licensed under a [CC Attribution-NonCommercial-NoDerivatives 4.0 International License]("http://creativecommons.org/licenses/by-nc-nd/4.0/")
+
+
 ## Dev Setup
 
 Built Using
