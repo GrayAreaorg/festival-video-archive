@@ -1,6 +1,6 @@
 # Gray Area Festival Video Archive
 
-Live at: https://grayareaorg.github.io/festival-video-archive/
+Live at: https://archive.grayareafestival.io
 
 A filterable archive of videos from the [Gray Area Festival](https://grayareafestival.io), consisting of in-person and virtual conference talks, presentations, and group panels. The videos in the archive are currently hosted on the Gray Area [YouTube Channel](https://www.youtube.com/@grayareaorg), which is currently the source of video metadata.
 
