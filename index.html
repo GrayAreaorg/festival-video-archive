@@ -77,9 +77,7 @@
         <!-- filters -->
         <div id="filters" class="bg-zinc-900 p-5 inline-block">
           <h4 class="">FILTERS</h4>
-
           <div class="flex mt-4">
-
             <div id="filterSortBy" class="mr-5">
               <h5 class="text-xs border-b mb-2">SORT BY</h5>
               <ul x-data="filtersSortBy" x-on:change="filterSortBy(filtersSortBy);">
@@ -93,7 +91,6 @@
                 </template>
               </ul>
             </div>
-
             <div id="filterYear" class="mr-5">
               <h5 class="text-xs border-b mb-2">YEAR</h5>
               <ul x-data="filtersYear" x-on:change="filterYear(filtersYear)">
@@ -107,7 +104,6 @@
                 </template>
               </ul>
             </div>
-
             <div id="filterTopic" class="mr-2">
               <h5 class="text-xs border-b mb-2">TOPIC</h5>
               <ul x-data="filtersTopic" x-on:change="filterTopic(filtersTopic);">
@@ -122,17 +118,14 @@
               </ul>
             </div>
           </div>
-
           <div class="mt-4">
             <h5 class="text-xs border-b mb-2">TITLE & DESC</h5>
             <input @input.debounce="filterTitleDesc" type="text" class="w-full" x-@ placeholder="Filter String">
           </div>
-
         </div>
 
-        <a name="results"></a>
-
         <!-- results -->
+        <a name="results"></a>
         <div class="flex-auto max-w-full my-4">
           <template x-if="!videos">
             <span>Loading...</span>
@@ -149,17 +142,13 @@
 
         <!-- footer -->
         <footer>
-
           <div class="inline-block m-4 ml-0">
             <span x-text="curPage * pageSize - (pageSize-1)"></span>&mdash;<span x-text="Math.min(curPage * pageSize, videos.length)"></span> of <span x-text="videos.length + ' Results'"></span>
           </div>
-
           <div class="inline-block">
             <button class="bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="previousPage; document.location.href='#results'">&lsaquo;</button>
             <button class="ml-1 bg-zinc-600 hover:bg-slate-700 p-1 px-4 rounded-full" @click="nextPage; document.location.href='#results'">&rsaquo;</button>
           </div>
-
-
           <div class="text-sm">
             <p class="mt-4">
               Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
@@ -171,7 +160,6 @@
               <span>&copy; <span x-text="new Date().getFullYear()"></span> <a href="https://grayarea.org">Gray Area</a></span>
             </p>
           </div>
-
         </footer>
 
       </div>
