@@ -6,21 +6,9 @@
 
 # Usage: script.sh sourceDir query1 [query2 query3 ...]
 
-# Query Arrays
-# - AI: "artificial intelligence" " ai "
-# - Art: " art " "fine art" "gallery"
-# - Biology: "biology" "cell" "genetics" "evolution" "physiology" "biochemistry" "adaptation" "reproduction" "biodiversity" "microbio" "molecular"
-# - Decolonialism: "decolonialism" "neocolonialism" "colonial" "indigenous" "imperialism" "sovereignty"
-# - Design: "design" "graphic design" "web design" "product design"
-# - Ecology: "ecology" "earth" "climate change" "ecosystem" "biodiversity" "conservation" "environment"
-# - History: "history" "historical" "past" "era" "ancient" "civilization" "culture" "heritage"
-# - Indigenous Wisdom: "indigenous" "wisdom" "elder" "past" "native" "heritage" "spiritual"
-# - Machine Learning: "machine learning" " ml " "neural net"
-# - Metaverse: " ar " " vr " " xr " "augmented reality" "mixed reality" "virtual reality" "immersive" "virtual world"
-# - Music: "music" "song" "concert" "composition" "melody"
-# - Philosophy: "philosophy" "metaphysics" "ethics" "aesthetic" "phenomenology"
-# - Software: "software" "programming" "code" "algorhythm" "open source"
-# - Systems: "systems" "chaos" "complexity" "modeling" "simulation" "pattern"
+# example usage:
+# ./bin/search-caption-string.sh ./data/videos " art " "fine art" "gallery" > ./data/topics/art.txt
+# notice spaces between specific key words to isolate them, rather then match fragments of other words.
 
 if [[ $# -eq 0 ]]; then
     echo "Usage: $0 sourceDir query1 [query2 query3 ...]"

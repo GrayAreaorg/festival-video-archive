@@ -17,6 +17,7 @@ set -x
 ./bin/search-caption-string.sh ./data/videos "software" "programming" "code" "algorithm" "open source" > ./data/topics/software.txt
 ./bin/search-caption-string.sh ./data/videos "systems" "chaos" "complexity" "modeling" "simulation" "pattern" > ./data/topics/systems.txt
 
+# convert to json
 for file in $(find ./data/topics/ -type f -name "*.txt"); do
   json_file="${file%.txt}.json"
   node bin/topic_lists_to_json.js "$file" > "$json_file"

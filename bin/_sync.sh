@@ -4,7 +4,6 @@ YELLOW="\033[33m"
 RED="\033[31m"
 BLUE="\033[34m"
 RESET="\033[0m"
-# echo -e "${YELLOW}Yellow Text${RESET}"
 
 SOURCE="./data/videos"
 
