@@ -33,7 +33,7 @@
   18 ./data/videos/2021/Nathan Shaffer ｜ Gray Area Festival 2021 [Z-mMqKfpZ9Q].en.vtt
   18 ./data/videos/2019/Sarah Brin ｜ Gray Area Festival 2019 [XfS-AMYIXsU].en.vtt
   18 ./data/videos/2019/Brenda Laurel ｜ Gray Area Festival 2019 Keynote [ghupMCIf_aY].en.vtt
-  18 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
+  18 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
   17 ./data/videos/2020/Bin Ends (Walkthrough Only) ｜ Gray Area Festival 2020 [ajYH8V5RdW0].en.vtt
   16 ./data/videos/2021/Peter Wu ｜ Gray Area Festival 2021 [h9HcxN6lVzw].en.vtt
   15 ./data/videos/2021/Mckenzie Wark ｜ Gray Area Festival 2021 [JTxho9yT0js].en.vtt

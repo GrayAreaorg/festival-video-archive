@@ -85,7 +85,7 @@
    3 ./data/videos/2018/Theo Watson ｜ Gray Area Festival 2018 [4jBP6nSfAUo].en.vtt
    3 ./data/videos/2018/Rhea Myers ｜ the 2018 Gray Area Festival [0qoaQgbD1mI].en.vtt
    3 ./data/videos/2018/Ingrid LaFleur ｜ Gray Area Festival 2018 [sk6dHbPNjSM].en.vtt
-   3 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
+   3 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
    3 ./data/videos/2017/Juliette Bibasse ｜ the 2017 Gray Area Festival [PZzXlvnoR5E].en.vtt
    3 ./data/videos/2017/Black Quantum Futurism ｜ Moor Mother + Rasheedah Phillips ｜  the Gray Area Festival 2017 [Ko8QCaGHXVY].en.vtt
    3 ./data/videos/2016/Cultural Security ｜ Erik Nemeth ｜ the 2016 Gray Area Festival [Z19r3bB5tEk].en.vtt

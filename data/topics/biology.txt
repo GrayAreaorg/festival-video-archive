@@ -34,7 +34,7 @@
    6 ./data/videos/2020/D. Fox Harrell ｜ Gray Area Festival 2020 Keynote [nh--7UOAJMY].en.vtt
    6 ./data/videos/2019/Peter Hirshberg ｜ Gray Area Festival 2019 [LzUaiwCRO6k].en.vtt
    6 ./data/videos/2018/Rhea Myers ｜ the 2018 Gray Area Festival [0qoaQgbD1mI].en.vtt
-   6 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
+   6 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
    6 ./data/videos/2018/Claire L Evans ｜ Gray Area Festival 2018 [evwWTQ7LRRM].en.vtt
    6 ./data/videos/2017/Gretta Louw ｜ the 2017 Gray Area Festival [p_wzIwH4Nho].en.vtt
    6 ./data/videos/2016/Keynote ｜ Megan Prelinger ｜ the 2016 Gray Area Festival [WazOE-3nd-8].en.vtt

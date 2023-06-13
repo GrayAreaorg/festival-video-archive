@@ -63,7 +63,7 @@
    6 ./data/videos/2018/Sophie Kahn ｜ Gray Area Festival 2018 [m6JURPO27qk].en.vtt
    6 ./data/videos/2018/Nicolas Maigret ｜ Gray Area Festival 2018 [59VObkSvVLY].en.vtt
    6 ./data/videos/2018/Cynthia Gayton ｜ Gray Area Festival 2018 [xEkOzxXNF4g].en.vtt
-   6 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
+   6 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
    6 ./data/videos/2017/Paul Dillinger ｜ the 2017 Gray Area Festival [aIjggg3Fpd8].en.vtt
    6 ./data/videos/2017/Lauren McCarthy ｜ the 2017 Gray Area Festival [l1qeNMXccvA].en.vtt
    6 ./data/videos/2017/Hyphen Labs ｜ the Gray Area Festival 2017 [ByptzVF5Hgk].en.vtt

@@ -34,7 +34,7 @@
    3 ./data/videos/2019/Brenda Laurel ｜ Gray Area Festival 2019 Keynote [ghupMCIf_aY].en.vtt
    3 ./data/videos/2018/Ruth Catlow ｜ the Gray Area Festival 2018 [OyWBRYXkTlM].en.vtt
    3 ./data/videos/2018/Primavera De Filippi ｜ the 2018 Gray Area Festival [YBE5Kuz7yJA].en.vtt
-   3 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
+   3 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
    3 ./data/videos/2017/Newton Harrison ｜ the 2017 Gray Area Festival [VsWKnam-5bY].en.vtt
    3 ./data/videos/2017/Black Quantum Futurism ｜ Moor Mother + Rasheedah Phillips ｜  the Gray Area Festival 2017 [Ko8QCaGHXVY].en.vtt
    3 ./data/videos/2017/Angela Washko ｜ the Gray Area Festival 2017 [NExzfQFMU-o].en.vtt

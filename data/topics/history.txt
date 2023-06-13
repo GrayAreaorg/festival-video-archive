@@ -73,7 +73,7 @@
   42 ./data/videos/2021/Peter Wu ｜ Gray Area Festival 2021 [h9HcxN6lVzw].en.vtt
   42 ./data/videos/2021/Huntrezz ｜ Gray Area Festival 2021 [C6EZ8nes3hg].en.vtt
   42 ./data/videos/2018/Cynthia Gayton ｜ Gray Area Festival 2018 [xEkOzxXNF4g].en.vtt
-  42 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
+  42 ./data/videos/2018/Clément Renaud ｜ Gray Area Festival 2018 [OmNeF5ZNUmE].en.vtt
   42 ./data/videos/2015/How Do We Do Art In A Boom？ ｜ Eric Rodenbeck ｜ The Gray Area Festival 2015 [t9L13rQBOjE].en.vtt
   39 ./data/videos/2022/Caroline Sinders ｜ Gray Area Festival 2022 [s59CPSgkOm8].en.vtt
   39 ./data/videos/2021/Auriea Harvey ｜ Gray Area Festival 2021 [cM0HhCGE8F0].en.vtt

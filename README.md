@@ -40,6 +40,12 @@ CSS Build Scripts
 
 # Scripts
 
+## Sync all data
+
+Download all video data, vtt's, topic lists, and compile json database in one command.
+
+`./bin/_sync.sh`
+
 ## Generate Topic Lists
 
 [search-caption-string.sh](./bin/search-caption-string.sh)
@@ -66,6 +72,10 @@ Example Output:
 Save output to file via `cat`:
 
 Find and collate vtt's related to the topic of "software": `./bin/search-caption-string.sh data/videos  "software" "programming" "code" "algorhythm" "open source" > data/topics/software.txt`
+
+### Generate All Topic Lists
+
+`./bin/gen-all-topics.sh`
 
 ### Topic List Query Arrays
 
