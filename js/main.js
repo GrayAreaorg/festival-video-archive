@@ -47,6 +47,8 @@ const loadAndCombineJSONFiles = async(fileUrls) => {
   }
 }
 
+const isEmpty = (str) => (str === undefined || str === null || str === '');
+
 const onReady = () => {};
 const DOMContentLoaded = () => {
   if (document.readyState !== "loading") {
@@ -62,6 +64,7 @@ const DOMContentLoaded = () => {
       filtersYear: [],
       filtersTopic: [],
       filtersSortBy: [],
+      curSort: "",
       selVideo: {},
       showViewer: false,
       pageSize: 24,
@@ -70,22 +73,117 @@ const DOMContentLoaded = () => {
         // load from flatfile json db
         const _db = await fetchJSON("./data/db.json");
         this.videos = this.allVideos = _db.videos;
+        
+        this.setStatefromURL();
+      },
+      setURLState () {
+        const urlState = {
+          selVideo: this.selVideo,
+          filters: this.filters,
+          sort: this.curSort,
+          page: this.curPage
+        }
 
-        // init with sortBy: Date
-        document.querySelectorAll('#filterSortBy ul li input[value="Date"]')[0].checked = true;
-        this.filterSortBy("Date");
+        let hash = "";
 
-        // check location hash for video link and load it
-        var hash = window.location.hash;
-        var match = hash.match(/^#v=(.+)/);
-        if (match) {
+        // selected video
+        if (!isEmpty(urlState.selVideo && urlState.selVideo.display_id)) {
+          hash += `display_id=${urlState.selVideo.display_id}&`
+        }
+
+        // filters
+        if (!isEmpty(urlState.filters)) {
+          if (!isEmpty(urlState.filters.topics)) {
+            hash += `filterTopics=${urlState.filters.topics.join()}&`
+          }
+          if (!isEmpty(urlState.filters.years)) {
+            hash += `filterYears=${urlState.filters.years.join()}&`
+          }          
+          if (!isEmpty(urlState.filters.search)) {
+            hash += `filterSearch=${urlState.filters.search}&`
+          }                    
+        }
+
+        // sort
+        if (!isEmpty(urlState.sort)) {
+          hash += `sort=${urlState.sort}&`
+        }
+
+        // page
+        if (!isEmpty(urlState.page)) {
+          hash += `page=${urlState.page}&`
+        }
+
+        // use a timeout here in case we use the hash to scroll to specific anchor tags
+        setTimeout(() => {
+          window.location.hash = hash;
+        }, 100);
+      },
+      setStatefromURL () {
+        
+        var params = new URLSearchParams(window.location.hash.split('#')[1]);
+
+        const splitParams = (str) => {
+          return typeof str === 'string' && str !== '' ? str.split(',') : null;
+        }
+
+        const urlState = {
+          display_id: params.get('display_id'),
+          filters: {
+            topics: splitParams(params.get('filterTopics')),
+            years: splitParams(params.get('filterYears')),
+            search: params.get('filterSearch')
+          },
+          sort: params.get('sort'),
+          page: params.get('page')
+        }
+
+        // load video from state
+        if (urlState.display_id) {
           document.querySelector("a[name='viewer']").scrollIntoView();
-            var someString = match[1];
-            var video = this.allVideos.find(video => video.id === someString);
-            this.selVideo = video;
-            this.showViewer = true; 
-            this.fetchSubs(this.selVideo); 
+          var video = this.allVideos.find(video => video.id === urlState.display_id);
+          this.selVideo = video;
+          this.showViewer = true; 
+          this.fetchSubs(this.selVideo);           
+        }
+
+        // set sort
+        if (urlState.sort) {
+          document.querySelectorAll(`#filterSortBy ul li input[value="${urlState.sort}"]`)[0].checked = true;
+          this.filterSortBy(urlState.sort)
+        }
+
+        // set filter topic elements
+        if (urlState.filters.topics) {
+          urlState.filters.topics.map((v) => {
+            document.querySelectorAll(`#filterTopic ul li input[value="${v}"]`)[0].checked = true;
+          })
+          this.filtersTopic = urlState.filters.topics;
+          this.filterTopic(urlState.filters.topics);
+        }
+
+        // set filter years
+        if (urlState.filters.years) {
+          urlState.filters.years.map((v) => {
+            document.querySelectorAll(`#filterYear ul li input[value="${v}"]`)[0].checked = true;
+          })
+          this.filtersYear = urlState.filters.years;
+          this.filterYear(urlState.filters.years);
         }       
+        
+        // set filter search
+        if (urlState.filters.search) {
+          const input = document.querySelectorAll(`#filterSearch input`)[0];
+          input.value = urlState.filters.search;
+          this.filters.search = urlState.filters.search;
+          this.filterVideos(this.filters);
+        }
+
+        // set page
+        if (urlState.page) {
+          this.curPage = urlState.page;
+        }
+
       },
       async fetchSubs(selVideo) {
         if (selVideo.subtitlesFile) {
@@ -132,12 +230,8 @@ const DOMContentLoaded = () => {
             (obj.description && obj.description.toLowerCase().includes(filters.search.toLowerCase()))
           );
         }
-      },
-      setSelVideo(videoDisplayId) {
-        // set the window hash to the video display id, after navigating to the viewer
-        setTimeout(() => {
-          window.location.hash = videoDisplayId
-        }, 150);
+
+        this.setURLState();
       },
       filterYear(festivalYears) {
         this.filters.years = festivalYears;
@@ -164,6 +258,8 @@ const DOMContentLoaded = () => {
             this.sort("title", true);
             break;
         }
+        this.curSort = sortFilter;
+        this.setURLState();
       },
       sort(col, asc = true) {
         this.videos.sort((a, b) => {
@@ -174,9 +270,11 @@ const DOMContentLoaded = () => {
       },
       nextPage() {
         if (this.curPage * this.pageSize < this.videos.length) this.curPage++;
+        this.setURLState();
       },
       previousPage() {
         if (this.curPage > 1) this.curPage--;
+        this.setURLState();
       },
       pagedVideos() {
         if (this.videos) {
