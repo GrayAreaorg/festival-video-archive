@@ -74,6 +74,18 @@ const DOMContentLoaded = () => {
         // init with sortBy: Date
         document.querySelectorAll('#filterSortBy ul li input[value="Date"]')[0].checked = true;
         this.filterSortBy("Date");
+
+        // check location hash for video link and load it
+        var hash = window.location.hash;
+        var match = hash.match(/^#v=(.+)/);
+        if (match) {
+          document.querySelector("a[name='viewer']").scrollIntoView();
+            var someString = match[1];
+            var video = this.allVideos.find(video => video.id === someString);
+            this.selVideo = video;
+            this.showViewer = true; 
+            this.fetchSubs(this.selVideo); 
+        }       
       },
       async fetchSubs(selVideo) {
         if (selVideo.subtitlesFile) {
@@ -120,6 +132,12 @@ const DOMContentLoaded = () => {
             (obj.description && obj.description.toLowerCase().includes(filters.search.toLowerCase()))
           );
         }
+      },
+      setSelVideo(videoDisplayId) {
+        // set the window hash to the video display id, after navigating to the viewer
+        setTimeout(() => {
+          window.location.hash = videoDisplayId
+        }, 150);
       },
       filterYear(festivalYears) {
         this.filters.years = festivalYears;

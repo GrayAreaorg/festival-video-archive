@@ -130,7 +130,7 @@
             <span>Loading...</span>
           </template>
           <template x-for="video in pagedVideos">
-            <a href="#viewer" class="inline-block mr-4 mb-4" x-on:click="selVideo = video; fetchSubs(selVideo); showViewer = true">
+            <a href="#viewer" class="inline-block mr-4 mb-4" x-on:click="selVideo = video; fetchSubs(selVideo); showViewer = true; setSelVideo('#v='+video.display_id)">
               <div class="hover:underline hover:opacity-70 bg-zinc-900 p-5 inline-block w-[354px] h-[328px] align-top">
                 <img :src="video.thumbnail_small" class="w-full mb-4" />
                 <h3 x-text="video.title" class="w-60"></h3>
