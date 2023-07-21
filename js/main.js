@@ -69,7 +69,17 @@ const DOMContentLoaded = () => {
       showViewer: false,
       pageSize: 24,
       curPage: 1,
+      version: "",
       async init() {
+
+        // preamble
+        const _package = await fetchJSON("./package.json");
+        console.log(_package.name);
+        console.log('license:', _package.license);
+        console.log('version:', _package.version);
+        this.version = _package.version;
+        console.log('---');
+
         // load from flatfile json db
         const _db = await fetchJSON("./data/db.json");
         this.videos = this.allVideos = _db.videos;

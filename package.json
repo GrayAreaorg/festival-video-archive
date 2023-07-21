@@ -1,4 +1,17 @@
 {
+  "name": "grayareaorg-festival-video-archive",
+  "version": "1.0.1",
+  "author": "Gabriel Dunne <gdunne@quilime.com> (https://quilime.com)",
+  "description": "Filterable archive of videos from the Gray Area Festival.",
+  "homepage": "https://archive.grayareafestival.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grayareaorg/festival-video-archive/"
+  },
+  "bugs": {
+    "url": "https://github.com/grayareaorg/festival-video-archive/issues"
+  },
+  "license": "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
   "scripts": {
     "css-watch": "npx tailwindcss -i ./css/style.css -o ./dist/output.css --watch",
     "css-build": "npx tailwindcss -i ./css/style.css -o ./dist/output.css --minify"
