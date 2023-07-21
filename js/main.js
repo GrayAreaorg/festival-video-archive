@@ -88,7 +88,7 @@ const DOMContentLoaded = () => {
 
         // selected video
         if (!isEmpty(urlState.selVideo && urlState.selVideo.display_id)) {
-          hash += `display_id=${urlState.selVideo.display_id}&`
+          hash += `v=${urlState.selVideo.display_id}&`
         }
 
         // filters
@@ -114,21 +114,20 @@ const DOMContentLoaded = () => {
           hash += `page=${urlState.page}&`
         }
 
-        // use a timeout here in case we use the hash to scroll to specific anchor tags
+        // use a timeout here to allow the interface to use to anchor tags
         setTimeout(() => {
           window.location.hash = hash;
         }, 100);
       },
       setStatefromURL () {
-        
-        var params = new URLSearchParams(window.location.hash.split('#')[1]);
+        const params = new URLSearchParams(window.location.hash.split('#')[1]);
 
         const splitParams = (str) => {
           return typeof str === 'string' && str !== '' ? str.split(',') : null;
         }
 
         const urlState = {
-          display_id: params.get('display_id'),
+          display_id: params.get('v'),
           filters: {
             topics: splitParams(params.get('filterTopics')),
             years: splitParams(params.get('filterYears')),
@@ -171,7 +170,7 @@ const DOMContentLoaded = () => {
           this.filterYear(urlState.filters.years);
         }       
         
-        // set filter search
+        // set filter str search
         if (urlState.filters.search) {
           const input = document.querySelectorAll(`#filterSearch input`)[0];
           input.value = urlState.filters.search;
@@ -179,7 +178,7 @@ const DOMContentLoaded = () => {
           this.filterVideos(this.filters);
         }
 
-        // set page
+        // set page num
         if (urlState.page) {
           this.curPage = urlState.page;
         }
