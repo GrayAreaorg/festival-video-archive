@@ -69,7 +69,7 @@ Example Output:
   ...
 ```
 
-Save output to file via `cat`:
+Save output to file via redirection `>`:
 
 Find and collate vtt's related to the topic of "software": `./bin/search-caption-string.sh data/videos  "software" "programming" "code" "algorhythm" "open source" > data/topics/software.txt`
 
