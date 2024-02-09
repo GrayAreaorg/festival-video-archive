@@ -780,7 +780,7 @@ input {
 
   #filters ul {
     display: flex;
-    max-height: 15rem;
+    max-height: 16rem;
     flex-direction: column;
     flex-wrap: wrap;
   }
