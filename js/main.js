@@ -1,5 +1,6 @@
 const filterSortByStrings = ["Date", "Title"];
 const filterYearStrings = [
+  "2023",
   "2022",
   "2021",
   "2020",
@@ -143,7 +144,7 @@ const DOMContentLoaded = () => {
             years: splitParams(params.get('filterYears')),
             search: params.get('filterSearch')
           },
-          sort: params.get('sort'),
+          sort: params.get('sort') ? params.get('sort') : "Date",
           page: params.get('page')
         }
 

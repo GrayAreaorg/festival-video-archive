@@ -17,6 +17,6 @@
     "css-build": "npx tailwindcss -i ./css/style.css -o ./dist/output.css --minify"
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.6"
   }
 }

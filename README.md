@@ -177,6 +177,7 @@ Example
 
 ### Youtube Playlists
 
+- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZ6OtS-D6PUpn4TflgVqi7R # 2023
 - https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYq6FBpOBHfHchjI0zTYINO # 2022
 - https://www.youtube.com/playlist?list=PLm8zJ0HKEJIbQgPDRsUHiawVtahvShN8X # 2021
 - https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaarwTpOzGg4DXXVLWy2GVU # 2020

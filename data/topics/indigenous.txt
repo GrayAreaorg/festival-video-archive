@@ -4,15 +4,18 @@
   69 ./data/videos/2017/Black Quantum Futurism ｜ Moor Mother + Rasheedah Phillips ｜  the Gray Area Festival 2017 [Ko8QCaGHXVY].en.vtt
   57 ./data/videos/2021/DON.XYZ, Sammie Veeler ｜ Gray Area Festival 2021 [ePZvnuy_f48].en.vtt
   43 ./data/videos/2021/Tabita Rezaire ｜ Gray Area Festival 2021 [3PbFBmMFTcE].en.vtt
+  39 ./data/videos/2016/The Build ｜ Gene Youngblood  ｜ 2016 Gray Area Festival ｜ Closing Keynote [yA8cRPXjdJw].en.vtt
   36 ./data/videos/2021/Tiare Ribeaux ｜ Gray Area Festival 2021 [HaVi0EovNGI].en.vtt
   33 ./data/videos/2021/Jeremy Couillard ｜ Gray Area Festival 2021 [PasE03HUlqE].en.vtt
   33 ./data/videos/2018/Julia Kaganskiy ｜ Gray Area Festival 2018 [CWNBqvXMx-M].en.vtt
+  27 ./data/videos/2023/Raphael Arar ｜ Gray Area Festival 2023 [svjvqmg03W8].en.vtt
   27 ./data/videos/2021/Nathan Shaffer ｜ Gray Area Festival 2021 [Z-mMqKfpZ9Q].en.vtt
   27 ./data/videos/2021/Cheyenne Concepcion ｜ Gray Area Festival 2021 [xJm1Q9zKAaQ].en.vtt
   27 ./data/videos/2017/Gretta Louw ｜ the 2017 Gray Area Festival [p_wzIwH4Nho].en.vtt
   24 ./data/videos/2022/Timothy Morton ｜ Gray Area Festival 2022 [axKCKLlVdF4].en.vtt
   24 ./data/videos/2021/Mckenzie Wark ｜ Gray Area Festival 2021 [JTxho9yT0js].en.vtt
   24 ./data/videos/2021/Audrey Tang, Benjamin Bratton ｜ Gray Area Festival 2021 [eo-HS92HeE4].en.vtt
+  21 ./data/videos/2023/Kelani Nichole ｜ Gray Area Festival 2023 [frhIaCirM0I].en.vtt
   21 ./data/videos/2021/Shu Lea Cheang ｜ Gray Area Festival 2021 [J8WgTt6iLPE].en.vtt
   18 ./data/videos/2022/The End Of You, ＂Beginning of Us＂ ｜ Gray Area Festival 2022 [vu8VHgf3LVI].en.vtt
   18 ./data/videos/2022/Caroline Sinders ｜ Gray Area Festival 2022 [s59CPSgkOm8].en.vtt
@@ -29,12 +32,16 @@
   15 ./data/videos/2017/Nora Al Badri and Jan Nicolai Nelles ｜ the 2017 Gray Area Festival [T7Xcs-_7dEo].en.vtt
   15 ./data/videos/2016/Cultural Security ｜ Erik Nemeth ｜ the 2016 Gray Area Festival [Z19r3bB5tEk].en.vtt
   15 ./data/videos/2015/The School of Poetic Computation ｜ Zach Lieberman ｜ The Gray Area Festival 2015 [0F8EZU6B-jE].en.vtt
+  12 ./data/videos/2023/Sammie Veeler and  Don Hanson ｜ Gray Area Festival 2023 [MFTtjh6_3Tc].en.vtt
+  12 ./data/videos/2023/CripTech Prototypes Dev Panel ｜ Gray Area Festival 2023 [7dKhtEU0zno].en.vtt
   12 ./data/videos/2020/D. Fox Harrell ｜ Gray Area Festival 2020 Keynote [nh--7UOAJMY].en.vtt
   12 ./data/videos/2019/Kathleen Cohen ｜ Gray Area Festival 2019 [3iksTpFEUDU].en.vtt
   12 ./data/videos/2018/Simon Denny ｜ Gray Area Festival 2018 [tS0tfF_1hu4].en.vtt
   12 ./data/videos/2016/Catalyzing Innovation in Story ｜ Kamal Sinclair at the 2016 Gray Area Festival [CbyNk-802_g].en.vtt
   12 ./data/videos/2016/Beyond the Bubble： The Paradoxes of Perspective ｜ David McConville ｜ the 2016 Gray Area Festival [m4DDTu9hGmQ].en.vtt
+  12 ./data/videos/2016/Beyond the Bubble： The Paradoxes of Perspective ｜ David McConville ｜ 2016 Gray Area Festival [m4DDTu9hGmQ].en.vtt
   11 ./data/videos/2019/ZERO1 American Arts Incubator Panel  ｜ Gray Area Festival 2019 [Ce7_72jPcvM].en.vtt
+   9 ./data/videos/2023/Crip Rave Panel ｜ Gray Area Festival 2023 [RbOMUzAXksM].en.vtt
    9 ./data/videos/2022/Alice Yuan Zhang ｜ Gray Area Festival 2022 [WlHeIo2JQsQ].en.vtt
    9 ./data/videos/2021/A. M. Darke ｜ Gray Area Festival 2021 [yCu_dqGNRZM].en.vtt
    9 ./data/videos/2020/ZERO1 Panel ｜ Gray Area Festival 2020 [0uXQCz6tu2c].en.vtt
@@ -49,6 +56,9 @@
    9 ./data/videos/2017/Caroline Sinders ｜ the Gray Area Festival 2017 [kvefuhhweSk].en.vtt
    9 ./data/videos/2016/How do we foster a critical digital culture in the Bay Area？ ｜ Ceci Moss ｜ The Gray Area Festival [xQvMsf1VUMw].en.vtt
    7 ./data/videos/2021/Joey Holder ｜ Gray Area Festival 2021 [fG2PQ0JN5p4].en.vtt
+   6 ./data/videos/2023/Rethinking Digital Ownership Panel ｜ Gray Area Festival 2023 [oUgpDRRwMrQ].en.vtt
+   6 ./data/videos/2023/Melissa Malzkuhn ｜ Gray Area Festival 2023 [Jt6-yHXbmT4].en.vtt
+   6 ./data/videos/2023/C⧸Change Panel ｜ Gray Area Festival 2023 [jgHu05uLRvg].en.vtt
    6 ./data/videos/2022/Kyle McDonald ｜ Gray Area Festival 2022 [mrNraumzIhk].en.vtt
    6 ./data/videos/2022/Hans Ulrich Obrist & Paola Antonelli ｜ Gray Area Festival 2022 [yZbYWJXjVq0].en.vtt
    6 ./data/videos/2022/Catherine Stihler ｜ Gray Area Festival 2022 [lxlTu5AZofg].en.vtt
@@ -70,8 +80,14 @@
    6 ./data/videos/2017/Dawn Danby ｜ the 2017 Gray Area Festival [vxQabgc_4vg].en.vtt
    6 ./data/videos/2016/Within the Context of All Contexts ｜ Pablo Garcia ｜ The 2016 Gray Area Festival [VUCjh7uzMUc].en.vtt
    6 ./data/videos/2016/The Stack We Have and The Stack To Come ｜ Benjamin Bratton ｜ The 2016 Gray Area Festival [HRiAF6ILpxw].en.vtt
+   6 ./data/videos/2016/The Stack We Have and The Stack To Come ｜ Benjamin Bratton ｜  2016 Gray Area Festival [HRiAF6ILpxw].en.vtt
    6 ./data/videos/2015/Responsibility in Democratization ｜ Jono Brandel ｜ The Gray Area Festival 2015 [tzGtJnhOSFg].en.vtt
    6 ./data/videos/2015/Quantum Leaps, The Ambiguous Futures of Design ｜ Paola Antonelli ｜ The Gray Area Festival 2015 [pyso_42Y1NI].en.vtt
+   4 ./data/videos/2023/DWEB For Creators Panel ｜ Gray Area Festival 2023 [klCl5oaMY64].en.vtt
+   3 ./data/videos/2023/Taeyoon Choi ｜ Gray Area Festival 2023 [ZL-xqqp7vJA].en.vtt
+   3 ./data/videos/2023/Matt Prewitt ｜ Gray Area Festival 2023 [qjca93uH-i4].en.vtt
+   3 ./data/videos/2023/Mai Ishikawa Sutton ｜ Gray Area Festival 2023 [HQm2WyuEYeU].en.vtt
+   3 ./data/videos/2023/Cade Diehm ｜ Gray Area Festival 2023 [CKtcsAVb-_Y].en.vtt
    3 ./data/videos/2022/Andrew McLuhan ｜ Gray Area Festival 2022 [ugvQVKfpVvA].en.vtt
    3 ./data/videos/2021/Auriea Harvey ｜ Gray Area Festival 2021 [cM0HhCGE8F0].en.vtt
    3 ./data/videos/2019/Jiajia Fei ｜ Gray Area Festival 2019 [O8sArQnGA4k].en.vtt
@@ -88,7 +104,10 @@
    3 ./data/videos/2017/Joanie Lemercier ｜ the 2017 Gray Area Festival [Og3nODyITSY].en.vtt
    3 ./data/videos/2017/Charles Lindsay ｜ the Gray Area Festival 2017 [lP-dnTt5Q1s].en.vtt
    3 ./data/videos/2016/Sustainable Wearables + Heirloom Electronics ｜ Lara Grant ｜ the 2016 Gray Area Festival [kbzA_KotIxY].en.vtt
+   3 ./data/videos/2016/Sustainable Wearables + Heirloom Electronics ｜ Lara Grant ｜ 2016 Gray Area Festival [kbzA_KotIxY].en.vtt
    3 ./data/videos/2016/Situated Systems Panel ｜ Autodesk ｜ The 2016 Gray Area Festival [jTDMOl7MvrU].en.vtt
+   3 ./data/videos/2016/Situated Systems Panel ｜ Autodesk ｜ 2016 Gray Area Festival [jTDMOl7MvrU].en.vtt
    3 ./data/videos/2016/Deep Time Photography ｜ Jonathon Keats ｜ the 2016 Gray Area Festival [l0VGE_YE06o].en.vtt
+   3 ./data/videos/2016/Deep Time Photography ｜ Jonathon Keats ｜ 2016 Gray Area Festival [l0VGE_YE06o].en.vtt
    3 ./data/videos/2015/Artists as Hackers, Hackers as Artists ｜ Olof Mathé ｜ The Gray Area Festival 2015 [WcIARbo7ijE].en.vtt
    3 ./data/videos/2015/Art & Invention ｜ Michael Naimark ｜ The Gray Area Festival 2015 [w-WPUus4Ebo].en.vtt

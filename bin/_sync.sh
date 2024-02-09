@@ -9,6 +9,7 @@ SOURCE="./data/videos"
 
 # get all videos from festival playlists
 echo -e "${GREEN}Get Youtube Metadata for all Playlists${RESET}"
+./bin/get-youtube-metadata.sh "https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZ6OtS-D6PUpn4TflgVqi7R" ./data/videos/2023
 ./bin/get-youtube-metadata.sh "https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYq6FBpOBHfHchjI0zTYINO" ./data/videos/2022
 ./bin/get-youtube-metadata.sh "https://www.youtube.com/playlist?list=PLm8zJ0HKEJIbQgPDRsUHiawVtahvShN8X" ./data/videos/2021
 ./bin/get-youtube-metadata.sh "https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaarwTpOzGg4DXXVLWy2GVU" ./data/videos/2020
