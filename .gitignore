@@ -1,4 +1,9 @@
+# build folders
+data
+dist
+
+# ignores
 .DS_Store
-NOTES.md
-node_modules
 .prettierrc
+node_modules
+NOTES.md

@@ -6,7 +6,7 @@ if [[ $# -eq 0 ]]; then
 fi
 
 if [ -n "$2" ]; then
-  yt-dlp --sub-lan=en --write-auto-sub --skip-download -o "$2" $1
+  yt-dlp --sub-lan=en --write-auto-sub --skip-download -o "$2" "https://www.youtube.com/watch?v=$1"
 else
-  yt-dlp --sub-lan=en --write-auto-sub --skip-download $1
+  yt-dlp --sub-lan=en --write-auto-sub --skip-download "https://www.youtube.com/watch?v=$1"
 fi

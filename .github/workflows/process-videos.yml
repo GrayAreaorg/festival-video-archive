@@ -1,0 +1,67 @@
+name: Process Videos
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  VIDEO_DATA: './data/videos'
+
+jobs:
+  process-videos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: '19.8.1'
+
+    - name: Setup yt-dlp
+      uses: AnimMouse/setup-yt-dlp@v1
+
+    - name: Make Data Folder
+      run: mkdir -p $VIDEO_DATA
+
+    - name: Get Youtube Metadata for all Playlists
+      run: ./bin/get-all-metadata.sh $VIDEO_DATA
+
+    - name: Delete Playlists Metadata
+      run: find $VIDEO_DATA -type f -name "*\[PL*\]*"  -exec rm {} \;
+
+    - name: Download Subtitles (VTTs) for all Videos
+      run: ./bin/get-all-subs.sh $VIDEO_DATA
+
+    - name: Generate Wordcount from Subs
+      run: node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount.txt
+
+    - name: Generate Wordcount Stats
+      run: node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount_video_stats.txt --include-video-stats
+
+    - name: Generate Topic Lists for Filter search
+      run: ./bin/gen-all-topics.sh
+    
+    - name: Generate Wordcount
+      run: node ./bin/compile-db.js $VIDEO_DATA ./data/db.json
+
+    - name: Make dist folder for CSS
+      run: mkdir -p ./dist
+      
+    - name: Build CSS
+      run: |
+        npm install
+        npm run css-build
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout -b build-dist
+        git add -f ./data ./dist
+        git commit -m "Update data files"
+        git push origin build-dist --force
