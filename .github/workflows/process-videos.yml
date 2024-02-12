@@ -54,13 +54,13 @@ jobs:
         set -x
 
         IFS=$'\n' # set the Internal Field Separator to newline, ignore the spaces
-        for f in $(find $VIDEO_DATA -type f -name '*.json'); do # TODO remove 2023
+        for f in $(find $VIDEO_DATA -type f -name '*.json'); do
           ytid=$(jq -r .id $f)
           echo $ytid
           dname=$(dirname $f)
           bname=$(basename $f)
           ff="${bname%.info.json}"
-          yt-dlp -r 50K --sub-lan=en --write-auto-sub --skip-download -o "$dname/$ff" "$ytid"
+          yt-dlp -r 50K --sub-lan=en --write-auto-sub --skip-download -o '$dname/$ff' '$ytid'
         done
 
     - name: Generate Wordcount from Subs
