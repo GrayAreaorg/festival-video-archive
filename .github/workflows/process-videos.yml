@@ -31,14 +31,6 @@ jobs:
         # playlist URLS
         declare -A playlists=(
             ["2023"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZ6OtS-D6PUpn4TflgVqi7R"
-            # ["2022"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYq6FBpOBHfHchjI0zTYINO"
-            # ["2021"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIbQgPDRsUHiawVtahvShN8X"
-            # ["2020"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaarwTpOzGg4DXXVLWy2GVU"
-            # ["2019"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZXGbpAdjpIP9cuuJYfOW-F"
-            # ["2018"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaNfzV_-f0aYvrpAZAzjhIl"
-            # ["2017"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYAk9rAz1CQmE9Pzn8G_hrq"
-            # ["2016"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZtQ0PqjW341QIWrqPPkQXi"
-            # ["2015"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw"
         )
         
         # Get Youtube Metadata for all Playlists
@@ -51,10 +43,14 @@ jobs:
           }
         done
 
-        # delete playlists metadata (just keep videos)
+    - name: Delete Playlists Metadata
+      run: |
+
         find . -type f -name "*\[PL*\]*"  -exec rm {} \;
 
-        # Get VTT's for all videos
+    - name: Download Subtitles (VTTs) for all Videos
+      run: |
+
         IFS=$'\n' # set the Internal Field Separator to newline, ignore the spaces
         for f in $(find $VIDEO_DATA -type f -name '*.json'); do
           ytid=$(jq -r .id $f)
@@ -65,10 +61,9 @@ jobs:
           yt-dlp --sub-lan=en --write-auto-sub --skip-download -o "$dname/$ff" $ytid
         done
 
-    - name: Generate Wordcount
+    - name: Generate Wordcount from Subs
       run: |
 
-        # Generate word counts from VTT's
         node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount.txt
         node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount_video_stats.txt --include-video-stats
 
