@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x
-
 mkdir -p ./data/topics
 
 ./bin/search-caption-string.sh ./data/videos "artificial intelligence" " ai " > ./data/topics/ai.txt

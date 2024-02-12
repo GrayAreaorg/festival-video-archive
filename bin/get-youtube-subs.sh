@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x
-
 if [[ $# -eq 0 ]]; then
   echo "Usage: $0 youtube_id dest"
   exit 1
