@@ -61,7 +61,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout -b build-dist
+        git checkout -b build
         git add -f ./data ./dist
         git commit -m "Update data files"
-        git push origin build-dist --force
+        git push origin build --force
