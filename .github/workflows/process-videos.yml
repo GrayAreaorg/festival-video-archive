@@ -20,16 +20,13 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.4.0
       with:
-        node-version: '19.8.1'
+        node-version: '19'
 
     - name: Setup yt-dlp
       uses: AnimMouse/setup-yt-dlp@v1
 
     - name: Download Playlists and Subtitles
       run: |
-
-        # video data
-        
 
         # playlist URLS
         declare -A playlists=(
@@ -54,6 +51,7 @@ jobs:
           }
         done
 
+        # delete playlists metadata (just keep videos)
         find . -type f -name "*\[PL*\]*"  -exec rm {} \;
 
         # Get VTT's for all videos
