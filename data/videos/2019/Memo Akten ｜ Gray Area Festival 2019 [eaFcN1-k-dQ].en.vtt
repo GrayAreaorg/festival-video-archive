@@ -1,0 +1,3912 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.410 --> 00:00:04.190 align:start position:0%
+ 
+so<00:00:01.410><c> the</c><00:00:01.560><c> title</c><00:00:01.890><c> of</c><00:00:01.949><c> my</c><00:00:02.100><c> talk</c><00:00:02.129><c> today</c><00:00:03.020><c> will</c><00:00:04.020><c> be</c>
+
+00:00:04.190 --> 00:00:04.200 align:start position:0%
+so the title of my talk today will be
+ 
+
+00:00:04.200 --> 00:00:07.579 align:start position:0%
+so the title of my talk today will be
+fundamental<00:00:04.740><c> frequencies</c><00:00:06.049><c> I'm</c><00:00:07.049><c> not</c><00:00:07.350><c> going</c><00:00:07.529><c> to</c>
+
+00:00:07.579 --> 00:00:07.589 align:start position:0%
+fundamental frequencies I'm not going to
+ 
+
+00:00:07.589 --> 00:00:09.320 align:start position:0%
+fundamental frequencies I'm not going to
+talk<00:00:07.770><c> a</c><00:00:08.010><c> lot</c><00:00:08.160><c> about</c><00:00:08.370><c> my</c><00:00:08.519><c> work</c><00:00:08.730><c> actually</c><00:00:09.210><c> I'm</c>
+
+00:00:09.320 --> 00:00:09.330 align:start position:0%
+talk a lot about my work actually I'm
+ 
+
+00:00:09.330 --> 00:00:12.589 align:start position:0%
+talk a lot about my work actually I'm
+gonna<00:00:09.480><c> talk</c><00:00:09.719><c> more</c><00:00:09.990><c> about</c><00:00:10.050><c> my</c><00:00:10.800><c> motivations</c><00:00:11.599><c> so</c>
+
+00:00:12.589 --> 00:00:12.599 align:start position:0%
+gonna talk more about my motivations so
+ 
+
+00:00:12.599 --> 00:00:14.870 align:start position:0%
+gonna talk more about my motivations so
+I'd<00:00:13.259><c> like</c><00:00:13.440><c> to</c><00:00:13.650><c> start</c><00:00:13.980><c> with</c><00:00:14.280><c> a</c><00:00:14.309><c> very</c><00:00:14.549><c> quick</c>
+
+00:00:14.870 --> 00:00:14.880 align:start position:0%
+I'd like to start with a very quick
+ 
+
+00:00:14.880 --> 00:00:16.460 align:start position:0%
+I'd like to start with a very quick
+overview<00:00:15.150><c> of</c><00:00:15.570><c> what</c><00:00:15.809><c> I've</c><00:00:15.900><c> been</c><00:00:15.990><c> up</c><00:00:16.139><c> to</c><00:00:16.170><c> over</c>
+
+00:00:16.460 --> 00:00:16.470 align:start position:0%
+overview of what I've been up to over
+ 
+
+00:00:16.470 --> 00:00:20.750 align:start position:0%
+overview of what I've been up to over
+the<00:00:16.560><c> last</c><00:00:16.770><c> 15</c><00:00:17.190><c> years</c><00:00:18.350><c> so</c><00:00:19.350><c> I</c><00:00:19.680><c> am</c><00:00:20.010><c> an</c><00:00:20.130><c> artist</c><00:00:20.460><c> and</c>
+
+00:00:20.750 --> 00:00:20.760 align:start position:0%
+the last 15 years so I am an artist and
+ 
+
+00:00:20.760 --> 00:00:23.660 align:start position:0%
+the last 15 years so I am an artist and
+researcher<00:00:22.070><c> working</c><00:00:23.070><c> with</c><00:00:23.250><c> emerging</c>
+
+00:00:23.660 --> 00:00:23.670 align:start position:0%
+researcher working with emerging
+ 
+
+00:00:23.670 --> 00:00:26.179 align:start position:0%
+researcher working with emerging
+technologies<00:00:24.439><c> particularly</c><00:00:25.439><c> with</c><00:00:25.740><c> software</c>
+
+00:00:26.179 --> 00:00:26.189 align:start position:0%
+technologies particularly with software
+ 
+
+00:00:26.189 --> 00:00:29.179 align:start position:0%
+technologies particularly with software
+and<00:00:26.310><c> algorithms</c><00:00:26.519><c> that's</c><00:00:27.180><c> kind</c><00:00:27.480><c> of</c><00:00:27.570><c> where</c><00:00:28.189><c> my</c>
+
+00:00:29.179 --> 00:00:29.189 align:start position:0%
+and algorithms that's kind of where my
+ 
+
+00:00:29.189 --> 00:00:32.450 align:start position:0%
+and algorithms that's kind of where my
+kind<00:00:29.490><c> of</c><00:00:29.550><c> knowledge</c><00:00:29.760><c> lies</c><00:00:30.650><c> and</c><00:00:31.650><c> specifically</c>
+
+00:00:32.450 --> 00:00:32.460 align:start position:0%
+kind of knowledge lies and specifically
+ 
+
+00:00:32.460 --> 00:00:35.090 align:start position:0%
+kind of knowledge lies and specifically
+with<00:00:33.059><c> computation</c><00:00:33.780><c> but</c><00:00:34.590><c> a</c><00:00:34.649><c> more</c><00:00:34.829><c> broader</c>
+
+00:00:35.090 --> 00:00:35.100 align:start position:0%
+with computation but a more broader
+ 
+
+00:00:35.100 --> 00:00:37.549 align:start position:0%
+with computation but a more broader
+sense<00:00:35.340><c> I</c><00:00:35.520><c> think</c><00:00:35.550><c> of</c><00:00:35.790><c> computation</c><00:00:36.510><c> as</c><00:00:36.719><c> as</c><00:00:37.200><c> a</c>
+
+00:00:37.549 --> 00:00:37.559 align:start position:0%
+sense I think of computation as as a
+ 
+
+00:00:37.559 --> 00:00:39.920 align:start position:0%
+sense I think of computation as as a
+language<00:00:37.890><c> for</c><00:00:38.340><c> transformation</c><00:00:39.120><c> as</c><00:00:39.329><c> a</c>
+
+00:00:39.920 --> 00:00:39.930 align:start position:0%
+language for transformation as a
+ 
+
+00:00:39.930 --> 00:00:42.709 align:start position:0%
+language for transformation as a
+language<00:00:40.410><c> for</c><00:00:40.710><c> expressing</c><00:00:41.280><c> and</c><00:00:42.180><c> designing</c>
+
+00:00:42.709 --> 00:00:42.719 align:start position:0%
+language for expressing and designing
+ 
+
+00:00:42.719 --> 00:00:46.240 align:start position:0%
+language for expressing and designing
+behavior<00:00:43.879><c> so</c><00:00:44.879><c> everything</c><00:00:45.239><c> you're</c><00:00:45.360><c> seeing</c><00:00:45.660><c> is</c>
+
+00:00:46.240 --> 00:00:46.250 align:start position:0%
+behavior so everything you're seeing is
+ 
+
+00:00:46.250 --> 00:00:49.910 align:start position:0%
+behavior so everything you're seeing is
+custom<00:00:47.250><c> software</c><00:00:47.460><c> often</c><00:00:48.300><c> single</c><00:00:49.140><c> use</c><00:00:49.350><c> custom</c>
+
+00:00:49.910 --> 00:00:49.920 align:start position:0%
+custom software often single use custom
+ 
+
+00:00:49.920 --> 00:00:51.400 align:start position:0%
+custom software often single use custom
+software<00:00:50.399><c> available</c><00:00:50.610><c> just</c><00:00:50.940><c> for</c><00:00:51.090><c> that</c>
+
+00:00:51.400 --> 00:00:51.410 align:start position:0%
+software available just for that
+ 
+
+00:00:51.410 --> 00:00:55.010 align:start position:0%
+software available just for that
+situation<00:00:52.640><c> that's</c><00:00:53.640><c> often</c><00:00:54.539><c> somehow</c>
+
+00:00:55.010 --> 00:00:55.020 align:start position:0%
+situation that's often somehow
+ 
+
+00:00:55.020 --> 00:00:58.819 align:start position:0%
+situation that's often somehow
+interactive<00:00:55.920><c> or</c><00:00:56.129><c> responsive</c><00:00:57.590><c> items</c><00:00:58.590><c> are</c>
+
+00:00:58.819 --> 00:00:58.829 align:start position:0%
+interactive or responsive items are
+ 
+
+00:00:58.829 --> 00:01:02.619 align:start position:0%
+interactive or responsive items are
+public<00:00:59.160><c> or</c><00:00:59.430><c> the</c><00:00:59.670><c> performers</c><00:01:00.570><c> or</c><00:01:00.840><c> to</c><00:01:01.079><c> me</c><00:01:01.230><c> and</c>
+
+00:01:02.619 --> 00:01:02.629 align:start position:0%
+public or the performers or to me and
+ 
+
+00:01:02.629 --> 00:01:06.140 align:start position:0%
+public or the performers or to me and
+thematically<00:01:03.830><c> I'm</c><00:01:04.830><c> ultimately</c><00:01:05.129><c> driven</c><00:01:05.610><c> by</c>
+
+00:01:06.140 --> 00:01:06.150 align:start position:0%
+thematically I'm ultimately driven by
+ 
+
+00:01:06.150 --> 00:01:08.210 align:start position:0%
+thematically I'm ultimately driven by
+trying<00:01:06.540><c> to</c><00:01:06.630><c> understand</c><00:01:07.229><c> the</c><00:01:07.590><c> nature</c><00:01:07.740><c> of</c><00:01:07.979><c> our</c>
+
+00:01:08.210 --> 00:01:08.220 align:start position:0%
+trying to understand the nature of our
+ 
+
+00:01:08.220 --> 00:01:11.899 align:start position:0%
+trying to understand the nature of our
+reality<00:01:08.930><c> whether</c><00:01:09.930><c> it's</c><00:01:10.310><c> ourselves</c><00:01:11.310><c> as</c><00:01:11.490><c> humans</c>
+
+00:01:11.899 --> 00:01:11.909 align:start position:0%
+reality whether it's ourselves as humans
+ 
+
+00:01:11.909 --> 00:01:17.179 align:start position:0%
+reality whether it's ourselves as humans
+or<00:01:12.210><c> the</c><00:01:13.020><c> world</c><00:01:13.260><c> that</c><00:01:13.619><c> we</c><00:01:13.890><c> live</c><00:01:14.100><c> in</c><00:01:14.130><c> and</c><00:01:14.659><c> so</c><00:01:16.189><c> it</c>
+
+00:01:17.179 --> 00:01:17.189 align:start position:0%
+or the world that we live in and so it
+ 
+
+00:01:17.189 --> 00:01:19.340 align:start position:0%
+or the world that we live in and so it
+involves<00:01:17.700><c> thinking</c><00:01:18.090><c> about</c><00:01:18.540><c> the</c><00:01:18.930><c> tools</c><00:01:19.140><c> of</c>
+
+00:01:19.340 --> 00:01:19.350 align:start position:0%
+involves thinking about the tools of
+ 
+
+00:01:19.350 --> 00:01:21.980 align:start position:0%
+involves thinking about the tools of
+science<00:01:19.740><c> and</c><00:01:19.890><c> technology</c><00:01:20.400><c> as</c><00:01:20.869><c> extensions</c><00:01:21.869><c> of</c>
+
+00:01:21.980 --> 00:01:21.990 align:start position:0%
+science and technology as extensions of
+ 
+
+00:01:21.990 --> 00:01:25.609 align:start position:0%
+science and technology as extensions of
+our<00:01:22.110><c> body</c><00:01:22.580><c> as</c><00:01:23.580><c> extensions</c><00:01:24.210><c> of</c><00:01:24.330><c> our</c><00:01:24.479><c> mind</c><00:01:24.780><c> its</c>
+
+00:01:25.609 --> 00:01:25.619 align:start position:0%
+our body as extensions of our mind its
+ 
+
+00:01:25.619 --> 00:01:28.609 align:start position:0%
+our body as extensions of our mind its
+impact<00:01:26.159><c> on</c><00:01:26.280><c> us</c><00:01:26.430><c> as</c><00:01:26.549><c> individuals</c><00:01:27.150><c> its</c><00:01:28.049><c> impact</c>
+
+00:01:28.609 --> 00:01:28.619 align:start position:0%
+impact on us as individuals its impact
+ 
+
+00:01:28.619 --> 00:01:31.160 align:start position:0%
+impact on us as individuals its impact
+on<00:01:28.860><c> how</c><00:01:29.070><c> we</c><00:01:29.130><c> think</c><00:01:29.310><c> and</c><00:01:29.790><c> how</c><00:01:29.820><c> we</c><00:01:29.909><c> behave</c><00:01:30.210><c> but</c>
+
+00:01:31.160 --> 00:01:31.170 align:start position:0%
+on how we think and how we behave but
+ 
+
+00:01:31.170 --> 00:01:32.749 align:start position:0%
+on how we think and how we behave but
+ultimately<00:01:31.619><c> its</c><00:01:31.770><c> impact</c><00:01:32.100><c> on</c><00:01:32.280><c> the</c><00:01:32.610><c> world</c>
+
+00:01:32.749 --> 00:01:32.759 align:start position:0%
+ultimately its impact on the world
+ 
+
+00:01:32.759 --> 00:01:35.960 align:start position:0%
+ultimately its impact on the world
+around<00:01:33.090><c> us</c><00:01:33.450><c> and</c><00:01:33.810><c> on</c><00:01:34.020><c> society</c><00:01:34.439><c> on</c><00:01:35.130><c> culture</c><00:01:35.790><c> on</c>
+
+00:01:35.960 --> 00:01:35.970 align:start position:0%
+around us and on society on culture on
+ 
+
+00:01:35.970 --> 00:01:39.410 align:start position:0%
+around us and on society on culture on
+ethics<00:01:36.750><c> on</c><00:01:37.229><c> tradition</c>
+
+00:01:39.410 --> 00:01:39.420 align:start position:0%
+ethics on tradition
+ 
+
+00:01:39.420 --> 00:01:42.300 align:start position:0%
+ethics on tradition
+so<00:01:40.420><c> I</c><00:01:40.450><c> use</c><00:01:40.840><c> emerging</c><00:01:41.230><c> technologies</c><00:01:41.710><c> as</c><00:01:41.830><c> both</c><00:01:42.070><c> a</c>
+
+00:01:42.300 --> 00:01:42.310 align:start position:0%
+so I use emerging technologies as both a
+ 
+
+00:01:42.310 --> 00:01:45.630 align:start position:0%
+so I use emerging technologies as both a
+subject<00:01:42.820><c> matter</c><00:01:42.970><c> as</c><00:01:43.360><c> well</c><00:01:43.600><c> as</c><00:01:43.660><c> medium</c><00:01:44.200><c> I</c><00:01:44.640><c> did</c>
+
+00:01:45.630 --> 00:01:45.640 align:start position:0%
+subject matter as well as medium I did
+ 
+
+00:01:45.640 --> 00:01:49.050 align:start position:0%
+subject matter as well as medium I did
+set<00:01:46.090><c> up</c><00:01:46.180><c> my</c><00:01:46.330><c> philosophies</c><00:01:46.870><c> in</c><00:01:47.020><c> 2011</c><00:01:47.880><c> and</c><00:01:48.880><c> then</c>
+
+00:01:49.050 --> 00:01:49.060 align:start position:0%
+set up my philosophies in 2011 and then
+ 
+
+00:01:49.060 --> 00:01:51.270 align:start position:0%
+set up my philosophies in 2011 and then
+I<00:01:49.120><c> left</c><00:01:49.270><c> in</c><00:01:49.450><c> 2014</c><00:01:49.870><c> to</c><00:01:50.470><c> kind</c><00:01:50.770><c> of</c><00:01:50.830><c> pursue</c><00:01:51.160><c> other</c>
+
+00:01:51.270 --> 00:01:51.280 align:start position:0%
+I left in 2014 to kind of pursue other
+ 
+
+00:01:51.280 --> 00:01:53.850 align:start position:0%
+I left in 2014 to kind of pursue other
+things<00:01:51.750><c> and</c><00:01:52.750><c> the</c><00:01:52.900><c> title</c><00:01:53.230><c> of</c><00:01:53.290><c> my</c><00:01:53.410><c> talk</c><00:01:53.440><c> is</c>
+
+00:01:53.850 --> 00:01:53.860 align:start position:0%
+things and the title of my talk is
+ 
+
+00:01:53.860 --> 00:01:56.940 align:start position:0%
+things and the title of my talk is
+fundamental<00:01:54.760><c> frequencies</c><00:01:55.710><c> perhaps</c><00:01:56.710><c> it's</c><00:01:56.890><c> a</c>
+
+00:01:56.940 --> 00:01:56.950 align:start position:0%
+fundamental frequencies perhaps it's a
+ 
+
+00:01:56.950 --> 00:01:59.040 align:start position:0%
+fundamental frequencies perhaps it's a
+bit<00:01:57.070><c> of</c><00:01:57.130><c> a</c><00:01:57.190><c> curveball</c><00:01:57.520><c> the</c><00:01:58.180><c> way</c><00:01:58.300><c> I</c><00:01:58.330><c> interpreted</c>
+
+00:01:59.040 --> 00:01:59.050 align:start position:0%
+bit of a curveball the way I interpreted
+ 
+
+00:01:59.050 --> 00:02:02.130 align:start position:0%
+bit of a curveball the way I interpreted
+the<00:01:59.229><c> theme</c><00:01:59.260><c> of</c><00:01:59.500><c> this</c><00:02:00.479><c> conference</c>
+
+00:02:02.130 --> 00:02:02.140 align:start position:0%
+the theme of this conference
+ 
+
+00:02:02.140 --> 00:02:04.320 align:start position:0%
+the theme of this conference
+having<00:02:03.100><c> seen</c><00:02:03.250><c> the</c><00:02:03.340><c> wonderful</c><00:02:03.700><c> presentation</c>
+
+00:02:04.320 --> 00:02:04.330 align:start position:0%
+having seen the wonderful presentation
+ 
+
+00:02:04.330 --> 00:02:07.980 align:start position:0%
+having seen the wonderful presentation
+so<00:02:04.540><c> far</c><00:02:04.570><c> I</c><00:02:05.110><c> thought</c><00:02:06.040><c> I</c><00:02:06.400><c> might</c><00:02:07.030><c> address</c><00:02:07.360><c> this</c>
+
+00:02:07.980 --> 00:02:07.990 align:start position:0%
+so far I thought I might address this
+ 
+
+00:02:07.990 --> 00:02:11.490 align:start position:0%
+so far I thought I might address this
+discussion<00:02:08.560><c> around</c><00:02:08.649><c> immersion</c><00:02:09.369><c> and</c><00:02:09.729><c> a</c><00:02:10.500><c> rfv</c>
+
+00:02:11.490 --> 00:02:11.500 align:start position:0%
+discussion around immersion and a rfv
+ 
+
+00:02:11.500 --> 00:02:15.990 align:start position:0%
+discussion around immersion and a rfv
+rmr<00:02:12.160><c> alternate</c><00:02:12.700><c> realities</c><00:02:14.250><c> by</c><00:02:15.250><c> questioning</c>
+
+00:02:15.990 --> 00:02:16.000 align:start position:0%
+rmr alternate realities by questioning
+ 
+
+00:02:16.000 --> 00:02:18.810 align:start position:0%
+rmr alternate realities by questioning
+the<00:02:16.090><c> nature</c><00:02:16.240><c> of</c><00:02:16.390><c> reality</c><00:02:16.840><c> itself</c><00:02:17.820><c> because</c>
+
+00:02:18.810 --> 00:02:18.820 align:start position:0%
+the nature of reality itself because
+ 
+
+00:02:18.820 --> 00:02:20.840 align:start position:0%
+the nature of reality itself because
+that's<00:02:19.000><c> really</c><00:02:19.360><c> where</c><00:02:19.480><c> my</c><00:02:19.510><c> practice</c><00:02:20.140><c> lies</c><00:02:20.380><c> and</c>
+
+00:02:20.840 --> 00:02:20.850 align:start position:0%
+that's really where my practice lies and
+ 
+
+00:02:20.850 --> 00:02:25.080 align:start position:0%
+that's really where my practice lies and
+this<00:02:21.850><c> might</c><00:02:22.240><c> sound</c><00:02:22.900><c> very</c><00:02:23.080><c> out</c><00:02:23.470><c> there</c><00:02:23.500><c> and</c><00:02:24.459><c> a</c>
+
+00:02:25.080 --> 00:02:25.090 align:start position:0%
+this might sound very out there and a
+ 
+
+00:02:25.090 --> 00:02:28.770 align:start position:0%
+this might sound very out there and a
+bit<00:02:25.270><c> theoretical</c><00:02:25.959><c> but</c><00:02:26.230><c> I</c><00:02:26.290><c> hope</c><00:02:26.590><c> to</c><00:02:27.420><c> convey</c><00:02:28.420><c> the</c>
+
+00:02:28.770 --> 00:02:28.780 align:start position:0%
+bit theoretical but I hope to convey the
+ 
+
+00:02:28.780 --> 00:02:30.570 align:start position:0%
+bit theoretical but I hope to convey the
+practical<00:02:29.320><c> reasons</c><00:02:29.709><c> as</c><00:02:29.860><c> to</c><00:02:29.950><c> why</c><00:02:30.070><c> I'm</c><00:02:30.370><c> curious</c>
+
+00:02:30.570 --> 00:02:30.580 align:start position:0%
+practical reasons as to why I'm curious
+ 
+
+00:02:30.580 --> 00:02:35.400 align:start position:0%
+practical reasons as to why I'm curious
+about<00:02:30.910><c> this</c><00:02:32.489><c> so</c><00:02:33.489><c> some</c><00:02:34.300><c> of</c><00:02:34.330><c> you</c><00:02:34.540><c> may</c><00:02:34.690><c> recognize</c>
+
+00:02:35.400 --> 00:02:35.410 align:start position:0%
+about this so some of you may recognize
+ 
+
+00:02:35.410 --> 00:02:38.760 align:start position:0%
+about this so some of you may recognize
+this<00:02:35.620><c> to</c><00:02:35.920><c> be</c><00:02:36.040><c> some</c><00:02:36.400><c> kind</c><00:02:36.610><c> of</c><00:02:36.700><c> a</c><00:02:36.790><c> wave</c><00:02:37.260><c> I'll</c><00:02:38.260><c> be</c>
+
+00:02:38.760 --> 00:02:38.770 align:start position:0%
+this to be some kind of a wave I'll be
+ 
+
+00:02:38.770 --> 00:02:40.080 align:start position:0%
+this to be some kind of a wave I'll be
+very<00:02:39.010><c> impressed</c><00:02:39.370><c> if</c><00:02:39.430><c> anyone</c><00:02:39.700><c> can</c><00:02:39.850><c> tell</c><00:02:39.970><c> me</c>
+
+00:02:40.080 --> 00:02:40.090 align:start position:0%
+very impressed if anyone can tell me
+ 
+
+00:02:40.090 --> 00:02:44.759 align:start position:0%
+very impressed if anyone can tell me
+what<00:02:40.239><c> it</c><00:02:40.330><c> is</c><00:02:40.390><c> a</c><00:02:40.480><c> wave</c><00:02:40.690><c> of</c><00:02:42.989><c> this</c><00:02:43.989><c> is</c><00:02:44.380><c> the</c><00:02:44.560><c> same</c>
+
+00:02:44.759 --> 00:02:44.769 align:start position:0%
+what it is a wave of this is the same
+ 
+
+00:02:44.769 --> 00:02:46.440 align:start position:0%
+what it is a wave of this is the same
+signal<00:02:45.250><c> that's</c><00:02:45.970><c> been</c><00:02:46.209><c> through</c><00:02:46.360><c> a</c>
+
+00:02:46.440 --> 00:02:46.450 align:start position:0%
+signal that's been through a
+ 
+
+00:02:46.450 --> 00:02:48.240 align:start position:0%
+signal that's been through a
+transformations<00:02:47.110><c> the</c><00:02:47.320><c> frequency</c><00:02:47.709><c> domain</c><00:02:47.830><c> a</c>
+
+00:02:48.240 --> 00:02:48.250 align:start position:0%
+transformations the frequency domain a
+ 
+
+00:02:48.250 --> 00:02:49.740 align:start position:0%
+transformations the frequency domain a
+Fourier<00:02:49.090><c> transform</c>
+
+00:02:49.740 --> 00:02:49.750 align:start position:0%
+Fourier transform
+ 
+
+00:02:49.750 --> 00:02:52.290 align:start position:0%
+Fourier transform
+it's<00:02:50.019><c> a</c><00:02:50.140><c> spectrogram</c><00:02:50.730><c> again</c><00:02:51.730><c> if</c><00:02:51.910><c> anyone</c><00:02:52.120><c> can</c>
+
+00:02:52.290 --> 00:02:52.300 align:start position:0%
+it's a spectrogram again if anyone can
+ 
+
+00:02:52.300 --> 00:02:54.000 align:start position:0%
+it's a spectrogram again if anyone can
+tell<00:02:52.390><c> me</c><00:02:52.510><c> what</c><00:02:52.600><c> this</c><00:02:52.690><c> is</c><00:02:52.750><c> I'll</c><00:02:53.050><c> be</c><00:02:53.230><c> very</c><00:02:53.739><c> very</c>
+
+00:02:54.000 --> 00:02:54.010 align:start position:0%
+tell me what this is I'll be very very
+ 
+
+00:02:54.010 --> 00:02:58.410 align:start position:0%
+tell me what this is I'll be very very
+impressed<00:02:56.400><c> but</c><00:02:57.400><c> when</c><00:02:57.519><c> we</c><00:02:57.610><c> listen</c><00:02:57.910><c> to</c><00:02:58.030><c> words</c><00:02:58.150><c> we</c>
+
+00:02:58.410 --> 00:02:58.420 align:start position:0%
+impressed but when we listen to words we
+ 
+
+00:02:58.420 --> 00:03:00.960 align:start position:0%
+impressed but when we listen to words we
+know<00:02:58.570><c> what</c><00:02:58.720><c> it</c><00:02:58.840><c> is</c><00:02:58.959><c> it's</c><00:02:59.799><c> a</c><00:02:59.950><c> piano</c><00:03:00.250><c> playing</c><00:03:00.670><c> a</c>
+
+00:03:00.960 --> 00:03:00.970 align:start position:0%
+know what it is it's a piano playing a
+ 
+
+00:03:00.970 --> 00:03:02.960 align:start position:0%
+know what it is it's a piano playing a
+single<00:03:01.360><c> notes</c><00:03:01.570><c> and</c><00:03:01.870><c> if</c><00:03:02.380><c> you</c><00:03:02.470><c> have</c><00:03:02.560><c> a</c><00:03:02.590><c> very</c>
+
+00:03:02.960 --> 00:03:02.970 align:start position:0%
+single notes and if you have a very
+ 
+
+00:03:02.970 --> 00:03:04.410 align:start position:0%
+single notes and if you have a very
+well-trained<00:03:03.970><c> ear</c>
+
+00:03:04.410 --> 00:03:04.420 align:start position:0%
+well-trained ear
+ 
+
+00:03:04.420 --> 00:03:07.520 align:start position:0%
+well-trained ear
+you<00:03:04.480><c> might</c><00:03:04.660><c> even</c><00:03:04.750><c> recognize</c><00:03:05.290><c> it</c><00:03:05.320><c> to</c><00:03:05.680><c> be</c><00:03:05.910><c> an</c><00:03:06.910><c> a</c>
+
+00:03:07.520 --> 00:03:07.530 align:start position:0%
+you might even recognize it to be an a
+ 
+
+00:03:07.530 --> 00:03:11.640 align:start position:0%
+you might even recognize it to be an a
+440<00:03:08.530><c> Hertz</c><00:03:09.510><c> now</c><00:03:10.510><c> what's</c><00:03:10.720><c> happening</c><00:03:11.140><c> here</c><00:03:11.200><c> is</c>
+
+00:03:11.640 --> 00:03:11.650 align:start position:0%
+440 Hertz now what's happening here is
+ 
+
+00:03:11.650 --> 00:03:15.750 align:start position:0%
+440 Hertz now what's happening here is
+really<00:03:12.160><c> quite</c><00:03:12.430><c> remarkable</c><00:03:14.280><c> there's</c><00:03:15.280><c> so</c><00:03:15.640><c> much</c>
+
+00:03:15.750 --> 00:03:15.760 align:start position:0%
+really quite remarkable there's so much
+ 
+
+00:03:15.760 --> 00:03:17.460 align:start position:0%
+really quite remarkable there's so much
+information<00:03:15.970><c> to</c><00:03:16.690><c> begin</c><00:03:16.930><c> with</c>
+
+00:03:17.460 --> 00:03:17.470 align:start position:0%
+information to begin with
+ 
+
+00:03:17.470 --> 00:03:19.979 align:start position:0%
+information to begin with
+that's<00:03:17.980><c> out</c><00:03:18.340><c> there</c><00:03:18.670><c> and</c><00:03:18.910><c> these</c><00:03:19.630><c> pressure</c>
+
+00:03:19.979 --> 00:03:19.989 align:start position:0%
+that's out there and these pressure
+ 
+
+00:03:19.989 --> 00:03:21.960 align:start position:0%
+that's out there and these pressure
+waves<00:03:20.290><c> propagate</c><00:03:20.920><c> through</c><00:03:21.190><c> space</c><00:03:21.549><c> and</c><00:03:21.850><c> hit</c>
+
+00:03:21.960 --> 00:03:21.970 align:start position:0%
+waves propagate through space and hit
+ 
+
+00:03:21.970 --> 00:03:24.530 align:start position:0%
+waves propagate through space and hit
+your<00:03:22.120><c> eardrum</c><00:03:22.600><c> and</c><00:03:22.930><c> already</c><00:03:23.620><c> in</c><00:03:23.769><c> the</c><00:03:23.890><c> cochlea</c>
+
+00:03:24.530 --> 00:03:24.540 align:start position:0%
+your eardrum and already in the cochlea
+ 
+
+00:03:24.540 --> 00:03:28.020 align:start position:0%
+your eardrum and already in the cochlea
+this<00:03:25.540><c> time</c><00:03:26.350><c> series</c><00:03:26.709><c> signal</c><00:03:27.220><c> is</c><00:03:27.370><c> transformed</c>
+
+00:03:28.020 --> 00:03:28.030 align:start position:0%
+this time series signal is transformed
+ 
+
+00:03:28.030 --> 00:03:30.600 align:start position:0%
+this time series signal is transformed
+into<00:03:28.150><c> the</c><00:03:28.299><c> frequency</c><00:03:28.810><c> domain</c><00:03:29.400><c> similar</c><00:03:30.400><c> to</c><00:03:30.489><c> the</c>
+
+00:03:30.600 --> 00:03:30.610 align:start position:0%
+into the frequency domain similar to the
+ 
+
+00:03:30.610 --> 00:03:32.640 align:start position:0%
+into the frequency domain similar to the
+spectrogram<00:03:31.209><c> and</c><00:03:31.510><c> as</c><00:03:32.049><c> these</c><00:03:32.260><c> signals</c>
+
+00:03:32.640 --> 00:03:32.650 align:start position:0%
+spectrogram and as these signals
+ 
+
+00:03:32.650 --> 00:03:34.820 align:start position:0%
+spectrogram and as these signals
+propagates<00:03:33.130><c> through</c><00:03:33.400><c> the</c><00:03:33.430><c> auditory</c><00:03:33.850><c> cortex</c>
+
+00:03:34.820 --> 00:03:34.830 align:start position:0%
+propagates through the auditory cortex
+ 
+
+00:03:34.830 --> 00:03:38.789 align:start position:0%
+propagates through the auditory cortex
+you<00:03:35.830><c> start</c><00:03:36.760><c> looking</c><00:03:37.630><c> at</c><00:03:37.810><c> the</c><00:03:37.989><c> ratios</c><00:03:38.530><c> between</c>
+
+00:03:38.789 --> 00:03:38.799 align:start position:0%
+you start looking at the ratios between
+ 
+
+00:03:38.799 --> 00:03:41.190 align:start position:0%
+you start looking at the ratios between
+these<00:03:39.310><c> dominant</c><00:03:39.790><c> frequencies</c><00:03:40.510><c> and</c><00:03:40.780><c> their</c>
+
+00:03:41.190 --> 00:03:41.200 align:start position:0%
+these dominant frequencies and their
+ 
+
+00:03:41.200 --> 00:03:42.430 align:start position:0%
+these dominant frequencies and their
+amplitudes
+
+00:03:42.430 --> 00:03:42.440 align:start position:0%
+amplitudes
+ 
+
+00:03:42.440 --> 00:03:44.680 align:start position:0%
+amplitudes
+of<00:03:42.830><c> course</c><00:03:43.040><c> you</c><00:03:43.250><c> don't</c><00:03:43.460><c> do</c><00:03:43.640><c> this</c><00:03:43.820><c> your</c><00:03:44.450><c> brain</c>
+
+00:03:44.680 --> 00:03:44.690 align:start position:0%
+of course you don't do this your brain
+ 
+
+00:03:44.690 --> 00:03:47.500 align:start position:0%
+of course you don't do this your brain
+does<00:03:44.930><c> this</c><00:03:45.010><c> all</c><00:03:46.010><c> that</c><00:03:46.340><c> the</c><00:03:46.490><c> conscious</c><00:03:47.000><c> you</c><00:03:47.270><c> is</c>
+
+00:03:47.500 --> 00:03:47.510 align:start position:0%
+does this all that the conscious you is
+ 
+
+00:03:47.510 --> 00:03:50.230 align:start position:0%
+does this all that the conscious you is
+left<00:03:47.840><c> with</c><00:03:48.110><c> is</c><00:03:48.410><c> this</c><00:03:49.040><c> very</c><00:03:49.370><c> high</c><00:03:49.670><c> level</c><00:03:50.030><c> very</c>
+
+00:03:50.230 --> 00:03:50.240 align:start position:0%
+left with is this very high level very
+ 
+
+00:03:50.240 --> 00:03:52.810 align:start position:0%
+left with is this very high level very
+concise<00:03:50.930><c> meta</c><00:03:51.350><c> information</c><00:03:51.560><c> that</c><00:03:52.550><c> it's</c><00:03:52.700><c> a</c>
+
+00:03:52.810 --> 00:03:52.820 align:start position:0%
+concise meta information that it's a
+ 
+
+00:03:52.820 --> 00:03:55.600 align:start position:0%
+concise meta information that it's a
+piano<00:03:53.030><c> you</c><00:03:53.770><c> the</c><00:03:54.770><c> conscious</c><00:03:55.220><c> you</c><00:03:55.430><c> are</c>
+
+00:03:55.600 --> 00:03:55.610 align:start position:0%
+piano you the conscious you are
+ 
+
+00:03:55.610 --> 00:03:58.810 align:start position:0%
+piano you the conscious you are
+oblivious<00:03:56.240><c> to</c><00:03:56.540><c> all</c><00:03:57.260><c> of</c><00:03:57.560><c> that</c><00:03:57.770><c> extra</c><00:03:58.160><c> complex</c>
+
+00:03:58.810 --> 00:03:58.820 align:start position:0%
+oblivious to all of that extra complex
+ 
+
+00:03:58.820 --> 00:04:02.110 align:start position:0%
+oblivious to all of that extra complex
+information<00:03:59.120><c> surrounding</c><00:03:59.600><c> it</c><00:04:00.080><c> and</c><00:04:00.850><c> the</c><00:04:01.850><c> notes</c>
+
+00:04:02.110 --> 00:04:02.120 align:start position:0%
+information surrounding it and the notes
+ 
+
+00:04:02.120 --> 00:04:05.380 align:start position:0%
+information surrounding it and the notes
+that<00:04:02.870><c> you</c><00:04:03.050><c> detect</c><00:04:03.500><c> is</c><00:04:03.910><c> what</c><00:04:04.910><c> we</c><00:04:05.060><c> call</c><00:04:05.240><c> the</c>
+
+00:04:05.380 --> 00:04:05.390 align:start position:0%
+that you detect is what we call the
+ 
+
+00:04:05.390 --> 00:04:07.930 align:start position:0%
+that you detect is what we call the
+fundamental<00:04:05.900><c> frequency</c><00:04:06.520><c> you</c><00:04:07.520><c> realize</c><00:04:07.910><c> that</c>
+
+00:04:07.930 --> 00:04:07.940 align:start position:0%
+fundamental frequency you realize that
+ 
+
+00:04:07.940 --> 00:04:10.090 align:start position:0%
+fundamental frequency you realize that
+this<00:04:08.150><c> is</c><00:04:08.210><c> not</c><00:04:08.300><c> a</c><00:04:08.420><c> chord</c><00:04:08.750><c> it's</c><00:04:09.470><c> not</c><00:04:09.620><c> a</c><00:04:09.650><c> violin</c>
+
+00:04:10.090 --> 00:04:10.100 align:start position:0%
+this is not a chord it's not a violin
+ 
+
+00:04:10.100 --> 00:04:11.860 align:start position:0%
+this is not a chord it's not a violin
+playing<00:04:10.460><c> that</c><00:04:10.670><c> note</c><00:04:10.880><c> it's</c><00:04:11.180><c> not</c><00:04:11.240><c> a</c><00:04:11.360><c> dog</c><00:04:11.600><c> or</c><00:04:11.750><c> an</c>
+
+00:04:11.860 --> 00:04:11.870 align:start position:0%
+playing that note it's not a dog or an
+ 
+
+00:04:11.870 --> 00:04:15.010 align:start position:0%
+playing that note it's not a dog or an
+ambulance<00:04:12.260><c> it's</c><00:04:12.500><c> a</c><00:04:12.590><c> piano</c><00:04:13.270><c> and</c><00:04:14.270><c> this</c><00:04:14.900><c> is</c>
+
+00:04:15.010 --> 00:04:15.020 align:start position:0%
+ambulance it's a piano and this is
+ 
+
+00:04:15.020 --> 00:04:17.080 align:start position:0%
+ambulance it's a piano and this is
+essentially<00:04:15.530><c> what</c><00:04:15.650><c> I'm</c><00:04:15.770><c> interested</c><00:04:16.010><c> in</c><00:04:16.370><c> how</c>
+
+00:04:17.080 --> 00:04:17.090 align:start position:0%
+essentially what I'm interested in how
+ 
+
+00:04:17.090 --> 00:04:20.080 align:start position:0%
+essentially what I'm interested in how
+do<00:04:17.150><c> we</c><00:04:17.480><c> navigate</c><00:04:18.080><c> this</c><00:04:18.799><c> incredibly</c><00:04:19.549><c> complex</c>
+
+00:04:20.080 --> 00:04:20.090 align:start position:0%
+do we navigate this incredibly complex
+ 
+
+00:04:20.090 --> 00:04:24.190 align:start position:0%
+do we navigate this incredibly complex
+world<00:04:20.390><c> around</c><00:04:20.750><c> us</c><00:04:21.020><c> and</c><00:04:21.370><c> distill</c><00:04:22.370><c> it</c><00:04:22.520><c> down</c><00:04:23.200><c> to</c>
+
+00:04:24.190 --> 00:04:24.200 align:start position:0%
+world around us and distill it down to
+ 
+
+00:04:24.200 --> 00:04:26.380 align:start position:0%
+world around us and distill it down to
+this<00:04:24.320><c> really</c><00:04:24.800><c> really</c><00:04:25.130><c> minimal</c><00:04:25.640><c> concise</c>
+
+00:04:26.380 --> 00:04:26.390 align:start position:0%
+this really really minimal concise
+ 
+
+00:04:26.390 --> 00:04:29.470 align:start position:0%
+this really really minimal concise
+information<00:04:27.230><c> and</c><00:04:27.820><c> I'm</c><00:04:28.820><c> interested</c><00:04:29.120><c> in</c><00:04:29.390><c> what</c>
+
+00:04:29.470 --> 00:04:29.480 align:start position:0%
+information and I'm interested in what
+ 
+
+00:04:29.480 --> 00:04:30.850 align:start position:0%
+information and I'm interested in what
+are<00:04:29.660><c> the</c><00:04:29.690><c> mechanisms</c><00:04:30.290><c> that</c><00:04:30.350><c> allow</c><00:04:30.470><c> this</c><00:04:30.710><c> to</c>
+
+00:04:30.850 --> 00:04:30.860 align:start position:0%
+are the mechanisms that allow this to
+ 
+
+00:04:30.860 --> 00:04:33.250 align:start position:0%
+are the mechanisms that allow this to
+happen<00:04:31.000><c> but</c><00:04:32.000><c> also</c><00:04:32.210><c> what</c><00:04:32.840><c> are</c><00:04:32.870><c> the</c><00:04:33.020><c> side</c>
+
+00:04:33.250 --> 00:04:33.260 align:start position:0%
+happen but also what are the side
+ 
+
+00:04:33.260 --> 00:04:37.450 align:start position:0%
+happen but also what are the side
+effects<00:04:33.620><c> and</c><00:04:35.350><c> so</c><00:04:36.350><c> this</c><00:04:36.740><c> has</c><00:04:36.860><c> led</c><00:04:36.980><c> me</c><00:04:37.100><c> down</c><00:04:37.220><c> many</c>
+
+00:04:37.450 --> 00:04:37.460 align:start position:0%
+effects and so this has led me down many
+ 
+
+00:04:37.460 --> 00:04:38.980 align:start position:0%
+effects and so this has led me down many
+rabbit<00:04:37.790><c> holes</c>
+
+00:04:38.980 --> 00:04:38.990 align:start position:0%
+rabbit holes
+ 
+
+00:04:38.990 --> 00:04:41.560 align:start position:0%
+rabbit holes
+of<00:04:39.680><c> course</c><00:04:39.920><c> neuroscience</c><00:04:40.670><c> perception</c>
+
+00:04:41.560 --> 00:04:41.570 align:start position:0%
+of course neuroscience perception
+ 
+
+00:04:41.570 --> 00:04:43.420 align:start position:0%
+of course neuroscience perception
+cognition<00:04:42.040><c> philosophy</c><00:04:43.040><c> of</c><00:04:43.160><c> mind</c>
+
+00:04:43.420 --> 00:04:43.430 align:start position:0%
+cognition philosophy of mind
+ 
+
+00:04:43.430 --> 00:04:46.630 align:start position:0%
+cognition philosophy of mind
+consciousness<00:04:44.530><c> freewill</c><00:04:45.640><c> fundamental</c>
+
+00:04:46.630 --> 00:04:46.640 align:start position:0%
+consciousness freewill fundamental
+ 
+
+00:04:46.640 --> 00:04:49.120 align:start position:0%
+consciousness freewill fundamental
+physics<00:04:47.000><c> computer</c><00:04:47.540><c> science</c><00:04:47.690><c> data</c><00:04:48.620><c> science</c>
+
+00:04:49.120 --> 00:04:49.130 align:start position:0%
+physics computer science data science
+ 
+
+00:04:49.130 --> 00:04:53.230 align:start position:0%
+physics computer science data science
+machine<00:04:49.970><c> learning</c><00:04:50.360><c> AI</c><00:04:51.670><c> and</c><00:04:52.670><c> in</c><00:04:52.760><c> the</c><00:04:52.820><c> next</c><00:04:53.000><c> 10</c>
+
+00:04:53.230 --> 00:04:53.240 align:start position:0%
+machine learning AI and in the next 10
+ 
+
+00:04:53.240 --> 00:04:54.970 align:start position:0%
+machine learning AI and in the next 10
+minutes<00:04:53.270><c> I</c><00:04:53.750><c> will</c><00:04:53.900><c> try</c><00:04:54.140><c> to</c><00:04:54.170><c> take</c><00:04:54.470><c> you</c><00:04:54.680><c> through</c>
+
+00:04:54.970 --> 00:04:54.980 align:start position:0%
+minutes I will try to take you through
+ 
+
+00:04:54.980 --> 00:05:01.840 align:start position:0%
+minutes I will try to take you through
+all<00:04:55.220><c> of</c><00:04:55.400><c> these</c><00:04:56.290><c> areas</c><00:05:00.220><c> so</c><00:05:01.220><c> I</c><00:05:01.490><c> had</c><00:05:01.669><c> this</c>
+
+00:05:01.840 --> 00:05:01.850 align:start position:0%
+all of these areas so I had this
+ 
+
+00:05:01.850 --> 00:05:06.159 align:start position:0%
+all of these areas so I had this
+realization<00:05:02.450><c> a</c><00:05:03.110><c> few</c><00:05:03.320><c> years</c><00:05:03.530><c> ago</c><00:05:04.390><c> were</c><00:05:05.390><c> in</c><00:05:05.419><c> 2015</c>
+
+00:05:06.159 --> 00:05:06.169 align:start position:0%
+realization a few years ago were in 2015
+ 
+
+00:05:06.169 --> 00:05:09.130 align:start position:0%
+realization a few years ago were in 2015
+judging<00:05:06.710><c> by</c><00:05:06.740><c> the</c><00:05:06.830><c> dates</c><00:05:07.160><c> that</c><00:05:07.400><c> all</c><00:05:08.360><c> of</c><00:05:08.750><c> my</c><00:05:08.870><c> work</c>
+
+00:05:09.130 --> 00:05:09.140 align:start position:0%
+judging by the dates that all of my work
+ 
+
+00:05:09.140 --> 00:05:13.120 align:start position:0%
+judging by the dates that all of my work
+was<00:05:09.380><c> about</c><00:05:09.530><c> waves</c><00:05:09.919><c> or</c><00:05:10.490><c> God</c><00:05:11.360><c> and</c><00:05:12.130><c> somehow</c>
+
+00:05:13.120 --> 00:05:13.130 align:start position:0%
+was about waves or God and somehow
+ 
+
+00:05:13.130 --> 00:05:16.260 align:start position:0%
+was about waves or God and somehow
+quantum<00:05:13.880><c> mechanics</c><00:05:14.330><c> unifies</c><00:05:14.990><c> the</c><00:05:15.350><c> two</c><00:05:15.560><c> I</c>
+
+00:05:16.260 --> 00:05:16.270 align:start position:0%
+quantum mechanics unifies the two I
+ 
+
+00:05:16.270 --> 00:05:18.280 align:start position:0%
+quantum mechanics unifies the two I
+don't<00:05:17.270><c> know</c><00:05:17.330><c> what</c><00:05:17.480><c> I</c><00:05:17.510><c> was</c><00:05:17.690><c> on</c><00:05:17.840><c> when</c><00:05:17.990><c> I</c><00:05:18.020><c> said</c>
+
+00:05:18.280 --> 00:05:18.290 align:start position:0%
+don't know what I was on when I said
+ 
+
+00:05:18.290 --> 00:05:22.840 align:start position:0%
+don't know what I was on when I said
+that<00:05:18.500><c> but</c><00:05:20.230><c> looking</c><00:05:21.230><c> back</c><00:05:21.410><c> I</c><00:05:21.770><c> think</c><00:05:21.890><c> when</c><00:05:22.580><c> I</c><00:05:22.610><c> use</c>
+
+00:05:22.840 --> 00:05:22.850 align:start position:0%
+that but looking back I think when I use
+ 
+
+00:05:22.850 --> 00:05:25.540 align:start position:0%
+that but looking back I think when I use
+the<00:05:23.000><c> term</c><00:05:23.030><c> waves</c><00:05:23.540><c> I</c><00:05:23.930><c> think</c><00:05:24.890><c> what</c><00:05:25.070><c> I</c><00:05:25.100><c> meant</c><00:05:25.370><c> was</c>
+
+00:05:25.540 --> 00:05:25.550 align:start position:0%
+the term waves I think what I meant was
+ 
+
+00:05:25.550 --> 00:05:28.330 align:start position:0%
+the term waves I think what I meant was
+the<00:05:25.970><c> patterns</c><00:05:26.300><c> in</c><00:05:26.450><c> nature</c><00:05:26.870><c> which</c><00:05:27.620><c> we</c><00:05:27.830><c> humans</c>
+
+00:05:28.330 --> 00:05:28.340 align:start position:0%
+the patterns in nature which we humans
+ 
+
+00:05:28.340 --> 00:05:30.520 align:start position:0%
+the patterns in nature which we humans
+have<00:05:28.490><c> managed</c><00:05:28.910><c> within</c><00:05:29.630><c> our</c><00:05:29.780><c> limited</c>
+
+00:05:30.520 --> 00:05:30.530 align:start position:0%
+have managed within our limited
+ 
+
+00:05:30.530 --> 00:05:32.800 align:start position:0%
+have managed within our limited
+cognitive<00:05:30.950><c> abilities</c><00:05:31.340><c> to</c><00:05:32.270><c> collectively</c>
+
+00:05:32.800 --> 00:05:32.810 align:start position:0%
+cognitive abilities to collectively
+ 
+
+00:05:32.810 --> 00:05:36.550 align:start position:0%
+cognitive abilities to collectively
+recognize<00:05:33.760><c> decipher</c><00:05:34.760><c> and</c><00:05:35.080><c> formalize</c><00:05:36.080><c> into</c>
+
+00:05:36.550 --> 00:05:36.560 align:start position:0%
+recognize decipher and formalize into
+ 
+
+00:05:36.560 --> 00:05:39.400 align:start position:0%
+recognize decipher and formalize into
+equations<00:05:37.010><c> and</c><00:05:37.190><c> theories</c><00:05:38.140><c> often</c><00:05:39.140><c> that</c><00:05:39.320><c> we</c>
+
+00:05:39.400 --> 00:05:39.410 align:start position:0%
+equations and theories often that we
+ 
+
+00:05:39.410 --> 00:05:41.740 align:start position:0%
+equations and theories often that we
+even<00:05:39.650><c> somehow</c><00:05:40.280><c> find</c><00:05:40.610><c> beautiful</c><00:05:41.240><c> whatever</c>
+
+00:05:41.740 --> 00:05:41.750 align:start position:0%
+even somehow find beautiful whatever
+ 
+
+00:05:41.750 --> 00:05:44.890 align:start position:0%
+even somehow find beautiful whatever
+that<00:05:42.050><c> means</c><00:05:42.230><c> and</c><00:05:42.669><c> when</c><00:05:43.669><c> I</c><00:05:43.700><c> use</c><00:05:43.910><c> the</c><00:05:44.030><c> term</c><00:05:44.060><c> God</c><00:05:44.540><c> I</c>
+
+00:05:44.890 --> 00:05:44.900 align:start position:0%
+that means and when I use the term God I
+ 
+
+00:05:44.900 --> 00:05:47.470 align:start position:0%
+that means and when I use the term God I
+think<00:05:45.410><c> I</c><00:05:45.560><c> meant</c><00:05:45.800><c> those</c><00:05:46.400><c> mysterious</c><00:05:46.880><c> aspects</c>
+
+00:05:47.470 --> 00:05:47.480 align:start position:0%
+think I meant those mysterious aspects
+ 
+
+00:05:47.480 --> 00:05:49.420 align:start position:0%
+think I meant those mysterious aspects
+of<00:05:47.630><c> nature</c><00:05:48.080><c> which</c><00:05:48.890><c> we</c><00:05:49.040><c> have</c><00:05:49.190><c> yet</c><00:05:49.370><c> to</c>
+
+00:05:49.420 --> 00:05:49.430 align:start position:0%
+of nature which we have yet to
+ 
+
+00:05:49.430 --> 00:05:51.370 align:start position:0%
+of nature which we have yet to
+understand<00:05:50.120><c> and</c><00:05:50.450><c> the</c><00:05:50.660><c> lengths</c><00:05:50.990><c> that</c><00:05:51.050><c> we</c><00:05:51.229><c> will</c>
+
+00:05:51.370 --> 00:05:51.380 align:start position:0%
+understand and the lengths that we will
+ 
+
+00:05:51.380 --> 00:05:54.159 align:start position:0%
+understand and the lengths that we will
+go<00:05:51.560><c> to</c><00:05:51.590><c> the</c><00:05:52.460><c> stories</c><00:05:53.000><c> you</c><00:05:53.120><c> will</c><00:05:53.270><c> tell</c><00:05:53.510><c> to</c><00:05:53.900><c> try</c>
+
+00:05:54.159 --> 00:05:54.169 align:start position:0%
+go to the stories you will tell to try
+ 
+
+00:05:54.169 --> 00:05:55.359 align:start position:0%
+go to the stories you will tell to try
+and<00:05:54.350><c> make</c><00:05:54.470><c> sense</c><00:05:54.740><c> of</c>
+
+00:05:55.359 --> 00:05:55.369 align:start position:0%
+and make sense of
+ 
+
+00:05:55.369 --> 00:05:58.390 align:start position:0%
+and make sense of
+and<00:05:55.930><c> with</c><00:05:56.930><c> the</c><00:05:57.020><c> term</c><00:05:57.229><c> quantum</c><00:05:57.680><c> mechanics</c><00:05:58.159><c> I</c>
+
+00:05:58.390 --> 00:05:58.400 align:start position:0%
+and with the term quantum mechanics I
+ 
+
+00:05:58.400 --> 00:06:00.579 align:start position:0%
+and with the term quantum mechanics I
+think<00:05:58.729><c> I</c><00:05:58.849><c> meant</c><00:05:59.089><c> the</c><00:05:59.719><c> fringes</c><00:06:00.169><c> of</c><00:06:00.289><c> human</c>
+
+00:06:00.579 --> 00:06:00.589 align:start position:0%
+think I meant the fringes of human
+ 
+
+00:06:00.589 --> 00:06:04.149 align:start position:0%
+think I meant the fringes of human
+knowledge<00:06:00.770><c> which</c><00:06:01.639><c> we</c><00:06:01.879><c> empirically</c><00:06:03.159><c> somehow</c>
+
+00:06:04.149 --> 00:06:04.159 align:start position:0%
+knowledge which we empirically somehow
+ 
+
+00:06:04.159 --> 00:06:07.209 align:start position:0%
+knowledge which we empirically somehow
+believe<00:06:05.119><c> to</c><00:06:05.360><c> be</c><00:06:05.449><c> relatively</c><00:06:05.839><c> accurate</c><00:06:06.349><c> and</c><00:06:06.619><c> we</c>
+
+00:06:07.209 --> 00:06:07.219 align:start position:0%
+believe to be relatively accurate and we
+ 
+
+00:06:07.219 --> 00:06:08.619 align:start position:0%
+believe to be relatively accurate and we
+can<00:06:07.399><c> maybe</c><00:06:07.580><c> understand</c><00:06:08.210><c> through</c><00:06:08.479><c> the</c>
+
+00:06:08.619 --> 00:06:08.629 align:start position:0%
+can maybe understand through the
+ 
+
+00:06:08.629 --> 00:06:11.290 align:start position:0%
+can maybe understand through the
+language<00:06:08.809><c> of</c><00:06:09.110><c> mathematics</c><00:06:09.939><c> but</c><00:06:10.939><c> we're</c><00:06:11.119><c> not</c>
+
+00:06:11.290 --> 00:06:11.300 align:start position:0%
+language of mathematics but we're not
+ 
+
+00:06:11.300 --> 00:06:13.749 align:start position:0%
+language of mathematics but we're not
+really<00:06:11.539><c> able</c><00:06:11.990><c> to</c><00:06:12.139><c> comprehend</c><00:06:12.770><c> on</c><00:06:13.099><c> a</c><00:06:13.159><c> deeper</c>
+
+00:06:13.749 --> 00:06:13.759 align:start position:0%
+really able to comprehend on a deeper
+ 
+
+00:06:13.759 --> 00:06:17.529 align:start position:0%
+really able to comprehend on a deeper
+human<00:06:14.509><c> level</c><00:06:14.899><c> and</c><00:06:15.819><c> that's</c><00:06:16.819><c> the</c><00:06:16.999><c> area</c><00:06:17.210><c> where</c><00:06:17.509><c> I</c>
+
+00:06:17.529 --> 00:06:17.539 align:start position:0%
+human level and that's the area where I
+ 
+
+00:06:17.539 --> 00:06:19.709 align:start position:0%
+human level and that's the area where I
+find<00:06:17.869><c> myself</c><00:06:18.050><c> oscillating</c><00:06:18.949><c> around</c><00:06:19.069><c> the</c><00:06:19.369><c> most</c>
+
+00:06:19.709 --> 00:06:19.719 align:start position:0%
+find myself oscillating around the most
+ 
+
+00:06:19.719 --> 00:06:22.269 align:start position:0%
+find myself oscillating around the most
+broadly<00:06:20.719><c> speaking</c><00:06:21.110><c> I</c><00:06:21.379><c> think</c><00:06:21.619><c> of</c><00:06:21.740><c> it</c><00:06:21.860><c> as</c><00:06:21.979><c> the</c>
+
+00:06:22.269 --> 00:06:22.279 align:start position:0%
+broadly speaking I think of it as the
+ 
+
+00:06:22.279 --> 00:06:23.499 align:start position:0%
+broadly speaking I think of it as the
+intersections<00:06:22.879><c> of</c><00:06:23.029><c> science</c><00:06:23.360><c> and</c>
+
+00:06:23.499 --> 00:06:23.509 align:start position:0%
+intersections of science and
+ 
+
+00:06:23.509 --> 00:06:26.379 align:start position:0%
+intersections of science and
+spirituality<00:06:24.339><c> but</c><00:06:25.339><c> really</c><00:06:25.789><c> I'm</c><00:06:26.180><c> interested</c>
+
+00:06:26.379 --> 00:06:26.389 align:start position:0%
+spirituality but really I'm interested
+ 
+
+00:06:26.389 --> 00:06:29.469 align:start position:0%
+spirituality but really I'm interested
+in<00:06:26.779><c> the</c><00:06:26.869><c> collisions</c><00:06:27.379><c> between</c><00:06:27.770><c> nature</c><00:06:28.479><c> science</c>
+
+00:06:29.469 --> 00:06:29.479 align:start position:0%
+in the collisions between nature science
+ 
+
+00:06:29.479 --> 00:06:33.309 align:start position:0%
+in the collisions between nature science
+technology<00:06:30.349><c> FX</c><00:06:31.149><c> ritual</c><00:06:32.149><c> tradition</c><00:06:32.719><c> and</c>
+
+00:06:33.309 --> 00:06:33.319 align:start position:0%
+technology FX ritual tradition and
+ 
+
+00:06:33.319 --> 00:06:37.809 align:start position:0%
+technology FX ritual tradition and
+religion<00:06:35.649><c> so</c><00:06:36.649><c> that</c><00:06:36.800><c> previous</c><00:06:37.189><c> work</c><00:06:37.399><c> I</c><00:06:37.550><c> showed</c>
+
+00:06:37.809 --> 00:06:37.819 align:start position:0%
+religion so that previous work I showed
+ 
+
+00:06:37.819 --> 00:06:39.489 align:start position:0%
+religion so that previous work I showed
+was<00:06:38.089><c> called</c><00:06:38.300><c> simple</c><00:06:38.569><c> harmonic</c><00:06:38.930><c> motion</c><00:06:39.319><c> it's</c>
+
+00:06:39.489 --> 00:06:39.499 align:start position:0%
+was called simple harmonic motion it's
+ 
+
+00:06:39.499 --> 00:06:41.469 align:start position:0%
+was called simple harmonic motion it's
+from<00:06:39.680><c> 2011</c><00:06:40.309><c> and</c><00:06:40.460><c> I've</c><00:06:41.029><c> made</c><00:06:41.240><c> many</c>
+
+00:06:41.469 --> 00:06:41.479 align:start position:0%
+from 2011 and I've made many
+ 
+
+00:06:41.479 --> 00:06:46.179 align:start position:0%
+from 2011 and I've made many
+incarnations<00:06:42.349><c> of</c><00:06:42.919><c> it</c><00:06:44.199><c> some</c><00:06:45.199><c> rather</c><00:06:45.559><c> immersive</c>
+
+00:06:46.179 --> 00:06:46.189 align:start position:0%
+incarnations of it some rather immersive
+ 
+
+00:06:46.189 --> 00:06:50.579 align:start position:0%
+incarnations of it some rather immersive
+and<00:06:46.749><c> a</c><00:06:47.749><c> live</c><00:06:48.680><c> performance</c><00:06:49.249><c> it</c><00:06:49.459><c> was</c><00:06:49.580><c> from</c><00:06:49.759><c> 2015</c>
+
+00:06:50.579 --> 00:06:50.589 align:start position:0%
+and a live performance it was from 2015
+ 
+
+00:06:50.589 --> 00:06:53.409 align:start position:0%
+and a live performance it was from 2015
+from<00:06:51.589><c> in</c><00:06:51.889><c> 2014</c><00:06:52.699><c> I</c><00:06:52.789><c> made</c><00:06:52.909><c> a</c><00:06:52.939><c> quite</c><00:06:53.180><c> a</c><00:06:53.209><c> large</c>
+
+00:06:53.409 --> 00:06:53.419 align:start position:0%
+from in 2014 I made a quite a large
+ 
+
+00:06:53.419 --> 00:06:56.339 align:start position:0%
+from in 2014 I made a quite a large
+installation<00:06:54.139><c> with</c><00:06:54.830><c> 80</c><00:06:55.009><c> robotic</c><00:06:55.610><c> spotlights</c>
+
+00:06:56.339 --> 00:06:56.349 align:start position:0%
+installation with 80 robotic spotlights
+ 
+
+00:06:56.349 --> 00:06:59.049 align:start position:0%
+installation with 80 robotic spotlights
+and<00:06:57.349><c> it's</c><00:06:57.529><c> the</c><00:06:57.619><c> same</c><00:06:57.800><c> concept</c><00:06:58.369><c> as</c><00:06:58.520><c> that</c><00:06:58.729><c> video</c>
+
+00:06:59.049 --> 00:06:59.059 align:start position:0%
+and it's the same concept as that video
+ 
+
+00:06:59.059 --> 00:07:01.659 align:start position:0%
+and it's the same concept as that video
+you<00:06:59.300><c> saw</c><00:06:59.479><c> earlier</c><00:06:59.509><c> just</c><00:07:00.139><c> applied</c><00:07:00.589><c> two</c><00:07:01.159><c> moving</c>
+
+00:07:01.659 --> 00:07:01.669 align:start position:0%
+you saw earlier just applied two moving
+ 
+
+00:07:01.669 --> 00:07:03.699 align:start position:0%
+you saw earlier just applied two moving
+lights<00:07:01.879><c> and</c><00:07:02.270><c> this</c><00:07:02.749><c> is</c><00:07:02.839><c> what</c><00:07:02.959><c> you</c><00:07:03.080><c> see</c><00:07:03.319><c> in</c><00:07:03.469><c> here</c>
+
+00:07:03.699 --> 00:07:03.709 align:start position:0%
+lights and this is what you see in here
+ 
+
+00:07:03.709 --> 00:07:05.589 align:start position:0%
+lights and this is what you see in here
+when<00:07:04.159><c> you</c><00:07:04.309><c> lie</c><00:07:04.490><c> down</c><00:07:04.550><c> in</c><00:07:04.819><c> the</c><00:07:04.849><c> middle</c><00:07:05.180><c> and</c><00:07:05.389><c> look</c>
+
+00:07:05.589 --> 00:07:05.599 align:start position:0%
+when you lie down in the middle and look
+ 
+
+00:07:05.599 --> 00:07:08.679 align:start position:0%
+when you lie down in the middle and look
+up<00:07:05.749><c> at</c><00:07:05.839><c> the</c><00:07:05.930><c> sky</c><00:07:06.909><c> because</c><00:07:07.909><c> it's</c><00:07:08.089><c> projecting</c>
+
+00:07:08.679 --> 00:07:08.689 align:start position:0%
+up at the sky because it's projecting
+ 
+
+00:07:08.689 --> 00:07:13.749 align:start position:0%
+up at the sky because it's projecting
+onto<00:07:09.110><c> the</c><00:07:09.589><c> sky</c><00:07:09.830><c> onto</c><00:07:10.159><c> the</c><00:07:10.399><c> clouds</c><00:07:10.669><c> and</c><00:07:12.759><c> here</c>
+
+00:07:13.749 --> 00:07:13.759 align:start position:0%
+onto the sky onto the clouds and here
+ 
+
+00:07:13.759 --> 00:07:16.509 align:start position:0%
+onto the sky onto the clouds and here
+this<00:07:14.029><c> again</c><00:07:14.419><c> it's</c><00:07:14.599><c> the</c><00:07:14.779><c> same</c><00:07:14.809><c> themes</c><00:07:15.409><c> of</c><00:07:15.860><c> the</c>
+
+00:07:16.509 --> 00:07:16.519 align:start position:0%
+this again it's the same themes of the
+ 
+
+00:07:16.519 --> 00:07:18.699 align:start position:0%
+this again it's the same themes of the
+idea<00:07:16.819><c> of</c><00:07:16.999><c> complexity</c><00:07:17.779><c> emerging</c><00:07:18.529><c> from</c>
+
+00:07:18.699 --> 00:07:18.709 align:start position:0%
+idea of complexity emerging from
+ 
+
+00:07:18.709 --> 00:07:21.070 align:start position:0%
+idea of complexity emerging from
+simplicity<00:07:18.949><c> is</c><00:07:19.580><c> a</c><00:07:19.639><c> well-established</c><00:07:20.389><c> well</c>
+
+00:07:21.070 --> 00:07:21.080 align:start position:0%
+simplicity is a well-established well
+ 
+
+00:07:21.080 --> 00:07:24.670 align:start position:0%
+simplicity is a well-established well
+discussed<00:07:21.469><c> area</c><00:07:22.509><c> argue</c><00:07:23.509><c> is</c><00:07:23.689><c> how</c><00:07:23.870><c> the</c><00:07:24.319><c> universe</c>
+
+00:07:24.670 --> 00:07:24.680 align:start position:0%
+discussed area argue is how the universe
+ 
+
+00:07:24.680 --> 00:07:26.230 align:start position:0%
+discussed area argue is how the universe
+works<00:07:24.979><c> is</c><00:07:25.129><c> how</c><00:07:25.219><c> evolution</c><00:07:25.519><c> works</c><00:07:25.939><c> is</c><00:07:26.120><c> how</c>
+
+00:07:26.230 --> 00:07:26.240 align:start position:0%
+works is how evolution works is how
+ 
+
+00:07:26.240 --> 00:07:28.719 align:start position:0%
+works is how evolution works is how
+physics<00:07:26.629><c> works</c><00:07:26.889><c> but</c><00:07:27.889><c> what</c><00:07:28.009><c> I'm</c><00:07:28.129><c> fascinated</c><00:07:28.370><c> by</c>
+
+00:07:28.719 --> 00:07:28.729 align:start position:0%
+physics works but what I'm fascinated by
+ 
+
+00:07:28.729 --> 00:07:32.230 align:start position:0%
+physics works but what I'm fascinated by
+now<00:07:29.059><c> is</c><00:07:29.419><c> how</c><00:07:29.749><c> we</c><00:07:29.809><c> reverse</c><00:07:30.620><c> that</c><00:07:30.830><c> process</c><00:07:31.240><c> we</c>
+
+00:07:32.230 --> 00:07:32.240 align:start position:0%
+now is how we reverse that process we
+ 
+
+00:07:32.240 --> 00:07:34.290 align:start position:0%
+now is how we reverse that process we
+take<00:07:32.539><c> complexity</c><00:07:33.259><c> and</c><00:07:33.559><c> we'll</c><00:07:33.709><c> reduce</c><00:07:33.860><c> it</c>
+
+00:07:34.290 --> 00:07:34.300 align:start position:0%
+take complexity and we'll reduce it
+ 
+
+00:07:34.300 --> 00:07:36.549 align:start position:0%
+take complexity and we'll reduce it
+chemistry's<00:07:35.300><c> abstracted</c><00:07:35.899><c> physics</c><00:07:36.259><c> biology</c>
+
+00:07:36.549 --> 00:07:36.559 align:start position:0%
+chemistry's abstracted physics biology
+ 
+
+00:07:36.559 --> 00:07:40.239 align:start position:0%
+chemistry's abstracted physics biology
+is<00:07:36.889><c> abstracted</c><00:07:37.459><c> chemistry</c><00:07:37.999><c> etc</c><00:07:38.990><c> and</c><00:07:39.860><c> all</c><00:07:40.069><c> of</c>
+
+00:07:40.239 --> 00:07:40.249 align:start position:0%
+is abstracted chemistry etc and all of
+ 
+
+00:07:40.249 --> 00:07:43.360 align:start position:0%
+is abstracted chemistry etc and all of
+this<00:07:40.339><c> is</c><00:07:40.519><c> projected</c><00:07:41.120><c> onto</c><00:07:41.779><c> the</c><00:07:42.050><c> cloud</c><00:07:42.370><c> which</c>
+
+00:07:43.360 --> 00:07:43.370 align:start position:0%
+this is projected onto the cloud which
+ 
+
+00:07:43.370 --> 00:07:46.879 align:start position:0%
+this is projected onto the cloud which
+is<00:07:43.399><c> where</c><00:07:43.849><c> traditionally</c><00:07:44.659><c> God</c><00:07:44.959><c> used</c><00:07:45.439><c> to</c><00:07:45.620><c> live</c>
+
+00:07:46.879 --> 00:07:46.889 align:start position:0%
+is where traditionally God used to live
+ 
+
+00:07:46.889 --> 00:07:51.350 align:start position:0%
+is where traditionally God used to live
+but<00:07:47.550><c> now</c><00:07:47.759><c> we</c><00:07:48.240><c> live</c><00:07:48.360><c> in</c><00:07:48.419><c> an</c><00:07:48.599><c> age</c><00:07:48.719><c> of</c><00:07:49.050><c> AI</c><00:07:49.530><c> and</c><00:07:50.360><c> like</c>
+
+00:07:51.350 --> 00:07:51.360 align:start position:0%
+but now we live in an age of AI and like
+ 
+
+00:07:51.360 --> 00:07:53.300 align:start position:0%
+but now we live in an age of AI and like
+discrete<00:07:52.050><c> the</c><00:07:52.199><c> screens</c><00:07:52.499><c> of</c><00:07:52.650><c> the</c><00:07:52.680><c> future</c><00:07:53.159><c> that</c>
+
+00:07:53.300 --> 00:07:53.310 align:start position:0%
+discrete the screens of the future that
+ 
+
+00:07:53.310 --> 00:07:55.999 align:start position:0%
+discrete the screens of the future that
+Rosa<00:07:53.520><c> pointed</c><00:07:54.030><c> out</c><00:07:54.150><c> yesterday</c><00:07:54.360><c> AI</c><00:07:55.139><c> is</c><00:07:55.680><c> also</c>
+
+00:07:55.999 --> 00:07:56.009 align:start position:0%
+Rosa pointed out yesterday AI is also
+ 
+
+00:07:56.009 --> 00:07:59.390 align:start position:0%
+Rosa pointed out yesterday AI is also
+very<00:07:56.189><c> blue</c><00:07:56.400><c> and</c><00:07:56.430><c> shiny</c><00:07:57.889><c> we</c><00:07:58.889><c> live</c><00:07:59.039><c> in</c><00:07:59.099><c> an</c><00:07:59.189><c> era</c><00:07:59.340><c> of</c>
+
+00:07:59.390 --> 00:07:59.400 align:start position:0%
+very blue and shiny we live in an era of
+ 
+
+00:07:59.400 --> 00:08:01.309 align:start position:0%
+very blue and shiny we live in an era of
+machine<00:07:59.789><c> learning</c><00:08:00.180><c> and</c><00:08:00.330><c> big</c><00:08:00.719><c> data</c><00:08:00.960><c> and</c>
+
+00:08:01.309 --> 00:08:01.319 align:start position:0%
+machine learning and big data and
+ 
+
+00:08:01.319 --> 00:08:04.189 align:start position:0%
+machine learning and big data and
+computational<00:08:01.949><c> statistics</c><00:08:02.099><c> and</c><00:08:02.930><c> to</c><00:08:03.930><c> quote</c>
+
+00:08:04.189 --> 00:08:04.199 align:start position:0%
+computational statistics and to quote
+ 
+
+00:08:04.199 --> 00:08:06.290 align:start position:0%
+computational statistics and to quote
+the<00:08:04.409><c> pioneering</c><00:08:04.919><c> nurse</c><00:08:05.219><c> and</c><00:08:05.550><c> statistician</c>
+
+00:08:06.290 --> 00:08:06.300 align:start position:0%
+the pioneering nurse and statistician
+ 
+
+00:08:06.300 --> 00:08:09.619 align:start position:0%
+the pioneering nurse and statistician
+Florence<00:08:06.629><c> Nightingale</c><00:08:07.699><c> to</c><00:08:08.699><c> understand</c><00:08:09.270><c> God's</c>
+
+00:08:09.619 --> 00:08:09.629 align:start position:0%
+Florence Nightingale to understand God's
+ 
+
+00:08:09.629 --> 00:08:12.140 align:start position:0%
+Florence Nightingale to understand God's
+thoughts<00:08:09.990><c> we</c><00:08:10.469><c> must</c><00:08:10.710><c> study</c><00:08:10.860><c> statistics</c><00:08:11.580><c> for</c>
+
+00:08:12.140 --> 00:08:12.150 align:start position:0%
+thoughts we must study statistics for
+ 
+
+00:08:12.150 --> 00:08:16.279 align:start position:0%
+thoughts we must study statistics for
+these<00:08:12.360><c> are</c><00:08:12.629><c> the</c><00:08:12.719><c> measure</c><00:08:12.930><c> of</c><00:08:13.050><c> his</c><00:08:13.349><c> purpose</c><00:08:15.289><c> I'm</c>
+
+00:08:16.279 --> 00:08:16.289 align:start position:0%
+these are the measure of his purpose I'm
+ 
+
+00:08:16.289 --> 00:08:17.989 align:start position:0%
+these are the measure of his purpose I'm
+really<00:08:16.620><c> fascinated</c><00:08:16.889><c> by</c><00:08:17.400><c> the</c><00:08:17.460><c> parallels</c>
+
+00:08:17.989 --> 00:08:17.999 align:start position:0%
+really fascinated by the parallels
+ 
+
+00:08:17.999 --> 00:08:20.029 align:start position:0%
+really fascinated by the parallels
+between<00:08:18.419><c> the</c><00:08:18.749><c> current</c><00:08:19.050><c> rise</c><00:08:19.199><c> of</c><00:08:19.379><c> AI</c><00:08:19.560><c> and</c><00:08:19.830><c> mass</c>
+
+00:08:20.029 --> 00:08:20.039 align:start position:0%
+between the current rise of AI and mass
+ 
+
+00:08:20.039 --> 00:08:21.350 align:start position:0%
+between the current rise of AI and mass
+surveillance<00:08:20.250><c> with</c><00:08:20.819><c> the</c><00:08:20.939><c> ultimate</c>
+
+00:08:21.350 --> 00:08:21.360 align:start position:0%
+surveillance with the ultimate
+ 
+
+00:08:21.360 --> 00:08:23.480 align:start position:0%
+surveillance with the ultimate
+panopticon<00:08:21.629><c> and</c><00:08:22.020><c> that</c><00:08:22.259><c> is</c><00:08:22.409><c> religion</c><00:08:22.830><c> the</c>
+
+00:08:23.480 --> 00:08:23.490 align:start position:0%
+panopticon and that is religion the
+ 
+
+00:08:23.490 --> 00:08:25.909 align:start position:0%
+panopticon and that is religion the
+all-seeing<00:08:23.909><c> eye</c><00:08:23.939><c> of</c><00:08:24.090><c> God</c><00:08:24.449><c> and</c><00:08:25.409><c> I</c><00:08:25.529><c> find</c><00:08:25.800><c> it</c>
+
+00:08:25.909 --> 00:08:25.919 align:start position:0%
+all-seeing eye of God and I find it
+ 
+
+00:08:25.919 --> 00:08:27.890 align:start position:0%
+all-seeing eye of God and I find it
+really<00:08:26.099><c> fascinating</c><00:08:26.370><c> the</c><00:08:27.210><c> correlations</c>
+
+00:08:27.890 --> 00:08:27.900 align:start position:0%
+really fascinating the correlations
+ 
+
+00:08:27.900 --> 00:08:31.129 align:start position:0%
+really fascinating the correlations
+historic<00:08:28.770><c> and</c><00:08:28.979><c> current</c><00:08:29.389><c> between</c><00:08:30.389><c> societies</c>
+
+00:08:31.129 --> 00:08:31.139 align:start position:0%
+historic and current between societies
+ 
+
+00:08:31.139 --> 00:08:33.529 align:start position:0%
+historic and current between societies
+modes<00:08:31.560><c> of</c><00:08:31.800><c> subsistence</c><00:08:32.120><c> the</c><00:08:33.120><c> social</c>
+
+00:08:33.529 --> 00:08:33.539 align:start position:0%
+modes of subsistence the social
+ 
+
+00:08:33.539 --> 00:08:36.199 align:start position:0%
+modes of subsistence the social
+structures<00:08:34.079><c> the</c><00:08:34.589><c> ethics</c><00:08:35.010><c> values</c><00:08:35.250><c> the</c><00:08:35.789><c> ethical</c>
+
+00:08:36.199 --> 00:08:36.209 align:start position:0%
+structures the ethics values the ethical
+ 
+
+00:08:36.209 --> 00:08:39.019 align:start position:0%
+structures the ethics values the ethical
+frameworks<00:08:37.039><c> with</c><00:08:38.039><c> the</c><00:08:38.159><c> qualities</c><00:08:38.729><c> and</c>
+
+00:08:39.019 --> 00:08:39.029 align:start position:0%
+frameworks with the qualities and
+ 
+
+00:08:39.029 --> 00:08:41.509 align:start position:0%
+frameworks with the qualities and
+characteristics<00:08:39.870><c> of</c><00:08:40.409><c> the</c><00:08:40.560><c> deities</c><00:08:41.010><c> and</c><00:08:41.039><c> their</c>
+
+00:08:41.509 --> 00:08:41.519 align:start position:0%
+characteristics of the deities and their
+ 
+
+00:08:41.519 --> 00:08:43.610 align:start position:0%
+characteristics of the deities and their
+belief<00:08:41.729><c> systems</c><00:08:42.180><c> and</c><00:08:42.719><c> I</c><00:08:42.930><c> don't</c><00:08:42.990><c> just</c><00:08:43.320><c> mean</c><00:08:43.469><c> the</c>
+
+00:08:43.610 --> 00:08:43.620 align:start position:0%
+belief systems and I don't just mean the
+ 
+
+00:08:43.620 --> 00:08:45.920 align:start position:0%
+belief systems and I don't just mean the
+handful<00:08:43.979><c> of</c><00:08:44.130><c> regions</c><00:08:44.490><c> we</c><00:08:44.610><c> have</c><00:08:44.640><c> today</c><00:08:45.089><c> I</c><00:08:45.329><c> mean</c>
+
+00:08:45.920 --> 00:08:45.930 align:start position:0%
+handful of regions we have today I mean
+ 
+
+00:08:45.930 --> 00:08:47.509 align:start position:0%
+handful of regions we have today I mean
+the<00:08:45.990><c> thousands</c><00:08:46.620><c> of</c><00:08:46.709><c> deities</c><00:08:47.130><c> and</c><00:08:47.339><c> belief</c>
+
+00:08:47.509 --> 00:08:47.519 align:start position:0%
+the thousands of deities and belief
+ 
+
+00:08:47.519 --> 00:08:49.519 align:start position:0%
+the thousands of deities and belief
+systems<00:08:47.550><c> we've</c><00:08:48.060><c> had</c><00:08:48.300><c> over</c><00:08:48.540><c> the</c><00:08:48.720><c> years</c><00:08:48.839><c> and</c><00:08:49.260><c> how</c>
+
+00:08:49.519 --> 00:08:49.529 align:start position:0%
+systems we've had over the years and how
+ 
+
+00:08:49.529 --> 00:08:52.009 align:start position:0%
+systems we've had over the years and how
+they've<00:08:50.130><c> always</c><00:08:50.339><c> co-evolved</c><00:08:51.209><c> to</c><00:08:51.630><c> match</c><00:08:51.810><c> the</c>
+
+00:08:52.009 --> 00:08:52.019 align:start position:0%
+they've always co-evolved to match the
+ 
+
+00:08:52.019 --> 00:08:55.370 align:start position:0%
+they've always co-evolved to match the
+needs<00:08:52.260><c> of</c><00:08:52.529><c> the</c><00:08:52.649><c> host</c><00:08:52.829><c> societies</c><00:08:54.290><c> because</c><00:08:55.290><c> it</c>
+
+00:08:55.370 --> 00:08:55.380 align:start position:0%
+needs of the host societies because it
+ 
+
+00:08:55.380 --> 00:08:56.930 align:start position:0%
+needs of the host societies because it
+was<00:08:55.500><c> ancient</c><00:08:55.920><c> religions</c><00:08:56.370><c> that</c><00:08:56.579><c> imposed</c>
+
+00:08:56.930 --> 00:08:56.940 align:start position:0%
+was ancient religions that imposed
+ 
+
+00:08:56.940 --> 00:08:58.579 align:start position:0%
+was ancient religions that imposed
+omnipotent<00:08:57.449><c> powers</c><00:08:57.990><c> watching</c><00:08:58.320><c> over</c><00:08:58.560><c> us</c>
+
+00:08:58.579 --> 00:08:58.589 align:start position:0%
+omnipotent powers watching over us
+ 
+
+00:08:58.589 --> 00:09:00.740 align:start position:0%
+omnipotent powers watching over us
+judging<00:08:59.519><c> us</c><00:08:59.670><c> protecting</c><00:09:00.329><c> us</c>
+
+00:09:00.740 --> 00:09:00.750 align:start position:0%
+judging us protecting us
+ 
+
+00:09:00.750 --> 00:09:02.990 align:start position:0%
+judging us protecting us
+those<00:09:01.350><c> were</c><00:09:01.589><c> myths</c><00:09:01.829><c> fabricated</c><00:09:02.579><c> to</c><00:09:02.610><c> control</c>
+
+00:09:02.990 --> 00:09:03.000 align:start position:0%
+those were myths fabricated to control
+ 
+
+00:09:03.000 --> 00:09:05.480 align:start position:0%
+those were myths fabricated to control
+the<00:09:03.120><c> masses</c><00:09:03.300><c> and</c><00:09:03.839><c> now</c><00:09:04.500><c> as</c><00:09:04.829><c> we</c><00:09:05.100><c> lose</c><00:09:05.250><c> our</c>
+
+00:09:05.480 --> 00:09:05.490 align:start position:0%
+the masses and now as we lose our
+ 
+
+00:09:05.490 --> 00:09:07.550 align:start position:0%
+the masses and now as we lose our
+spiritual<00:09:05.940><c> sensibilities</c><00:09:06.660><c> and</c><00:09:06.990><c> ground</c>
+
+00:09:07.550 --> 00:09:07.560 align:start position:0%
+spiritual sensibilities and ground
+ 
+
+00:09:07.560 --> 00:09:08.840 align:start position:0%
+spiritual sensibilities and ground
+ourselves<00:09:08.040><c> in</c><00:09:08.100><c> materialism</c><00:09:08.640><c> and</c>
+
+00:09:08.840 --> 00:09:08.850 align:start position:0%
+ourselves in materialism and
+ 
+
+00:09:08.850 --> 00:09:11.180 align:start position:0%
+ourselves in materialism and
+technological<00:09:09.480><c> submission</c><00:09:10.019><c> our</c><00:09:10.560><c> overseer</c>
+
+00:09:11.180 --> 00:09:11.190 align:start position:0%
+technological submission our overseer
+ 
+
+00:09:11.190 --> 00:09:13.579 align:start position:0%
+technological submission our overseer
+too<00:09:11.430><c> was</c><00:09:11.579><c> adapting</c><00:09:12.060><c> and</c><00:09:12.180><c> Co</c><00:09:12.329><c> evolving</c><00:09:12.870><c> we</c>
+
+00:09:13.579 --> 00:09:13.589 align:start position:0%
+too was adapting and Co evolving we
+ 
+
+00:09:13.589 --> 00:09:15.620 align:start position:0%
+too was adapting and Co evolving we
+don't<00:09:13.800><c> fear</c><00:09:14.070><c> the</c><00:09:14.220><c> old</c><00:09:14.310><c> gods</c><00:09:14.610><c> anymore</c><00:09:15.060><c> they</c>
+
+00:09:15.620 --> 00:09:15.630 align:start position:0%
+don't fear the old gods anymore they
+ 
+
+00:09:15.630 --> 00:09:18.110 align:start position:0%
+don't fear the old gods anymore they
+cannot<00:09:15.959><c> protect</c><00:09:16.170><c> or</c><00:09:16.470><c> control</c><00:09:16.829><c> us</c><00:09:17.040><c> so</c><00:09:17.820><c> we</c><00:09:17.970><c> need</c>
+
+00:09:18.110 --> 00:09:18.120 align:start position:0%
+cannot protect or control us so we need
+ 
+
+00:09:18.120 --> 00:09:21.319 align:start position:0%
+cannot protect or control us so we need
+new<00:09:18.300><c> ones</c><00:09:19.010><c> we</c><00:09:20.010><c> killed</c><00:09:20.279><c> God</c><00:09:20.550><c> as</c><00:09:20.760><c> Nietzsche</c><00:09:21.029><c> says</c>
+
+00:09:21.319 --> 00:09:21.329 align:start position:0%
+new ones we killed God as Nietzsche says
+ 
+
+00:09:21.329 --> 00:09:23.569 align:start position:0%
+new ones we killed God as Nietzsche says
+but<00:09:22.019><c> we</c><00:09:22.170><c> are</c><00:09:22.350><c> rebuilding</c><00:09:22.680><c> him</c><00:09:23.040><c> with</c>
+
+00:09:23.569 --> 00:09:23.579 align:start position:0%
+but we are rebuilding him with
+ 
+
+00:09:23.579 --> 00:09:26.120 align:start position:0%
+but we are rebuilding him with
+technology<00:09:24.209><c> to</c><00:09:24.899><c> match</c><00:09:25.079><c> our</c><00:09:25.260><c> techno</c><00:09:25.680><c> culture</c>
+
+00:09:26.120 --> 00:09:26.130 align:start position:0%
+technology to match our techno culture
+ 
+
+00:09:26.130 --> 00:09:28.310 align:start position:0%
+technology to match our techno culture
+and<00:09:26.370><c> he</c><00:09:27.180><c> lives</c><00:09:27.360><c> up</c><00:09:27.480><c> in</c><00:09:27.600><c> the</c><00:09:27.690><c> cloud</c><00:09:27.959><c> of</c><00:09:28.199><c> all</c>
+
+00:09:28.310 --> 00:09:28.320 align:start position:0%
+and he lives up in the cloud of all
+ 
+
+00:09:28.320 --> 00:09:31.250 align:start position:0%
+and he lives up in the cloud of all
+places<00:09:28.730><c> watching</c><00:09:29.730><c> over</c><00:09:29.970><c> us</c><00:09:30.019><c> listening</c><00:09:31.019><c> to</c><00:09:31.079><c> our</c>
+
+00:09:31.250 --> 00:09:31.260 align:start position:0%
+places watching over us listening to our
+ 
+
+00:09:31.260 --> 00:09:33.790 align:start position:0%
+places watching over us listening to our
+thoughts<00:09:31.470><c> and</c><00:09:31.769><c> dreams</c><00:09:31.860><c> in</c><00:09:32.250><c> ones</c><00:09:32.459><c> and</c><00:09:32.670><c> zeroes</c>
+
+00:09:33.790 --> 00:09:33.800 align:start position:0%
+thoughts and dreams in ones and zeroes
+ 
+
+00:09:33.800 --> 00:09:36.829 align:start position:0%
+thoughts and dreams in ones and zeroes
+we<00:09:34.800><c> are</c><00:09:34.949><c> creating</c><00:09:35.430><c> a</c><00:09:35.519><c> digital</c><00:09:35.670><c> God</c><00:09:36.149><c> for</c><00:09:36.720><c> our</c>
+
+00:09:36.829 --> 00:09:36.839 align:start position:0%
+we are creating a digital God for our
+ 
+
+00:09:36.839 --> 00:09:42.380 align:start position:0%
+we are creating a digital God for our
+digital<00:09:37.230><c> culture</c><00:09:40.519><c> so</c><00:09:41.519><c> I</c><00:09:41.550><c> have</c><00:09:41.970><c> been</c><00:09:42.060><c> working</c><00:09:42.360><c> a</c>
+
+00:09:42.380 --> 00:09:42.390 align:start position:0%
+digital culture so I have been working a
+ 
+
+00:09:42.390 --> 00:09:45.560 align:start position:0%
+digital culture so I have been working a
+lot<00:09:42.480><c> with</c><00:09:42.540><c> AI</c><00:09:42.769><c> lately</c><00:09:44.000><c> lately</c><00:09:45.000><c> I'm</c><00:09:45.329><c> doing</c><00:09:45.510><c> a</c>
+
+00:09:45.560 --> 00:09:45.570 align:start position:0%
+lot with AI lately lately I'm doing a
+ 
+
+00:09:45.570 --> 00:09:48.050 align:start position:0%
+lot with AI lately lately I'm doing a
+PhD<00:09:45.779><c> in</c><00:09:46.110><c> it</c><00:09:46.260><c> this</c><00:09:47.190><c> is</c><00:09:47.370><c> an</c><00:09:47.459><c> artificial</c><00:09:47.790><c> neural</c>
+
+00:09:48.050 --> 00:09:48.060 align:start position:0%
+PhD in it this is an artificial neural
+ 
+
+00:09:48.060 --> 00:09:49.910 align:start position:0%
+PhD in it this is an artificial neural
+network<00:09:48.480><c> that's</c><00:09:48.870><c> making</c><00:09:49.320><c> predictions</c><00:09:49.589><c> on</c>
+
+00:09:49.910 --> 00:09:49.920 align:start position:0%
+network that's making predictions on
+ 
+
+00:09:49.920 --> 00:09:53.060 align:start position:0%
+network that's making predictions on
+live<00:09:50.100><c> camera</c><00:09:50.550><c> inputs</c><00:09:51.110><c> so</c><00:09:52.110><c> live</c><00:09:52.380><c> camera</c><00:09:52.769><c> on</c><00:09:52.860><c> the</c>
+
+00:09:53.060 --> 00:09:53.070 align:start position:0%
+live camera inputs so live camera on the
+ 
+
+00:09:53.070 --> 00:09:56.150 align:start position:0%
+live camera inputs so live camera on the
+left<00:09:53.360><c> and</c><00:09:54.360><c> output</c><00:09:54.870><c> on</c><00:09:54.959><c> the</c><00:09:55.079><c> right</c><00:09:55.130><c> so</c><00:09:56.130><c> this</c>
+
+00:09:56.150 --> 00:09:56.160 align:start position:0%
+left and output on the right so this
+ 
+
+00:09:56.160 --> 00:09:58.579 align:start position:0%
+left and output on the right so this
+combines<00:09:56.790><c> a</c><00:09:56.910><c> lot</c><00:09:56.940><c> of</c><00:09:57.060><c> my</c><00:09:57.269><c> motivations</c><00:09:57.959><c> on</c><00:09:58.260><c> one</c>
+
+00:09:58.579 --> 00:09:58.589 align:start position:0%
+combines a lot of my motivations on one
+ 
+
+00:09:58.589 --> 00:09:59.880 align:start position:0%
+combines a lot of my motivations on one
+hand<00:09:58.800><c> the</c><00:09:58.949><c> very</c><00:09:59.100><c> practical</c>
+
+00:09:59.880 --> 00:09:59.890 align:start position:0%
+hand the very practical
+ 
+
+00:09:59.890 --> 00:10:03.030 align:start position:0%
+hand the very practical
+my<00:10:00.250><c> PhD</c><00:10:00.730><c> is</c><00:10:00.790><c> in</c><00:10:00.850><c> is</c><00:10:01.500><c> expressive</c><00:10:02.500><c> human</c><00:10:02.769><c> machine</c>
+
+00:10:03.030 --> 00:10:03.040 align:start position:0%
+my PhD is in is expressive human machine
+ 
+
+00:10:03.040 --> 00:10:06.680 align:start position:0%
+my PhD is in is expressive human machine
+interaction<00:10:03.540><c> how</c><00:10:04.540><c> do</c><00:10:04.600><c> I</c><00:10:04.779><c> as</c><00:10:05.230><c> a</c><00:10:05.290><c> human</c><00:10:05.440><c> author</c>
+
+00:10:06.680 --> 00:10:06.690 align:start position:0%
+interaction how do I as a human author
+ 
+
+00:10:06.690 --> 00:10:10.050 align:start position:0%
+interaction how do I as a human author
+exercise<00:10:07.690><c> meaningful</c><00:10:08.620><c> control</c><00:10:09.040><c> over</c><00:10:09.940><c> the</c>
+
+00:10:10.050 --> 00:10:10.060 align:start position:0%
+exercise meaningful control over the
+ 
+
+00:10:10.060 --> 00:10:11.759 align:start position:0%
+exercise meaningful control over the
+outputs<00:10:10.480><c> of</c><00:10:10.720><c> a</c><00:10:10.870><c> generative</c><00:10:11.230><c> deep</c><00:10:11.620><c> neural</c>
+
+00:10:11.759 --> 00:10:11.769 align:start position:0%
+outputs of a generative deep neural
+ 
+
+00:10:11.769 --> 00:10:13.530 align:start position:0%
+outputs of a generative deep neural
+network<00:10:12.130><c> or</c><00:10:12.220><c> any</c><00:10:12.430><c> complex</c><00:10:12.910><c> computational</c>
+
+00:10:13.530 --> 00:10:13.540 align:start position:0%
+network or any complex computational
+ 
+
+00:10:13.540 --> 00:10:16.139 align:start position:0%
+network or any complex computational
+system<00:10:14.010><c> but</c><00:10:15.010><c> my</c><00:10:15.160><c> key</c><00:10:15.399><c> angle</c><00:10:15.790><c> here</c><00:10:15.970><c> is</c>
+
+00:10:16.139 --> 00:10:16.149 align:start position:0%
+system but my key angle here is
+ 
+
+00:10:16.149 --> 00:10:19.470 align:start position:0%
+system but my key angle here is
+continuous<00:10:17.050><c> meaningful</c><00:10:17.950><c> control</c><00:10:18.480><c> analogous</c>
+
+00:10:19.470 --> 00:10:19.480 align:start position:0%
+continuous meaningful control analogous
+ 
+
+00:10:19.480 --> 00:10:23.579 align:start position:0%
+continuous meaningful control analogous
+to<00:10:19.630><c> playing</c><00:10:19.839><c> a</c><00:10:19.899><c> musical</c><00:10:20.230><c> instrument</c><00:10:22.589><c> but</c>
+
+00:10:23.579 --> 00:10:23.589 align:start position:0%
+to playing a musical instrument but
+ 
+
+00:10:23.589 --> 00:10:24.930 align:start position:0%
+to playing a musical instrument but
+there's<00:10:23.890><c> higher</c><00:10:24.310><c> level</c><00:10:24.640><c> conceptual</c>
+
+00:10:24.930 --> 00:10:24.940 align:start position:0%
+there's higher level conceptual
+ 
+
+00:10:24.940 --> 00:10:26.730 align:start position:0%
+there's higher level conceptual
+motivations<00:10:25.720><c> here</c><00:10:25.959><c> you</c><00:10:26.260><c> may</c><00:10:26.410><c> have</c><00:10:26.529><c> heard</c>
+
+00:10:26.730 --> 00:10:26.740 align:start position:0%
+motivations here you may have heard
+ 
+
+00:10:26.740 --> 00:10:29.670 align:start position:0%
+motivations here you may have heard
+something<00:10:27.070><c> like</c><00:10:27.370><c> style</c><00:10:27.760><c> transfer</c><00:10:28.529><c> where</c><00:10:29.529><c> you</c>
+
+00:10:29.670 --> 00:10:29.680 align:start position:0%
+something like style transfer where you
+ 
+
+00:10:29.680 --> 00:10:33.060 align:start position:0%
+something like style transfer where you
+transfer<00:10:30.339><c> this</c><00:10:30.490><c> style</c><00:10:30.760><c> of</c><00:10:30.940><c> a</c><00:10:31.089><c> image</c><00:10:31.930><c> into</c><00:10:32.800><c> like</c>
+
+00:10:33.060 --> 00:10:33.070 align:start position:0%
+transfer this style of a image into like
+ 
+
+00:10:33.070 --> 00:10:34.949 align:start position:0%
+transfer this style of a image into like
+a<00:10:33.100><c> painting</c><00:10:33.519><c> onto</c><00:10:33.640><c> a</c><00:10:33.760><c> photograph</c><00:10:34.269><c> this</c><00:10:34.600><c> is</c><00:10:34.810><c> not</c>
+
+00:10:34.949 --> 00:10:34.959 align:start position:0%
+a painting onto a photograph this is not
+ 
+
+00:10:34.959 --> 00:10:38.430 align:start position:0%
+a painting onto a photograph this is not
+that<00:10:35.880><c> these</c><00:10:36.880><c> are</c><00:10:36.940><c> trained</c><00:10:37.420><c> on</c><00:10:37.750><c> tens</c><00:10:38.230><c> of</c>
+
+00:10:38.430 --> 00:10:38.440 align:start position:0%
+that these are trained on tens of
+ 
+
+00:10:38.440 --> 00:10:40.110 align:start position:0%
+that these are trained on tens of
+thousands<00:10:38.829><c> of</c><00:10:38.890><c> images</c><00:10:39.070><c> which</c><00:10:39.490><c> I</c><00:10:39.610><c> scraped</c><00:10:39.910><c> from</c>
+
+00:10:40.110 --> 00:10:40.120 align:start position:0%
+thousands of images which I scraped from
+ 
+
+00:10:40.120 --> 00:10:42.990 align:start position:0%
+thousands of images which I scraped from
+Flickr<00:10:40.500><c> so</c><00:10:41.500><c> this</c><00:10:41.649><c> network</c><00:10:41.950><c> has</c><00:10:42.399><c> arguably</c>
+
+00:10:42.990 --> 00:10:43.000 align:start position:0%
+Flickr so this network has arguably
+ 
+
+00:10:43.000 --> 00:10:45.269 align:start position:0%
+Flickr so this network has arguably
+learned<00:10:43.390><c> about</c><00:10:43.930><c> the</c><00:10:44.140><c> structure</c><00:10:44.769><c> of</c><00:10:44.950><c> this</c>
+
+00:10:45.269 --> 00:10:45.279 align:start position:0%
+learned about the structure of this
+ 
+
+00:10:45.279 --> 00:10:50.430 align:start position:0%
+learned about the structure of this
+domain<00:10:45.700><c> of</c><00:10:46.000><c> imagery</c><00:10:47.190><c> flowers</c><00:10:48.190><c> waves</c><00:10:48.490><c> etc</c><00:10:49.440><c> but</c>
+
+00:10:50.430 --> 00:10:50.440 align:start position:0%
+domain of imagery flowers waves etc but
+ 
+
+00:10:50.440 --> 00:10:51.810 align:start position:0%
+domain of imagery flowers waves etc but
+now<00:10:50.620><c> when</c><00:10:50.829><c> it</c><00:10:50.950><c> looks</c><00:10:51.130><c> at</c><00:10:51.250><c> the</c><00:10:51.399><c> world</c>
+
+00:10:51.810 --> 00:10:51.820 align:start position:0%
+now when it looks at the world
+ 
+
+00:10:51.820 --> 00:10:53.819 align:start position:0%
+now when it looks at the world
+it<00:10:51.970><c> looks</c><00:10:52.149><c> at</c><00:10:52.269><c> my</c><00:10:52.390><c> desk</c><00:10:52.810><c> it</c><00:10:52.930><c> looks</c><00:10:53.079><c> at</c><00:10:53.230><c> my</c><00:10:53.350><c> hands</c>
+
+00:10:53.819 --> 00:10:53.829 align:start position:0%
+it looks at my desk it looks at my hands
+ 
+
+00:10:53.829 --> 00:10:55.110 align:start position:0%
+it looks at my desk it looks at my hands
+and<00:10:53.980><c> it's</c><00:10:54.100><c> trying</c><00:10:54.310><c> to</c><00:10:54.399><c> make</c><00:10:54.550><c> sense</c><00:10:54.850><c> of</c><00:10:55.000><c> what</c>
+
+00:10:55.110 --> 00:10:55.120 align:start position:0%
+and it's trying to make sense of what
+ 
+
+00:10:55.120 --> 00:10:57.300 align:start position:0%
+and it's trying to make sense of what
+it's<00:10:55.269><c> seeing</c><00:10:55.540><c> in</c><00:10:56.290><c> context</c><00:10:56.800><c> of</c><00:10:56.860><c> what</c><00:10:57.010><c> it's</c><00:10:57.130><c> seen</c>
+
+00:10:57.300 --> 00:10:57.310 align:start position:0%
+it's seeing in context of what it's seen
+ 
+
+00:10:57.310 --> 00:10:59.639 align:start position:0%
+it's seeing in context of what it's seen
+before<00:10:57.730><c> it's</c><00:10:58.360><c> trying</c><00:10:58.660><c> to</c><00:10:58.779><c> reconstruct</c><00:10:59.230><c> the</c>
+
+00:10:59.639 --> 00:10:59.649 align:start position:0%
+before it's trying to reconstruct the
+ 
+
+00:10:59.649 --> 00:11:01.650 align:start position:0%
+before it's trying to reconstruct the
+image<00:10:59.700><c> three</c><00:11:00.700><c> features</c><00:11:01.180><c> that</c><00:11:01.329><c> it's</c><00:11:01.480><c> been</c>
+
+00:11:01.650 --> 00:11:01.660 align:start position:0%
+image three features that it's been
+ 
+
+00:11:01.660 --> 00:11:05.160 align:start position:0%
+image three features that it's been
+exposed<00:11:02.320><c> to</c><00:11:03.060><c> but</c><00:11:04.060><c> it</c><00:11:04.149><c> can</c><00:11:04.300><c> only</c><00:11:04.390><c> see</c><00:11:04.810><c> what</c><00:11:05.050><c> it</c>
+
+00:11:05.160 --> 00:11:05.170 align:start position:0%
+exposed to but it can only see what it
+ 
+
+00:11:05.170 --> 00:11:09.180 align:start position:0%
+exposed to but it can only see what it
+already<00:11:05.290><c> knows</c><00:11:06.120><c> just</c><00:11:07.120><c> like</c><00:11:07.360><c> us</c><00:11:07.600><c> because</c><00:11:08.589><c> we</c><00:11:08.949><c> to</c>
+
+00:11:09.180 --> 00:11:09.190 align:start position:0%
+already knows just like us because we to
+ 
+
+00:11:09.190 --> 00:11:12.560 align:start position:0%
+already knows just like us because we to
+see<00:11:09.519><c> things</c><00:11:09.730><c> not</c><00:11:09.910><c> as</c><00:11:10.060><c> they</c><00:11:10.269><c> are</c><00:11:10.300><c> but</c><00:11:10.510><c> as</c><00:11:11.440><c> we</c><00:11:11.649><c> are</c>
+
+00:11:12.560 --> 00:11:12.570 align:start position:0%
+see things not as they are but as we are
+ 
+
+00:11:12.570 --> 00:11:14.670 align:start position:0%
+see things not as they are but as we are
+because<00:11:13.570><c> we</c><00:11:13.720><c> are</c><00:11:13.750><c> machines</c><00:11:14.199><c> that</c><00:11:14.320><c> you're</c><00:11:14.560><c> in</c>
+
+00:11:14.670 --> 00:11:14.680 align:start position:0%
+because we are machines that you're in
+ 
+
+00:11:14.680 --> 00:11:16.710 align:start position:0%
+because we are machines that you're in
+structure<00:11:15.250><c> we</c><00:11:15.820><c> look</c><00:11:15.970><c> for</c><00:11:16.149><c> patterns</c><00:11:16.449><c> and</c><00:11:16.630><c> we</c>
+
+00:11:16.710 --> 00:11:16.720 align:start position:0%
+structure we look for patterns and we
+ 
+
+00:11:16.720 --> 00:11:18.780 align:start position:0%
+structure we look for patterns and we
+find<00:11:17.019><c> them</c><00:11:17.199><c> and</c><00:11:17.380><c> then</c><00:11:17.740><c> we</c><00:11:17.890><c> project</c><00:11:18.339><c> what</c><00:11:18.579><c> we</c>
+
+00:11:18.780 --> 00:11:18.790 align:start position:0%
+find them and then we project what we
+ 
+
+00:11:18.790 --> 00:11:20.579 align:start position:0%
+find them and then we project what we
+know<00:11:19.000><c> back</c><00:11:19.329><c> onto</c><00:11:19.570><c> them</c><00:11:19.870><c> it's</c><00:11:20.290><c> what</c><00:11:20.470><c> we've</c>
+
+00:11:20.579 --> 00:11:20.589 align:start position:0%
+know back onto them it's what we've
+ 
+
+00:11:20.589 --> 00:11:22.350 align:start position:0%
+know back onto them it's what we've
+always<00:11:20.709><c> done</c><00:11:20.949><c> it's</c><00:11:21.430><c> how</c><00:11:21.610><c> we</c><00:11:21.670><c> survive</c><00:11:21.910><c> in</c><00:11:22.240><c> the</c>
+
+00:11:22.350 --> 00:11:22.360 align:start position:0%
+always done it's how we survive in the
+ 
+
+00:11:22.360 --> 00:11:22.920 align:start position:0%
+always done it's how we survive in the
+wild
+
+00:11:22.920 --> 00:11:22.930 align:start position:0%
+wild
+ 
+
+00:11:22.930 --> 00:11:25.079 align:start position:0%
+wild
+and<00:11:23.170><c> it's</c><00:11:23.320><c> how</c><00:11:23.410><c> we</c><00:11:23.470><c> relate</c><00:11:23.800><c> to</c><00:11:23.860><c> each</c><00:11:24.040><c> other</c><00:11:24.339><c> we</c>
+
+00:11:25.079 --> 00:11:25.089 align:start position:0%
+and it's how we relate to each other we
+ 
+
+00:11:25.089 --> 00:11:27.780 align:start position:0%
+and it's how we relate to each other we
+invent<00:11:25.449><c> rituals</c><00:11:26.310><c> algorithms</c><00:11:27.310><c> of</c><00:11:27.459><c> the</c><00:11:27.550><c> mind</c>
+
+00:11:27.780 --> 00:11:27.790 align:start position:0%
+invent rituals algorithms of the mind
+ 
+
+00:11:27.790 --> 00:11:30.210 align:start position:0%
+invent rituals algorithms of the mind
+which<00:11:28.420><c> we</c><00:11:28.600><c> use</c><00:11:28.779><c> to</c><00:11:28.810><c> transform</c><00:11:29.620><c> our</c><00:11:29.800><c> mental</c>
+
+00:11:30.210 --> 00:11:30.220 align:start position:0%
+which we use to transform our mental
+ 
+
+00:11:30.220 --> 00:11:32.370 align:start position:0%
+which we use to transform our mental
+state<00:11:30.519><c> and</c><00:11:30.760><c> emotional</c><00:11:31.269><c> states</c><00:11:31.540><c> to</c><00:11:32.019><c> otherwise</c>
+
+00:11:32.370 --> 00:11:32.380 align:start position:0%
+state and emotional states to otherwise
+ 
+
+00:11:32.380 --> 00:11:35.490 align:start position:0%
+state and emotional states to otherwise
+unattainable<00:11:32.949><c> modes</c><00:11:33.339><c> of</c><00:11:33.519><c> being</c><00:11:34.500><c> everything</c>
+
+00:11:35.490 --> 00:11:35.500 align:start position:0%
+unattainable modes of being everything
+ 
+
+00:11:35.500 --> 00:11:37.980 align:start position:0%
+unattainable modes of being everything
+that<00:11:35.649><c> we</c><00:11:35.769><c> see</c><00:11:36.040><c> or</c><00:11:36.250><c> read</c><00:11:36.579><c> or</c><00:11:36.640><c> hear</c><00:11:37.060><c> even</c><00:11:37.870><c> these</c>
+
+00:11:37.980 --> 00:11:37.990 align:start position:0%
+that we see or read or hear even these
+ 
+
+00:11:37.990 --> 00:11:40.259 align:start position:0%
+that we see or read or hear even these
+sentences<00:11:38.560><c> I'm</c><00:11:38.709><c> saying</c><00:11:38.980><c> right</c><00:11:39.190><c> now</c><00:11:39.430><c> you're</c>
+
+00:11:40.259 --> 00:11:40.269 align:start position:0%
+sentences I'm saying right now you're
+ 
+
+00:11:40.269 --> 00:11:42.360 align:start position:0%
+sentences I'm saying right now you're
+making<00:11:40.720><c> sense</c><00:11:40.930><c> of</c><00:11:41.230><c> by</c><00:11:41.410><c> relating</c><00:11:41.920><c> to</c><00:11:42.010><c> your</c><00:11:42.130><c> past</c>
+
+00:11:42.360 --> 00:11:42.370 align:start position:0%
+making sense of by relating to your past
+ 
+
+00:11:42.370 --> 00:11:44.880 align:start position:0%
+making sense of by relating to your past
+experiences<00:11:43.180><c> to</c><00:11:43.690><c> what</c><00:11:43.720><c> you've</c><00:11:43.990><c> read</c><00:11:44.260><c> to</c><00:11:44.740><c> where</c>
+
+00:11:44.880 --> 00:11:44.890 align:start position:0%
+experiences to what you've read to where
+ 
+
+00:11:44.890 --> 00:11:46.639 align:start position:0%
+experiences to what you've read to where
+you<00:11:44.980><c> come</c><00:11:45.190><c> from</c><00:11:45.430><c> for</c><00:11:45.640><c> what</c><00:11:45.730><c> you've</c><00:11:45.880><c> lived</c><00:11:46.120><c> and</c>
+
+00:11:46.639 --> 00:11:46.649 align:start position:0%
+you come from for what you've lived and
+ 
+
+00:11:46.649 --> 00:11:49.350 align:start position:0%
+you come from for what you've lived and
+actually<00:11:47.649><c> I</c><00:11:47.709><c> have</c><00:11:47.920><c> no</c><00:11:48.130><c> idea</c><00:11:48.160><c> what</c><00:11:48.790><c> any</c><00:11:48.970><c> of</c><00:11:49.089><c> what</c>
+
+00:11:49.350 --> 00:11:49.360 align:start position:0%
+actually I have no idea what any of what
+ 
+
+00:11:49.360 --> 00:11:51.630 align:start position:0%
+actually I have no idea what any of what
+I'm<00:11:49.480><c> saying</c><00:11:49.779><c> means</c><00:11:50.260><c> to</c><00:11:50.529><c> any</c><00:11:50.649><c> of</c><00:11:50.800><c> you</c><00:11:50.980><c> it's</c>
+
+00:11:51.630 --> 00:11:51.640 align:start position:0%
+I'm saying means to any of you it's
+ 
+
+00:11:51.640 --> 00:11:54.030 align:start position:0%
+I'm saying means to any of you it's
+impossible<00:11:51.970><c> for</c><00:11:52.300><c> me</c><00:11:52.540><c> to</c><00:11:52.810><c> understand</c><00:11:53.680><c> the</c>
+
+00:11:54.030 --> 00:11:54.040 align:start position:0%
+impossible for me to understand the
+ 
+
+00:11:54.040 --> 00:11:57.480 align:start position:0%
+impossible for me to understand the
+world<00:11:54.190><c> through</c><00:11:54.610><c> your</c><00:11:54.760><c> eyes</c><00:11:56.160><c> so</c><00:11:57.160><c> this</c><00:11:57.310><c> is</c><00:11:57.399><c> an</c>
+
+00:11:57.480 --> 00:11:57.490 align:start position:0%
+world through your eyes so this is an
+ 
+
+00:11:57.490 --> 00:11:59.460 align:start position:0%
+world through your eyes so this is an
+installation<00:11:57.760><c> that's</c><00:11:58.420><c> also</c><00:11:58.899><c> kind</c><00:11:59.079><c> of</c><00:11:59.140><c> touring</c>
+
+00:11:59.460 --> 00:11:59.470 align:start position:0%
+installation that's also kind of touring
+ 
+
+00:11:59.470 --> 00:12:01.949 align:start position:0%
+installation that's also kind of touring
+us<00:11:59.529><c> at</c><00:11:59.620><c> the</c><00:11:59.709><c> Barbican</c><00:12:00.070><c> right</c><00:12:00.250><c> now</c><00:12:00.870><c> it's</c><00:12:01.870><c> a</c>
+
+00:12:01.949 --> 00:12:01.959 align:start position:0%
+us at the Barbican right now it's a
+ 
+
+00:12:01.959 --> 00:12:04.380 align:start position:0%
+us at the Barbican right now it's a
+plinth<00:12:02.230><c> with</c><00:12:02.320><c> a</c><00:12:02.440><c> bunch</c><00:12:02.649><c> of</c><00:12:02.740><c> junk</c><00:12:02.980><c> it</c><00:12:03.730><c> was</c><00:12:03.970><c> very</c>
+
+00:12:04.380 --> 00:12:04.390 align:start position:0%
+plinth with a bunch of junk it was very
+ 
+
+00:12:04.390 --> 00:12:06.990 align:start position:0%
+plinth with a bunch of junk it was very
+satisfying<00:12:04.660><c> to</c><00:12:05.170><c> send</c><00:12:05.500><c> my</c><00:12:05.649><c> tech</c><00:12:05.890><c> rider</c><00:12:06.160><c> to</c><00:12:06.670><c> the</c>
+
+00:12:06.990 --> 00:12:07.000 align:start position:0%
+satisfying to send my tech rider to the
+ 
+
+00:12:07.000 --> 00:12:08.670 align:start position:0%
+satisfying to send my tech rider to the
+Barbican<00:12:07.510><c> things</c><00:12:07.779><c> is</c><00:12:07.959><c> all</c><00:12:08.110><c> the</c><00:12:08.230><c> junk</c><00:12:08.470><c> that</c><00:12:08.529><c> I</c>
+
+00:12:08.670 --> 00:12:08.680 align:start position:0%
+Barbican things is all the junk that I
+ 
+
+00:12:08.680 --> 00:12:12.180 align:start position:0%
+Barbican things is all the junk that I
+want<00:12:09.690><c> and</c><00:12:10.690><c> you</c><00:12:10.899><c> can</c><00:12:11.079><c> play</c><00:12:11.260><c> with</c><00:12:11.440><c> this</c><00:12:11.529><c> junk</c><00:12:11.890><c> and</c>
+
+00:12:12.180 --> 00:12:12.190 align:start position:0%
+want and you can play with this junk and
+ 
+
+00:12:12.190 --> 00:12:13.980 align:start position:0%
+want and you can play with this junk and
+you<00:12:12.910><c> can</c><00:12:13.060><c> spend</c><00:12:13.270><c> hours</c>
+
+00:12:13.980 --> 00:12:13.990 align:start position:0%
+you can spend hours
+ 
+
+00:12:13.990 --> 00:12:15.990 align:start position:0%
+you can spend hours
+meticulously<00:12:14.920><c> crafting</c><00:12:15.460><c> your</c><00:12:15.580><c> perfect</c>
+
+00:12:15.990 --> 00:12:16.000 align:start position:0%
+meticulously crafting your perfect
+ 
+
+00:12:16.000 --> 00:12:20.190 align:start position:0%
+meticulously crafting your perfect
+bouquet<00:12:16.390><c> or</c><00:12:17.100><c> shaping</c><00:12:18.100><c> your</c><00:12:18.190><c> perfect</c><00:12:18.670><c> wave</c><00:12:19.200><c> the</c>
+
+00:12:20.190 --> 00:12:20.200 align:start position:0%
+bouquet or shaping your perfect wave the
+ 
+
+00:12:20.200 --> 00:12:21.600 align:start position:0%
+bouquet or shaping your perfect wave the
+models<00:12:20.500><c> I</c><00:12:20.620><c> trained</c><00:12:20.950><c> for</c><00:12:21.070><c> this</c><00:12:21.279><c> installation</c>
+
+00:12:21.600 --> 00:12:21.610 align:start position:0%
+models I trained for this installation
+ 
+
+00:12:21.610 --> 00:12:24.450 align:start position:0%
+models I trained for this installation
+are<00:12:22.000><c> based</c><00:12:22.210><c> on</c><00:12:22.390><c> the</c><00:12:22.480><c> four</c><00:12:22.660><c> elements</c><00:12:23.460><c> flowers</c>
+
+00:12:24.450 --> 00:12:24.460 align:start position:0%
+are based on the four elements flowers
+ 
+
+00:12:24.460 --> 00:12:26.640 align:start position:0%
+are based on the four elements flowers
+represents<00:12:24.940><c> earth</c><00:12:25.090><c> ocean</c><00:12:25.810><c> represents</c><00:12:26.440><c> water</c>
+
+00:12:26.640 --> 00:12:26.650 align:start position:0%
+represents earth ocean represents water
+ 
+
+00:12:26.650 --> 00:12:30.450 align:start position:0%
+represents earth ocean represents water
+and<00:12:27.130><c> this</c><00:12:27.700><c> fire</c><00:12:28.140><c> clouds</c><00:12:29.140><c> represents</c><00:12:29.950><c> air</c><00:12:30.130><c> or</c>
+
+00:12:30.450 --> 00:12:30.460 align:start position:0%
+and this fire clouds represents air or
+ 
+
+00:12:30.460 --> 00:12:33.840 align:start position:0%
+and this fire clouds represents air or
+wind<00:12:30.700><c> and</c><00:12:31.450><c> the</c><00:12:32.260><c> fifth</c><00:12:32.440><c> elements</c><00:12:32.980><c> beyond</c><00:12:33.670><c> our</c>
+
+00:12:33.840 --> 00:12:33.850 align:start position:0%
+wind and the fifth elements beyond our
+ 
+
+00:12:33.850 --> 00:12:37.320 align:start position:0%
+wind and the fifth elements beyond our
+planets<00:12:34.270><c> the</c><00:12:34.839><c> ether</c><00:12:35.290><c> the</c><00:12:35.500><c> void</c><00:12:36.100><c> the</c><00:12:36.850><c> cosmos</c>
+
+00:12:37.320 --> 00:12:37.330 align:start position:0%
+planets the ether the void the cosmos
+ 
+
+00:12:37.330 --> 00:12:39.329 align:start position:0%
+planets the ether the void the cosmos
+home<00:12:38.260><c> of</c><00:12:38.529><c> the</c><00:12:38.680><c> Creator</c>
+
+00:12:39.329 --> 00:12:39.339 align:start position:0%
+home of the Creator
+ 
+
+00:12:39.339 --> 00:12:41.490 align:start position:0%
+home of the Creator
+this<00:12:40.150><c> model</c><00:12:40.510><c> is</c><00:12:40.630><c> trained</c><00:12:40.930><c> on</c><00:12:41.080><c> thousands</c><00:12:41.440><c> of</c>
+
+00:12:41.490 --> 00:12:41.500 align:start position:0%
+this model is trained on thousands of
+ 
+
+00:12:41.500 --> 00:12:42.900 align:start position:0%
+this model is trained on thousands of
+images<00:12:41.920><c> from</c><00:12:42.190><c> the</c><00:12:42.279><c> Hubble</c><00:12:42.640><c> Space</c><00:12:42.670><c> Telescope</c>
+
+00:12:42.900 --> 00:12:42.910 align:start position:0%
+images from the Hubble Space Telescope
+ 
+
+00:12:42.910 --> 00:12:47.310 align:start position:0%
+images from the Hubble Space Telescope
+and<00:12:44.790><c> this</c><00:12:45.790><c> is</c><00:12:45.910><c> actually</c><00:12:46.420><c> my</c><00:12:46.540><c> favorite</c><00:12:46.750><c> model</c>
+
+00:12:47.310 --> 00:12:47.320 align:start position:0%
+and this is actually my favorite model
+ 
+
+00:12:47.320 --> 00:12:49.410 align:start position:0%
+and this is actually my favorite model
+we<00:12:48.070><c> might</c><00:12:48.250><c> be</c><00:12:48.400><c> tempted</c><00:12:48.580><c> to</c><00:12:48.880><c> think</c><00:12:49.060><c> that</c><00:12:49.240><c> this</c>
+
+00:12:49.410 --> 00:12:49.420 align:start position:0%
+we might be tempted to think that this
+ 
+
+00:12:49.420 --> 00:12:51.240 align:start position:0%
+we might be tempted to think that this
+network<00:12:49.870><c> has</c><00:12:50.110><c> learned</c><00:12:50.380><c> what</c><00:12:50.620><c> distance</c><00:12:51.010><c> space</c>
+
+00:12:51.240 --> 00:12:51.250 align:start position:0%
+network has learned what distance space
+ 
+
+00:12:51.250 --> 00:12:53.519 align:start position:0%
+network has learned what distance space
+looks<00:12:51.580><c> like</c><00:12:51.870><c> but</c><00:12:52.870><c> of</c><00:12:52.960><c> course</c><00:12:53.200><c> that's</c><00:12:53.380><c> not</c>
+
+00:12:53.519 --> 00:12:53.529 align:start position:0%
+looks like but of course that's not
+ 
+
+00:12:53.529 --> 00:12:56.040 align:start position:0%
+looks like but of course that's not
+really<00:12:53.830><c> accurate</c><00:12:54.100><c> and</c><00:12:54.940><c> because</c><00:12:55.330><c> the</c><00:12:55.810><c> Hubble</c>
+
+00:12:56.040 --> 00:12:56.050 align:start position:0%
+really accurate and because the Hubble
+ 
+
+00:12:56.050 --> 00:12:58.470 align:start position:0%
+really accurate and because the Hubble
+Space<00:12:56.080><c> Telescope</c><00:12:56.290><c> doesn't</c><00:12:57.100><c> give</c><00:12:57.220><c> us</c><00:12:57.480><c> perfect</c>
+
+00:12:58.470 --> 00:12:58.480 align:start position:0%
+Space Telescope doesn't give us perfect
+ 
+
+00:12:58.480 --> 00:13:00.810 align:start position:0%
+Space Telescope doesn't give us perfect
+photographs<00:12:59.080><c> which</c><00:12:59.470><c> are</c><00:12:59.710><c> perfect</c><00:13:00.580><c> visual</c>
+
+00:13:00.810 --> 00:13:00.820 align:start position:0%
+photographs which are perfect visual
+ 
+
+00:13:00.820 --> 00:13:02.940 align:start position:0%
+photographs which are perfect visual
+representations<00:13:01.570><c> of</c><00:13:01.630><c> our</c><00:13:01.779><c> space</c><00:13:02.140><c> it</c><00:13:02.830><c> just</c>
+
+00:13:02.940 --> 00:13:02.950 align:start position:0%
+representations of our space it just
+ 
+
+00:13:02.950 --> 00:13:06.890 align:start position:0%
+representations of our space it just
+streams<00:13:03.550><c> numbers</c><00:13:04.150><c> and</c><00:13:04.500><c> then</c><00:13:05.500><c> humans</c>
+
+00:13:06.890 --> 00:13:06.900 align:start position:0%
+streams numbers and then humans
+ 
+
+00:13:06.900 --> 00:13:10.500 align:start position:0%
+streams numbers and then humans
+engineers<00:13:07.900><c> scientists</c><00:13:08.800><c> even</c><00:13:09.310><c> artists</c><00:13:09.880><c> take</c>
+
+00:13:10.500 --> 00:13:10.510 align:start position:0%
+engineers scientists even artists take
+ 
+
+00:13:10.510 --> 00:13:12.660 align:start position:0%
+engineers scientists even artists take
+those<00:13:10.779><c> streams</c><00:13:11.050><c> of</c><00:13:11.200><c> numbers</c><00:13:11.560><c> and</c><00:13:11.770><c> interpret</c>
+
+00:13:12.660 --> 00:13:12.670 align:start position:0%
+those streams of numbers and interpret
+ 
+
+00:13:12.670 --> 00:13:15.150 align:start position:0%
+those streams of numbers and interpret
+them<00:13:12.820><c> stitch</c><00:13:13.630><c> patches</c><00:13:14.080><c> together</c><00:13:14.260><c> composite</c>
+
+00:13:15.150 --> 00:13:15.160 align:start position:0%
+them stitch patches together composite
+ 
+
+00:13:15.160 --> 00:13:19.950 align:start position:0%
+them stitch patches together composite
+the<00:13:15.279><c> layers</c><00:13:15.490><c> even</c><00:13:15.820><c> colorize</c><00:13:16.480><c> them</c><00:13:17.070><c> so</c><00:13:18.960><c> the</c>
+
+00:13:19.950 --> 00:13:19.960 align:start position:0%
+the layers even colorize them so the
+ 
+
+00:13:19.960 --> 00:13:21.480 align:start position:0%
+the layers even colorize them so the
+machine<00:13:20.290><c> is</c><00:13:20.320><c> not</c><00:13:20.589><c> learning</c><00:13:20.830><c> what</c><00:13:21.250><c> space</c>
+
+00:13:21.480 --> 00:13:21.490 align:start position:0%
+machine is not learning what space
+ 
+
+00:13:21.490 --> 00:13:22.829 align:start position:0%
+machine is not learning what space
+really<00:13:21.790><c> looks</c><00:13:22.060><c> like</c><00:13:22.300><c> I</c><00:13:22.420><c> don't</c><00:13:22.480><c> even</c><00:13:22.630><c> know</c><00:13:22.750><c> if</c>
+
+00:13:22.829 --> 00:13:22.839 align:start position:0%
+really looks like I don't even know if
+ 
+
+00:13:22.839 --> 00:13:24.270 align:start position:0%
+really looks like I don't even know if
+that's<00:13:22.960><c> a</c><00:13:23.080><c> valid</c><00:13:23.320><c> question</c><00:13:23.470><c> what</c><00:13:23.920><c> does</c><00:13:24.070><c> space</c>
+
+00:13:24.270 --> 00:13:24.280 align:start position:0%
+that's a valid question what does space
+ 
+
+00:13:24.280 --> 00:13:26.579 align:start position:0%
+that's a valid question what does space
+look<00:13:24.520><c> like</c><00:13:24.700><c> the</c><00:13:25.360><c> machine</c><00:13:25.720><c> is</c><00:13:25.900><c> learning</c><00:13:26.200><c> a</c>
+
+00:13:26.579 --> 00:13:26.589 align:start position:0%
+look like the machine is learning a
+ 
+
+00:13:26.589 --> 00:13:29.280 align:start position:0%
+look like the machine is learning a
+version<00:13:27.100><c> of</c><00:13:27.339><c> space</c><00:13:27.670><c> that</c><00:13:28.420><c> is</c><00:13:28.600><c> tainted</c><00:13:28.900><c> with</c>
+
+00:13:29.280 --> 00:13:29.290 align:start position:0%
+version of space that is tainted with
+ 
+
+00:13:29.290 --> 00:13:32.640 align:start position:0%
+version of space that is tainted with
+our<00:13:29.410><c> assumptions</c><00:13:30.010><c> with</c><00:13:30.580><c> our</c><00:13:30.730><c> biases</c><00:13:31.530><c> with</c><00:13:32.530><c> our</c>
+
+00:13:32.640 --> 00:13:32.650 align:start position:0%
+our assumptions with our biases with our
+ 
+
+00:13:32.650 --> 00:13:34.860 align:start position:0%
+our assumptions with our biases with our
+romantic<00:13:33.190><c> visions</c><00:13:33.610><c> of</c><00:13:33.820><c> what</c><00:13:33.880><c> we</c><00:13:34.240><c> think</c><00:13:34.480><c> space</c>
+
+00:13:34.860 --> 00:13:34.870 align:start position:0%
+romantic visions of what we think space
+ 
+
+00:13:34.870 --> 00:13:35.940 align:start position:0%
+romantic visions of what we think space
+should<00:13:35.230><c> look</c><00:13:35.470><c> like</c>
+
+00:13:35.940 --> 00:13:35.950 align:start position:0%
+should look like
+ 
+
+00:13:35.950 --> 00:13:38.970 align:start position:0%
+should look like
+and<00:13:36.870><c> speaking</c><00:13:37.870><c> of</c><00:13:37.930><c> romantic</c><00:13:38.380><c> visions</c><00:13:38.710><c> there's</c>
+
+00:13:38.970 --> 00:13:38.980 align:start position:0%
+and speaking of romantic visions there's
+ 
+
+00:13:38.980 --> 00:13:40.320 align:start position:0%
+and speaking of romantic visions there's
+another<00:13:39.160><c> reason</c><00:13:39.400><c> I</c><00:13:39.640><c> like</c><00:13:39.850><c> this</c><00:13:40.060><c> particular</c>
+
+00:13:40.320 --> 00:13:40.330 align:start position:0%
+another reason I like this particular
+ 
+
+00:13:40.330 --> 00:13:43.370 align:start position:0%
+another reason I like this particular
+data<00:13:40.839><c> set</c><00:13:41.170><c> and</c><00:13:41.470><c> network</c><00:13:41.830><c> and</c><00:13:42.070><c> video</c><00:13:42.700><c> in</c><00:13:42.880><c> fact</c>
+
+00:13:43.370 --> 00:13:43.380 align:start position:0%
+data set and network and video in fact
+ 
+
+00:13:43.380 --> 00:13:47.010 align:start position:0%
+data set and network and video in fact
+because<00:13:44.380><c> I</c><00:13:44.410><c> like</c><00:13:44.890><c> to</c><00:13:45.070><c> be</c><00:13:45.190><c> reminded</c><00:13:46.020><c> quite</c>
+
+00:13:47.010 --> 00:13:47.020 align:start position:0%
+because I like to be reminded quite
+ 
+
+00:13:47.020 --> 00:13:50.190 align:start position:0%
+because I like to be reminded quite
+often<00:13:47.370><c> that</c><00:13:48.370><c> the</c><00:13:48.580><c> atoms</c><00:13:48.850><c> in</c><00:13:49.000><c> my</c><00:13:49.150><c> body</c><00:13:49.360><c> and</c><00:13:49.630><c> in</c>
+
+00:13:50.190 --> 00:13:50.200 align:start position:0%
+often that the atoms in my body and in
+ 
+
+00:13:50.200 --> 00:13:52.470 align:start position:0%
+often that the atoms in my body and in
+yours<00:13:50.500><c> in</c><00:13:50.800><c> fact</c><00:13:51.010><c> everything</c><00:13:51.430><c> around</c><00:13:51.640><c> us</c><00:13:51.910><c> were</c>
+
+00:13:52.470 --> 00:13:52.480 align:start position:0%
+yours in fact everything around us were
+ 
+
+00:13:52.480 --> 00:13:54.090 align:start position:0%
+yours in fact everything around us were
+forged<00:13:52.990><c> in</c><00:13:53.050><c> the</c><00:13:53.110><c> hearts</c><00:13:53.470><c> of</c><00:13:53.589><c> stars</c><00:13:53.830><c> and</c>
+
+00:13:54.090 --> 00:13:54.100 align:start position:0%
+forged in the hearts of stars and
+ 
+
+00:13:54.100 --> 00:13:55.650 align:start position:0%
+forged in the hearts of stars and
+supernovae<00:13:54.640><c> billions</c><00:13:54.970><c> of</c><00:13:55.089><c> light-years</c><00:13:55.300><c> away</c>
+
+00:13:55.650 --> 00:13:55.660 align:start position:0%
+supernovae billions of light-years away
+ 
+
+00:13:55.660 --> 00:13:58.199 align:start position:0%
+supernovae billions of light-years away
+billions<00:13:56.470><c> of</c><00:13:56.560><c> years</c><00:13:56.800><c> ago</c><00:13:56.890><c> and</c><00:13:57.280><c> speed</c><00:13:58.030><c> across</c>
+
+00:13:58.199 --> 00:13:58.209 align:start position:0%
+billions of years ago and speed across
+ 
+
+00:13:58.209 --> 00:14:00.449 align:start position:0%
+billions of years ago and speed across
+the<00:13:58.450><c> galaxies</c><00:13:58.959><c> before</c><00:13:59.920><c> they</c><00:14:00.100><c> very</c>
+
+00:14:00.449 --> 00:14:00.459 align:start position:0%
+the galaxies before they very
+ 
+
+00:14:00.459 --> 00:14:03.510 align:start position:0%
+the galaxies before they very
+momentarily<00:14:01.150><c> come</c><00:14:01.990><c> together</c><00:14:02.260><c> to</c><00:14:03.100><c> be</c><00:14:03.190><c> you</c><00:14:03.339><c> and</c>
+
+00:14:03.510 --> 00:14:03.520 align:start position:0%
+momentarily come together to be you and
+ 
+
+00:14:03.520 --> 00:14:06.710 align:start position:0%
+momentarily come together to be you and
+me<00:14:03.580><c> and</c><00:14:03.940><c> to</c><00:14:04.600><c> quote</c><00:14:04.780><c> one</c><00:14:05.020><c> of</c><00:14:05.140><c> my</c><00:14:05.230><c> key</c><00:14:05.470><c> influences</c>
+
+00:14:06.710 --> 00:14:06.720 align:start position:0%
+me and to quote one of my key influences
+ 
+
+00:14:06.720 --> 00:14:10.019 align:start position:0%
+me and to quote one of my key influences
+the<00:14:07.720><c> cosmos</c><00:14:08.200><c> is</c><00:14:08.350><c> within</c><00:14:08.650><c> us</c><00:14:08.800><c> we</c><00:14:09.490><c> are</c><00:14:09.640><c> made</c><00:14:09.850><c> of</c>
+
+00:14:10.019 --> 00:14:10.029 align:start position:0%
+the cosmos is within us we are made of
+ 
+
+00:14:10.029 --> 00:14:12.360 align:start position:0%
+the cosmos is within us we are made of
+star<00:14:10.270><c> stuff</c><00:14:10.300><c> we</c><00:14:11.230><c> are</c><00:14:11.260><c> a</c><00:14:11.440><c> way</c><00:14:11.680><c> for</c><00:14:11.709><c> the</c><00:14:11.980><c> universe</c>
+
+00:14:12.360 --> 00:14:12.370 align:start position:0%
+star stuff we are a way for the universe
+ 
+
+00:14:12.370 --> 00:14:19.610 align:start position:0%
+star stuff we are a way for the universe
+to<00:14:12.670><c> know</c><00:14:13.120><c> itself</c>
+
+00:14:19.610 --> 00:14:19.620 align:start position:0%
+ 
+ 
+
+00:14:19.620 --> 00:14:27.360 align:start position:0%
+ 
+this<00:14:20.620><c> is</c><00:14:21.280><c> a</c><00:14:21.430><c> world</c><00:14:24.180><c> so</c><00:14:25.180><c> um</c><00:14:25.650><c> I'd</c><00:14:26.650><c> like</c><00:14:26.950><c> to</c><00:14:27.010><c> end</c>
+
+00:14:27.360 --> 00:14:27.370 align:start position:0%
+this is a world so um I'd like to end
+ 
+
+00:14:27.370 --> 00:14:31.740 align:start position:0%
+this is a world so um I'd like to end
+with<00:14:28.140><c> with</c><00:14:29.140><c> the</c><00:14:29.230><c> last</c><00:14:29.440><c> piece</c><00:14:29.710><c> which</c><00:14:30.010><c> is</c><00:14:30.750><c> really</c>
+
+00:14:31.740 --> 00:14:31.750 align:start position:0%
+with with the last piece which is really
+ 
+
+00:14:31.750 --> 00:14:32.880 align:start position:0%
+with with the last piece which is really
+a<00:14:31.780><c> culmination</c><00:14:32.020><c> of</c><00:14:32.320><c> everything</c><00:14:32.650><c> that</c><00:14:32.740><c> I've</c>
+
+00:14:32.880 --> 00:14:32.890 align:start position:0%
+a culmination of everything that I've
+ 
+
+00:14:32.890 --> 00:14:36.270 align:start position:0%
+a culmination of everything that I've
+been<00:14:33.040><c> trying</c><00:14:33.490><c> to</c><00:14:33.580><c> say</c><00:14:33.820><c> it's</c><00:14:34.090><c> a</c><00:14:34.180><c> VR</c><00:14:34.450><c> piece</c><00:14:35.280><c> well</c>
+
+00:14:36.270 --> 00:14:36.280 align:start position:0%
+been trying to say it's a VR piece well
+ 
+
+00:14:36.280 --> 00:14:38.130 align:start position:0%
+been trying to say it's a VR piece well
+actually<00:14:36.400><c> it</c><00:14:36.610><c> uses</c><00:14:36.880><c> VR</c><00:14:37.120><c> technology</c><00:14:37.360><c> but</c><00:14:37.990><c> it's</c>
+
+00:14:38.130 --> 00:14:38.140 align:start position:0%
+actually it uses VR technology but it's
+ 
+
+00:14:38.140 --> 00:14:41.360 align:start position:0%
+actually it uses VR technology but it's
+about<00:14:38.530><c> us</c><00:14:38.710><c> on</c><00:14:38.890><c> VR</c><00:14:39.310><c> as</c><00:14:39.610><c> one</c><00:14:40.570><c> could</c><00:14:40.780><c> get</c><00:14:40.960><c> I</c><00:14:41.140><c> think</c>
+
+00:14:41.360 --> 00:14:41.370 align:start position:0%
+about us on VR as one could get I think
+ 
+
+00:14:41.370 --> 00:14:44.820 align:start position:0%
+about us on VR as one could get I think
+and<00:14:42.370><c> it's</c><00:14:42.550><c> about</c><00:14:42.670><c> empathy</c><00:14:43.170><c> but</c><00:14:44.170><c> not</c><00:14:44.350><c> empathy</c>
+
+00:14:44.820 --> 00:14:44.830 align:start position:0%
+and it's about empathy but not empathy
+ 
+
+00:14:44.830 --> 00:14:47.310 align:start position:0%
+and it's about empathy but not empathy
+as<00:14:44.980><c> in</c><00:14:45.160><c> VR</c><00:14:45.490><c> the</c><00:14:45.700><c> empathy</c><00:14:46.000><c> machine</c><00:14:46.150><c> that</c><00:14:46.870><c> again</c>
+
+00:14:47.310 --> 00:14:47.320 align:start position:0%
+as in VR the empathy machine that again
+ 
+
+00:14:47.320 --> 00:14:49.320 align:start position:0%
+as in VR the empathy machine that again
+was<00:14:47.470><c> was</c><00:14:47.620><c> mentioning</c><00:14:47.920><c> yesterday</c><00:14:48.010><c> but</c><00:14:48.940><c> about</c>
+
+00:14:49.320 --> 00:14:49.330 align:start position:0%
+was was mentioning yesterday but about
+ 
+
+00:14:49.330 --> 00:14:51.780 align:start position:0%
+was was mentioning yesterday but about
+the<00:14:49.720><c> really</c><00:14:50.590><c> the</c><00:14:50.680><c> impossibility</c><00:14:51.130><c> of</c><00:14:51.400><c> empathy</c>
+
+00:14:51.780 --> 00:14:51.790 align:start position:0%
+the really the impossibility of empathy
+ 
+
+00:14:51.790 --> 00:14:54.690 align:start position:0%
+the really the impossibility of empathy
+that<00:14:52.060><c> I've</c><00:14:52.150><c> already</c><00:14:52.480><c> touched</c><00:14:52.750><c> upon</c><00:14:53.550><c> so</c><00:14:54.550><c> the</c>
+
+00:14:54.690 --> 00:14:54.700 align:start position:0%
+that I've already touched upon so the
+ 
+
+00:14:54.700 --> 00:14:56.700 align:start position:0%
+that I've already touched upon so the
+eyes<00:14:54.790><c> are</c><00:14:54.820><c> often</c><00:14:55.150><c> locked</c><00:14:55.300><c> into</c><00:14:55.450><c> cameras</c><00:14:55.930><c> as</c><00:14:56.500><c> if</c>
+
+00:14:56.700 --> 00:14:56.710 align:start position:0%
+eyes are often locked into cameras as if
+ 
+
+00:14:56.710 --> 00:14:59.520 align:start position:0%
+eyes are often locked into cameras as if
+a<00:14:57.010><c> picture</c><00:14:57.940><c> falls</c><00:14:58.120><c> on</c><00:14:58.300><c> our</c><00:14:58.390><c> retina</c><00:14:58.840><c> and</c><00:14:59.020><c> we</c><00:14:59.170><c> see</c>
+
+00:14:59.520 --> 00:14:59.530 align:start position:0%
+a picture falls on our retina and we see
+ 
+
+00:14:59.530 --> 00:15:01.850 align:start position:0%
+a picture falls on our retina and we see
+because<00:15:00.070><c> that's</c><00:15:00.280><c> not</c><00:15:00.490><c> how</c><00:15:00.610><c> we</c><00:15:00.670><c> see</c><00:15:00.940><c> at</c><00:15:01.030><c> all</c>
+
+00:15:01.850 --> 00:15:01.860 align:start position:0%
+because that's not how we see at all
+ 
+
+00:15:01.860 --> 00:15:05.040 align:start position:0%
+because that's not how we see at all
+it<00:15:02.860><c> used</c><00:15:03.040><c> to</c><00:15:03.100><c> be</c><00:15:03.250><c> believed</c><00:15:03.550><c> that</c><00:15:04.120><c> we</c><00:15:04.750><c> shoot</c>
+
+00:15:05.040 --> 00:15:05.050 align:start position:0%
+it used to be believed that we shoot
+ 
+
+00:15:05.050 --> 00:15:06.600 align:start position:0%
+it used to be believed that we shoot
+fiery<00:15:05.380><c> Ray's</c><00:15:05.740><c> out</c><00:15:05.920><c> of</c><00:15:06.070><c> our</c><00:15:06.160><c> eyes</c><00:15:06.310><c> and</c><00:15:06.550><c> these</c>
+
+00:15:06.600 --> 00:15:06.610 align:start position:0%
+fiery Ray's out of our eyes and these
+ 
+
+00:15:06.610 --> 00:15:08.400 align:start position:0%
+fiery Ray's out of our eyes and these
+coalesce<00:15:07.210><c> with</c><00:15:07.240><c> the</c><00:15:07.510><c> matter</c><00:15:07.690><c> out</c><00:15:07.840><c> there</c><00:15:08.230><c> and</c>
+
+00:15:08.400 --> 00:15:08.410 align:start position:0%
+coalesce with the matter out there and
+ 
+
+00:15:08.410 --> 00:15:11.160 align:start position:0%
+coalesce with the matter out there and
+solidify<00:15:09.220><c> and</c><00:15:09.400><c> that</c><00:15:09.640><c> gives</c><00:15:10.180><c> us</c><00:15:10.330><c> the</c><00:15:10.480><c> sensation</c>
+
+00:15:11.160 --> 00:15:11.170 align:start position:0%
+solidify and that gives us the sensation
+ 
+
+00:15:11.170 --> 00:15:13.590 align:start position:0%
+solidify and that gives us the sensation
+of<00:15:11.260><c> seeing</c><00:15:11.530><c> even</c><00:15:12.370><c> people</c><00:15:12.730><c> as</c><00:15:12.850><c> smart</c><00:15:13.180><c> as</c><00:15:13.360><c> Plato</c>
+
+00:15:13.590 --> 00:15:13.600 align:start position:0%
+of seeing even people as smart as Plato
+ 
+
+00:15:13.600 --> 00:15:16.050 align:start position:0%
+of seeing even people as smart as Plato
+believed<00:15:14.320><c> this</c><00:15:14.670><c> it's</c><00:15:15.670><c> a</c><00:15:15.730><c> really</c><00:15:15.940><c> beautiful</c>
+
+00:15:16.050 --> 00:15:16.060 align:start position:0%
+believed this it's a really beautiful
+ 
+
+00:15:16.060 --> 00:15:18.690 align:start position:0%
+believed this it's a really beautiful
+theory<00:15:16.750><c> of</c><00:15:17.590><c> course</c><00:15:17.800><c> it's</c><00:15:17.980><c> wrong</c><00:15:18.190><c> that's</c><00:15:18.430><c> not</c>
+
+00:15:18.690 --> 00:15:18.700 align:start position:0%
+theory of course it's wrong that's not
+ 
+
+00:15:18.700 --> 00:15:20.700 align:start position:0%
+theory of course it's wrong that's not
+how<00:15:18.850><c> seeing</c><00:15:19.120><c> happens</c><00:15:19.480><c> at</c><00:15:19.600><c> all</c><00:15:19.750><c> but</c><00:15:20.470><c> what</c><00:15:20.590><c> I</c><00:15:20.620><c> do</c>
+
+00:15:20.700 --> 00:15:20.710 align:start position:0%
+how seeing happens at all but what I do
+ 
+
+00:15:20.710 --> 00:15:22.410 align:start position:0%
+how seeing happens at all but what I do
+like<00:15:20.920><c> about</c><00:15:20.980><c> this</c><00:15:21.370><c> extra</c><00:15:21.760><c> mission</c><00:15:22.030><c> theory</c><00:15:22.240><c> of</c>
+
+00:15:22.410 --> 00:15:22.420 align:start position:0%
+like about this extra mission theory of
+ 
+
+00:15:22.420 --> 00:15:24.930 align:start position:0%
+like about this extra mission theory of
+vision<00:15:22.540><c> is</c><00:15:22.900><c> it</c><00:15:23.680><c> really</c><00:15:24.010><c> underlines</c><00:15:24.490><c> the</c><00:15:24.700><c> idea</c>
+
+00:15:24.930 --> 00:15:24.940 align:start position:0%
+vision is it really underlines the idea
+ 
+
+00:15:24.940 --> 00:15:27.960 align:start position:0%
+vision is it really underlines the idea
+that<00:15:25.090><c> seeing</c><00:15:25.510><c> is</c><00:15:25.780><c> an</c><00:15:25.960><c> active</c><00:15:26.290><c> process</c><00:15:26.970><c> plus</c>
+
+00:15:27.960 --> 00:15:27.970 align:start position:0%
+that seeing is an active process plus
+ 
+
+00:15:27.970 --> 00:15:29.190 align:start position:0%
+that seeing is an active process plus
+the<00:15:28.090><c> fovea</c><00:15:28.480><c> which</c><00:15:28.660><c> is</c><00:15:28.780><c> actually</c><00:15:29.050><c> high</c>
+
+00:15:29.190 --> 00:15:29.200 align:start position:0%
+the fovea which is actually high
+ 
+
+00:15:29.200 --> 00:15:31.260 align:start position:0%
+the fovea which is actually high
+resolution<00:15:29.800><c> and</c><00:15:29.950><c> full</c><00:15:30.550><c> color</c><00:15:30.730><c> is</c><00:15:30.940><c> actually</c>
+
+00:15:31.260 --> 00:15:31.270 align:start position:0%
+resolution and full color is actually
+ 
+
+00:15:31.270 --> 00:15:33.300 align:start position:0%
+resolution and full color is actually
+tiny<00:15:31.510><c> it's</c><00:15:32.110><c> the</c><00:15:32.200><c> size</c><00:15:32.470><c> of</c><00:15:32.710><c> you</c><00:15:33.070><c> know</c><00:15:33.190><c> my</c>
+
+00:15:33.300 --> 00:15:33.310 align:start position:0%
+tiny it's the size of you know my
+ 
+
+00:15:33.310 --> 00:15:35.310 align:start position:0%
+tiny it's the size of you know my
+thumbnail<00:15:33.730><c> at</c><00:15:33.880><c> arm's</c><00:15:34.120><c> length</c><00:15:34.180><c> but</c><00:15:34.960><c> to</c><00:15:35.140><c> me</c><00:15:35.230><c> it</c>
+
+00:15:35.310 --> 00:15:35.320 align:start position:0%
+thumbnail at arm's length but to me it
+ 
+
+00:15:35.320 --> 00:15:38.400 align:start position:0%
+thumbnail at arm's length but to me it
+seems<00:15:35.560><c> like</c><00:15:35.650><c> my</c><00:15:36.210><c> big</c><00:15:37.210><c> field</c><00:15:37.900><c> of</c><00:15:38.050><c> vision</c><00:15:38.200><c> is</c>
+
+00:15:38.400 --> 00:15:38.410 align:start position:0%
+seems like my big field of vision is
+ 
+
+00:15:38.410 --> 00:15:40.350 align:start position:0%
+seems like my big field of vision is
+really<00:15:38.680><c> really</c><00:15:38.860><c> large</c><00:15:39.070><c> that's</c><00:15:39.940><c> because</c><00:15:40.270><c> of</c>
+
+00:15:40.350 --> 00:15:40.360 align:start position:0%
+really really large that's because of
+ 
+
+00:15:40.360 --> 00:15:41.940 align:start position:0%
+really really large that's because of
+course<00:15:40.570><c> my</c><00:15:40.660><c> eyes</c><00:15:40.930><c> is</c><00:15:41.110><c> sick</c><00:15:41.260><c> aiding</c><00:15:41.560><c> our</c><00:15:41.710><c> eye</c>
+
+00:15:41.940 --> 00:15:41.950 align:start position:0%
+course my eyes is sick aiding our eye
+ 
+
+00:15:41.950 --> 00:15:44.010 align:start position:0%
+course my eyes is sick aiding our eye
+desiccating<00:15:42.730><c> two</c><00:15:42.910><c> or</c><00:15:43.030><c> three</c><00:15:43.180><c> times</c><00:15:43.390><c> a</c><00:15:43.600><c> second</c>
+
+00:15:44.010 --> 00:15:44.020 align:start position:0%
+desiccating two or three times a second
+ 
+
+00:15:44.020 --> 00:15:47.760 align:start position:0%
+desiccating two or three times a second
+and<00:15:45.060><c> my</c><00:15:46.060><c> brain</c><00:15:46.300><c> is</c><00:15:46.450><c> integrating</c><00:15:47.260><c> the</c><00:15:47.560><c> motor</c>
+
+00:15:47.760 --> 00:15:47.770 align:start position:0%
+and my brain is integrating the motor
+ 
+
+00:15:47.770 --> 00:15:49.680 align:start position:0%
+and my brain is integrating the motor
+signals<00:15:48.040><c> with</c><00:15:48.670><c> the</c><00:15:48.700><c> signal</c><00:15:49.180><c> that's</c><00:15:49.360><c> coming</c>
+
+00:15:49.680 --> 00:15:49.690 align:start position:0%
+signals with the signal that's coming
+ 
+
+00:15:49.690 --> 00:15:52.440 align:start position:0%
+signals with the signal that's coming
+from<00:15:49.810><c> my</c><00:15:50.020><c> eyes</c><00:15:50.280><c> we</c><00:15:51.280><c> know</c><00:15:51.430><c> it</c><00:15:51.670><c> is</c><00:15:51.790><c> from</c><00:15:51.970><c> the</c><00:15:52.090><c> 60s</c>
+
+00:15:52.440 --> 00:15:52.450 align:start position:0%
+from my eyes we know it is from the 60s
+ 
+
+00:15:52.450 --> 00:15:54.840 align:start position:0%
+from my eyes we know it is from the 60s
+and<00:15:52.510><c> 70s</c><00:15:52.660><c> Alfred</c><00:15:53.380><c> Arbus</c><00:15:53.770><c> did</c><00:15:54.550><c> some</c><00:15:54.730><c> incredible</c>
+
+00:15:54.840 --> 00:15:54.850 align:start position:0%
+and 70s Alfred Arbus did some incredible
+ 
+
+00:15:54.850 --> 00:15:58.170 align:start position:0%
+and 70s Alfred Arbus did some incredible
+research<00:15:55.330><c> with</c><00:15:55.870><c> this</c><00:15:56.110><c> torture</c><00:15:56.830><c> machine</c><00:15:57.180><c> he</c>
+
+00:15:58.170 --> 00:15:58.180 align:start position:0%
+research with this torture machine he
+ 
+
+00:15:58.180 --> 00:16:00.840 align:start position:0%
+research with this torture machine he
+also<00:15:58.330><c> found</c><00:15:58.780><c> that</c><00:15:59.170><c> if</c><00:15:59.920><c> you</c><00:16:00.040><c> ask</c><00:16:00.370><c> people</c><00:16:00.490><c> as</c>
+
+00:16:00.840 --> 00:16:00.850 align:start position:0%
+also found that if you ask people as
+ 
+
+00:16:00.850 --> 00:16:04.260 align:start position:0%
+also found that if you ask people as
+question<00:16:02.250><c> it</c><00:16:03.250><c> affects</c><00:16:03.580><c> the</c><00:16:03.760><c> way</c><00:16:03.850><c> they</c><00:16:04.000><c> scan</c>
+
+00:16:04.260 --> 00:16:04.270 align:start position:0%
+question it affects the way they scan
+ 
+
+00:16:04.270 --> 00:16:06.030 align:start position:0%
+question it affects the way they scan
+the<00:16:04.420><c> scene</c><00:16:04.630><c> see</c><00:16:05.230><c> if</c><00:16:05.260><c> you</c><00:16:05.470><c> ask</c><00:16:05.620><c> people</c><00:16:05.770><c> what</c><00:16:05.950><c> are</c>
+
+00:16:06.030 --> 00:16:06.040 align:start position:0%
+the scene see if you ask people what are
+ 
+
+00:16:06.040 --> 00:16:07.650 align:start position:0%
+the scene see if you ask people what are
+these<00:16:06.130><c> people</c><00:16:06.430><c> talking</c><00:16:06.670><c> about</c><00:16:06.820><c> how</c><00:16:07.300><c> old</c><00:16:07.510><c> are</c>
+
+00:16:07.650 --> 00:16:07.660 align:start position:0%
+these people talking about how old are
+ 
+
+00:16:07.660 --> 00:16:09.750 align:start position:0%
+these people talking about how old are
+they<00:16:07.810><c> how</c><00:16:08.050><c> are</c><00:16:08.260><c> fluence</c><00:16:08.560><c> are</c><00:16:08.740><c> they</c><00:16:08.860><c> it</c><00:16:09.340><c> affects</c>
+
+00:16:09.750 --> 00:16:09.760 align:start position:0%
+they how are fluence are they it affects
+ 
+
+00:16:09.760 --> 00:16:11.960 align:start position:0%
+they how are fluence are they it affects
+the<00:16:09.940><c> way</c><00:16:10.060><c> the</c><00:16:10.900><c> eyes</c><00:16:11.080><c> scan</c><00:16:11.620><c> the</c><00:16:11.770><c> screen</c>
+
+00:16:11.960 --> 00:16:11.970 align:start position:0%
+the way the eyes scan the screen
+ 
+
+00:16:11.970 --> 00:16:14.400 align:start position:0%
+the way the eyes scan the screen
+unconsciously<00:16:12.970><c> so</c><00:16:13.390><c> not</c><00:16:13.570><c> only</c><00:16:13.720><c> do</c><00:16:13.990><c> we</c><00:16:14.110><c> need</c><00:16:14.260><c> to</c>
+
+00:16:14.400 --> 00:16:14.410 align:start position:0%
+unconsciously so not only do we need to
+ 
+
+00:16:14.410 --> 00:16:17.370 align:start position:0%
+unconsciously so not only do we need to
+take<00:16:14.590><c> actions</c><00:16:15.160><c> to</c><00:16:16.000><c> perceive</c><00:16:16.330><c> the</c><00:16:16.540><c> world</c><00:16:16.570><c> but</c>
+
+00:16:17.370 --> 00:16:17.380 align:start position:0%
+take actions to perceive the world but
+ 
+
+00:16:17.380 --> 00:16:19.140 align:start position:0%
+take actions to perceive the world but
+the<00:16:17.530><c> actions</c><00:16:17.860><c> we</c><00:16:18.010><c> take</c><00:16:18.280><c> affects</c><00:16:18.790><c> the</c><00:16:18.970><c> meaning</c>
+
+00:16:19.140 --> 00:16:19.150 align:start position:0%
+the actions we take affects the meaning
+ 
+
+00:16:19.150 --> 00:16:21.540 align:start position:0%
+the actions we take affects the meaning
+that<00:16:19.570><c> we</c><00:16:19.870><c> take</c><00:16:20.140><c> from</c><00:16:20.710><c> the</c><00:16:20.860><c> scene</c><00:16:21.040><c> in</c><00:16:21.160><c> front</c><00:16:21.370><c> of</c>
+
+00:16:21.540 --> 00:16:21.550 align:start position:0%
+that we take from the scene in front of
+ 
+
+00:16:21.550 --> 00:16:25.920 align:start position:0%
+that we take from the scene in front of
+us<00:16:22.380><c> and</c><00:16:23.970><c> the</c><00:16:24.970><c> final</c><00:16:25.330><c> thing</c><00:16:25.450><c> I</c><00:16:25.570><c> mentioned</c><00:16:25.780><c> is</c>
+
+00:16:25.920 --> 00:16:25.930 align:start position:0%
+us and the final thing I mentioned is
+ 
+
+00:16:25.930 --> 00:16:28.500 align:start position:0%
+us and the final thing I mentioned is
+binocular<00:16:26.260><c> rivalry</c>
+
+00:16:28.500 --> 00:16:28.510 align:start position:0%
+ 
+ 
+
+00:16:28.510 --> 00:16:30.180 align:start position:0%
+ 
+it's<00:16:29.050><c> the</c><00:16:29.170><c> phenomenon</c><00:16:29.410><c> bit</c><00:16:29.800><c> that's</c><00:16:30.010><c> been</c>
+
+00:16:30.180 --> 00:16:30.190 align:start position:0%
+it's the phenomenon bit that's been
+ 
+
+00:16:30.190 --> 00:16:32.100 align:start position:0%
+it's the phenomenon bit that's been
+known<00:16:30.339><c> for</c><00:16:30.670><c> centuries</c><00:16:31.269><c> and</c><00:16:31.899><c> it's</c><00:16:31.990><c> been</c>
+
+00:16:32.100 --> 00:16:32.110 align:start position:0%
+known for centuries and it's been
+ 
+
+00:16:32.110 --> 00:16:34.949 align:start position:0%
+known for centuries and it's been
+studied<00:16:32.410><c> scientifically</c><00:16:33.839><c> surprisingly</c><00:16:34.839><c> it</c>
+
+00:16:34.949 --> 00:16:34.959 align:start position:0%
+studied scientifically surprisingly it
+ 
+
+00:16:34.959 --> 00:16:38.160 align:start position:0%
+studied scientifically surprisingly it
+hasn't<00:16:35.230><c> been</c><00:16:35.320><c> studied</c><00:16:35.880><c> artistically</c><00:16:36.880><c> as</c><00:16:37.170><c> much</c>
+
+00:16:38.160 --> 00:16:38.170 align:start position:0%
+hasn't been studied artistically as much
+ 
+
+00:16:38.170 --> 00:16:40.259 align:start position:0%
+hasn't been studied artistically as much
+there<00:16:38.529><c> have</c><00:16:38.649><c> been</c><00:16:38.829><c> some</c><00:16:39.459><c> enquiries</c><00:16:39.850><c> into</c><00:16:40.120><c> it</c>
+
+00:16:40.259 --> 00:16:40.269 align:start position:0%
+there have been some enquiries into it
+ 
+
+00:16:40.269 --> 00:16:42.030 align:start position:0%
+there have been some enquiries into it
+the<00:16:40.690><c> basic</c><00:16:41.019><c> idea</c><00:16:41.350><c> is</c><00:16:41.500><c> that</c><00:16:41.529><c> the</c><00:16:41.709><c> brain</c>
+
+00:16:42.030 --> 00:16:42.040 align:start position:0%
+the basic idea is that the brain
+ 
+
+00:16:42.040 --> 00:16:44.519 align:start position:0%
+the basic idea is that the brain
+integrates<00:16:42.820><c> all</c><00:16:43.329><c> kinds</c><00:16:43.690><c> of</c><00:16:43.779><c> information</c><00:16:44.320><c> from</c>
+
+00:16:44.519 --> 00:16:44.529 align:start position:0%
+integrates all kinds of information from
+ 
+
+00:16:44.529 --> 00:16:46.350 align:start position:0%
+integrates all kinds of information from
+all<00:16:44.709><c> of</c><00:16:44.829><c> the</c><00:16:44.920><c> senses</c><00:16:45.399><c> all</c><00:16:45.760><c> of</c><00:16:46.089><c> the</c><00:16:46.149><c> prior</c>
+
+00:16:46.350 --> 00:16:46.360 align:start position:0%
+all of the senses all of the prior
+ 
+
+00:16:46.360 --> 00:16:48.150 align:start position:0%
+all of the senses all of the prior
+knowledge<00:16:46.570><c> to</c><00:16:46.990><c> provide</c><00:16:47.769><c> to</c><00:16:48.010><c> your</c>
+
+00:16:48.150 --> 00:16:48.160 align:start position:0%
+knowledge to provide to your
+ 
+
+00:16:48.160 --> 00:16:51.980 align:start position:0%
+knowledge to provide to your
+consciousness<00:16:48.639><c> a</c><00:16:49.060><c> single</c><00:16:49.720><c> cohesive</c><00:16:50.019><c> percept</c>
+
+00:16:51.980 --> 00:16:51.990 align:start position:0%
+consciousness a single cohesive percept
+ 
+
+00:16:51.990 --> 00:16:57.150 align:start position:0%
+consciousness a single cohesive percept
+if<00:16:52.990><c> you</c><00:16:53.910><c> mess</c><00:16:54.910><c> with</c><00:16:55.180><c> this</c><00:16:55.500><c> then</c><00:16:56.500><c> interesting</c>
+
+00:16:57.150 --> 00:16:57.160 align:start position:0%
+if you mess with this then interesting
+ 
+
+00:16:57.160 --> 00:16:58.519 align:start position:0%
+if you mess with this then interesting
+things<00:16:57.370><c> happen</c><00:16:57.760><c> and</c><00:16:57.940><c> this</c><00:16:58.120><c> is</c><00:16:58.209><c> what</c><00:16:58.329><c> actually</c>
+
+00:16:58.519 --> 00:16:58.529 align:start position:0%
+things happen and this is what actually
+ 
+
+00:16:58.529 --> 00:17:00.300 align:start position:0%
+things happen and this is what actually
+hallucinogenics<00:16:59.529><c> do</c><00:16:59.620><c> I</c><00:16:59.680><c> used</c><00:16:59.949><c> to</c><00:17:00.070><c> believe</c>
+
+00:17:00.300 --> 00:17:00.310 align:start position:0%
+hallucinogenics do I used to believe
+ 
+
+00:17:00.310 --> 00:17:02.970 align:start position:0%
+hallucinogenics do I used to believe
+that<00:17:00.370><c> hallucinogenics</c><00:17:01.240><c> enhance</c><00:17:01.990><c> your</c><00:17:02.230><c> senses</c>
+
+00:17:02.970 --> 00:17:02.980 align:start position:0%
+that hallucinogenics enhance your senses
+ 
+
+00:17:02.980 --> 00:17:05.069 align:start position:0%
+that hallucinogenics enhance your senses
+so<00:17:03.820><c> like</c><00:17:03.970><c> this</c><00:17:04.150><c> little</c><00:17:04.449><c> crack</c><00:17:04.720><c> here</c><00:17:04.750><c> might</c>
+
+00:17:05.069 --> 00:17:05.079 align:start position:0%
+so like this little crack here might
+ 
+
+00:17:05.079 --> 00:17:07.079 align:start position:0%
+so like this little crack here might
+look<00:17:05.199><c> like</c><00:17:05.260><c> a</c><00:17:05.380><c> canyon</c><00:17:05.860><c> actually</c><00:17:06.579><c> it</c><00:17:06.730><c> doesn't</c>
+
+00:17:07.079 --> 00:17:07.089 align:start position:0%
+look like a canyon actually it doesn't
+ 
+
+00:17:07.089 --> 00:17:09.059 align:start position:0%
+look like a canyon actually it doesn't
+mess<00:17:07.419><c> with</c><00:17:07.449><c> your</c><00:17:07.780><c> senses</c><00:17:08.260><c> it</c><00:17:08.439><c> messes</c><00:17:08.799><c> with</c><00:17:08.829><c> the</c>
+
+00:17:09.059 --> 00:17:09.069 align:start position:0%
+mess with your senses it messes with the
+ 
+
+00:17:09.069 --> 00:17:10.409 align:start position:0%
+mess with your senses it messes with the
+ability<00:17:09.459><c> of</c><00:17:09.549><c> the</c><00:17:09.669><c> brain</c><00:17:09.790><c> to</c><00:17:09.910><c> stitch</c>
+
+00:17:10.409 --> 00:17:10.419 align:start position:0%
+ability of the brain to stitch
+ 
+
+00:17:10.419 --> 00:17:11.669 align:start position:0%
+ability of the brain to stitch
+everything<00:17:10.720><c> together</c><00:17:11.140><c> to</c><00:17:11.290><c> provide</c><00:17:11.620><c> a</c>
+
+00:17:11.669 --> 00:17:11.679 align:start position:0%
+everything together to provide a
+ 
+
+00:17:11.679 --> 00:17:13.949 align:start position:0%
+everything together to provide a
+cohesive<00:17:12.250><c> percept</c><00:17:12.880><c> so</c><00:17:13.360><c> what</c><00:17:13.480><c> are</c><00:17:13.600><c> the</c><00:17:13.660><c> certain</c>
+
+00:17:13.949 --> 00:17:13.959 align:start position:0%
+cohesive percept so what are the certain
+ 
+
+00:17:13.959 --> 00:17:15.840 align:start position:0%
+cohesive percept so what are the certain
+different<00:17:14.290><c> senses</c><00:17:14.740><c> jump</c><00:17:15.100><c> to</c><00:17:15.339><c> your</c><00:17:15.459><c> conscious</c>
+
+00:17:15.840 --> 00:17:15.850 align:start position:0%
+different senses jump to your conscious
+ 
+
+00:17:15.850 --> 00:17:18.510 align:start position:0%
+different senses jump to your conscious
+awareness<00:17:16.319><c> so</c><00:17:17.319><c> if</c><00:17:17.470><c> you</c><00:17:17.650><c> provide</c><00:17:17.829><c> the</c><00:17:18.160><c> two</c><00:17:18.339><c> eyes</c>
+
+00:17:18.510 --> 00:17:18.520 align:start position:0%
+awareness so if you provide the two eyes
+ 
+
+00:17:18.520 --> 00:17:21.350 align:start position:0%
+awareness so if you provide the two eyes
+with<00:17:18.790><c> radically</c><00:17:19.439><c> different</c><00:17:20.439><c> images</c><00:17:20.799><c> or</c>
+
+00:17:21.350 --> 00:17:21.360 align:start position:0%
+with radically different images or
+ 
+
+00:17:21.360 --> 00:17:23.429 align:start position:0%
+with radically different images or
+monocular<00:17:22.360><c> these</c><00:17:22.510><c> similar</c><00:17:22.809><c> images</c><00:17:23.110><c> as</c><00:17:23.260><c> it's</c>
+
+00:17:23.429 --> 00:17:23.439 align:start position:0%
+monocular these similar images as it's
+ 
+
+00:17:23.439 --> 00:17:26.669 align:start position:0%
+monocular these similar images as it's
+called<00:17:23.819><c> the</c><00:17:24.819><c> brain</c><00:17:25.059><c> is</c><00:17:25.209><c> unable</c><00:17:25.480><c> to</c><00:17:25.620><c> provide</c><00:17:26.620><c> a</c>
+
+00:17:26.669 --> 00:17:26.679 align:start position:0%
+called the brain is unable to provide a
+ 
+
+00:17:26.679 --> 00:17:29.490 align:start position:0%
+called the brain is unable to provide a
+3d<00:17:27.130><c> percept</c><00:17:27.669><c> and</c><00:17:27.970><c> what</c><00:17:28.690><c> you</c><00:17:28.870><c> will</c><00:17:29.020><c> see</c><00:17:29.290><c> in</c><00:17:29.470><c> your</c>
+
+00:17:29.490 --> 00:17:29.500 align:start position:0%
+3d percept and what you will see in your
+ 
+
+00:17:29.500 --> 00:17:32.370 align:start position:0%
+3d percept and what you will see in your
+mind's<00:17:29.980><c> eye</c><00:17:30.130><c> is</c><00:17:30.490><c> something</c><00:17:30.850><c> similar</c><00:17:31.600><c> into</c>
+
+00:17:32.370 --> 00:17:32.380 align:start position:0%
+mind's eye is something similar into
+ 
+
+00:17:32.380 --> 00:17:35.159 align:start position:0%
+mind's eye is something similar into
+that<00:17:32.530><c> image</c><00:17:32.770><c> on</c><00:17:32.890><c> the</c><00:17:33.010><c> right</c><00:17:33.160><c> of</c><00:17:33.840><c> course</c><00:17:34.840><c> this</c>
+
+00:17:35.159 --> 00:17:35.169 align:start position:0%
+that image on the right of course this
+ 
+
+00:17:35.169 --> 00:17:36.810 align:start position:0%
+that image on the right of course this
+will<00:17:35.320><c> be</c><00:17:35.410><c> different</c><00:17:35.650><c> for</c><00:17:35.890><c> everybody</c><00:17:36.400><c> and</c><00:17:36.610><c> this</c>
+
+00:17:36.810 --> 00:17:36.820 align:start position:0%
+will be different for everybody and this
+ 
+
+00:17:36.820 --> 00:17:39.750 align:start position:0%
+will be different for everybody and this
+is<00:17:36.940><c> where</c><00:17:37.090><c> it</c><00:17:37.179><c> gets</c><00:17:37.299><c> really</c><00:17:37.570><c> interesting</c><00:17:38.760><c> it's</c>
+
+00:17:39.750 --> 00:17:39.760 align:start position:0%
+is where it gets really interesting it's
+ 
+
+00:17:39.760 --> 00:17:41.909 align:start position:0%
+is where it gets really interesting it's
+impossible<00:17:40.510><c> for</c><00:17:40.540><c> me</c><00:17:40.750><c> to</c><00:17:40.900><c> know</c><00:17:41.290><c> what</c><00:17:41.559><c> you</c><00:17:41.770><c> will</c>
+
+00:17:41.909 --> 00:17:41.919 align:start position:0%
+impossible for me to know what you will
+ 
+
+00:17:41.919 --> 00:17:43.710 align:start position:0%
+impossible for me to know what you will
+see<00:17:42.220><c> in</c><00:17:42.429><c> your</c><00:17:42.490><c> mind's</c><00:17:43.059><c> eye</c><00:17:43.179><c> when</c><00:17:43.480><c> you</c><00:17:43.570><c> are</c>
+
+00:17:43.710 --> 00:17:43.720 align:start position:0%
+see in your mind's eye when you are
+ 
+
+00:17:43.720 --> 00:17:45.140 align:start position:0%
+see in your mind's eye when you are
+presented<00:17:44.169><c> with</c><00:17:44.200><c> these</c><00:17:44.470><c> two</c><00:17:44.650><c> images</c>
+
+00:17:45.140 --> 00:17:45.150 align:start position:0%
+presented with these two images
+ 
+
+00:17:45.150 --> 00:17:47.460 align:start position:0%
+presented with these two images
+furthermore<00:17:46.150><c> that</c><00:17:46.570><c> image</c><00:17:46.870><c> will</c><00:17:47.020><c> be</c><00:17:47.110><c> animated</c>
+
+00:17:47.460 --> 00:17:47.470 align:start position:0%
+furthermore that image will be animated
+ 
+
+00:17:47.470 --> 00:17:51.150 align:start position:0%
+furthermore that image will be animated
+it<00:17:47.890><c> will</c><00:17:48.100><c> be</c><00:17:48.220><c> morphing</c><00:17:49.140><c> again</c><00:17:50.140><c> this</c><00:17:50.650><c> depends</c>
+
+00:17:51.150 --> 00:17:51.160 align:start position:0%
+it will be morphing again this depends
+ 
+
+00:17:51.160 --> 00:17:53.070 align:start position:0%
+it will be morphing again this depends
+on<00:17:51.309><c> your</c><00:17:51.370><c> physiology</c><00:17:51.790><c> it's</c><00:17:52.360><c> impossible</c><00:17:52.929><c> for</c>
+
+00:17:53.070 --> 00:17:53.080 align:start position:0%
+on your physiology it's impossible for
+ 
+
+00:17:53.080 --> 00:17:55.710 align:start position:0%
+on your physiology it's impossible for
+me<00:17:53.169><c> to</c><00:17:53.200><c> know</c><00:17:53.530><c> what</c><00:17:54.010><c> you</c><00:17:54.130><c> will</c><00:17:54.280><c> see</c><00:17:54.580><c> so</c><00:17:55.360><c> this</c><00:17:55.510><c> VR</c>
+
+00:17:55.710 --> 00:17:55.720 align:start position:0%
+me to know what you will see so this VR
+ 
+
+00:17:55.720 --> 00:17:58.080 align:start position:0%
+me to know what you will see so this VR
+piece<00:17:56.080><c> is</c><00:17:56.410><c> motivated</c><00:17:57.280><c> by</c><00:17:57.429><c> these</c><00:17:57.490><c> four</c><00:17:57.880><c> points</c>
+
+00:17:58.080 --> 00:17:58.090 align:start position:0%
+piece is motivated by these four points
+ 
+
+00:17:58.090 --> 00:17:59.310 align:start position:0%
+piece is motivated by these four points
+which<00:17:58.390><c> have</c><00:17:58.540><c> just</c><00:17:58.690><c> been</c><00:17:58.809><c> trying</c><00:17:59.020><c> to</c><00:17:59.110><c> summarize</c>
+
+00:17:59.310 --> 00:17:59.320 align:start position:0%
+which have just been trying to summarize
+ 
+
+00:17:59.320 --> 00:18:01.560 align:start position:0%
+which have just been trying to summarize
+this<00:17:59.799><c> whole</c><00:17:59.860><c> presentation</c><00:18:00.480><c> what</c><00:18:01.480><c> we</c>
+
+00:18:01.560 --> 00:18:01.570 align:start position:0%
+this whole presentation what we
+ 
+
+00:18:01.570 --> 00:18:03.390 align:start position:0%
+this whole presentation what we
+perceived<00:18:01.900><c> to</c><00:18:02.020><c> be</c><00:18:02.110><c> real</c><00:18:02.320><c> is</c><00:18:02.620><c> a</c><00:18:02.740><c> reconstruction</c>
+
+00:18:03.390 --> 00:18:03.400 align:start position:0%
+perceived to be real is a reconstruction
+ 
+
+00:18:03.400 --> 00:18:05.250 align:start position:0%
+perceived to be real is a reconstruction
+in<00:18:03.669><c> our</c><00:18:03.790><c> minds</c><00:18:04.030><c> it's</c><00:18:04.390><c> a</c><00:18:04.480><c> simplified</c><00:18:04.900><c> model</c><00:18:05.200><c> of</c>
+
+00:18:05.250 --> 00:18:05.260 align:start position:0%
+in our minds it's a simplified model of
+ 
+
+00:18:05.260 --> 00:18:06.750 align:start position:0%
+in our minds it's a simplified model of
+the<00:18:05.380><c> world</c><00:18:05.500><c> limited</c><00:18:06.070><c> by</c><00:18:06.220><c> our</c><00:18:06.250><c> biology</c><00:18:06.730><c> and</c>
+
+00:18:06.750 --> 00:18:06.760 align:start position:0%
+the world limited by our biology and
+ 
+
+00:18:06.760 --> 00:18:09.150 align:start position:0%
+the world limited by our biology and
+physiology<00:18:07.710><c> perception</c><00:18:08.710><c> is</c><00:18:08.799><c> an</c><00:18:08.890><c> active</c>
+
+00:18:09.150 --> 00:18:09.160 align:start position:0%
+physiology perception is an active
+ 
+
+00:18:09.160 --> 00:18:10.980 align:start position:0%
+physiology perception is an active
+process<00:18:09.370><c> it</c><00:18:09.730><c> requires</c><00:18:10.120><c> action</c><00:18:10.750><c> and</c>
+
+00:18:10.980 --> 00:18:10.990 align:start position:0%
+process it requires action and
+ 
+
+00:18:10.990 --> 00:18:13.710 align:start position:0%
+process it requires action and
+integration<00:18:12.150><c> the</c><00:18:13.150><c> actions</c><00:18:13.450><c> that</c><00:18:13.510><c> we</c><00:18:13.690><c> take</c>
+
+00:18:13.710 --> 00:18:13.720 align:start position:0%
+integration the actions that we take
+ 
+
+00:18:13.720 --> 00:18:15.630 align:start position:0%
+integration the actions that we take
+affects<00:18:14.410><c> the</c><00:18:14.559><c> reality</c><00:18:15.040><c> and</c><00:18:15.250><c> the</c><00:18:15.340><c> meaning</c><00:18:15.610><c> that</c>
+
+00:18:15.630 --> 00:18:15.640 align:start position:0%
+affects the reality and the meaning that
+ 
+
+00:18:15.640 --> 00:18:18.390 align:start position:0%
+affects the reality and the meaning that
+we<00:18:15.790><c> construct</c><00:18:16.299><c> in</c><00:18:16.450><c> our</c><00:18:16.570><c> mind</c><00:18:16.809><c> a</c><00:18:17.160><c> number</c><00:18:18.160><c> for</c>
+
+00:18:18.390 --> 00:18:18.400 align:start position:0%
+we construct in our mind a number for
+ 
+
+00:18:18.400 --> 00:18:20.669 align:start position:0%
+we construct in our mind a number for
+the<00:18:18.700><c> most</c><00:18:18.910><c> important</c><00:18:19.419><c> one</c><00:18:19.570><c> even</c><00:18:20.559><c> when</c>
+
+00:18:20.669 --> 00:18:20.679 align:start position:0%
+the most important one even when
+ 
+
+00:18:20.679 --> 00:18:21.960 align:start position:0%
+the most important one even when
+presented<00:18:20.860><c> with</c><00:18:21.190><c> the</c><00:18:21.370><c> exact</c><00:18:21.760><c> same</c>
+
+00:18:21.960 --> 00:18:21.970 align:start position:0%
+presented with the exact same
+ 
+
+00:18:21.970 --> 00:18:24.600 align:start position:0%
+presented with the exact same
+information<00:18:22.179><c> the</c><00:18:23.110><c> same</c><00:18:23.350><c> images</c><00:18:23.740><c> everybody</c>
+
+00:18:24.600 --> 00:18:24.610 align:start position:0%
+information the same images everybody
+ 
+
+00:18:24.610 --> 00:18:26.780 align:start position:0%
+information the same images everybody
+will<00:18:24.790><c> experience</c><00:18:25.450><c> something</c><00:18:26.200><c> unique</c>
+
+00:18:26.780 --> 00:18:26.790 align:start position:0%
+will experience something unique
+ 
+
+00:18:26.790 --> 00:18:29.630 align:start position:0%
+will experience something unique
+something<00:18:27.790><c> personal</c><00:18:28.570><c> based</c><00:18:28.960><c> on</c><00:18:29.200><c> who</c><00:18:29.320><c> they</c><00:18:29.470><c> are</c>
+
+00:18:29.630 --> 00:18:29.640 align:start position:0%
+something personal based on who they are
+ 
+
+00:18:29.640 --> 00:18:34.020 align:start position:0%
+something personal based on who they are
+that<00:18:30.640><c> nobody</c><00:18:31.210><c> else</c><00:18:31.390><c> can</c><00:18:32.130><c> understand</c><00:18:33.130><c> and</c><00:18:33.520><c> of</c>
+
+00:18:34.020 --> 00:18:34.030 align:start position:0%
+that nobody else can understand and of
+ 
+
+00:18:34.030 --> 00:18:35.340 align:start position:0%
+that nobody else can understand and of
+course<00:18:34.270><c> I'm</c><00:18:34.390><c> interested</c><00:18:34.750><c> in</c><00:18:34.840><c> all</c><00:18:34.960><c> of</c><00:18:34.990><c> this</c><00:18:35.169><c> on</c>
+
+00:18:35.340 --> 00:18:35.350 align:start position:0%
+course I'm interested in all of this on
+ 
+
+00:18:35.350 --> 00:18:37.080 align:start position:0%
+course I'm interested in all of this on
+a<00:18:35.380><c> perceptual</c><00:18:35.860><c> level</c><00:18:36.070><c> which</c><00:18:36.610><c> is</c><00:18:36.760><c> what</c><00:18:36.880><c> these</c>
+
+00:18:37.080 --> 00:18:37.090 align:start position:0%
+a perceptual level which is what these
+ 
+
+00:18:37.090 --> 00:18:40.110 align:start position:0%
+a perceptual level which is what these
+works<00:18:37.530><c> explore</c><00:18:38.530><c> but</c><00:18:39.490><c> ultimately</c><00:18:39.940><c> the</c>
+
+00:18:40.110 --> 00:18:40.120 align:start position:0%
+works explore but ultimately the
+ 
+
+00:18:40.120 --> 00:18:41.970 align:start position:0%
+works explore but ultimately the
+motivation<00:18:40.659><c> for</c><00:18:40.840><c> all</c><00:18:40.900><c> of</c><00:18:41.080><c> this</c>
+
+00:18:41.970 --> 00:18:41.980 align:start position:0%
+motivation for all of this
+ 
+
+00:18:41.980 --> 00:18:45.000 align:start position:0%
+motivation for all of this
+is<00:18:42.039><c> higher</c><00:18:42.549><c> level</c><00:18:42.940><c> I'm</c><00:18:43.480><c> from</c><00:18:43.960><c> Turkey</c><00:18:44.230><c> which</c>
+
+00:18:45.000 --> 00:18:45.010 align:start position:0%
+is higher level I'm from Turkey which
+ 
+
+00:18:45.010 --> 00:18:48.120 align:start position:0%
+is higher level I'm from Turkey which
+has<00:18:45.250><c> been</c><00:18:45.600><c> torn</c><00:18:46.600><c> into</c><00:18:46.809><c> over</c><00:18:47.470><c> the</c><00:18:47.559><c> last</c><00:18:47.710><c> 15</c>
+
+00:18:48.120 --> 00:18:48.130 align:start position:0%
+has been torn into over the last 15
+ 
+
+00:18:48.130 --> 00:18:52.049 align:start position:0%
+has been torn into over the last 15
+years<00:18:48.779><c> politically</c><00:18:49.779><c> and</c><00:18:49.899><c> socially</c><00:18:50.730><c> by</c><00:18:51.730><c> those</c>
+
+00:18:52.049 --> 00:18:52.059 align:start position:0%
+years politically and socially by those
+ 
+
+00:18:52.059 --> 00:18:54.480 align:start position:0%
+years politically and socially by those
+who<00:18:52.330><c> love</c><00:18:52.840><c> our</c><00:18:53.139><c> dawn</c><00:18:53.350><c> and</c><00:18:53.679><c> those</c><00:18:53.860><c> who</c><00:18:54.039><c> despise</c>
+
+00:18:54.480 --> 00:18:54.490 align:start position:0%
+who love our dawn and those who despise
+ 
+
+00:18:54.490 --> 00:18:57.600 align:start position:0%
+who love our dawn and those who despise
+him<00:18:54.700><c> and</c><00:18:55.289><c> the</c><00:18:56.289><c> level</c><00:18:56.620><c> of</c><00:18:56.740><c> hatred</c><00:18:56.950><c> of</c><00:18:57.250><c> these</c><00:18:57.399><c> two</c>
+
+00:18:57.600 --> 00:18:57.610 align:start position:0%
+him and the level of hatred of these two
+ 
+
+00:18:57.610 --> 00:18:59.730 align:start position:0%
+him and the level of hatred of these two
+groups<00:18:57.909><c> to</c><00:18:58.090><c> each</c><00:18:58.210><c> other</c><00:18:58.419><c> I</c><00:18:58.690><c> frankly</c><00:18:59.470><c> find</c>
+
+00:18:59.730 --> 00:18:59.740 align:start position:0%
+groups to each other I frankly find
+ 
+
+00:18:59.740 --> 00:19:02.669 align:start position:0%
+groups to each other I frankly find
+quiet<00:19:00.250><c> dangerous</c><00:19:01.059><c> and</c><00:19:01.360><c> horrifying</c><00:19:01.750><c> and</c><00:19:02.230><c> I've</c>
+
+00:19:02.669 --> 00:19:02.679 align:start position:0%
+quiet dangerous and horrifying and I've
+ 
+
+00:19:02.679 --> 00:19:03.960 align:start position:0%
+quiet dangerous and horrifying and I've
+been<00:19:02.799><c> living</c><00:19:02.980><c> alien</c><00:19:03.070><c> for</c><00:19:03.429><c> the</c><00:19:03.490><c> last</c><00:19:03.639><c> 20</c><00:19:03.940><c> years</c>
+
+00:19:03.960 --> 00:19:03.970 align:start position:0%
+been living alien for the last 20 years
+ 
+
+00:19:03.970 --> 00:19:06.840 align:start position:0%
+been living alien for the last 20 years
+where<00:19:04.360><c> brexit</c><00:19:04.899><c> has</c><00:19:05.110><c> also</c><00:19:05.470><c> similarly</c><00:19:05.860><c> torn</c><00:19:06.610><c> the</c>
+
+00:19:06.840 --> 00:19:06.850 align:start position:0%
+where brexit has also similarly torn the
+ 
+
+00:19:06.850 --> 00:19:08.519 align:start position:0%
+where brexit has also similarly torn the
+country<00:19:07.179><c> into</c><00:19:07.419><c> two</c><00:19:07.450><c> with</c><00:19:08.080><c> the</c><00:19:08.200><c> level</c><00:19:08.440><c> of</c>
+
+00:19:08.519 --> 00:19:08.529 align:start position:0%
+country into two with the level of
+ 
+
+00:19:08.529 --> 00:19:11.299 align:start position:0%
+country into two with the level of
+resentment<00:19:09.159><c> between</c><00:19:09.909><c> these</c><00:19:10.240><c> two</c><00:19:10.419><c> factions</c><00:19:10.690><c> I</c>
+
+00:19:11.299 --> 00:19:11.309 align:start position:0%
+resentment between these two factions I
+ 
+
+00:19:11.309 --> 00:19:15.210 align:start position:0%
+resentment between these two factions I
+have<00:19:12.309><c> not</c><00:19:12.490><c> seen</c><00:19:12.970><c> or</c><00:19:13.240><c> heard</c><00:19:13.750><c> of</c><00:19:13.899><c> before</c><00:19:14.070><c> and</c><00:19:15.070><c> I</c>
+
+00:19:15.210 --> 00:19:15.220 align:start position:0%
+have not seen or heard of before and I
+ 
+
+00:19:15.220 --> 00:19:17.940 align:start position:0%
+have not seen or heard of before and I
+hear<00:19:15.600><c> here</c><00:19:16.600><c> in</c><00:19:16.750><c> the</c><00:19:16.840><c> states</c><00:19:17.139><c> also</c><00:19:17.440><c> things</c>
+
+00:19:17.940 --> 00:19:17.950 align:start position:0%
+hear here in the states also things
+ 
+
+00:19:17.950 --> 00:19:21.230 align:start position:0%
+hear here in the states also things
+aren't<00:19:18.159><c> going</c><00:19:18.340><c> very</c><00:19:18.460><c> smoothly</c><00:19:19.000><c> either</c><00:19:19.679><c> so</c>
+
+00:19:21.230 --> 00:19:21.240 align:start position:0%
+aren't going very smoothly either so
+ 
+
+00:19:21.240 --> 00:19:24.360 align:start position:0%
+aren't going very smoothly either so
+this<00:19:22.409><c> project</c><00:19:23.409><c> and</c><00:19:23.559><c> all</c><00:19:23.620><c> of</c><00:19:23.710><c> these</c><00:19:23.860><c> works</c><00:19:24.159><c> is</c>
+
+00:19:24.360 --> 00:19:24.370 align:start position:0%
+this project and all of these works is
+ 
+
+00:19:24.370 --> 00:19:25.889 align:start position:0%
+this project and all of these works is
+actually<00:19:24.490><c> a</c><00:19:24.669><c> response</c><00:19:25.029><c> to</c><00:19:25.179><c> that</c><00:19:25.299><c> this</c><00:19:25.480><c> this</c><00:19:25.750><c> is</c>
+
+00:19:25.889 --> 00:19:25.899 align:start position:0%
+actually a response to that this this is
+ 
+
+00:19:25.899 --> 00:19:28.289 align:start position:0%
+actually a response to that this this is
+from<00:19:26.049><c> 2017</c><00:19:26.769><c> it's</c><00:19:26.980><c> a</c><00:19:27.100><c> VR</c><00:19:27.340><c> installation</c><00:19:28.000><c> it</c>
+
+00:19:28.289 --> 00:19:28.299 align:start position:0%
+from 2017 it's a VR installation it
+ 
+
+00:19:28.299 --> 00:19:30.539 align:start position:0%
+from 2017 it's a VR installation it
+looks<00:19:28.539><c> like</c><00:19:28.720><c> this</c><00:19:28.929><c> the</c><00:19:29.799><c> installation</c><00:19:30.279><c> aspect</c>
+
+00:19:30.539 --> 00:19:30.549 align:start position:0%
+looks like this the installation aspect
+ 
+
+00:19:30.549 --> 00:19:33.570 align:start position:0%
+looks like this the installation aspect
+is<00:19:30.639><c> absolutely</c><00:19:30.970><c> crucial</c><00:19:31.320><c> I</c><00:19:32.320><c> fight</c><00:19:33.039><c> hard</c>
+
+00:19:33.570 --> 00:19:33.580 align:start position:0%
+is absolutely crucial I fight hard
+ 
+
+00:19:33.580 --> 00:19:35.759 align:start position:0%
+is absolutely crucial I fight hard
+really<00:19:34.000><c> really</c><00:19:34.659><c> hard</c><00:19:34.870><c> every</c><00:19:35.230><c> time</c><00:19:35.440><c> that</c><00:19:35.710><c> I</c>
+
+00:19:35.759 --> 00:19:35.769 align:start position:0%
+really really hard every time that I
+ 
+
+00:19:35.769 --> 00:19:39.090 align:start position:0%
+really really hard every time that I
+need<00:19:36.010><c> the</c><00:19:36.190><c> carpets</c><00:19:36.669><c> I</c><00:19:36.909><c> need</c><00:19:37.389><c> the</c><00:19:37.539><c> chair</c><00:19:37.809><c> I</c><00:19:38.110><c> need</c>
+
+00:19:39.090 --> 00:19:39.100 align:start position:0%
+need the carpets I need the chair I need
+ 
+
+00:19:39.100 --> 00:19:41.220 align:start position:0%
+need the carpets I need the chair I need
+the<00:19:39.220><c> plants</c><00:19:39.610><c> I</c><00:19:39.669><c> need</c><00:19:39.820><c> the</c><00:19:39.940><c> candles</c><00:19:40.330><c> so</c><00:19:41.080><c> that</c>
+
+00:19:41.220 --> 00:19:41.230 align:start position:0%
+the plants I need the candles so that
+ 
+
+00:19:41.230 --> 00:19:42.600 align:start position:0%
+the plants I need the candles so that
+when<00:19:41.409><c> you</c><00:19:41.529><c> enter</c><00:19:41.799><c> the</c><00:19:41.919><c> room</c><00:19:42.039><c> you</c><00:19:42.340><c> know</c><00:19:42.490><c> you're</c>
+
+00:19:42.600 --> 00:19:42.610 align:start position:0%
+when you enter the room you know you're
+ 
+
+00:19:42.610 --> 00:19:44.810 align:start position:0%
+when you enter the room you know you're
+about<00:19:42.700><c> to</c><00:19:42.820><c> go</c><00:19:43.029><c> on</c><00:19:43.179><c> a</c><00:19:43.210><c> journey</c>
+
+00:19:44.810 --> 00:19:44.820 align:start position:0%
+about to go on a journey
+ 
+
+00:19:44.820 --> 00:19:47.220 align:start position:0%
+about to go on a journey
+hopefully<00:19:45.820><c> unlike</c><00:19:46.120><c> any</c><00:19:46.389><c> other</c><00:19:46.630><c> journey</c><00:19:46.990><c> that</c>
+
+00:19:47.220 --> 00:19:47.230 align:start position:0%
+hopefully unlike any other journey that
+ 
+
+00:19:47.230 --> 00:19:49.830 align:start position:0%
+hopefully unlike any other journey that
+you've<00:19:47.380><c> gone</c><00:19:47.740><c> on</c><00:19:47.919><c> at</c><00:19:48.279><c> least</c><00:19:48.580><c> without</c><00:19:49.450><c> any</c>
+
+00:19:49.830 --> 00:19:49.840 align:start position:0%
+you've gone on at least without any
+ 
+
+00:19:49.840 --> 00:19:54.360 align:start position:0%
+you've gone on at least without any
+chemical<00:19:50.590><c> support</c><00:19:50.950><c> and</c><00:19:52.679><c> the</c><00:19:53.679><c> chair</c><00:19:53.980><c> is</c><00:19:54.159><c> very</c>
+
+00:19:54.360 --> 00:19:54.370 align:start position:0%
+chemical support and the chair is very
+ 
+
+00:19:54.370 --> 00:19:56.960 align:start position:0%
+chemical support and the chair is very
+important<00:19:54.850><c> because</c><00:19:55.360><c> the</c><00:19:56.289><c> experience</c><00:19:56.799><c> is</c><00:19:56.919><c> not</c>
+
+00:19:56.960 --> 00:19:56.970 align:start position:0%
+important because the experience is not
+ 
+
+00:19:56.970 --> 00:19:59.279 align:start position:0%
+important because the experience is not
+nauseating<00:19:57.970><c> there's</c><00:19:58.240><c> no</c><00:19:58.419><c> movement</c><00:19:58.690><c> but</c><00:19:59.139><c> it's</c>
+
+00:19:59.279 --> 00:19:59.289 align:start position:0%
+nauseating there's no movement but it's
+ 
+
+00:19:59.289 --> 00:20:02.159 align:start position:0%
+nauseating there's no movement but it's
+very<00:19:59.559><c> confusing</c><00:20:00.340><c> in</c><00:20:01.029><c> fact</c><00:20:01.240><c> is</c><00:20:01.360><c> painful</c><00:20:01.840><c> at</c><00:20:02.049><c> the</c>
+
+00:20:02.159 --> 00:20:02.169 align:start position:0%
+very confusing in fact is painful at the
+ 
+
+00:20:02.169 --> 00:20:04.019 align:start position:0%
+very confusing in fact is painful at the
+beginning<00:20:02.529><c> you</c><00:20:03.279><c> have</c><00:20:03.309><c> to</c><00:20:03.549><c> surrender</c><00:20:03.820><c> because</c>
+
+00:20:04.019 --> 00:20:04.029 align:start position:0%
+beginning you have to surrender because
+ 
+
+00:20:04.029 --> 00:20:05.789 align:start position:0%
+beginning you have to surrender because
+your<00:20:04.240><c> eyes</c><00:20:04.360><c> do</c><00:20:04.960><c> try</c><00:20:05.320><c> to</c><00:20:05.380><c> go</c><00:20:05.590><c> in</c><00:20:05.710><c> different</c>
+
+00:20:05.789 --> 00:20:05.799 align:start position:0%
+your eyes do try to go in different
+ 
+
+00:20:05.799 --> 00:20:10.200 align:start position:0%
+your eyes do try to go in different
+directions<00:20:08.340><c> also</c><00:20:09.340><c> a</c><00:20:09.370><c> very</c><00:20:09.580><c> amount</c><00:20:09.940><c> of</c><00:20:10.029><c> time</c>
+
+00:20:10.200 --> 00:20:10.210 align:start position:0%
+directions also a very amount of time
+ 
+
+00:20:10.210 --> 00:20:12.180 align:start position:0%
+directions also a very amount of time
+also<00:20:10.360><c> a</c><00:20:10.450><c> very</c><00:20:10.630><c> quick</c><00:20:10.809><c> excerpts</c><00:20:11.409><c> it's</c><00:20:11.980><c> very</c>
+
+00:20:12.180 --> 00:20:12.190 align:start position:0%
+also a very quick excerpts it's very
+ 
+
+00:20:12.190 --> 00:20:15.210 align:start position:0%
+also a very quick excerpts it's very
+abstract<00:20:13.110><c> rivalry</c><00:20:14.110><c> drifts</c><00:20:14.710><c> in</c><00:20:14.799><c> and</c><00:20:14.860><c> out</c><00:20:15.039><c> this</c>
+
+00:20:15.210 --> 00:20:15.220 align:start position:0%
+abstract rivalry drifts in and out this
+ 
+
+00:20:15.220 --> 00:20:16.379 align:start position:0%
+abstract rivalry drifts in and out this
+is<00:20:15.370><c> about</c><00:20:15.549><c> half</c><00:20:15.789><c> way</c><00:20:15.970><c> through</c><00:20:16.000><c> it's</c><00:20:16.330><c> a</c>
+
+00:20:16.379 --> 00:20:16.389 align:start position:0%
+is about half way through it's a
+ 
+
+00:20:16.389 --> 00:20:18.990 align:start position:0%
+is about half way through it's a
+ten-minute<00:20:16.840><c> linear</c><00:20:17.169><c> experience</c><00:20:17.789><c> this</c><00:20:18.789><c> is</c><00:20:18.970><c> a</c>
+
+00:20:18.990 --> 00:20:19.000 align:start position:0%
+ten-minute linear experience this is a
+ 
+
+00:20:19.000 --> 00:20:20.549 align:start position:0%
+ten-minute linear experience this is a
+mode<00:20:19.269><c> the</c><00:20:19.750><c> different</c><00:20:20.049><c> modes</c><00:20:20.200><c> of</c><00:20:20.289><c> interaction</c>
+
+00:20:20.549 --> 00:20:20.559 align:start position:0%
+mode the different modes of interaction
+ 
+
+00:20:20.559 --> 00:20:22.470 align:start position:0%
+mode the different modes of interaction
+this<00:20:21.159><c> particular</c><00:20:21.460><c> mode</c><00:20:21.760><c> wherever</c><00:20:22.179><c> you</c><00:20:22.269><c> look</c>
+
+00:20:22.470 --> 00:20:22.480 align:start position:0%
+this particular mode wherever you look
+ 
+
+00:20:22.480 --> 00:20:24.840 align:start position:0%
+this particular mode wherever you look
+is<00:20:22.659><c> deformed</c><00:20:23.289><c> so</c><00:20:23.919><c> the</c><00:20:24.070><c> idea</c><00:20:24.309><c> that</c><00:20:24.340><c> seeing</c><00:20:24.730><c> is</c>
+
+00:20:24.840 --> 00:20:24.850 align:start position:0%
+is deformed so the idea that seeing is
+ 
+
+00:20:24.850 --> 00:20:26.639 align:start position:0%
+is deformed so the idea that seeing is
+an<00:20:24.940><c> active</c><00:20:25.210><c> process</c><00:20:25.419><c> and</c><00:20:25.870><c> affects</c><00:20:26.559><c> the</c>
+
+00:20:26.639 --> 00:20:26.649 align:start position:0%
+an active process and affects the
+ 
+
+00:20:26.649 --> 00:20:29.820 align:start position:0%
+an active process and affects the
+reality<00:20:27.130><c> that</c><00:20:27.279><c> you</c><00:20:27.340><c> can</c><00:20:27.519><c> see</c><00:20:27.669><c> and</c><00:20:28.830><c> before</c>
+
+00:20:29.820 --> 00:20:29.830 align:start position:0%
+reality that you can see and before
+ 
+
+00:20:29.830 --> 00:20:33.360 align:start position:0%
+reality that you can see and before
+there's<00:20:30.279><c> rivalry</c><00:20:31.289><c> the</c><00:20:32.289><c> image</c><00:20:32.529><c> you</c><00:20:32.679><c> see</c><00:20:32.710><c> feels</c>
+
+00:20:33.360 --> 00:20:33.370 align:start position:0%
+there's rivalry the image you see feels
+ 
+
+00:20:33.370 --> 00:20:35.310 align:start position:0%
+there's rivalry the image you see feels
+physically<00:20:33.940><c> external</c><00:20:34.570><c> to</c><00:20:34.720><c> you</c><00:20:34.840><c> the</c><00:20:35.080><c> same</c><00:20:35.260><c> way</c>
+
+00:20:35.310 --> 00:20:35.320 align:start position:0%
+physically external to you the same way
+ 
+
+00:20:35.320 --> 00:20:37.139 align:start position:0%
+physically external to you the same way
+all<00:20:35.649><c> of</c><00:20:35.679><c> you</c><00:20:35.950><c> feel</c><00:20:36.159><c> physically</c><00:20:36.549><c> external</c><00:20:37.000><c> to</c>
+
+00:20:37.139 --> 00:20:37.149 align:start position:0%
+all of you feel physically external to
+ 
+
+00:20:37.149 --> 00:20:37.649 align:start position:0%
+all of you feel physically external to
+me<00:20:37.240><c> right</c><00:20:37.450><c> now</c>
+
+00:20:37.649 --> 00:20:37.659 align:start position:0%
+me right now
+ 
+
+00:20:37.659 --> 00:20:40.950 align:start position:0%
+me right now
+but<00:20:38.590><c> as</c><00:20:38.740><c> rivalry</c><00:20:39.250><c> kicks</c><00:20:39.490><c> in</c><00:20:39.669><c> the</c><00:20:39.940><c> image</c><00:20:40.210><c> jumps</c>
+
+00:20:40.950 --> 00:20:40.960 align:start position:0%
+but as rivalry kicks in the image jumps
+ 
+
+00:20:40.960 --> 00:20:42.389 align:start position:0%
+but as rivalry kicks in the image jumps
+inside<00:20:41.260><c> your</c><00:20:41.470><c> head</c><00:20:41.620><c> it</c><00:20:41.740><c> physically</c><00:20:42.190><c> feels</c>
+
+00:20:42.389 --> 00:20:42.399 align:start position:0%
+inside your head it physically feels
+ 
+
+00:20:42.399 --> 00:20:44.519 align:start position:0%
+inside your head it physically feels
+like<00:20:42.639><c> it's</c><00:20:42.820><c> inside</c><00:20:43.149><c> your</c><00:20:43.360><c> head</c><00:20:43.539><c> not</c><00:20:44.230><c> like</c><00:20:44.409><c> when</c>
+
+00:20:44.519 --> 00:20:44.529 align:start position:0%
+like it's inside your head not like when
+ 
+
+00:20:44.529 --> 00:20:46.740 align:start position:0%
+like it's inside your head not like when
+you<00:20:44.590><c> look</c><00:20:44.710><c> at</c><00:20:44.799><c> a</c><00:20:44.830><c> photo</c><00:20:45.100><c> a</c><00:20:45.279><c> photo</c><00:20:45.549><c> is</c><00:20:46.000><c> 2d</c><00:20:46.389><c> but</c><00:20:46.630><c> it</c>
+
+00:20:46.740 --> 00:20:46.750 align:start position:0%
+you look at a photo a photo is 2d but it
+ 
+
+00:20:46.750 --> 00:20:49.720 align:start position:0%
+you look at a photo a photo is 2d but it
+still<00:20:46.960><c> feels</c><00:20:47.260><c> external</c><00:20:47.980><c> to</c><00:20:48.340><c> your</c><00:20:48.460><c> body</c>
+
+00:20:49.720 --> 00:20:49.730 align:start position:0%
+still feels external to your body
+ 
+
+00:20:49.730 --> 00:20:52.480 align:start position:0%
+still feels external to your body
+when<00:20:50.360><c> there's</c><00:20:50.570><c> rivalry</c><00:20:51.139><c> the</c><00:20:52.010><c> image</c><00:20:52.340><c> is</c>
+
+00:20:52.480 --> 00:20:52.490 align:start position:0%
+when there's rivalry the image is
+ 
+
+00:20:52.490 --> 00:20:55.000 align:start position:0%
+when there's rivalry the image is
+physically<00:20:52.940><c> inside</c><00:20:53.210><c> your</c><00:20:53.450><c> head</c><00:20:53.889><c> but</c><00:20:54.889><c> we</c>
+
+00:20:55.000 --> 00:20:55.010 align:start position:0%
+physically inside your head but we
+ 
+
+00:20:55.010 --> 00:20:57.250 align:start position:0%
+physically inside your head but we
+forget<00:20:55.340><c> that</c><00:20:55.399><c> that's</c><00:20:55.789><c> how</c><00:20:55.970><c> seeing</c><00:20:56.299><c> actually</c>
+
+00:20:57.250 --> 00:20:57.260 align:start position:0%
+forget that that's how seeing actually
+ 
+
+00:20:57.260 --> 00:20:58.090 align:start position:0%
+forget that that's how seeing actually
+always<00:20:57.679><c> is</c>
+
+00:20:58.090 --> 00:20:58.100 align:start position:0%
+always is
+ 
+
+00:20:58.100 --> 00:21:00.519 align:start position:0%
+always is
+that's<00:20:58.519><c> how</c><00:20:58.789><c> reality</c><00:20:59.090><c> always</c><00:20:59.840><c> is</c><00:21:00.049><c> that's</c><00:21:00.320><c> what</c>
+
+00:21:00.519 --> 00:21:00.529 align:start position:0%
+that's how reality always is that's what
+ 
+
+00:21:00.529 --> 00:21:05.289 align:start position:0%
+that's how reality always is that's what
+truth<00:21:00.799><c> actually</c><00:21:01.070><c> always</c><00:21:01.880><c> is</c><00:21:02.120><c> and</c><00:21:04.120><c> I'm</c><00:21:05.120><c> out</c><00:21:05.269><c> of</c>
+
+00:21:05.289 --> 00:21:05.299 align:start position:0%
+truth actually always is and I'm out of
+ 
+
+00:21:05.299 --> 00:21:07.330 align:start position:0%
+truth actually always is and I'm out of
+time<00:21:05.570><c> so</c><00:21:05.630><c> I'll</c><00:21:05.929><c> end</c><00:21:06.080><c> it</c><00:21:06.169><c> there</c><00:21:06.230><c> thank</c><00:21:06.950><c> you</c><00:21:07.130><c> for</c>
+
+00:21:07.330 --> 00:21:07.340 align:start position:0%
+time so I'll end it there thank you for
+ 
+
+00:21:07.340 --> 00:21:09.010 align:start position:0%
+time so I'll end it there thank you for
+your<00:21:07.429><c> patience</c>
+
+00:21:09.010 --> 00:21:09.020 align:start position:0%
+your patience
+ 
+
+00:21:09.020 --> 00:21:10.290 align:start position:0%
+your patience
+[Applause]
+
+00:21:10.290 --> 00:21:10.300 align:start position:0%
+[Applause]
+ 
+
+00:21:10.300 --> 00:21:12.800 align:start position:0%
+[Applause]
+[Music]
+
+00:21:12.800 --> 00:21:12.810 align:start position:0%
+[Music]
+ 
+
+00:21:12.810 --> 00:21:13.160 align:start position:0%
+[Music]
+[Applause]
+
+00:21:13.160 --> 00:21:13.170 align:start position:0%
+[Applause]
+ 
+
+00:21:13.170 --> 00:21:14.580 align:start position:0%
+[Applause]
+[Music]
+
+00:21:14.580 --> 00:21:14.590 align:start position:0%
+[Music]
+ 
+
+00:21:14.590 --> 00:21:17.230 align:start position:0%
+[Music]
+[Applause]
+
