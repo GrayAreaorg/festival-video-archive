@@ -28,12 +28,10 @@ jobs:
     - name: Download Playlists and Subtitles
       run: |
 
-        # playlist URLS
         declare -A playlists=(
             ["2023"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZ6OtS-D6PUpn4TflgVqi7R"
         )
         
-        # Get Youtube Metadata for all Playlists
         for year in "${!playlists[@]}"; do
           echo "Processing playlists $year"
           {
