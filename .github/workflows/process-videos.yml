@@ -19,6 +19,9 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Setup yt-dlp
+      uses: AnimMouse/setup-yt-dlp@v1
+
     - name: Install dependencies
       run: |
         npm install
@@ -58,4 +61,3 @@ jobs:
         git add ./data
         git commit -m "Update data files"
         git push -f origin build
-        
