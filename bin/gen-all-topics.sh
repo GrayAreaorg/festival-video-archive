@@ -2,6 +2,8 @@
 
 set -x
 
+mkdir -p ./data/topics
+
 ./bin/search-caption-string.sh ./data/videos "artificial intelligence" " ai " > ./data/topics/ai.txt
 ./bin/search-caption-string.sh ./data/videos " art " "fine art" "gallery" > ./data/topics/art.txt
 ./bin/search-caption-string.sh ./data/videos "biology" "cell" "genetics" "evolution" "physiology" "biochemistry" "adaptation" "reproduction" "biodiversity" "microbio" "molecular" > ./data/topics/biology.txt
