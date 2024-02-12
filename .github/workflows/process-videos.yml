@@ -75,11 +75,11 @@ jobs:
     
     #     node ./bin/compile-db.js ./data/videos ./data/db.json
 
-    # - name: Commit and push changes
-    #   run: |
-    #     git config --local user.email "action@github.com"
-    #     git config --local user.name "GitHub Action"
-    #     git checkout -b build
-    #     git add ./data
-    #     git commit -m "Update data files"
-    #     git push -f origin build
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout -b build
+        git add ./data
+        git commit -m "Update data files"
+        git push -f origin build
