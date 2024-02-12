@@ -25,14 +25,17 @@ jobs:
     - name: Setup yt-dlp
       uses: AnimMouse/setup-yt-dlp@v1
 
-    - name: Download Playlists and Subtitles
-      run: ./bin/get-playlists-and-subs.sh
+    - name: Make Data Folder
+      run: mkdir -p $VIDEO_DATA
+
+    - name: Get Youtube Metadata for all Playlists
+      run: ./bin/get-all-metadata.sh $VIDEO_DATA
 
     - name: Delete Playlists Metadata
-      run: find . -type f -name "*\[PL*\]*"  -exec rm {} \;
+      run: find $VIDEO_DATA -type f -name "*\[PL*\]*"  -exec rm {} \;
 
     - name: Download Subtitles (VTTs) for all Videos
-      run: ./bin/get-all-subs.sh
+      run: ./bin/get-all-subs.sh $VIDEO_DATA
 
     - name: Generate Wordcount from Subs
       run: node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount.txt
@@ -44,7 +47,7 @@ jobs:
       run: ./bin/gen-all-topics.sh
     
     - name: Generate Wordcount
-      run: node ./bin/compile-db.js ./data/videos ./data/db.json
+      run: node ./bin/compile-db.js $VIDEO_DATA ./data/db.json
 
     - name: Commit and push changes
       run: |
