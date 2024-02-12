@@ -37,7 +37,7 @@ jobs:
         for year in "${!playlists[@]}"; do
           echo "Processing playlists $year"
           {
-            yt-dlp -r 50K --ignore-errors --write-info-json --skip-download -o "\"$VIDEO_DATA/$year/%(title)s [%(id)s].%(ext)s"\" ${playlists[$year]}
+            yt-dlp -r 50K --ignore-errors --write-info-json --skip-download -o "$VIDEO_DATA/$year/%(title)s [%(id)s].%(ext)s" ${playlists[$year]}
           } || {
             echo "Error occurred, but continuing"
           }
@@ -60,7 +60,7 @@ jobs:
           dname=$(dirname $f)
           bname=$(basename $f)
           ff="${bname%.info.json}"
-          yt-dlp -r 50K --sub-lan=en --write-auto-sub --skip-download -o "\"$dname/$ff"\" "\"$ytid\""
+          yt-dlp -r 50K --sub-lan=en --write-auto-sub --skip-download -o "\"$dname/$ff" "\"$ytid\""
         done
 
     - name: Generate Wordcount from Subs
