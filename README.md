@@ -10,6 +10,8 @@ Preliminary work has been carried out to allow users to filter videos by various
 
 This project is open to submissions and suggestions around engaging with this growing collection of content. You are welcome to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute to the [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
 
+DB and caption files will build automatically and deploy to the [dist](https://github.com/GrayAreaorg/festival-video-archive/tree/dist) branch on push to main using the [process-videos.yml](.github/workflows/process-videos.yml) workflow. To test/run locally, see [Sync all data](#sync-all-data).
+
 
 ## LICENSE
 
@@ -42,9 +44,11 @@ CSS Build Scripts
 
 ## Sync all data
 
-Download all video data, vtt's, topic lists, and compile json database in one command.
+Download all video data, vtt's, topic lists, and compile json DB.
 
-`./bin/_sync.sh`
+`./bin/_workflow-local.sh`
+
+Playlist URLs are stored in [playlists.txt](/bin/playlists.txt).
 
 ## Generate Topic Lists
 
@@ -174,19 +178,6 @@ Example
 # get all 2021 videos
 ./bin/get-youtube-metadata.sh https://www.youtube.com/playlist?list=PLm8zJ0HKEJIbQgPDRsUHiawVtahvShN8X ./data/videos/2021/
 ```
-
-### Youtube Playlists
-
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZ6OtS-D6PUpn4TflgVqi7R # 2023
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYq6FBpOBHfHchjI0zTYINO # 2022
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIbQgPDRsUHiawVtahvShN8X # 2021
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaarwTpOzGg4DXXVLWy2GVU # 2020
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZXGbpAdjpIP9cuuJYfOW-F # 2019
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIaNfzV_-f0aYvrpAZAzjhIl # 2018
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIYAk9rAz1CQmE9Pzn8G_hrq # 2017
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZtQ0PqjW341QIWrqPPkQXi # 2016
-- https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw # 2015
-
 
 ## Optional Metadata: Custom Keys via YouTube Description Field
 
