@@ -36,9 +36,15 @@ jobs:
             ["2015"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw"
         )
         
-        echo "Get Youtube Metadata for all Playlists"
+        # Get Youtube Metadata for all Playlists"
+        
         for year in "${!playlists[@]}"; do
-          yt-dlp --ignore-errors --write-info-json --skip-download -o "$videodata/$year/%(title)s [%(id)s].%(ext)s" ${playlists[$year]}
+          echo "Processing playlists $year"
+          {
+            yt-dlp --ignore-errors --write-info-json --skip-download -o "$videodata/$year/%(title)s [%(id)s].%(ext)s" ${playlists[$year]}
+          } || {
+            echo "Error occurred, but continuing"
+          }
         done
 
         find . -type f -name "*\[PL*\]*"  -exec rm {} \;
