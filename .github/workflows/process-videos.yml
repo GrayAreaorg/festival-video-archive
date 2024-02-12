@@ -49,9 +49,11 @@ jobs:
     - name: Generate Wordcount
       run: node ./bin/compile-db.js $VIDEO_DATA ./data/db.json
 
+    - name: Make dist folder for CSS
+      run: mkdir -p ./dist
+      
     - name: Build CSS
       run: |
-        mkdir -p ./dist
         npm install
         npm run css-build
 
