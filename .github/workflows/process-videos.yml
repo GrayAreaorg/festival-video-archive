@@ -1,0 +1,61 @@
+name: Process Videos
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  process-videos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.4.0
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Run script
+      run: |
+        chmod +x ./bin/get-youtube-metadata.sh
+        chmod +x ./bin/get-all-subs.sh
+        chmod +x ./bin/gen-all-topics.sh
+
+        SOURCE="./data/videos"
+
+        echo "Get Youtube Metadata for all Playlists"
+        ./bin/get-youtube-metadata.sh "https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZ6OtS-D6PUpn4TflgVqi7R" ./data/videos/2023
+        # ... repeat for all playlists ...
+
+        find . -type f -name "*\[PL*\]*"  -exec rm {} \;
+
+        echo "Get VTT's for all videos"
+        ./bin/get-all-subs.sh ./data/videos
+
+        echo "Generate word counts from VTT's"
+        node ./bin/wordcount.js ./data/videos ./data/wordcount.txt
+        node ./bin/wordcount.js ./data/videos ./data/wordcount_video_stats.txt --include-video-stats
+
+        echo "Generate all Topics from VTT's"
+        ./bin/gen-all-topics.sh
+
+        echo "Compile DB's"
+        node ./bin/compile-db.js ./data/videos ./data/db.json
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout -b build
+        git add ./data
+        git commit -m "Update data files"
+        git push -f origin build
+        
