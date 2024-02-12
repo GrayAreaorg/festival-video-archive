@@ -65,15 +65,15 @@ jobs:
         node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount.txt
         node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount_video_stats.txt --include-video-stats
 
-    # - name: Generate Wordcount
-    #   run: 
+    - name: Generate Topic Lists for Filter search
+      run: 
   
-    #     ./bin/gen-all-topics.sh
+        ./bin/gen-all-topics.sh
     
-    # - name: Generate Wordcount
-    #   run: |
+    - name: Generate Wordcount
+      run: |
     
-    #     node ./bin/compile-db.js ./data/videos ./data/db.json
+        node ./bin/compile-db.js ./data/videos ./data/db.json
 
     - name: Commit and push changes
       run: |
