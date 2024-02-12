@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  VIDEO_DATA: './data/videos'
+
 jobs:
   process-videos:
     runs-on: ubuntu-latest
@@ -14,14 +17,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.4.0
+      with:
+        node-version: '19.8.1'
+
     - name: Setup yt-dlp
       uses: AnimMouse/setup-yt-dlp@v1
 
-    - name: Run script
+    - name: Download Playlists and Subtitles
       run: |
 
         # video data
-        videodata="./data/videos"
+        
 
         # playlist URLS
         declare -A playlists=(
@@ -36,12 +44,11 @@ jobs:
             # ["2015"]="https://www.youtube.com/playlist?list=PLm8zJ0HKEJIZz_vKS1amJguyAEIiTtxjw"
         )
         
-        # Get Youtube Metadata for all Playlists"
-        
+        # Get Youtube Metadata for all Playlists
         for year in "${!playlists[@]}"; do
           echo "Processing playlists $year"
           {
-            yt-dlp --ignore-errors --write-info-json --skip-download -o "$videodata/$year/%(title)s [%(id)s].%(ext)s" ${playlists[$year]}
+            yt-dlp --ignore-errors --write-info-json --skip-download -o "$VIDEO_DATA/$year/%(title)s [%(id)s].%(ext)s" ${playlists[$year]}
           } || {
             echo "Error occurred, but continuing"
           }
@@ -49,9 +56,9 @@ jobs:
 
         find . -type f -name "*\[PL*\]*"  -exec rm {} \;
 
-        # echo "Get VTT's for all videos"
+        # Get VTT's for all videos
         IFS=$'\n' # set the Internal Field Separator to newline, ignore the spaces
-        for f in $(find $videodata -type f -name '*.json'); do
+        for f in $(find $VIDEO_DATA -type f -name '*.json'); do
           ytid=$(jq -r .id $f)
           echo $ytid
           dname=$(dirname $f)
@@ -60,15 +67,22 @@ jobs:
           yt-dlp --sub-lan=en --write-auto-sub --skip-download -o "$dname/$ff" $ytid
         done
 
-        # echo "Generate word counts from VTT's"
-        # node ./bin/wordcount.js ./data/videos ./data/wordcount.txt
-        # node ./bin/wordcount.js ./data/videos ./data/wordcount_video_stats.txt --include-video-stats
+    - name: Generate Wordcount
+      run: |
 
-        # echo "Generate all Topics from VTT's"
-        # ./bin/gen-all-topics.sh
+        # Generate word counts from VTT's
+        node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount.txt
+        node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount_video_stats.txt --include-video-stats
 
-        # echo "Compile DB's"
-        # node ./bin/compile-db.js ./data/videos ./data/db.json
+    # - name: Generate Wordcount
+    #   run: 
+  
+    #     ./bin/gen-all-topics.sh
+    
+    # - name: Generate Wordcount
+    #   run: |
+    
+    #     node ./bin/compile-db.js ./data/videos ./data/db.json
 
     # - name: Commit and push changes
     #   run: |
