@@ -1,6 +1,6 @@
 # build folders
-./data
-./dist
+data
+dist
 
 # ignores
 .DS_Store
