@@ -4,14 +4,13 @@ Live at: https://archive.grayareafestival.io
 
 A filterable archive of videos from the [Gray Area Festival](https://grayareafestival.io), consisting of in-person and virtual conference talks, presentations, and group panels. The videos in the archive are currently hosted on the Gray Area [YouTube Channel](https://www.youtube.com/@grayareaorg), which is currently the source of video metadata.
 
-The archive is built statically with flat-file JSON files and includes english captions for each video, which improves accessibility and encourages filtering, searching, NLP analysis, and/or experimentation with LLMs. Contributions are welcome. These `.vtt` formatted caption files are stored alongside the video metadata JSON in the [data/videos](data/videos/) folder.
+The archive is built statically with flat-file JSON files and includes english captions for each video, which improves accessibility and encourages filtering, searching, NLP analysis, and/or experimentation with LLMs. These `.vtt` formatted caption files are stored alongside the video metadata JSON in the [data/videos](https://github.com/GrayAreaorg/festival-video-archive/tree/dist/data/videos) folder.
 
-Preliminary work has been carried out to allow users to filter videos by various curated topics ordered by the [frequency of key-words](data/wordcount.txt), and [word-count per video](data/wordcount_video_stats.txt) generated from the video captions. View these files in the [data/topics](data/topics/).
-
-This project is open to submissions and suggestions around engaging with this growing collection of content. You are welcome to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute to the [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
+Filter videos by various curated topics ordered by the [frequency of key-words](https://github.com/GrayAreaorg/festival-video-archive/blob/dist/data/wordcount.txt), and [word-count per video ID](https://github.com/GrayAreaorg/festival-video-archive/blob/dist/data/wordcount_video_stats.txt) generated from the video captions. View these files in the [data/topics](https://github.com/GrayAreaorg/festival-video-archive/tree/dist/data/topics).
 
 DB and caption files will build automatically and deploy to the [dist](https://github.com/GrayAreaorg/festival-video-archive/tree/dist) branch on push to main using the [process-videos.yml](.github/workflows/process-videos.yml) workflow. To test/run locally, see [Sync all data](#sync-all-data).
 
+This project is open to submissions and suggestions around engaging with this growing collection of content. You are welcome to make a [pull request](https://github.com/GrayAreaorg/festival-video-archive/pulls) or contribute to the [issues](https://github.com/GrayAreaorg/festival-video-archive/issues) for discussion.
 
 ## LICENSE
 
