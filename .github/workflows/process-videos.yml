@@ -14,17 +14,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v2.4.0
-      with:
-        node-version: '14'
-
     - name: Setup yt-dlp
       uses: AnimMouse/setup-yt-dlp@v1
-
-    - name: Install dependencies
-      run: |
-        npm install
 
     - name: Run script
       run: |
@@ -46,8 +37,8 @@ jobs:
         )
         
         echo "Get Youtube Metadata for all Playlists"
-        for year in "${!urls[@]}"; do
-          yt-dlp --ignore-errors --write-info-json --skip-download -o "$videodata/$year/%(title)s [%(id)s].%(ext)s" ${urls[$year]}
+        for year in "${!playlists[@]}"; do
+          yt-dlp --ignore-errors --write-info-json --skip-download -o "$videodata/$year/%(title)s [%(id)s].%(ext)s" ${playlists[$year]}
         done
 
         find . -type f -name "*\[PL*\]*"  -exec rm {} \;
