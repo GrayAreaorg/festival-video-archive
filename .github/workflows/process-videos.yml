@@ -26,58 +26,25 @@ jobs:
       uses: AnimMouse/setup-yt-dlp@v1
 
     - name: Download Playlists and Subtitles
-      run: |
-
-        declare -A playlists
-
-        while read -r year url; do
-            playlists["$year"]="$url"
-        done < ./bin/playlists.txt
-        
-        for year in "${!playlists[@]}"; do
-          echo "Processing playlists $year"
-          {
-            yt-dlp -r 50K --ignore-errors --write-info-json --skip-download -o "$VIDEO_DATA/$year/%(title)s [%(id)s].%(ext)s" ${playlists[$year]}
-          } || {
-            echo "Error occurred, but continuing"
-          }
-        done
+      run: ./bin/get-playlists-and-subs.sh
 
     - name: Delete Playlists Metadata
-      run: |
-
-        find . -type f -name "*\[PL*\]*"  -exec rm {} \;
+      run: find . -type f -name "*\[PL*\]*"  -exec rm {} \;
 
     - name: Download Subtitles (VTTs) for all Videos
-      run: |
-
-        set -x
-
-        IFS=$'\n' # set the Internal Field Separator to newline, ignore the spaces
-        for f in $(find $VIDEO_DATA -type f -name '*.json'); do
-          ytid=$(jq -r .id $f)
-          echo $ytid
-          dname=$(dirname $f)
-          bname=$(basename $f)
-          ff="${bname%.info.json}"
-          yt-dlp -r 50K --sub-lan=en --write-auto-sub --skip-download -o "$dname/$ff" "\"$ytid\""
-        done
+      run: ./bin/get-all-subs.sh
 
     - name: Generate Wordcount from Subs
-      run: |
+      run: node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount.txt
 
-        node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount.txt
-        node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount_video_stats.txt --include-video-stats
+    - name: Generate Wordcount Stats
+      run: node ./bin/wordcount.js $VIDEO_DATA ./data/wordcount_video_stats.txt --include-video-stats
 
     - name: Generate Topic Lists for Filter search
-      run: 
-  
-        ./bin/gen-all-topics.sh
+      run: ./bin/gen-all-topics.sh
     
     - name: Generate Wordcount
-      run: |
-    
-        node ./bin/compile-db.js ./data/videos ./data/db.json
+      run: node ./bin/compile-db.js ./data/videos ./data/db.json
 
     - name: Commit and push changes
       run: |
