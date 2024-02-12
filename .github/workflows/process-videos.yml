@@ -60,6 +60,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git checkout -b build-dist
-        git add ./data
+        git add ./data ./dist
         git commit -m "Update data files"
         git push origin build-dist --force
