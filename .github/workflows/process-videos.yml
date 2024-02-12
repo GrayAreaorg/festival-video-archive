@@ -82,4 +82,4 @@ jobs:
         git checkout -b build
         git add ./data
         git commit -m "Update data files"
-        git push -f origin build
+        git push -f origin build-dist
