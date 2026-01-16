@@ -1,17 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Usage: ./bin/_workflow-local.sh [year] [browser]
+# If year is provided, only process that year. Otherwise process all years.
+# If browser is provided, use cookies from that browser (e.g., firefox, chrome, safari)
+
 GREEN="\033[32m"
 YELLOW="\033[33m"
 RED="\033[31m"
 BLUE="\033[34m"
 RESET="\033[0m"
 
+FILTER_YEAR=$1
+BROWSER=$2
 VIDEO_DATA="./data/videos"
 
 mkdir -p $VIDEO_DATA
 
 # Download Playlists and Subtitles
-echo -e "${GREEN}Get Youtube Metadata for all Playlists${RESET}"
-./bin/get-all-metadata.sh $VIDEO_DATA
+if [[ -n "$FILTER_YEAR" ]]; then
+  echo -e "${GREEN}Get Youtube Metadata for $FILTER_YEAR Playlist${RESET}"
+else
+  echo -e "${GREEN}Get Youtube Metadata for all Playlists${RESET}"
+fi
+./bin/get-all-metadata.sh $VIDEO_DATA $FILTER_YEAR $BROWSER
 
 # delete playlist metadata
 find . -type f -name "*\[PL*\]*"  -exec rm {} \;
