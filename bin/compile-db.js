@@ -95,11 +95,28 @@ for (let i = 0; i < allFiles.length; i++) {
   }
 
   // parse small thumbnail
-  const thumb196 = originalJson.thumbnails.filter(
+  // Try to find 196px width (older videos)
+  let thumb196 = originalJson.thumbnails.filter(
     (thumb) => thumb.width === 196
   );
   if (thumb196.length > 0) {
     reduced.thumbnail_small = thumb196[0].url;
+  } else {
+    // Fallback: try to find hqdefault with width 480 (newer videos)
+    const thumbHQ = originalJson.thumbnails.filter(
+      (thumb) => thumb.width === 480 && thumb.url && thumb.url.includes("hqdefault")
+    );
+    if (thumbHQ.length > 0) {
+      reduced.thumbnail_small = thumbHQ[0].url;
+    } else {
+      // Final fallback: use any hqdefault thumbnail
+      const thumbHQAny = originalJson.thumbnails.filter(
+        (thumb) => thumb.url && thumb.url.includes("hqdefault")
+      );
+      if (thumbHQAny.length > 0) {
+        reduced.thumbnail_small = thumbHQAny[0].url;
+      }
+    }
   }
 
   // local .vtt if it exists (generate with `bin/get-all-subs.sh`)

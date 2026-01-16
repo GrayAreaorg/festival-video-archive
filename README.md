@@ -21,11 +21,11 @@ This work and all content therin is licensed under a [CC Attribution-NonCommerci
 
 Built Using
 
-- [Node](https://nodejs.org/) v19.8.1
+- [Node](https://nodejs.org/) v22.14.0
 - [AlpineJS](https://alpinejs.dev/) v3.12.0
 - [TailwindCSS](https://tailwindcss.com/) v3.3.2
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) v2023.02.17
-- [jq](https://stedolan.github.io/jq/) v1.6
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) v2023.03.04
+- [jq](https://stedolan.github.io/jq/) jq-1.8.1
 
 Installation
 
