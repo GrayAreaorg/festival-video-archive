@@ -32,7 +32,7 @@ input {
   @apply md:w-[22em];
 }
 #filters ul {
-  @apply md:max-h-64 md:flex md:flex-col md:flex-wrap;
+  @apply md:max-h-80 md:flex md:flex-col md:flex-wrap;
 }
 #filters label {
   @apply text-zinc-600 cursor-pointer block whitespace-nowrap -indent-3 py-1 pr-0 pl-3;
