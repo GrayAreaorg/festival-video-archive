@@ -43,7 +43,7 @@ if [[ -n "$DEST" && -f "${DEST}.en.vtt" ]]; then
 fi
 
 # Build yt-dlp options
-YTDLP_OPTS="--sub-lan=en --write-auto-sub --skip-download"
+YTDLP_OPTS="--sub-lan=en --write-auto-sub --skip-download --restrict-filenames"
 if [[ -n "$BROWSER" ]]; then
   YTDLP_OPTS="$YTDLP_OPTS --cookies-from-browser $BROWSER"
 fi
