@@ -1,6 +1,6 @@
 # Building the Dist Branch Locally
 
-The GitHub Actions workflow has been disabled because GitHub Actions are disabling `yt-dlp` because it thinks its a bot. This README outlines how to build the `dist` branch locally.
+The GitHub Actions workflow has been disabled because the 2025 videos are private and require authentication. Build the `dist` branch locally with these steps:
 
 ## Full Build (All Years)
 
