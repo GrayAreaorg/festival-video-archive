@@ -1,4 +1,5 @@
 # build folders
+# uncommented lines to ignore build folders since we're managing them manually now
 data
 dist
 
