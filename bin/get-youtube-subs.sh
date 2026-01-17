@@ -36,6 +36,12 @@ if [[ -z "$YTID" ]]; then
   exit 1
 fi
 
+# Check if VTT already exists
+if [[ -n "$DEST" && -f "${DEST}.en.vtt" ]]; then
+  echo "Skipping $YTID (VTT exists)"
+  exit 0
+fi
+
 # Build yt-dlp options
 YTDLP_OPTS="--sub-lan=en --write-auto-sub --skip-download"
 if [[ -n "$BROWSER" ]]; then

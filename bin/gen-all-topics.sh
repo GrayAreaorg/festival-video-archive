@@ -1,21 +1,22 @@
 #!/bin/bash
+set -x
 
 mkdir -p ./data/topics
 
-./bin/search-caption-string.sh ./data/videos "artificial intelligence" " ai " > ./data/topics/ai.txt
-./bin/search-caption-string.sh ./data/videos " art " "fine art" "gallery" > ./data/topics/art.txt
-./bin/search-caption-string.sh ./data/videos "biology" "cell" "genetics" "evolution" "physiology" "biochemistry" "adaptation" "reproduction" "biodiversity" "microbio" "molecular" > ./data/topics/biology.txt
-./bin/search-caption-string.sh ./data/videos "decolonialism" "neocolonialism" "colonial" "indigenous" "imperialism" "sovereignty" > ./data/topics/decolonialism.txt
-./bin/search-caption-string.sh ./data/videos "design" "graphic design" "web design" "product design" > ./data/topics/design.txt
-./bin/search-caption-string.sh ./data/videos "ecology" "earth" "climate change" "ecosystem" "biodiversity" "conservation" "environment" > ./data/topics/ecology.txt
-./bin/search-caption-string.sh ./data/videos "history" "historical" "past" "era" "ancient" "civilization" "culture" "heritage" > ./data/topics/history.txt
-./bin/search-caption-string.sh ./data/videos "indigenous" "wisdom" "elder" "past" "native" "heritage" "spiritual" > ./data/topics/indigenous.txt
-./bin/search-caption-string.sh ./data/videos "machine learning" " ml " "neural net" > ./data/topics/machine-learning.txt
-./bin/search-caption-string.sh ./data/videos " ar " " vr " " xr " "augmented reality" "mixed reality" "virtual reality" "immersive" "virtual world" > ./data/topics/metaverse.txt
-./bin/search-caption-string.sh ./data/videos "music" "song" "concert" "composition" "melody" > ./data/topics/music.txt
-./bin/search-caption-string.sh ./data/videos "philosophy" "metaphysics" "ethics" "aesthetic" "phenomenology" > ./data/topics/philosophy.txt
-./bin/search-caption-string.sh ./data/videos "software" "programming" "code" "algorithm" "open source" > ./data/topics/software.txt
-./bin/search-caption-string.sh ./data/videos "systems" "chaos" "complexity" "modeling" "simulation" "pattern" > ./data/topics/systems.txt
+./bin/search-caption-string.sh ./data/videos "artificial intelligence" " ai " " llm " "large language model" "diffusion model" "generative ai" "stable diffusion" "midjourney" "dalle" "chatgpt" " gpt" "transformer" "generative model" "deep learning" "computer vision" "natural language" "text to image" "image generation" "prompt engineering" "fine-tuning" "training data" "algorithmic bias" "ai ethics" "synthetic media" "deepfake" "ai art" "creative ai" "latent space" "embedding" "attention mechanism" "foundation model" > ./data/topics/ai.txt
+./bin/search-caption-string.sh ./data/videos " art " "fine art" "gallery" "artist" "artwork" "painting" "sculpture" "installation" "performance art" "contemporary art" "visual art" "exhibition" "curator" "creative practice" "artistic" "multimedia art" "digital art" "new media" "video art" "sound art" "interactive art" > ./data/topics/art.txt
+./bin/search-caption-string.sh ./data/videos "biology" "cell" "genetics" "evolution" "physiology" "biochemistry" "adaptation" "reproduction" "biodiversity" "microbio" "molecular" "dna" "organism" "protein" "neuroscience" "bioinformatics" "genome" "cellular" "biological" "biotechnology" "synthetic biology" "crispr" "gene editing" > ./data/topics/biology.txt
+./bin/search-caption-string.sh ./data/videos "decolonialism" "neocolonialism" "colonial" "indigenous" "imperialism" "sovereignty" "postcolonial" "decolonize" "anticolonial" "colonization" "self-determination" "land back" "reparations" "settler colonialism" "cultural appropriation" "oppression" "liberation" "resistance" > ./data/topics/decolonialism.txt
+./bin/search-caption-string.sh ./data/videos "design" "graphic design" "web design" "product design" "user experience" " ux " " ui " "interface" "interaction design" "design thinking" "typography" "visual design" "prototype" "user interface" "usability" "design system" "human-centered" "service design" "speculative design" > ./data/topics/design.txt
+./bin/search-caption-string.sh ./data/videos "ecology" "earth" "climate change" "ecosystem" "biodiversity" "conservation" "environment" "sustainability" "renewable" "carbon" "global warming" "environmental" "habitat" "species" "pollution" "deforestation" "ocean" "atmosphere" "anthropocene" "planetary" "ecological" > ./data/topics/ecology.txt
+./bin/search-caption-string.sh ./data/videos "history" "historical" "past" "era" "ancient" "civilization" "culture" "heritage" "archive" "memory" "tradition" "legacy" "chronology" "ancestor" "historic" "century" "archeology" "anthropology" "cultural history" "oral history" "collective memory" > ./data/topics/history.txt
+./bin/search-caption-string.sh ./data/videos "indigenous" "wisdom" "elder" "native" "heritage" "spiritual" "aboriginal" "first nations" "tribal" "ceremony" "sacred" "ancestral" "traditional knowledge" "land stewardship" "oral tradition" "indigenous people" "native american" "cultural practices" > ./data/topics/indigenous.txt
+./bin/search-caption-string.sh ./data/videos "machine learning" " ml " "neural net" "supervised learning" "unsupervised learning" "reinforcement learning" "convolutional" "recurrent neural" "backpropagation" "classification" "regression" "clustering" "gradient descent" "overfitting" "model training" "feature extraction" "data science" > ./data/topics/machine-learning.txt
+./bin/search-caption-string.sh ./data/videos " ar " " vr " " xr " "augmented reality" "mixed reality" "virtual reality" "immersive" "virtual world" "metaverse" "headset" "oculus" "hololens" "spatial computing" "3d environment" "avatar" "virtual space" "haptic" "motion tracking" "360 degree" > ./data/topics/metaverse.txt
+./bin/search-caption-string.sh ./data/videos "music" "song" "concert" "composition" "melody" "musician" "sound" "audio" "acoustic" "harmony" "rhythm" "synthesizer" "electronic music" "sonic" "instrument" "performance" "musical" "soundtrack" "experimental music" "improvisation" > ./data/topics/music.txt
+./bin/search-caption-string.sh ./data/videos "philosophy" "metaphysics" "ethics" "aesthetic" "phenomenology" "epistemology" "ontology" "existential" "consciousness" "perception" "moral" "philosophical" "critique" "discourse" "theory" "dialectic" "rationalism" "empiricism" "postmodern" > ./data/topics/philosophy.txt
+./bin/search-caption-string.sh ./data/videos "software" "programming" "code" "algorithm" "open source" "developer" "application" "platform" "framework" "library" "api" "database" "frontend" "backend" "debugging" "version control" "git" "coding" "scripting" "computational" > ./data/topics/software.txt
+./bin/search-caption-string.sh ./data/videos "systems" "chaos" "complexity" "modeling" "simulation" "pattern" "emergence" "feedback loop" "network" "dynamics" "self-organization" "interconnected" "systemic" "complex system" "nonlinear" "adaptive" "holistic" "cybernetics" "agent-based" > ./data/topics/systems.txt
 
 # convert to json
 for file in $(find ./data/topics/ -type f -name "*.txt"); do

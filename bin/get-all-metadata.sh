@@ -45,7 +45,7 @@ if [[ -z "$DEST" ]]; then
 fi
 
 # Build yt-dlp options
-YTDLP_OPTS="-r 50K --ignore-errors --write-info-json --skip-download"
+YTDLP_OPTS="-r 50K --ignore-errors --write-info-json --skip-download --js-runtimes node --remote-components ejs:github"
 if [[ -n "$BROWSER" ]]; then
   YTDLP_OPTS="$YTDLP_OPTS --cookies-from-browser $BROWSER"
   echo "Using cookies from $BROWSER"
@@ -70,7 +70,16 @@ for i in "${!years[@]}"; do
   fi
   
   mkdir -p $DEST/$year
-  echo "Processing playlists $year"
+  
+  # Check if metadata already exists
+  existing_files=$(find "$DEST/$year" -type f -name "*.info.json" 2>/dev/null | wc -l)
+  if [[ $existing_files -gt 0 ]]; then
+    echo "Processing playlists $year (skipping $existing_files existing files)"
+    YTDLP_OPTS="$YTDLP_OPTS --no-overwrites"
+  else
+    echo "Processing playlists $year"
+  fi
+  
   {
     yt-dlp $YTDLP_OPTS -o "$DEST/$year/%(title)s [%(id)s].%(ext)s" "$url"
   } || {
