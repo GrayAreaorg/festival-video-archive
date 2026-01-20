@@ -78,7 +78,6 @@
   36 ./data/videos/2016/Exploring_The_Edges_of_Storytelling_Creativity_Tiffany_Shlain_2016_Gray_Area_Festival [ex32CJG5NF8].en.vtt
   35 ./data/videos/2021/Skewannati_Gray_Area_Festival_2021 [Escjf11RJmY].en.vtt
   34 ./data/videos/2021/Wardell_Warner_Gray_Area_Festival_2021 [rBJZPvUJknE].en.vtt
-  33 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
   33 ./data/videos/2019/Memo_Akten_Gray_Area_Festival_2019 [eaFcN1-k-dQ].en.vtt
   32 ./data/videos/2024/Gray_Area_Festival_10_-_Morehshin_Allahyari [zk2CmkPDYG0].en.vtt
   32 ./data/videos/2017/Caroline_Sinders_the_Gray_Area_Festival_2017 [kvefuhhweSk].en.vtt

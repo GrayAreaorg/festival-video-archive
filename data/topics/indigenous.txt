@@ -16,7 +16,6 @@
   19 ./data/videos/2021/Mckenzie_Wark_Gray_Area_Festival_2021 [JTxho9yT0js].en.vtt
   18 ./data/videos/2021/Keiken_Gray_Area_Festival_2021 [k6scUTq9Ggs].en.vtt
   18 ./data/videos/2019/Jaron_Lanier_Gray_Area_Festival_2019_Keynote [lsNF4KfmwkY].en.vtt
-  17 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
   15 ./data/videos/2025/Toby_Shorin_Gray_Area_Festival_2025 [J80ZJkQkfJw].en.vtt
   15 ./data/videos/2024/Gray_Area_Festival_10_-_Ranu_Mukherjee [zPjMm0Gycxg].en.vtt
   15 ./data/videos/2024/Gray_Area_Festival_10_-_Golan_Levin [Df-QeOJ_ysc].en.vtt

@@ -31,7 +31,6 @@
   15 ./data/videos/2020/D._Fox_Harrell_Gray_Area_Festival_2020_Keynote [nh--7UOAJMY].en.vtt
   15 ./data/videos/2016/Cultural_Security_Erik_Nemeth_the_2016_Gray_Area_Festival [Z19r3bB5tEk].en.vtt
   13 ./data/videos/2025/Zach_Blas_Gray_Area_Festival_2025 [GFiT8_Vv3mE].en.vtt
-  12 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
   12 ./data/videos/2025/Miriam_Simun_Gray_Area_Festival_2025 [Hojkto7-UWo].en.vtt
   12 ./data/videos/2025/Alice_Bucknell_Gray_Area_Festival_2025 [fMdAQNUpYII].en.vtt
   12 ./data/videos/2022/Paige_Emery_Gray_Area_Festival_2022 [0A9rjxb8z1M].en.vtt

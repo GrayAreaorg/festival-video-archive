@@ -113,7 +113,6 @@
    9 ./data/videos/2015/Art_Invention_Michael_Naimark_The_Gray_Area_Festival_2015 [w-WPUus4Ebo].en.vtt
    8 ./data/videos/2023/Cade_Diehm_Gray_Area_Festival_2023 [CKtcsAVb-_Y].en.vtt
    7 ./data/videos/2017/Hyphen_Labs_the_Gray_Area_Festival_2017 [ByptzVF5Hgk].en.vtt
-   6 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
    6 ./data/videos/2025/Toby_Shorin_Gray_Area_Festival_2025 [J80ZJkQkfJw].en.vtt
    6 ./data/videos/2025/Sydney_Skybetter_Gray_Area_Festival_2025 [oXZWEfzHxLE].en.vtt
    6 ./data/videos/2024/Gray_Area_Festival_10_-_Ranu_Mukherjee [zPjMm0Gycxg].en.vtt

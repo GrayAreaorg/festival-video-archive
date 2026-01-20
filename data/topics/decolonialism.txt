@@ -13,7 +13,6 @@
   18 ./data/videos/2018/Ingrid_LaFleur_Gray_Area_Festival_2018 [sk6dHbPNjSM].en.vtt
   18 ./data/videos/2015/The_Empathetic_Underclass_Sha_Hwang_The_Gray_Area_Festival_2015 [-pIaPg4OHXc].en.vtt
   17 ./data/videos/2020/Ruha_Benjamin_Gray_Area_Festival_2020_Keynote [GISl_8-fbuA].en.vtt
-  15 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
   15 ./data/videos/2024/Gray_Area_Festival_10_-_Sharmi_Basu [0J4LZnfk1N4].en.vtt
   15 ./data/videos/2020/ZERO1_Panel_Gray_Area_Festival_2020 [0uXQCz6tu2c].en.vtt
   15 ./data/videos/2018/Simon_Denny_Gray_Area_Festival_2018 [tS0tfF_1hu4].en.vtt

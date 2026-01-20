@@ -85,7 +85,6 @@
   52 ./data/videos/2016/The_Build_Gene_Youngblood_2016_Gray_Area_Festival_Closing_Keynote [yA8cRPXjdJw].en.vtt
   51 ./data/videos/2017/Angela_Washko_the_Gray_Area_Festival_2017 [NExzfQFMU-o].en.vtt
   50 ./data/videos/2021/Kei_Kreutler_Gray_Area_Festival_2021 [-Ail218gsj4].en.vtt
-  49 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
   49 ./data/videos/2016/Situated_Systems_Panel_Autodesk_2016_Gray_Area_Festival [jTDMOl7MvrU].en.vtt
   48 ./data/videos/2017/Nora_Al_Badri_and_Jan_Nikolai_Nelles_the_2017_Gray_Area_Festival [T7Xcs-_7dEo].en.vtt
   46 ./data/videos/2019/ZERO1_American_Arts_Incubator_Panel_Gray_Area_Festival_2019 [Ce7_72jPcvM].en.vtt

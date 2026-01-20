@@ -59,7 +59,6 @@
    5 ./data/videos/2023/Ari_Kalinowski_Gray_Area_Festival_2023 [eelPwdSnIWI].en.vtt
    4 ./data/videos/2020/Stephanie_Dinkins_Gray_Area_Festival_2020 [41I4tAz-lNE].en.vtt
    4 ./data/videos/2020/Ruha_Benjamin_Gray_Area_Festival_2020_Keynote [GISl_8-fbuA].en.vtt
-   3 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
    3 ./data/videos/2025/Alice_Bucknell_Gray_Area_Festival_2025 [fMdAQNUpYII].en.vtt
    3 ./data/videos/2024/Gray_Area_Festival_10_-_Wendi_Yan [Dqept2E1XMo].en.vtt
    3 ./data/videos/2024/Gray_Area_Festival_10_-_Barbara_London [Gp7fPAvBPFY].en.vtt

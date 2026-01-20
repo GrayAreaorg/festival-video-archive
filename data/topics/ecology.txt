@@ -17,7 +17,6 @@
   57 ./data/videos/2021/Mckenzie_Wark_Gray_Area_Festival_2021 [JTxho9yT0js].en.vtt
   53 ./data/videos/2016/The_Build_Gene_Youngblood_2016_Gray_Area_Festival_Closing_Keynote [yA8cRPXjdJw].en.vtt
   51 ./data/videos/2024/Gray_Area_Festival_10_-_Victoria_Ivanova [s-4GmnM_5jA].en.vtt
-  47 ./data/videos/2025/micha_cardenas_Gray_Area_Festival_2025 [O3xCjKV9shA].en.vtt
   45 ./data/videos/2023/Ari_Kalinowski_Gray_Area_Festival_2023 [eelPwdSnIWI].en.vtt
   45 ./data/videos/2021/Huntrezz_Gray_Area_Festival_2021 [C6EZ8nes3hg].en.vtt
   42 ./data/videos/2021/Tabita_Rezaire_Gray_Area_Festival_2021 [3PbFBmMFTcE].en.vtt

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Usage: ./bin/_workflow-local.sh [OPTIONS]
-# 
+#
 # Options:
 #   --year YEAR         Only process specified year (e.g., --year 2025)
 #   --browser BROWSER   Use cookies from browser (e.g., --browser firefox)
