@@ -45,7 +45,7 @@ if [[ -z "$DEST" ]]; then
 fi
 
 # Build yt-dlp options
-YTDLP_OPTS="-r 50K --ignore-errors --write-info-json --skip-download --js-runtimes node --remote-components ejs:github --restrict-filenames"
+YTDLP_OPTS="-r 50K --ignore-errors --write-info-json --skip-download --js-runtimes node --remote-components ejs:github --restrict-filenames --match-filters 'availability!=private'"
 if [[ -n "$BROWSER" ]]; then
   YTDLP_OPTS="$YTDLP_OPTS --cookies-from-browser $BROWSER"
   echo "Using cookies from $BROWSER"
