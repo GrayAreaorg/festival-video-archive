@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Usage: ./bin/_workflow-local.sh [OPTIONS]
-# 
+# Usage: ./bin/_workflow-local.sh [year] [browser]
+# If year is provided, only process that year. Otherwise process all years.
+# If browser is provided, use cookies from that browser (e.g., firefox, chrome, safari)
+#
 # Options:
 #   --year YEAR         Only process specified year (e.g., --year 2025)
 #   --browser BROWSER   Use cookies from browser (e.g., --browser firefox)
